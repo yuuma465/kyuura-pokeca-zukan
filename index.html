@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="旧裏ポケカ第1弾・拡張パック全96枚を、属性・進化・レアリティで見渡せる静的図鑑サイト。"
+    >
+    <title>旧裏ポケカ図鑑 — 拡張パック第1弾</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <p class="kicker">Pocket Monsters Card Game / Old Back</p>
+        <h1>旧裏ポケカ図鑑 — 拡張パック第1弾</h1>
+        <div class="set-meta" aria-label="セット情報">
+          <span>発売 1996年10月20日</span>
+          <span>全96枚</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="control-band" aria-labelledby="filter-title">
+        <div class="container controls">
+          <div class="control-head">
+            <div>
+              <h2 id="filter-title">カード検索</h2>
+              <p id="result-count" class="result-count" aria-live="polite">表示中 0 / 全 96 枚</p>
+            </div>
+            <button id="reset-button" class="reset-button" type="button">すべて</button>
+          </div>
+
+          <div class="search-row">
+            <label for="search-input">名前・No検索</label>
+            <input
+              id="search-input"
+              type="search"
+              inputmode="search"
+              autocomplete="off"
+              placeholder="例: リザードン / Charizard / 006"
+            >
+          </div>
+
+          <fieldset class="chip-field">
+            <legend>属性</legend>
+            <div id="type-filters" class="chip-list" aria-label="属性フィルタ"></div>
+          </fieldset>
+
+          <fieldset class="chip-field rarity-field">
+            <legend>レアリティ</legend>
+            <div id="rarity-filters" class="chip-list" aria-label="レアリティフィルタ"></div>
+          </fieldset>
+        </div>
+      </section>
+
+      <section class="card-section">
+        <div class="container">
+          <div id="card-grid" class="card-grid" aria-live="polite"></div>
+          <p id="empty-state" class="empty-state" hidden>該当カードがありません</p>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="card-modal" class="modal" aria-labelledby="modal-title">
+      <article class="modal-panel">
+        <header class="modal-header">
+          <div class="modal-title-wrap">
+            <span id="modal-no" class="modal-no">No.000</span>
+            <h2 id="modal-title">カード名</h2>
+          </div>
+          <button id="modal-close" class="icon-button close-button" type="button" aria-label="閉じる">×</button>
+        </header>
+
+        <div class="modal-body">
+          <div class="modal-visual">
+            <div id="modal-thumb" class="modal-thumb thumb">
+              <img id="modal-image" alt="" width="500" height="698" decoding="async">
+              <span class="fallback-ball" aria-hidden="true"></span>
+              <span id="modal-fallback" class="fallback-text"></span>
+            </div>
+            <div id="modal-chips" class="modal-chips" aria-label="カード概要"></div>
+          </div>
+
+          <dl id="modal-details" class="detail-list"></dl>
+        </div>
+
+        <footer class="modal-footer">
+          <button id="prev-card" class="nav-button" type="button">← 前</button>
+          <a id="source-link" class="source-link" href="#" target="_blank" rel="noopener noreferrer">出典ページ</a>
+          <button id="next-card" class="nav-button" type="button">次 →</button>
+        </footer>
+      </article>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          カード画像および『ポケモン』関連の著作権は任天堂・クリーチャーズ・ゲームフリークに帰属します。本サイトはファンによる非営利のまとめであり、公式とは関係ありません。
+        </p>
+        <p>データ出典: なぞのばしょ / Bulbapedia を参照。</p>
+      </div>
+    </footer>
+
+    <script src="data/cards.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
