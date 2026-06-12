@@ -653,11 +653,16 @@
 
   function renderMarketLinks(card) {
     const yahooQuery = encodeURIComponent(`旧裏 ${card.name_ja}`);
-    const magiQuery = encodeURIComponent(`${card.name_ja} 旧裏`);
+    const marketQuery = encodeURIComponent(`${card.name_ja} 旧裏`);
+    const enName = String(card.name_en || "").replace(/[♂♀]/g, "").trim() || card.name_ja;
+    const ebayQuery = encodeURIComponent(`${enName} japanese base set`);
     const googleQuery = encodeURIComponent(`ポケカ 旧裏 ${card.name_ja} 相場`);
     els.marketLinks.replaceChildren(
       createMarketLink("Yahoo!フリマ", `https://paypayfleamarket.yahoo.co.jp/search/${yahooQuery}`),
-      createMarketLink("magi", `https://magi.camp/search?keyword=${magiQuery}`),
+      createMarketLink("メルカリ", `https://jp.mercari.com/search?keyword=${marketQuery}&category_id=1289&status=on_sale`),
+      createMarketLink("magi", `https://magi.camp/items/search?forms_search_items%5Bkeyword%5D=${marketQuery}`),
+      createMarketLink("スニダン", `https://snkrdunk.com/search?keywords=${marketQuery}&rootCategoryId=6`),
+      createMarketLink("eBay", `https://www.ebay.com/sch/i.html?_nkw=${ebayQuery}&_sacat=183454`),
       createMarketLink("Google相場検索", `https://www.google.com/search?q=${googleQuery}`)
     );
   }
