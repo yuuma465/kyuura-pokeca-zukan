@@ -1,4 +1,4 @@
-window.POKECA_PSA = {
+{
   "1st1001": {
     "spec_id": 544115,
     "total": 2337,
@@ -16829,4 +16829,4 @@ window.POKECA_PSA = {
     "gem_rate": 32.5,
     "updated": "2026-06-13"
   }
-};
+}
