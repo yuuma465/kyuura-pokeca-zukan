@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="旧裏ポケカ第1弾・拡張パック全96枚を、属性・進化・レアリティで見渡せる静的図鑑サイト。"
+      content="旧裏ポケカ全1,615枚を、カントー・ジョウト・VSの地方とセット別に見渡せる静的図鑑サイト。"
     >
-    <title>旧裏ポケカ図鑑 — 拡張パック第1弾</title>
+    <title>旧裏ポケカ図鑑 — カントー＆ジョウト</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,21 +20,15 @@
     <header class="site-header">
       <div class="container header-inner">
         <p class="kicker">Pocket Monsters Card Game / Old Back</p>
-        <h1>旧裏ポケカ図鑑</h1>
+        <h1>旧裏ポケカ図鑑 — カントー＆ジョウト</h1>
       </div>
       <div class="header-subbar">
         <div class="container subbar-inner">
           <div class="set-meta" aria-label="セット情報">
-            <span>発売 1996年10月20日</span>
-            <span>全96枚</span>
+            <span>全1,615枚</span>
+            <span>カントー・ジョウト・VS</span>
+            <span>全34セット</span>
           </div>
-          <button
-            id="package-open"
-            class="package-trigger"
-            type="button"
-            aria-haspopup="dialog"
-            aria-controls="package-modal"
-          >拡張パック第1弾</button>
         </div>
       </div>
     </header>
@@ -45,7 +39,7 @@
           <div class="control-head">
             <div>
               <h2 id="filter-title">カード検索</h2>
-              <p id="result-count" class="result-count" aria-live="polite">表示中 0 / 全 96 枚</p>
+              <p id="result-count" class="result-count" aria-live="polite">表示中 0 / 全 1,615 枚</p>
             </div>
             <button id="reset-button" class="reset-button" type="button">すべて</button>
           </div>
@@ -57,9 +51,26 @@
               type="search"
               inputmode="search"
               autocomplete="off"
-              placeholder="例: リザードン / Charizard / 006"
+              placeholder="例: リザードン / Charizard / 016/096"
             >
           </div>
+
+          <fieldset class="chip-field">
+            <legend>地方</legend>
+            <div id="region-filters" class="chip-list" aria-label="地方フィルタ"></div>
+          </fieldset>
+
+          <div class="select-row">
+            <label for="set-filter">セット</label>
+            <select id="set-filter">
+              <option value="">すべてのセット</option>
+            </select>
+          </div>
+
+          <fieldset class="chip-field">
+            <legend>種別</legend>
+            <div id="kind-filters" class="chip-list" aria-label="種別フィルタ"></div>
+          </fieldset>
 
           <fieldset class="chip-field">
             <legend>属性</legend>
@@ -70,12 +81,17 @@
             <legend>レアリティ</legend>
             <div id="rarity-filters" class="chip-list" aria-label="レアリティフィルタ"></div>
           </fieldset>
+
+          <label class="toggle-row" for="psa-only">
+            <input id="psa-only" type="checkbox">
+            <span>PSAデータありのみ表示</span>
+          </label>
         </div>
       </section>
 
       <section class="card-section">
         <div class="container">
-          <div id="card-grid" class="card-grid" aria-live="polite"></div>
+          <div id="card-grid" class="grouped-card-list" aria-live="polite"></div>
           <p id="empty-state" class="empty-state" hidden>該当カードがありません</p>
         </div>
       </section>
@@ -123,41 +139,6 @@
       </article>
     </dialog>
 
-    <dialog id="package-modal" class="modal package-modal" aria-labelledby="package-title">
-      <article class="modal-panel package-panel">
-        <header class="modal-header package-header">
-          <div class="modal-title-wrap">
-            <span class="modal-no">Pack</span>
-            <h2 id="package-title">拡張パック第1弾</h2>
-          </div>
-          <button id="package-close" class="icon-button close-button" type="button" aria-label="閉じる">×</button>
-        </header>
-
-        <div class="package-body">
-          <div id="package-image-frame" class="package-image-frame">
-            <img id="package-image" alt="" width="640" height="430" decoding="async">
-            <span class="fallback-ball" aria-hidden="true"></span>
-            <span class="fallback-text"></span>
-          </div>
-
-          <dl class="detail-list package-details">
-            <dt>発売日</dt>
-            <dd id="package-release">-</dd>
-            <dt>価格</dt>
-            <dd id="package-price">-</dd>
-            <dt>1パック</dt>
-            <dd id="package-per-pack">-</dd>
-            <dt>収録種類数</dt>
-            <dd id="package-total">-</dd>
-            <dt>レアリティ構成</dt>
-            <dd id="package-rarity">-</dd>
-            <dt>看板ポケモン</dt>
-            <dd id="package-cover">-</dd>
-          </dl>
-        </div>
-      </article>
-    </dialog>
-
     <footer class="site-footer">
       <div class="container">
         <p>
@@ -167,9 +148,9 @@
       </div>
     </footer>
 
-    <script src="data/cards.js"></script>
-    <script src="data/variants.js"></script>
-    <script src="data/psa_pop.js"></script>
+    <script src="data/cards_all.js"></script>
+    <script src="data/variants_all.js"></script>
+    <script src="data/psa_pop_all.js"></script>
     <script src="assets/app.js"></script>
   </body>
 </html>

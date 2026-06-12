@@ -38,7 +38,8 @@ body.scroll-locked {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -48,6 +49,7 @@ button {
 
 button:focus-visible,
 input:focus-visible,
+select:focus-visible,
 a:focus-visible {
   outline: 2px solid var(--blue);
   outline-offset: 3px;
@@ -162,6 +164,8 @@ h1 {
 
 .control-head,
 .search-row,
+.select-row,
+.toggle-row,
 .chip-field {
   border-right: 1px solid var(--border);
   border-left: 1px solid var(--border);
@@ -232,13 +236,15 @@ h1 {
   opacity: 0.8;
 }
 
-.search-row {
+.search-row,
+.select-row {
   display: grid;
   gap: 7px;
   padding: 0 14px 14px;
 }
 
 .search-row label,
+.select-row label,
 .chip-field legend {
   color: var(--ink);
   font-size: 13px;
@@ -246,7 +252,8 @@ h1 {
   line-height: 1.4;
 }
 
-.search-row input {
+.search-row input,
+.select-row select {
   width: 100%;
   min-height: 44px;
   border: 1px solid var(--border);
@@ -256,10 +263,16 @@ h1 {
   color: var(--ink);
 }
 
-.search-row input:focus {
+.search-row input:focus,
+.select-row select:focus {
   border-color: var(--blue);
   outline: 0;
   box-shadow: 0 0 0 2px var(--blue);
+}
+
+.select-row select {
+  appearance: auto;
+  cursor: pointer;
 }
 
 .chip-field {
@@ -271,8 +284,28 @@ h1 {
 }
 
 .rarity-field {
+  padding-bottom: 12px;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   border-bottom: 1px solid var(--border);
   border-radius: 0 0 8px 8px;
+  padding: 0 14px 16px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.toggle-row input {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  accent-color: var(--blue);
 }
 
 .chip-field legend {
@@ -331,6 +364,69 @@ h1 {
 .card-section {
   padding: 18px 0 28px;
   background: var(--white);
+}
+
+.grouped-card-list {
+  display: grid;
+  gap: 24px;
+}
+
+.region-group {
+  min-width: 0;
+}
+
+.region-heading {
+  margin: 0 0 12px;
+  border-bottom: 3px solid var(--black);
+  padding: 0 0 8px;
+  color: var(--black);
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.set-group {
+  min-width: 0;
+}
+
+.set-group + .set-group {
+  margin-top: 18px;
+}
+
+.set-heading {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 0 10px;
+  border-left: 4px solid var(--blue);
+  padding-left: 10px;
+  color: var(--black);
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.set-heading > span:first-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.set-count {
+  display: inline-flex;
+  min-height: 24px;
+  flex: 0 0 auto;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 35px;
+  padding: 2px 9px;
+  background: var(--band);
+  color: var(--muted);
+  font-family: var(--font-latin);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .card-grid {
@@ -433,7 +529,8 @@ h1 {
 
 .thumb > .no-badge,
 .thumb > .rarity,
-.thumb > .stage {
+.thumb > .stage,
+.thumb > .psa-badge {
   position: absolute;
   z-index: 2;
 }
@@ -482,6 +579,10 @@ h1 {
   color: var(--red);
 }
 
+.rarity--none {
+  color: var(--muted);
+}
+
 .thumb > .stage {
   display: inline-flex;
   bottom: 7px;
@@ -511,6 +612,25 @@ h1 {
   border-bottom: 4px solid transparent;
   border-left: 6px solid var(--type-color, var(--blue));
   content: "";
+}
+
+.psa-badge {
+  right: 7px;
+  bottom: 7px;
+  display: inline-flex;
+  min-height: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--blue);
+  border-radius: 2px;
+  padding: 2px 6px;
+  background: var(--blue);
+  color: var(--white);
+  font-family: var(--font-latin);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .type-bar {
@@ -843,6 +963,10 @@ h1 {
   border-color: var(--red);
 }
 
+.rarity-badge--none {
+  border-color: var(--border);
+}
+
 .detail-list {
   display: grid;
   grid-template-columns: 7em minmax(0, 1fr);
@@ -957,6 +1081,18 @@ h1 {
   display: grid;
   gap: 12px;
   min-width: 0;
+}
+
+.psa-empty {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  background: var(--band);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 .psa-summary {
@@ -1206,6 +1342,8 @@ h1 {
 
   .control-head,
   .search-row,
+  .select-row,
+  .toggle-row,
   .chip-field {
     padding-right: 20px;
     padding-left: 20px;

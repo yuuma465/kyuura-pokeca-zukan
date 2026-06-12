@@ -1,43 +1,283 @@
 (() => {
   "use strict";
 
-  const dataset = window.POKECA || { meta: { total_count: 0 }, cards: [] };
-  const variantsByNo = window.POKECA_VARIANTS || {};
-  const psaByNo = window.POKECA_PSA || {};
-  const cards = [...dataset.cards].sort((a, b) => Number(a.no) - Number(b.no));
-  const totalCount = Number(dataset.meta?.total_count || cards.length);
-  const packageInfo = dataset.meta?.package || null;
+  const dataset = window.POKECA_ALL || { cards: [] };
+  const variantsById = window.POKECA_VARIANTS || {};
+  const psaById = window.POKECA_PSA || {};
+  const sourceCards = Array.isArray(dataset.cards) ? dataset.cards : [];
+
+  const seriesOrder = new Map([
+    ["PMCG", 0],
+    ["neo", 1],
+    ["VS", 2],
+  ]);
+  const regionOrder = new Map([
+    ["カントー", 0],
+    ["ジョウト", 1],
+    ["VS", 2],
+  ]);
+  const collator = new Intl.Collator("ja-JP", { numeric: true, sensitivity: "base" });
 
   const typeDefinitions = [
-    { key: "ほのお", label: "炎", fullLabel: "炎(ほのお)", color: "#E8533B" },
-    { key: "みず", label: "水", fullLabel: "水(みず)", color: "#3E8EDE" },
-    { key: "くさ", label: "草", fullLabel: "草(くさ)", color: "#5BB04A" },
-    { key: "でんき", label: "雷", fullLabel: "雷(でんき)", color: "#F2C200" },
-    { key: "エスパー", label: "超", fullLabel: "超(エスパー)", color: "#A05BC0" },
-    { key: "かくとう", label: "闘", fullLabel: "闘(かくとう)", color: "#C77B3A" },
-    { key: "あく", label: "悪", fullLabel: "悪(あく)", color: "#3A332A" },
-    { key: "はがね", label: "鋼", fullLabel: "鋼(はがね)", color: "#8A97A6" },
-    { key: "無色", label: "無色", fullLabel: "無色(ノーマル)", color: "#C8BFA6" },
-    { key: "ドラゴン", label: "竜", fullLabel: "ドラゴン", color: "#6A52C7" },
-    { key: "トレーナー", label: "トレーナー", fullLabel: "トレーナー", color: "#D98C2B" },
-    { key: "エネルギー", label: "エネルギー", fullLabel: "エネルギー", color: "#6B5D45" },
+    { key: "草", label: "草", fullLabel: "草", color: "#5BB04A", pokemon: true },
+    { key: "炎", label: "炎", fullLabel: "炎", color: "#E8533B", pokemon: true },
+    { key: "水", label: "水", fullLabel: "水", color: "#3E8EDE", pokemon: true },
+    { key: "雷", label: "雷", fullLabel: "雷", color: "#F2C200", pokemon: true },
+    { key: "超", label: "超", fullLabel: "超", color: "#A05BC0", pokemon: true },
+    { key: "闘", label: "闘", fullLabel: "闘", color: "#C77B3A", pokemon: true },
+    { key: "悪", label: "悪", fullLabel: "悪", color: "#3A332A", pokemon: true },
+    { key: "鋼", label: "鋼", fullLabel: "鋼", color: "#8A97A6", pokemon: true },
+    { key: "無色", label: "無色", fullLabel: "無色", color: "#C8BFA6", pokemon: true },
+    { key: "トレーナー", label: "Tr", fullLabel: "トレーナー", color: "#D98C2B", pokemon: false },
+    { key: "エネルギー", label: "En", fullLabel: "エネルギー", color: "#6B5D45", pokemon: false },
+  ];
+  const typeByKey = new Map(typeDefinitions.map((type) => [type.key, type]));
+
+  const regionDefinitions = [
+    { key: "カントー", label: "カントー" },
+    { key: "ジョウト", label: "ジョウト" },
+    { key: "VS", label: "VS" },
   ];
 
-  const typeByKey = new Map(typeDefinitions.map((type) => [type.key, type]));
+  const kindDefinitions = [
+    { key: "ポケモン", label: "ポケモン" },
+    { key: "トレーナー", label: "トレーナー" },
+    { key: "エネルギー", label: "エネルギー" },
+  ];
+
   const rarityDefinitions = [
     { key: "●", label: "●", name: "コモン", className: "rarity--common" },
     { key: "◆", label: "◆", name: "アンコモン", className: "rarity--uncommon" },
     { key: "★", label: "★", name: "レア", className: "rarity--rare" },
-    { key: "☆", label: "☆", name: "レアホロ", className: "rarity--rare" },
   ];
   const rarityByKey = new Map(rarityDefinitions.map((rarity) => [rarity.key, rarity]));
 
+  const initialSetOrder = buildInitialSetOrder(sourceCards);
+  const cards = sortCards(sourceCards);
+  const cardById = new Map(cards.map((card) => [card.id, card]));
+  const totalCount = cards.length;
+
+  function setKey(card) {
+    return `${card.series || ""}\u0000${card.region || ""}\u0000${card.set || ""}`;
+  }
+
+  function buildInitialSetOrder(cardList) {
+    const order = new Map();
+    for (const card of cardList) {
+      const key = setKey(card);
+      if (!order.has(key)) {
+        order.set(key, order.size);
+      }
+    }
+    return order;
+  }
+
+  function parseCardNumber(cardNumber) {
+    const text = String(cardNumber || "").trim();
+    const match = text.match(/^(\d+)(?:\s*\/\s*(\d+))?$/);
+    if (!match) {
+      return { missing: true, number: Number.MAX_SAFE_INTEGER, total: Number.MAX_SAFE_INTEGER };
+    }
+    return {
+      missing: false,
+      number: Number(match[1]),
+      total: Number(match[2] || Number.MAX_SAFE_INTEGER),
+    };
+  }
+
+  function compareCards(a, b) {
+    const seriesDiff = (seriesOrder.get(a.series) ?? 99) - (seriesOrder.get(b.series) ?? 99);
+    if (seriesDiff) {
+      return seriesDiff;
+    }
+
+    const regionDiff = (regionOrder.get(a.region) ?? 99) - (regionOrder.get(b.region) ?? 99);
+    if (regionDiff) {
+      return regionDiff;
+    }
+
+    const setDiff = (initialSetOrder.get(setKey(a)) ?? Number.MAX_SAFE_INTEGER) - (initialSetOrder.get(setKey(b)) ?? Number.MAX_SAFE_INTEGER);
+    if (setDiff) {
+      return setDiff;
+    }
+
+    const setNameDiff = collator.compare(a.set || "", b.set || "");
+    if (setNameDiff) {
+      return setNameDiff;
+    }
+
+    const aNo = parseCardNumber(a.card_number);
+    const bNo = parseCardNumber(b.card_number);
+    if (aNo.missing !== bNo.missing) {
+      return aNo.missing ? 1 : -1;
+    }
+    if (aNo.number !== bNo.number) {
+      return aNo.number - bNo.number;
+    }
+    return collator.compare(a.id || "", b.id || "");
+  }
+
+  function sortCards(cardList) {
+    return [...cardList].sort(compareCards);
+  }
+
+  function normalizeText(value) {
+    return String(value || "")
+      .normalize("NFKC")
+      .toLowerCase()
+      .replace(/[ぁ-ゖ]/g, (char) => String.fromCharCode(char.charCodeAt(0) + 0x60))
+      .replace(/\s+/g, "");
+  }
+
+  function normalizeRarity(rarity) {
+    const symbol = String(rarity || "").trim().charAt(0);
+    return symbol || "-";
+  }
+
+  function getCardKind(card) {
+    if (card.hp !== null && card.hp !== undefined && card.hp !== "") {
+      return "ポケモン";
+    }
+    if (card.type) {
+      return "ポケモン";
+    }
+    if (card.card_type === "エネルギー") {
+      return "エネルギー";
+    }
+    if (card.card_type === "トレーナー") {
+      return "トレーナー";
+    }
+    return "トレーナー";
+  }
+
+  function getTypeKey(card) {
+    const kind = getCardKind(card);
+    if (kind === "ポケモン") {
+      return card.type || "無色";
+    }
+    return kind;
+  }
+
+  function getTypeInfo(cardOrKey) {
+    const key = typeof cardOrKey === "string" ? cardOrKey : getTypeKey(cardOrKey);
+    return typeByKey.get(key) || {
+      key,
+      label: key || "-",
+      fullLabel: key || "-",
+      color: "#D8C7A8",
+    };
+  }
+
+  function getRarityInfo(cardOrRarity) {
+    const key = typeof cardOrRarity === "string" ? normalizeRarity(cardOrRarity) : normalizeRarity(cardOrRarity.rarity);
+    return rarityByKey.get(key) || {
+      key,
+      label: key,
+      name: key === "-" ? "なし" : key,
+      className: "rarity--none",
+    };
+  }
+
+  function hasPSAData(card) {
+    return Boolean(psaById[card.id]);
+  }
+
+  function cardMatchesQuery(card, normalizedQuery) {
+    if (!normalizedQuery) {
+      return true;
+    }
+    const haystack = normalizeText(`${card.name_ja} ${card.name_en} ${card.card_number} ${card.id}`);
+    return haystack.includes(normalizedQuery);
+  }
+
+  function filterCards(cardList, filters) {
+    const selectedRegions = filters.selectedRegions || new Set();
+    const selectedKinds = filters.selectedKinds || new Set();
+    const selectedTypes = filters.selectedTypes || new Set();
+    const selectedRarities = filters.selectedRarities || new Set();
+    const selectedSet = filters.selectedSet || "";
+    const normalizedQuery = normalizeText(filters.query || "");
+
+    return cardList.filter((card) => {
+      const kind = getCardKind(card);
+      const type = getTypeKey(card);
+      const rarity = normalizeRarity(card.rarity);
+      return (
+        (selectedRegions.size === 0 || selectedRegions.has(card.region)) &&
+        (!selectedSet || card.set === selectedSet) &&
+        (selectedKinds.size === 0 || selectedKinds.has(kind)) &&
+        (selectedTypes.size === 0 || selectedTypes.has(type)) &&
+        (selectedRarities.size === 0 || selectedRarities.has(rarity)) &&
+        (!filters.psaOnly || hasPSAData(card)) &&
+        cardMatchesQuery(card, normalizedQuery)
+      );
+    });
+  }
+
+  function groupCards(cardList) {
+    const regions = [];
+    const regionMap = new Map();
+
+    for (const card of cardList) {
+      if (!regionMap.has(card.region)) {
+        const regionGroup = { region: card.region, sets: [], count: 0, setMap: new Map() };
+        regionMap.set(card.region, regionGroup);
+        regions.push(regionGroup);
+      }
+
+      const regionGroup = regionMap.get(card.region);
+      if (!regionGroup.setMap.has(card.set)) {
+        const setGroup = { set: card.set, cards: [] };
+        regionGroup.setMap.set(card.set, setGroup);
+        regionGroup.sets.push(setGroup);
+      }
+
+      regionGroup.setMap.get(card.set).cards.push(card);
+      regionGroup.count += 1;
+    }
+
+    return regions.map((regionGroup) => ({
+      region: regionGroup.region,
+      count: regionGroup.count,
+      sets: regionGroup.sets,
+    }));
+  }
+
+  function getHashForCard(card) {
+    return `#id-${encodeURIComponent(card.id)}`;
+  }
+
+  function getIdFromHash(hash) {
+    const match = String(hash || "").match(/^#id-(.+)$/);
+    return match ? decodeURIComponent(match[1]) : "";
+  }
+
+  window.POKECA_APP_TESTS = {
+    normalizeText,
+    sortCards,
+    groupCards,
+    filterCards,
+    getCardKind,
+    getTypeKey,
+    getHashForCard,
+    getIdFromHash,
+    parseCardNumber,
+  };
+
+  if (window.POKECA_APP_SKIP_INIT) {
+    return;
+  }
+
   const state = {
+    selectedRegions: new Set(),
+    selectedSet: "",
+    selectedKinds: new Set(),
     selectedTypes: new Set(),
     selectedRarities: new Set(),
+    psaOnly: false,
     query: "",
     visibleCards: [...cards],
-    activeCardNo: null,
+    activeCardId: null,
     activeVariantIndex: 0,
     lastFocusedTile: null,
   };
@@ -48,8 +288,12 @@
     emptyState: document.getElementById("empty-state"),
     searchInput: document.getElementById("search-input"),
     resetButton: document.getElementById("reset-button"),
+    regionFilters: document.getElementById("region-filters"),
+    setFilter: document.getElementById("set-filter"),
+    kindFilters: document.getElementById("kind-filters"),
     typeFilters: document.getElementById("type-filters"),
     rarityFilters: document.getElementById("rarity-filters"),
+    psaOnly: document.getElementById("psa-only"),
     modal: document.getElementById("card-modal"),
     modalPanel: document.querySelector(".modal-panel"),
     modalHeader: document.querySelector(".modal-header"),
@@ -71,95 +315,15 @@
     prevCard: document.getElementById("prev-card"),
     nextCard: document.getElementById("next-card"),
     sourceLink: document.getElementById("source-link"),
-    packageOpen: document.getElementById("package-open"),
-    packageModal: document.getElementById("package-modal"),
-    packagePanel: document.querySelector(".package-panel"),
-    packageHeader: document.querySelector(".package-header"),
-    packageClose: document.getElementById("package-close"),
-    packageTitle: document.getElementById("package-title"),
-    packageImageFrame: document.getElementById("package-image-frame"),
-    packageImage: document.getElementById("package-image"),
-    packageRelease: document.getElementById("package-release"),
-    packagePrice: document.getElementById("package-price"),
-    packagePerPack: document.getElementById("package-per-pack"),
-    packageTotal: document.getElementById("package-total"),
-    packageRarity: document.getElementById("package-rarity"),
-    packageCover: document.getElementById("package-cover"),
   };
 
-  const tileByNo = new Map();
-
-  function padNo(no) {
-    return String(no).padStart(3, "0");
-  }
+  const tileById = new Map();
 
   function cssEscape(value) {
     if (window.CSS?.escape) {
-      return CSS.escape(value);
+      return window.CSS.escape(value);
     }
     return String(value).replace(/["\\]/g, "\\$&");
-  }
-
-  function normalizeText(value) {
-    return String(value || "")
-      .normalize("NFKC")
-      .toLowerCase()
-      .replace(/[ぁ-ゖ]/g, (char) => String.fromCharCode(char.charCodeAt(0) + 0x60))
-      .replace(/\s+/g, "");
-  }
-
-  function normalizeRarity(rarity) {
-    const symbol = String(rarity || "").trim().charAt(0);
-    return rarityByKey.has(symbol) ? symbol : symbol || "-";
-  }
-
-  function getTypeKey(card) {
-    if (card.card_type === "トレーナー") {
-      return "トレーナー";
-    }
-    if (card.card_type === "エネルギー") {
-      return "エネルギー";
-    }
-    return card.pokemon_type || card.card_type || "無色";
-  }
-
-  function getTypeInfo(cardOrKey) {
-    const key = typeof cardOrKey === "string" ? cardOrKey : getTypeKey(cardOrKey);
-    return typeByKey.get(key) || {
-      key,
-      label: key || "-",
-      fullLabel: key || "-",
-      color: "#D8C7A8",
-    };
-  }
-
-  function getRarityInfo(cardOrRarity) {
-    const key = typeof cardOrRarity === "string" ? normalizeRarity(cardOrRarity) : normalizeRarity(cardOrRarity.rarity);
-    return rarityByKey.get(key) || {
-      key,
-      label: key,
-      name: String(cardOrRarity.rarity || cardOrRarity || "-"),
-      className: "rarity--common",
-    };
-  }
-
-  function getStageLabel(card) {
-    if (card.stage && card.stage !== "-") {
-      return card.stage;
-    }
-    return card.card_type || "-";
-  }
-
-  function getHpLabel(card) {
-    return Number.isFinite(Number(card.hp)) ? `HP${card.hp}` : "HP -";
-  }
-
-  function formatDate(dateText) {
-    const match = String(dateText || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
-    if (!match) {
-      return dateText || "-";
-    }
-    return `${match[1]}年${Number(match[2])}月${Number(match[3])}日`;
   }
 
   function formatNumber(value) {
@@ -170,6 +334,30 @@
   function formatPercent(value) {
     const number = Number(value);
     return Number.isFinite(number) ? number.toFixed(1) : "0.0";
+  }
+
+  function formatDate(dateText) {
+    const match = String(dateText || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!match) {
+      return dateText || "-";
+    }
+    return `${match[1]}年${Number(match[2])}月${Number(match[3])}日`;
+  }
+
+  function getCardNumberLabel(card) {
+    const number = String(card.card_number || "").trim();
+    return number && number !== "-/-" ? number : "番号なし";
+  }
+
+  function getHpLabel(card) {
+    return Number.isFinite(Number(card.hp)) ? `HP${card.hp}` : "HP -";
+  }
+
+  function getStageLabel(card) {
+    if (getCardKind(card) !== "ポケモン") {
+      return getCardKind(card);
+    }
+    return card.stage || "ポケモン";
   }
 
   function createElement(tag, options = {}) {
@@ -192,7 +380,7 @@
   }
 
   function setTypeStyle(element, cardOrKey) {
-    element.style.setProperty("--type-color", getTypeInfo(cardOrKey).color);
+    element?.style.setProperty("--type-color", getTypeInfo(cardOrKey).color);
   }
 
   function markImageFallback(thumb, fallbackText) {
@@ -207,6 +395,367 @@
   function clearImageFallback(thumb) {
     thumb.classList.remove("img-fallback");
     delete thumb.dataset.fallback;
+  }
+
+  function buildChipButton(definition, group) {
+    const button = createElement("button", {
+      className: "filter-chip",
+      attrs: {
+        type: "button",
+        "aria-pressed": "false",
+        "data-filter-group": group,
+        "data-filter-key": definition.key,
+      },
+    });
+    if (definition.color) {
+      button.style.setProperty("--type-color", definition.color);
+      button.append(createElement("span", { className: "chip-dot", attrs: { "aria-hidden": "true" } }));
+    }
+    if (definition.className) {
+      button.append(createElement("span", { className: `rarity ${definition.className}`, text: definition.label, attrs: { "aria-hidden": "true" } }));
+      button.append(document.createTextNode(definition.name));
+    } else {
+      button.append(document.createTextNode(definition.label));
+    }
+    button.addEventListener("click", () => toggleFilter(group, definition.key));
+    return button;
+  }
+
+  function renderFilters() {
+    for (const region of regionDefinitions) {
+      els.regionFilters.append(buildChipButton(region, "region"));
+    }
+
+    const setCounts = new Map();
+    for (const card of cards) {
+      setCounts.set(card.set, (setCounts.get(card.set) || 0) + 1);
+    }
+    const seenSets = new Set();
+    for (const card of cards) {
+      if (seenSets.has(card.set)) {
+        continue;
+      }
+      seenSets.add(card.set);
+      els.setFilter.append(createElement("option", {
+        text: `${card.set}（${formatNumber(setCounts.get(card.set))}）`,
+        attrs: { value: card.set },
+      }));
+    }
+
+    for (const kind of kindDefinitions) {
+      els.kindFilters.append(buildChipButton(kind, "kind"));
+    }
+
+    const presentTypes = new Set(cards.filter((card) => getCardKind(card) === "ポケモン").map((card) => getTypeKey(card)));
+    for (const type of typeDefinitions.filter((item) => item.pokemon && presentTypes.has(item.key))) {
+      els.typeFilters.append(buildChipButton(type, "type"));
+    }
+
+    const presentRarities = new Set(cards.map((card) => normalizeRarity(card.rarity)));
+    for (const rarity of rarityDefinitions.filter((item) => presentRarities.has(item.key))) {
+      els.rarityFilters.append(buildChipButton(rarity, "rarity"));
+    }
+  }
+
+  function getStateSet(group) {
+    if (group === "region") {
+      return state.selectedRegions;
+    }
+    if (group === "kind") {
+      return state.selectedKinds;
+    }
+    if (group === "type") {
+      return state.selectedTypes;
+    }
+    return state.selectedRarities;
+  }
+
+  function toggleFilter(group, key) {
+    const set = getStateSet(group);
+    if (set.has(key)) {
+      set.delete(key);
+    } else {
+      set.add(key);
+    }
+    applyFilters({ updateUrl: true });
+  }
+
+  function updateFilterControls() {
+    for (const button of document.querySelectorAll("[data-filter-group][data-filter-key]")) {
+      const group = button.getAttribute("data-filter-group");
+      const key = button.getAttribute("data-filter-key");
+      button.setAttribute("aria-pressed", String(getStateSet(group).has(key)));
+    }
+    els.setFilter.value = state.selectedSet;
+    els.psaOnly.checked = state.psaOnly;
+  }
+
+  function buildTile(card) {
+    const typeInfo = getTypeInfo(card);
+    const rarityInfo = getRarityInfo(card);
+    const numberLabel = getCardNumberLabel(card);
+    const tile = createElement("button", {
+      className: "card-tile",
+      attrs: {
+        type: "button",
+        "data-id": card.id,
+        "data-type": typeInfo.key,
+        "data-rarity": rarityInfo.key,
+        "aria-label": `${numberLabel} ${card.name_ja} の詳細を開く`,
+      },
+    });
+    setTypeStyle(tile, card);
+
+    const thumb = createElement("span", { className: "thumb" });
+    const img = createElement("img", {
+      attrs: {
+        src: card.image_url,
+        alt: `${card.name_ja}のカード画像`,
+        loading: "lazy",
+        decoding: "async",
+        width: "500",
+        height: "698",
+      },
+    });
+    img.addEventListener("error", () => markImageFallback(thumb, `${numberLabel}\n${card.name_ja}\n画像なし`), { once: true });
+    thumb.append(
+      img,
+      createElement("span", { className: "fallback-ball", attrs: { "aria-hidden": "true" } }),
+      createElement("span", { className: "fallback-text" }),
+      createElement("span", { className: "no-badge", text: numberLabel }),
+      createElement("span", {
+        className: `rarity ${rarityInfo.className}`,
+        text: rarityInfo.key,
+        attrs: { "aria-label": `レアリティ ${rarityInfo.name}` },
+      }),
+      createElement("span", {
+        className: `stage${card.stage === "1進化" || card.stage === "2進化" ? " stage--evolved" : ""}`,
+        text: getStageLabel(card),
+      }),
+    );
+    if (hasPSAData(card)) {
+      thumb.append(createElement("span", { className: "psa-badge", text: "PSA" }));
+    }
+
+    const tileInfo = createElement("span", { className: "tile-info" });
+    const typeDot = createElement("span", { className: "type-dot", attrs: { "aria-label": typeInfo.fullLabel } });
+    typeDot.style.setProperty("--type-color", typeInfo.color);
+    tileInfo.append(
+      createElement("span", { className: "tile-name", text: card.name_ja }),
+      typeDot,
+      createElement("span", { className: "tile-hp", text: getHpLabel(card) }),
+    );
+
+    tile.append(
+      thumb,
+      createElement("span", { className: "type-bar", attrs: { "aria-hidden": "true" } }),
+      tileInfo,
+    );
+    tile.addEventListener("click", () => openModal(card.id, { updateHash: true, push: true, focusSource: tile }));
+    tileById.set(card.id, tile);
+    return tile;
+  }
+
+  function renderCardGroups(cardList) {
+    const fragment = document.createDocumentFragment();
+    tileById.clear();
+
+    for (const regionGroup of groupCards(cardList)) {
+      const regionSection = createElement("section", {
+        className: "region-group",
+        attrs: { "aria-labelledby": `region-${cssEscape(regionGroup.region)}` },
+      });
+      regionSection.append(
+        createElement("h2", {
+          className: "region-heading",
+          text: `${regionGroup.region} ${formatNumber(regionGroup.count)}枚`,
+          attrs: { id: `region-${regionGroup.region}` },
+        }),
+      );
+
+      for (const setGroup of regionGroup.sets) {
+        const setSection = createElement("section", { className: "set-group" });
+        const heading = createElement("h3", { className: "set-heading" });
+        heading.append(
+          createElement("span", { text: setGroup.set || "セット未設定" }),
+          createElement("span", { className: "set-count", text: `${formatNumber(setGroup.cards.length)}枚` }),
+        );
+
+        const grid = createElement("div", { className: "card-grid" });
+        for (const card of setGroup.cards) {
+          grid.append(buildTile(card));
+        }
+        setSection.append(heading, grid);
+        regionSection.append(setSection);
+      }
+
+      fragment.append(regionSection);
+    }
+
+    els.grid.replaceChildren(fragment);
+  }
+
+  function applyFilters({ updateUrl = false } = {}) {
+    state.visibleCards = filterCards(cards, state);
+    renderCardGroups(state.visibleCards);
+    updateFilterControls();
+    els.resultCount.textContent = `表示中 ${formatNumber(state.visibleCards.length)} / 全 ${formatNumber(totalCount)} 枚`;
+    els.emptyState.hidden = state.visibleCards.length !== 0;
+
+    if (state.activeCardId) {
+      updateModalNavigation(cardById.get(state.activeCardId));
+    }
+    if (updateUrl) {
+      writeFiltersToUrl();
+    }
+  }
+
+  function readFiltersFromUrl() {
+    const params = new URLSearchParams(location.search);
+    const readSet = (name, target, allowed) => {
+      for (const value of (params.get(name) || "").split(",").filter(Boolean)) {
+        if (!allowed || allowed.has(value)) {
+          target.add(value);
+        }
+      }
+    };
+
+    readSet("region", state.selectedRegions, new Set(regionDefinitions.map((item) => item.key)));
+    readSet("kind", state.selectedKinds, new Set(kindDefinitions.map((item) => item.key)));
+    readSet("type", state.selectedTypes, new Set(typeDefinitions.filter((item) => item.pokemon).map((item) => item.key)));
+    readSet("rarity", state.selectedRarities, new Set(rarityDefinitions.map((item) => item.key)));
+
+    const knownSets = new Set(cards.map((card) => card.set));
+    const set = params.get("set") || "";
+    state.selectedSet = knownSets.has(set) ? set : "";
+    state.psaOnly = params.get("psa") === "1";
+    state.query = params.get("q") || "";
+    els.searchInput.value = state.query;
+  }
+
+  function writeFiltersToUrl() {
+    const url = new URL(location.href);
+    const params = url.searchParams;
+    const writeSet = (name, values) => {
+      const text = [...values].join(",");
+      if (text) {
+        params.set(name, text);
+      } else {
+        params.delete(name);
+      }
+    };
+
+    writeSet("region", state.selectedRegions);
+    writeSet("kind", state.selectedKinds);
+    writeSet("type", state.selectedTypes);
+    writeSet("rarity", state.selectedRarities);
+
+    if (state.selectedSet) {
+      params.set("set", state.selectedSet);
+    } else {
+      params.delete("set");
+    }
+    if (state.psaOnly) {
+      params.set("psa", "1");
+    } else {
+      params.delete("psa");
+    }
+    if (state.query) {
+      params.set("q", state.query);
+    } else {
+      params.delete("q");
+    }
+    updateHistory("replaceState", url);
+  }
+
+  function resetFilters() {
+    state.selectedRegions.clear();
+    state.selectedSet = "";
+    state.selectedKinds.clear();
+    state.selectedTypes.clear();
+    state.selectedRarities.clear();
+    state.psaOnly = false;
+    state.query = "";
+    els.searchInput.value = "";
+    applyFilters({ updateUrl: true });
+  }
+
+  function debounce(callback, delay) {
+    let timer = 0;
+    return (...args) => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => callback(...args), delay);
+    };
+  }
+
+  function createSummaryChip(text, typeInfo, rarityInfo) {
+    const chip = createElement("span", { className: "summary-chip" });
+    if (typeInfo) {
+      chip.style.setProperty("--type-color", typeInfo.color);
+      chip.append(createElement("span", { className: "type-dot", attrs: { "aria-hidden": "true" } }));
+    }
+    if (rarityInfo) {
+      chip.append(createElement("span", { className: `rarity ${rarityInfo.className}`, text: rarityInfo.key, attrs: { "aria-hidden": "true" } }));
+    }
+    chip.append(document.createTextNode(text));
+    return chip;
+  }
+
+  function getRarityBadgeClass(rarityInfo) {
+    if (rarityInfo.key === "★") {
+      return "rare";
+    }
+    if (rarityInfo.key === "◆") {
+      return "uncommon";
+    }
+    if (rarityInfo.key === "●") {
+      return "common";
+    }
+    return "none";
+  }
+
+  function createRarityBadge(rarityInfo) {
+    const badge = createElement("span", {
+      className: `rarity-badge rarity-badge--${getRarityBadgeClass(rarityInfo)}`,
+      attrs: { "aria-label": `レアリティ ${rarityInfo.key} ${rarityInfo.name}` },
+    });
+    badge.append(
+      createElement("span", {
+        className: `rarity ${rarityInfo.className}`,
+        text: rarityInfo.key,
+        attrs: { "aria-hidden": "true" },
+      }),
+      document.createTextNode(rarityInfo.name),
+    );
+    return badge;
+  }
+
+  function createMarketLink(label, href) {
+    return createElement("a", {
+      className: "market-link",
+      text: label,
+      attrs: {
+        href,
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+    });
+  }
+
+  function renderMarketLinks(card) {
+    const yahooQuery = encodeURIComponent(`旧裏 ${card.name_ja}`);
+    const marketQuery = encodeURIComponent(`${card.name_ja} 旧裏`);
+    const enName = String(card.name_en || "").replace(/[♂♀]/g, "").trim() || card.name_ja;
+    const ebayQuery = encodeURIComponent(`${enName} japanese pokemon old back`);
+    const googleQuery = encodeURIComponent(`ポケカ 旧裏 ${card.name_ja} 相場`);
+    els.marketLinks.replaceChildren(
+      createMarketLink("Yahoo!フリマ", `https://paypayfleamarket.yahoo.co.jp/search/${yahooQuery}`),
+      createMarketLink("メルカリ", `https://jp.mercari.com/search?keyword=${marketQuery}&category_id=1289&status=on_sale`),
+      createMarketLink("magi", `https://magi.camp/items/search?forms_search_items%5Bkeyword%5D=${marketQuery}`),
+      createMarketLink("スニダン", `https://snkrdunk.com/search?keywords=${marketQuery}&rootCategoryId=6`),
+      createMarketLink("eBay", `https://www.ebay.com/sch/i.html?_nkw=${ebayQuery}&_sacat=183454`),
+      createMarketLink("Google相場検索", `https://www.google.com/search?q=${googleQuery}`),
+    );
   }
 
   function setupVariantElements() {
@@ -237,319 +786,17 @@
     els.modalVariantStrip = strip;
   }
 
-  function buildFilterButton({ key, label, fullLabel, color }, group) {
-    const button = createElement("button", {
-      className: "filter-chip",
-      attrs: {
-        type: "button",
-        "aria-pressed": "false",
-        "data-filter-key": key,
-      },
-    });
-    button.style.setProperty("--type-color", color);
-    button.append(
-      createElement("span", { className: "chip-dot", attrs: { "aria-hidden": "true" } }),
-      document.createTextNode(label)
-    );
-    button.setAttribute("aria-label", `${fullLabel}で絞り込み`);
-    button.addEventListener("click", () => toggleFilter(group, key));
-    return button;
-  }
-
-  function buildRarityButton(rarity) {
-    const button = createElement("button", {
-      className: "filter-chip",
-      attrs: {
-        type: "button",
-        "aria-pressed": "false",
-        "data-filter-key": rarity.key,
-        "aria-label": `${rarity.name}で絞り込み`,
-      },
-    });
-    button.append(
-      createElement("span", { className: `rarity ${rarity.className}`, text: rarity.label, attrs: { "aria-hidden": "true" } }),
-      document.createTextNode(rarity.name)
-    );
-    return button;
-  }
-
-  function renderFilters() {
-    const presentTypes = new Set(cards.map((card) => getTypeKey(card)));
-    for (const type of typeDefinitions.filter((item) => presentTypes.has(item.key))) {
-      els.typeFilters.append(buildFilterButton(type, "type"));
-    }
-
-    const presentRarities = new Set(cards.map((card) => normalizeRarity(card.rarity)));
-    for (const rarity of rarityDefinitions.filter((item) => presentRarities.has(item.key) && item.key !== "☆")) {
-      const button = buildRarityButton(rarity);
-      button.addEventListener("click", () => toggleFilter("rarity", rarity.key));
-      els.rarityFilters.append(button);
-    }
-  }
-
-  function buildTile(card) {
-    const typeInfo = getTypeInfo(card);
-    const rarityInfo = getRarityInfo(card);
-    const no = padNo(card.no);
-    const tile = createElement("button", {
-      className: "card-tile",
-      attrs: {
-        type: "button",
-        "data-no": String(card.no),
-        "data-type": typeInfo.key,
-        "data-rarity": rarityInfo.key,
-        "aria-label": `No.${no} ${card.name_ja} の詳細を開く`,
-      },
-    });
-    setTypeStyle(tile, card);
-
-    const thumb = createElement("span", { className: "thumb" });
-    const img = createElement("img", {
-      attrs: {
-        src: card.image_url,
-        alt: `${card.name_ja}のカード画像`,
-        loading: "lazy",
-        decoding: "async",
-        width: "500",
-        height: "698",
-      },
-    });
-    img.addEventListener("error", () => markImageFallback(thumb, `No.${no}\n${card.name_ja}\n画像なし`), { once: true });
-    thumb.append(
-      img,
-      createElement("span", { className: "fallback-ball", attrs: { "aria-hidden": "true" } }),
-      createElement("span", { className: "fallback-text" }),
-      createElement("span", { className: "no-badge", text: `No.${no}` }),
-      createElement("span", {
-        className: `rarity ${rarityInfo.className}`,
-        text: rarityInfo.key,
-        attrs: { "aria-label": `レアリティ ${rarityInfo.name}` },
-      }),
-      createElement("span", {
-        className: `stage${card.stage === "1進化" || card.stage === "2進化" ? " stage--evolved" : ""}`,
-        text: getStageLabel(card),
-      })
-    );
-
-    tile.append(
-      thumb,
-      createElement("span", { className: "type-bar", attrs: { "aria-hidden": "true" } }),
-      createElement("span", {
-        className: "tile-info",
-        html: `<span class="tile-name"></span><span class="type-dot" aria-label="${typeInfo.fullLabel}"></span><span class="tile-hp"></span>`,
-      })
-    );
-    tile.querySelector(".tile-name").textContent = card.name_ja;
-    tile.querySelector(".tile-hp").textContent = getHpLabel(card);
-    tile.addEventListener("click", () => openModal(card.no, { updateHash: true, push: true, focusSource: tile }));
-    tileByNo.set(Number(card.no), tile);
-    return tile;
-  }
-
-  function renderCards() {
-    const fragment = document.createDocumentFragment();
-    for (const card of cards) {
-      fragment.append(buildTile(card));
-    }
-    els.grid.append(fragment);
-  }
-
-  function toggleFilter(group, key) {
-    const set = group === "type" ? state.selectedTypes : state.selectedRarities;
-    if (set.has(key)) {
-      set.delete(key);
-    } else {
-      set.add(key);
-    }
-    applyFilters({ updateUrl: true });
-  }
-
-  function cardMatchesQuery(card, normalizedQuery) {
-    if (!normalizedQuery) {
-      return true;
-    }
-    const no = String(card.no);
-    const padded = padNo(card.no);
-    if (/^\d+$/.test(normalizedQuery) && (no.includes(normalizedQuery) || padded.includes(normalizedQuery))) {
-      return true;
-    }
-    const haystack = normalizeText(`${card.name_ja} ${card.name_en} ${padded} ${no}`);
-    return haystack.includes(normalizedQuery);
-  }
-
-  function updateFilterButtons() {
-    for (const button of document.querySelectorAll("[data-filter-key]")) {
-      const key = button.getAttribute("data-filter-key");
-      const parent = button.closest("#type-filters") ? state.selectedTypes : state.selectedRarities;
-      button.setAttribute("aria-pressed", String(parent.has(key)));
-    }
-  }
-
-  function applyFilters({ updateUrl = false } = {}) {
-    const normalizedQuery = normalizeText(state.query);
-    state.visibleCards = [];
-
-    for (const card of cards) {
-      const tile = tileByNo.get(Number(card.no));
-      const typeKey = getTypeKey(card);
-      const rarityKey = normalizeRarity(card.rarity);
-      const typeOk = state.selectedTypes.size === 0 || state.selectedTypes.has(typeKey);
-      const rarityOk = state.selectedRarities.size === 0 || state.selectedRarities.has(rarityKey);
-      const queryOk = cardMatchesQuery(card, normalizedQuery);
-      const visible = typeOk && rarityOk && queryOk;
-      tile.hidden = !visible;
-      if (visible) {
-        state.visibleCards.push(card);
-      }
-    }
-
-    updateFilterButtons();
-    els.resultCount.textContent = `表示中 ${state.visibleCards.length} / 全 ${totalCount} 枚`;
-    els.emptyState.hidden = state.visibleCards.length !== 0;
-
-    if (updateUrl) {
-      writeFiltersToUrl();
-    }
-  }
-
-  function readFiltersFromUrl() {
-    const params = new URLSearchParams(location.search);
-    const types = (params.get("type") || "").split(",").filter(Boolean);
-    const rarities = (params.get("rarity") || "").split(",").filter(Boolean);
-    for (const type of types) {
-      if (typeByKey.has(type)) {
-        state.selectedTypes.add(type);
-      }
-    }
-    for (const rarity of rarities) {
-      if (rarityByKey.has(rarity)) {
-        state.selectedRarities.add(rarity);
-      }
-    }
-    state.query = params.get("q") || "";
-    els.searchInput.value = state.query;
-  }
-
-  function writeFiltersToUrl() {
-    const url = new URL(location.href);
-    const params = url.searchParams;
-    const typeValue = [...state.selectedTypes].join(",");
-    const rarityValue = [...state.selectedRarities].join(",");
-
-    if (typeValue) {
-      params.set("type", typeValue);
-    } else {
-      params.delete("type");
-    }
-    if (rarityValue) {
-      params.set("rarity", rarityValue);
-    } else {
-      params.delete("rarity");
-    }
-    if (state.query) {
-      params.set("q", state.query);
-    } else {
-      params.delete("q");
-    }
-    history.replaceState(history.state, "", url);
-  }
-
-  function resetFilters() {
-    state.selectedTypes.clear();
-    state.selectedRarities.clear();
-    state.query = "";
-    els.searchInput.value = "";
-    applyFilters({ updateUrl: true });
-  }
-
-  function debounce(callback, delay) {
-    let timer = 0;
-    return (...args) => {
-      window.clearTimeout(timer);
-      timer = window.setTimeout(() => callback(...args), delay);
-    };
-  }
-
-  function getCard(no) {
-    return cards.find((card) => Number(card.no) === Number(no)) || null;
-  }
-
-  function getCardIndex(no) {
-    return cards.findIndex((card) => Number(card.no) === Number(no));
-  }
-
-  function createSummaryChip(text, typeInfo, rarityInfo) {
-    const chip = createElement("span", { className: "summary-chip" });
-    if (typeInfo) {
-      chip.style.setProperty("--type-color", typeInfo.color);
-      chip.append(createElement("span", { className: "type-dot", attrs: { "aria-hidden": "true" } }));
-    }
-    if (rarityInfo) {
-      chip.append(createElement("span", { className: `rarity ${rarityInfo.className}`, text: rarityInfo.key, attrs: { "aria-hidden": "true" } }));
-    }
-    chip.append(document.createTextNode(text));
-    return chip;
-  }
-
-  function getRarityBadgeClass(rarityInfo) {
-    if (rarityInfo.key === "★" || rarityInfo.key === "☆") {
-      return "rare";
-    }
-    if (rarityInfo.key === "◆") {
-      return "uncommon";
-    }
-    return "common";
-  }
-
-  function createRarityBadge(rarityInfo) {
-    const badge = createElement("span", {
-      className: `rarity-badge rarity-badge--${getRarityBadgeClass(rarityInfo)}`,
-      attrs: { "aria-label": `レアリティ ${rarityInfo.key} ${rarityInfo.name}` },
-    });
-    badge.append(
-      createElement("span", {
-        className: `rarity ${rarityInfo.className}`,
-        text: rarityInfo.key,
-        attrs: { "aria-hidden": "true" },
-      }),
-      document.createTextNode(rarityInfo.name)
-    );
-    return badge;
-  }
-
-  function createMarketLink(label, href) {
-    return createElement("a", {
-      className: "market-link",
-      text: label,
-      attrs: {
-        href,
-        target: "_blank",
-        rel: "noopener noreferrer",
-      },
-    });
-  }
-
   function getCardVariants(card) {
-    const variants = variantsByNo[String(card.no)];
+    const variants = variantsById[card.id];
     if (Array.isArray(variants) && variants.length > 0) {
       return variants;
     }
-    return [
-      {
-        code: `card-${card.no}`,
-        series: "PMCG",
-        set: card.release_set || dataset.meta?.set_name_ja || "第1弾 拡張パック",
-        image_url: card.image_url,
-        source_url: card.source_url,
-      },
-    ];
-  }
-
-  function getVariantSeriesPrefix(variant) {
-    if (variant.series === "neo" || variant.series === "VS") {
-      return `${variant.series} `;
-    }
-    return "";
+    return [{
+      id: card.id,
+      set: card.set,
+      region: card.region,
+      image_url: card.image_url,
+    }];
   }
 
   function shortenSetName(setName) {
@@ -577,31 +824,29 @@
       const setName = variant.set || "バリエーション";
       const index = (setIndexes.get(setName) || 0) + 1;
       const suffix = setCounts.get(setName) > 1 && index > 1 ? `（${index}）` : "";
-      const prefix = getVariantSeriesPrefix(variant);
       setIndexes.set(setName, index);
       return {
         variant,
-        fullLabel: `${prefix}${setName}${suffix}`,
-        shortLabel: `${prefix}${shortenSetName(setName)}${suffix}`,
+        fullLabel: `${variant.region ? `${variant.region} / ` : ""}${setName}${suffix}`,
+        shortLabel: `${variant.region ? `${variant.region} ` : ""}${shortenSetName(setName)}${suffix}`,
       };
     });
   }
 
   function selectVariant(card, viewModel, index) {
     const { variant, fullLabel } = viewModel;
-    const no = padNo(card.no);
     state.activeVariantIndex = index;
 
     clearImageFallback(els.modalThumb);
     els.modalFallback.textContent = "";
-    els.modalImage.onerror = () => markImageFallback(els.modalThumb, `No.${no}\n${card.name_ja}\n画像なし`);
+    els.modalImage.onerror = () => markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
     els.modalImage.alt = `${card.name_ja} ${fullLabel}のカード画像`;
 
     if (variant.image_url) {
       els.modalImage.src = variant.image_url;
     } else {
       els.modalImage.removeAttribute("src");
-      markImageFallback(els.modalThumb, `No.${no}\n${card.name_ja}\n画像なし`);
+      markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
     }
 
     els.modalVariantCaption.textContent = fullLabel;
@@ -639,16 +884,23 @@
     frame.append(
       image,
       createElement("span", { className: "fallback-ball", attrs: { "aria-hidden": "true" } }),
-      createElement("span", { className: "fallback-text" })
+      createElement("span", { className: "fallback-text" }),
     );
     if (!variant.image_url) {
       markImageFallback(frame, "画像なし");
     }
     button.append(
       frame,
-      createElement("span", { className: "variant-thumb-label", text: shortLabel })
+      createElement("span", { className: "variant-thumb-label", text: shortLabel }),
     );
-    button.addEventListener("click", () => selectVariant(card, viewModel, index));
+    button.addEventListener("click", () => {
+      const targetCard = cardById.get(variant.id);
+      if (targetCard && targetCard.id !== card.id) {
+        openModal(targetCard.id, { updateHash: true, push: true });
+        return;
+      }
+      selectVariant(card, viewModel, index);
+    });
     return button;
   }
 
@@ -656,28 +908,14 @@
     const viewModels = buildVariantViewModels(card);
     const fragment = document.createDocumentFragment();
 
+    els.modalVariants.hidden = viewModels.length <= 1;
+    els.modalVariantCaption.hidden = viewModels.length <= 1;
     els.modalVariantsTitle.textContent = `バリエーション ${viewModels.length}種`;
     for (const [index, viewModel] of viewModels.entries()) {
       fragment.append(buildVariantButton(card, viewModel, index));
     }
     els.modalVariantStrip.replaceChildren(fragment);
     selectVariant(card, viewModels[0], 0);
-  }
-
-  function renderMarketLinks(card) {
-    const yahooQuery = encodeURIComponent(`旧裏 ${card.name_ja}`);
-    const marketQuery = encodeURIComponent(`${card.name_ja} 旧裏`);
-    const enName = String(card.name_en || "").replace(/[♂♀]/g, "").trim() || card.name_ja;
-    const ebayQuery = encodeURIComponent(`${enName} japanese base set`);
-    const googleQuery = encodeURIComponent(`ポケカ 旧裏 ${card.name_ja} 相場`);
-    els.marketLinks.replaceChildren(
-      createMarketLink("Yahoo!フリマ", `https://paypayfleamarket.yahoo.co.jp/search/${yahooQuery}`),
-      createMarketLink("メルカリ", `https://jp.mercari.com/search?keyword=${marketQuery}&category_id=1289&status=on_sale`),
-      createMarketLink("magi", `https://magi.camp/items/search?forms_search_items%5Bkeyword%5D=${marketQuery}`),
-      createMarketLink("スニダン", `https://snkrdunk.com/search?keywords=${marketQuery}&rootCategoryId=6`),
-      createMarketLink("eBay", `https://www.ebay.com/sch/i.html?_nkw=${ebayQuery}&_sacat=183454`),
-      createMarketLink("Google相場検索", `https://www.google.com/search?q=${googleQuery}`)
-    );
   }
 
   function buildPSAGradeRow(grade, count, total) {
@@ -701,7 +939,7 @@
         attrs: { "aria-hidden": "true" },
       }),
       createElement("span", { className: "psa-grade-count", text: `${formatNumber(safeCount)}枚` }),
-      createElement("span", { className: "psa-grade-percent", text: `${formatPercent(percent)}%` })
+      createElement("span", { className: "psa-grade-percent", text: `${formatPercent(percent)}%` }),
     );
     row.querySelector(".psa-grade-track").append(fill);
     return row;
@@ -712,14 +950,17 @@
       return;
     }
 
-    const psa = psaByNo[String(card.no)];
+    const psa = psaById[card.id];
+    els.psaSection.hidden = false;
     els.psaBody.replaceChildren();
     if (!psa) {
-      els.psaSection.hidden = true;
+      els.psaBody.append(createElement("p", {
+        className: "psa-empty",
+        text: "このカードのPSA鑑定データはありません",
+      }));
       return;
     }
 
-    els.psaSection.hidden = false;
     const total = Math.max(Number(psa.total) || 0, 0);
     const grades = psa.grades || {};
     const summary = createElement("div", { className: "psa-summary" });
@@ -731,37 +972,34 @@
       createElement("div", {
         className: "psa-metric",
         html: '<span class="psa-metric-label">総鑑定数</span><span class="psa-metric-value"></span><span class="psa-metric-sub">世界累計</span>',
-      })
+      }),
     );
     summary.querySelector(".psa-metric--gem .psa-metric-value").textContent = `${formatPercent(psa.gem_rate)}%`;
     summary.querySelector(".psa-metric:not(.psa-metric--gem) .psa-metric-value").textContent = `${formatNumber(total)}枚`;
 
     const list = createElement("div", { className: "psa-grade-list" });
     for (let grade = 10; grade >= 1; grade -= 1) {
-      const count = Number(grades[`g${grade}`]) || 0;
-      if (count > 0) {
-        list.append(buildPSAGradeRow(grade, count, total));
-      }
+      list.append(buildPSAGradeRow(grade, grades[`g${grade}`], total));
     }
 
     const source = createElement("p", { className: "psa-source" });
     source.append(
-      document.createTextNode(`PSA公式データ / 最終更新 ${formatDate(psa.updated)} / `),
+      document.createTextNode(`PSA公式データ / Spec ID ${psa.spec_id || "-"} / 最終更新 ${formatDate(psa.updated)} / `),
       createElement("a", {
         text: "psacard.com",
         attrs: {
-          href: "https://www.psacard.com/pop/tcg-cards/1996/pokemon-japanese-basic/55428",
+          href: "https://www.psacard.com/pop",
           target: "_blank",
           rel: "noopener noreferrer",
         },
-      })
+      }),
     );
 
     els.psaBody.append(summary, list, source);
   }
 
   function buildEvolutionLine(card) {
-    if (!card.stage || card.stage === "-") {
+    if (getCardKind(card) !== "ポケモン" || !card.stage) {
       return document.createTextNode("-");
     }
     const line = createElement("span", { className: "evolution-line" });
@@ -805,25 +1043,23 @@
     appendDetail("属性", typeValue);
 
     appendDetail("レアリティ", createRarityBadge(rarityInfo));
-    appendDetail("進化系統", buildEvolutionLine(card));
-    appendDetail("カード番号", `No.${padNo(card.no)}`);
-    appendDetail("セット名", card.release_set || dataset.meta?.set_name_ja || "-");
-    appendDetail("発売時期", formatDate(card.release_date));
+    appendDetail("進化", buildEvolutionLine(card));
+    appendDetail("カード番号", card.card_number || "-");
+    appendDetail("セット名", card.set || "-");
+    appendDetail("地方", card.region || "-");
     appendDetail("イラストレーター", card.illustrator || "-");
-    appendDetail("その他詳細", card.notes || "-");
   }
 
   function renderModal(card) {
     const typeInfo = getTypeInfo(card);
     const rarityInfo = getRarityInfo(card);
-    const no = padNo(card.no);
-    state.activeCardNo = Number(card.no);
+    state.activeCardId = card.id;
 
     setTypeStyle(els.modalPanel, card);
     setTypeStyle(els.modal, card);
     setTypeStyle(els.modalHeader, card);
 
-    els.modalNo.textContent = `No.${no}`;
+    els.modalNo.textContent = getCardNumberLabel(card);
     els.modalTitle.textContent = card.name_ja;
     els.modalFallback.textContent = "";
     clearImageFallback(els.modalThumb);
@@ -831,80 +1067,27 @@
     els.modalChips.replaceChildren(
       createSummaryChip(typeInfo.fullLabel, typeInfo, null),
       createRarityBadge(rarityInfo),
-      createSummaryChip(getStageLabel(card), typeInfo, null)
+      createSummaryChip(getStageLabel(card), typeInfo, null),
+      createSummaryChip(card.set || "-", null, null),
     );
     renderVariants(card);
     renderModalDetails(card);
     renderMarketLinks(card);
     renderPSA(card);
-
-    const index = getCardIndex(card.no);
-    els.prevCard.disabled = index <= 0;
-    els.nextCard.disabled = index >= cards.length - 1;
-    els.prevCard.dataset.targetNo = index > 0 ? String(cards[index - 1].no) : "";
-    els.nextCard.dataset.targetNo = index < cards.length - 1 ? String(cards[index + 1].no) : "";
+    updateModalNavigation(card);
     els.sourceLink.href = card.source_url || "#";
   }
 
-  function setPackageStyle() {
-    const color = packageInfo?.theme_color || "#2E5BAA";
-    for (const element of [els.packagePanel, els.packageHeader, els.packageImageFrame]) {
-      element?.style.setProperty("--package-color", color);
-    }
-  }
-
-  function renderPackageModal() {
-    if (!packageInfo) {
+  function updateModalNavigation(card) {
+    if (!card) {
       return;
     }
-
-    setPackageStyle();
-    els.packageTitle.textContent = packageInfo.name || "パック詳細";
-    els.packageRelease.textContent = formatDate(packageInfo.release_date);
-    els.packagePrice.textContent = packageInfo.price || "-";
-    els.packagePerPack.textContent = packageInfo.per_pack || "-";
-    els.packageTotal.textContent = packageInfo.total || "-";
-    els.packageRarity.textContent = packageInfo.rarity || "-";
-    els.packageCover.textContent = packageInfo.cover_pokemon || "-";
-
-    clearImageFallback(els.packageImageFrame);
-    els.packageImage.onerror = () => markImageFallback(els.packageImageFrame, `${packageInfo.name || "パック"}\n画像なし`);
-    els.packageImage.alt = `${packageInfo.name || "パック"}のパッケージ画像`;
-    if (packageInfo.image_url) {
-      els.packageImage.src = packageInfo.image_url;
-    } else {
-      els.packageImage.removeAttribute("src");
-      markImageFallback(els.packageImageFrame, `${packageInfo.name || "パック"}\n画像なし`);
-    }
-  }
-
-  function openPackageModal() {
-    if (!packageInfo || !els.packageModal) {
-      return;
-    }
-    renderPackageModal();
-    if (!els.packageModal.open) {
-      if (typeof els.packageModal.showModal === "function") {
-        els.packageModal.showModal();
-      } else {
-        els.packageModal.setAttribute("open", "");
-      }
-      document.body.classList.add("scroll-locked");
-    }
-    requestAnimationFrame(() => els.packageClose.focus());
-  }
-
-  function closePackageModal({ restoreFocus = true } = {}) {
-    if (!els.packageModal?.open) {
-      return;
-    }
-    els.packageModal.close();
-    if (!els.modal.open) {
-      document.body.classList.remove("scroll-locked");
-    }
-    if (restoreFocus && els.packageOpen?.isConnected) {
-      els.packageOpen.focus();
-    }
+    const navCards = state.visibleCards.some((visibleCard) => visibleCard.id === card.id) ? state.visibleCards : cards;
+    const index = navCards.findIndex((visibleCard) => visibleCard.id === card.id);
+    els.prevCard.disabled = index <= 0;
+    els.nextCard.disabled = index < 0 || index >= navCards.length - 1;
+    els.prevCard.dataset.targetId = index > 0 ? navCards[index - 1].id : "";
+    els.nextCard.dataset.targetId = index >= 0 && index < navCards.length - 1 ? navCards[index + 1].id : "";
   }
 
   function makeUrlWithHash(hash) {
@@ -913,8 +1096,18 @@
     return url;
   }
 
-  function openModal(no, { updateHash = true, push = false, focusSource = null } = {}) {
-    const card = getCard(no);
+  function updateHistory(method, url) {
+    try {
+      history[method](history.state, "", url);
+    } catch (error) {
+      if (url.hash && location.hash !== url.hash) {
+        location.hash = url.hash;
+      }
+    }
+  }
+
+  function openModal(id, { updateHash = true, push = false, focusSource = null } = {}) {
+    const card = cardById.get(id);
     if (!card) {
       return;
     }
@@ -936,10 +1129,10 @@
     requestAnimationFrame(() => els.modalClose.focus());
 
     if (updateHash) {
-      const url = makeUrlWithHash(`#no-${padNo(card.no)}`);
+      const url = makeUrlWithHash(getHashForCard(card));
       const method = push ? "pushState" : "replaceState";
       if (location.hash !== url.hash) {
-        history[method](history.state, "", url);
+        updateHistory(method, url);
       }
     }
   }
@@ -948,14 +1141,18 @@
     if (!els.modal.open) {
       return;
     }
-    els.modal.close();
+    if (typeof els.modal.close === "function") {
+      els.modal.close();
+    } else {
+      els.modal.removeAttribute("open");
+    }
     document.body.classList.remove("scroll-locked");
-    state.activeCardNo = null;
+    state.activeCardId = null;
     state.activeVariantIndex = 0;
 
-    if (updateHash && /^#no-\d{3}$/.test(location.hash)) {
+    if (updateHash && getIdFromHash(location.hash)) {
       const url = makeUrlWithHash("");
-      history.pushState(history.state, "", url);
+      updateHistory("pushState", url);
     }
     if (restoreFocus && state.lastFocusedTile?.isConnected) {
       state.lastFocusedTile.focus();
@@ -963,26 +1160,28 @@
   }
 
   function navigateModal(direction) {
-    if (!state.activeCardNo) {
+    if (!state.activeCardId) {
       return;
     }
-    const index = getCardIndex(state.activeCardNo);
+    const card = cardById.get(state.activeCardId);
+    const navCards = state.visibleCards.some((visibleCard) => visibleCard.id === state.activeCardId) ? state.visibleCards : cards;
+    const index = navCards.findIndex((visibleCard) => visibleCard.id === card?.id);
     const nextIndex = index + direction;
-    if (nextIndex < 0 || nextIndex >= cards.length) {
+    if (nextIndex < 0 || nextIndex >= navCards.length) {
       return;
     }
-    openModal(cards[nextIndex].no, { updateHash: true, push: true });
+    openModal(navCards[nextIndex].id, { updateHash: true, push: true });
   }
 
   function openFromHash() {
-    const match = location.hash.match(/^#no-(\d{3})$/);
-    if (!match) {
+    const id = getIdFromHash(location.hash);
+    if (!id) {
       if (els.modal.open) {
         closeModal({ updateHash: false, restoreFocus: false });
       }
       return;
     }
-    openModal(Number(match[1]), { updateHash: false });
+    openModal(id, { updateHash: false });
   }
 
   function bindEvents() {
@@ -990,20 +1189,15 @@
       state.query = event.target.value.trim();
       applyFilters({ updateUrl: true });
     }, 200));
+    els.setFilter.addEventListener("change", (event) => {
+      state.selectedSet = event.target.value;
+      applyFilters({ updateUrl: true });
+    });
+    els.psaOnly.addEventListener("change", (event) => {
+      state.psaOnly = event.target.checked;
+      applyFilters({ updateUrl: true });
+    });
     els.resetButton.addEventListener("click", resetFilters);
-    if (packageInfo && els.packageOpen && els.packageModal) {
-      els.packageOpen.addEventListener("click", openPackageModal);
-      els.packageClose.addEventListener("click", () => closePackageModal());
-      els.packageModal.addEventListener("click", (event) => {
-        if (event.target === els.packageModal) {
-          closePackageModal();
-        }
-      });
-      els.packageModal.addEventListener("cancel", (event) => {
-        event.preventDefault();
-        closePackageModal();
-      });
-    }
     els.modalClose.addEventListener("click", () => closeModal({ updateHash: true }));
     els.modal.addEventListener("click", (event) => {
       if (event.target === els.modal) {
@@ -1034,14 +1228,7 @@
   }
 
   function init() {
-    if (packageInfo && els.packageOpen) {
-      els.packageOpen.textContent = packageInfo.name || els.packageOpen.textContent;
-      setPackageStyle();
-    } else if (els.packageOpen) {
-      els.packageOpen.hidden = true;
-    }
     renderFilters();
-    renderCards();
     setupVariantElements();
     readFiltersFromUrl();
     bindEvents();
