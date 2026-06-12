@@ -4,6 +4,7 @@
   const dataset = window.POKECA || { meta: { total_count: 0 }, cards: [] };
   const cards = [...dataset.cards].sort((a, b) => Number(a.no) - Number(b.no));
   const totalCount = Number(dataset.meta?.total_count || cards.length);
+  const packageInfo = dataset.meta?.package || null;
 
   const typeDefinitions = [
     { key: "ほのお", label: "炎", fullLabel: "炎(ほのお)", color: "#E8533B" },
@@ -57,9 +58,24 @@
     modalFallback: document.getElementById("modal-fallback"),
     modalChips: document.getElementById("modal-chips"),
     modalDetails: document.getElementById("modal-details"),
+    marketLinks: document.getElementById("market-links"),
     prevCard: document.getElementById("prev-card"),
     nextCard: document.getElementById("next-card"),
     sourceLink: document.getElementById("source-link"),
+    packageOpen: document.getElementById("package-open"),
+    packageModal: document.getElementById("package-modal"),
+    packagePanel: document.querySelector(".package-panel"),
+    packageHeader: document.querySelector(".package-header"),
+    packageClose: document.getElementById("package-close"),
+    packageTitle: document.getElementById("package-title"),
+    packageImageFrame: document.getElementById("package-image-frame"),
+    packageImage: document.getElementById("package-image"),
+    packageRelease: document.getElementById("package-release"),
+    packagePrice: document.getElementById("package-price"),
+    packagePerPack: document.getElementById("package-per-pack"),
+    packageTotal: document.getElementById("package-total"),
+    packageRarity: document.getElementById("package-rarity"),
+    packageCover: document.getElementById("package-cover"),
   };
 
   const tileByNo = new Map();
@@ -428,6 +444,55 @@
     return chip;
   }
 
+  function getRarityBadgeClass(rarityInfo) {
+    if (rarityInfo.key === "★" || rarityInfo.key === "☆") {
+      return "rare";
+    }
+    if (rarityInfo.key === "◆") {
+      return "uncommon";
+    }
+    return "common";
+  }
+
+  function createRarityBadge(rarityInfo) {
+    const badge = createElement("span", {
+      className: `rarity-badge rarity-badge--${getRarityBadgeClass(rarityInfo)}`,
+      attrs: { "aria-label": `レアリティ ${rarityInfo.key} ${rarityInfo.name}` },
+    });
+    badge.append(
+      createElement("span", {
+        className: `rarity ${rarityInfo.className}`,
+        text: rarityInfo.key,
+        attrs: { "aria-hidden": "true" },
+      }),
+      document.createTextNode(rarityInfo.name)
+    );
+    return badge;
+  }
+
+  function createMarketLink(label, href) {
+    return createElement("a", {
+      className: "market-link",
+      text: label,
+      attrs: {
+        href,
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+    });
+  }
+
+  function renderMarketLinks(card) {
+    const yahooQuery = encodeURIComponent(`旧裏 ${card.name_ja}`);
+    const magiQuery = encodeURIComponent(`${card.name_ja} 旧裏`);
+    const googleQuery = encodeURIComponent(`ポケカ 旧裏 ${card.name_ja} 相場`);
+    els.marketLinks.replaceChildren(
+      createMarketLink("Yahoo!フリマ", `https://paypayfleamarket.yahoo.co.jp/search/${yahooQuery}`),
+      createMarketLink("magi", `https://magi.camp/search?keyword=${magiQuery}`),
+      createMarketLink("Google相場検索", `https://www.google.com/search?q=${googleQuery}`)
+    );
+  }
+
   function buildEvolutionLine(card) {
     if (!card.stage || card.stage === "-") {
       return document.createTextNode("-");
@@ -472,7 +537,7 @@
     typeValue.append(createElement("span", { className: "type-dot", attrs: { "aria-hidden": "true" } }), document.createTextNode(typeInfo.fullLabel));
     appendDetail("属性", typeValue);
 
-    appendDetail("レアリティ", createSummaryChip(rarityInfo.name, null, rarityInfo));
+    appendDetail("レアリティ", createRarityBadge(rarityInfo));
     appendDetail("進化系統", buildEvolutionLine(card));
     appendDetail("カード番号", `No.${padNo(card.no)}`);
     appendDetail("セット名", card.release_set || dataset.meta?.set_name_ja || "-");
@@ -501,10 +566,11 @@
 
     els.modalChips.replaceChildren(
       createSummaryChip(typeInfo.fullLabel, typeInfo, null),
-      createSummaryChip(rarityInfo.name, null, rarityInfo),
+      createRarityBadge(rarityInfo),
       createSummaryChip(getStageLabel(card), typeInfo, null)
     );
     renderModalDetails(card);
+    renderMarketLinks(card);
 
     const index = getCardIndex(card.no);
     els.prevCard.disabled = index <= 0;
@@ -512,6 +578,67 @@
     els.prevCard.dataset.targetNo = index > 0 ? String(cards[index - 1].no) : "";
     els.nextCard.dataset.targetNo = index < cards.length - 1 ? String(cards[index + 1].no) : "";
     els.sourceLink.href = card.source_url || "#";
+  }
+
+  function setPackageStyle() {
+    const color = packageInfo?.theme_color || "#2E5BAA";
+    for (const element of [els.packagePanel, els.packageHeader, els.packageImageFrame]) {
+      element?.style.setProperty("--package-color", color);
+    }
+  }
+
+  function renderPackageModal() {
+    if (!packageInfo) {
+      return;
+    }
+
+    setPackageStyle();
+    els.packageTitle.textContent = packageInfo.name || "パック詳細";
+    els.packageRelease.textContent = formatDate(packageInfo.release_date);
+    els.packagePrice.textContent = packageInfo.price || "-";
+    els.packagePerPack.textContent = packageInfo.per_pack || "-";
+    els.packageTotal.textContent = packageInfo.total || "-";
+    els.packageRarity.textContent = packageInfo.rarity || "-";
+    els.packageCover.textContent = packageInfo.cover_pokemon || "-";
+
+    clearImageFallback(els.packageImageFrame);
+    els.packageImage.onerror = () => markImageFallback(els.packageImageFrame, `${packageInfo.name || "パック"}\n画像なし`);
+    els.packageImage.alt = `${packageInfo.name || "パック"}のパッケージ画像`;
+    if (packageInfo.image_url) {
+      els.packageImage.src = packageInfo.image_url;
+    } else {
+      els.packageImage.removeAttribute("src");
+      markImageFallback(els.packageImageFrame, `${packageInfo.name || "パック"}\n画像なし`);
+    }
+  }
+
+  function openPackageModal() {
+    if (!packageInfo || !els.packageModal) {
+      return;
+    }
+    renderPackageModal();
+    if (!els.packageModal.open) {
+      if (typeof els.packageModal.showModal === "function") {
+        els.packageModal.showModal();
+      } else {
+        els.packageModal.setAttribute("open", "");
+      }
+      document.body.classList.add("scroll-locked");
+    }
+    requestAnimationFrame(() => els.packageClose.focus());
+  }
+
+  function closePackageModal({ restoreFocus = true } = {}) {
+    if (!els.packageModal?.open) {
+      return;
+    }
+    els.packageModal.close();
+    if (!els.modal.open) {
+      document.body.classList.remove("scroll-locked");
+    }
+    if (restoreFocus && els.packageOpen?.isConnected) {
+      els.packageOpen.focus();
+    }
   }
 
   function makeUrlWithHash(hash) {
@@ -597,6 +724,19 @@
       applyFilters({ updateUrl: true });
     }, 200));
     els.resetButton.addEventListener("click", resetFilters);
+    if (packageInfo && els.packageOpen && els.packageModal) {
+      els.packageOpen.addEventListener("click", openPackageModal);
+      els.packageClose.addEventListener("click", () => closePackageModal());
+      els.packageModal.addEventListener("click", (event) => {
+        if (event.target === els.packageModal) {
+          closePackageModal();
+        }
+      });
+      els.packageModal.addEventListener("cancel", (event) => {
+        event.preventDefault();
+        closePackageModal();
+      });
+    }
     els.modalClose.addEventListener("click", () => closeModal({ updateHash: true }));
     els.modal.addEventListener("click", (event) => {
       if (event.target === els.modal) {
@@ -627,6 +767,12 @@
   }
 
   function init() {
+    if (packageInfo && els.packageOpen) {
+      els.packageOpen.textContent = packageInfo.name || els.packageOpen.textContent;
+      setPackageStyle();
+    } else if (els.packageOpen) {
+      els.packageOpen.hidden = true;
+    }
     renderFilters();
     renderCards();
     readFiltersFromUrl();

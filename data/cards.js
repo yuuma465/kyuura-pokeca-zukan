@@ -5,7 +5,18 @@ window.POKECA = {
     "release_date": "1996-10-20",
     "numbering_convention": "日本版「旧裏」拡張パック第1弾の標準コレクター番号（No.1〜96）を採用。日本のカード自体は無番号だが、なぞのばしょ・ポケモンWiki 等の旧裏まとめ系サイトで共通して使われる「タイプ順（草→炎→水→雷→超→闘→無色）→各タイプ内はレアリティ昇順→全国図鑑番号順、その後にトレーナー→特殊エネルギー」という配列での連番が事実上の標準。この採番は英語版Base Set（102枚）とは異なり、英語版で追加された基本エネルギー6種（草・炎・水・雷・超・闘）を含まない96枚構成（C32/U32/R32）であり、日本版第1弾の実際の収録内容と一致するため、日本の旧裏まとめサイトに最も適している。英語版の102枚アルファベット順採番ではなく、日本版実態に沿う96枚タイプ順を選択した。",
     "total_count": 96,
-    "collected_count": 96
+    "collected_count": 96,
+    "package": {
+      "name": "拡張パック第1弾",
+      "release_date": "1996-10-20",
+      "price": "291円（税抜）",
+      "per_pack": "10枚入り",
+      "total": "96種",
+      "rarity": "●コモン32 ／ ◆アンコモン32 ／ ★レア32",
+      "theme_color": "#2E5BAA",
+      "cover_pokemon": "ピッピ",
+      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/12/pmcg01.jpg"
+    }
   },
   "cards": [
     {
@@ -21,8 +32,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "LV.13。ワザ「やどりぎのタネ」。弱点ほのお。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_001_フシギダネ_copy-500x698.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-001-fushigidane/",
+      "image_url": "https://pcg-search.com/img/1st/1st1001.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1001.php",
       "confidence": "high"
     },
     {
@@ -38,8 +49,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "フシギダネから進化。弱点ほのお。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_002_フシギソウ_copy-500x698.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-002-fushigisou/",
+      "image_url": "https://pcg-search.com/img/1st/1st1002.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1002.php",
       "confidence": "high"
     },
     {
@@ -55,8 +66,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "LV.67。フシギソウから進化。特殊能力「エナジートランス」、ワザ「ソーラービーム」。弱点ほのお、にげる2。スターターパックにも収録。初版はレアリティマークなし。第1弾の看板ホロカードの一つ。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_003_フシギバナ_copy-500x698.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-003-fushigibana/",
+      "image_url": "https://pcg-search.com/img/1st/1st1003.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1003.php",
       "confidence": "high"
     },
     {
@@ -72,8 +83,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "LV.13。ワザ「いとをはく」（コイン判定でマヒ）。弱点ほのお。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_004_キャタピー_copy-500x698.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-004-caterpie/",
+      "image_url": "https://pcg-search.com/img/1st/1st1004.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1004.php",
       "confidence": "high"
     },
     {
@@ -89,8 +100,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "キャタピーから進化。ワザ「かたまる」「しびれごな」。弱点ほのお。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_005_トランセル_copy-500x698.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-005-transel/",
+      "image_url": "https://pcg-search.com/img/1st/1st1005.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1005.php",
       "confidence": "high"
     },
     {
@@ -106,8 +117,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "LV.12。ワザ「どくばり」。弱点ほのお。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_006_ビードル_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-006-beedle/",
+      "image_url": "https://pcg-search.com/img/1st/1st1006.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1006.php",
       "confidence": "high"
     },
     {
@@ -123,8 +134,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "ビードルから進化。ワザ「かたまる」「どくのこな」。弱点ほのお。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_007_コクーン_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-007-cocoon/",
+      "image_url": "https://pcg-search.com/img/1st/1st1007.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1007.php",
       "confidence": "high"
     },
     {
@@ -140,8 +151,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "コクーンから進化。ワザ「ダブルニードル」「どくばり」。弱点ほのお。第1弾のレア（ホロ）カードの一つ。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_008_スピアー_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-008-spear/",
+      "image_url": "https://pcg-search.com/img/1st/1st1008.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1008.php",
       "confidence": "high"
     },
     {
@@ -157,8 +168,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック「ポケットモンスターカードゲーム」第1弾",
       "notes": "英語版Base Setでは#55。当時の英語版TCGでは毒タイプは草(くさ)タイプとして扱われた。再録: 英語版Base Set(1999)など。イラストは杉森建(Ken Sugimori)。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/9/97/NidoranBaseSet55.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Nidoran%E2%99%82_(Base_Set_55)",
+      "image_url": "https://pcg-search.com/img/1st/1st1009.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1009.php",
       "confidence": "high"
     },
     {
@@ -174,8 +185,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック「ポケットモンスターカードゲーム」第1弾",
       "notes": "ニドラン♂から進化。英語版Base Setでは#37(アンコモン)。当時のTCGでは毒タイプは草(くさ)タイプ扱い。イラストは有田満弘(Mitsuhiro Arita)。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/b/b3/NidorinoBaseSet37.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Nidorino_(Base_Set_37)",
+      "image_url": "https://pcg-search.com/img/1st/1st1010.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1010.php",
       "confidence": "high"
     },
     {
@@ -191,8 +202,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック「ポケットモンスターカードゲーム」第1弾",
       "notes": "ニドリーノから進化。英語版Base Setでは#11(アンコモン)。当時のTCGでは毒タイプは草(くさ)タイプ扱い。イラストは杉森建(Ken Sugimori)。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/f/f8/NidokingBaseSet11.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Nidoking_(Base_Set_11)",
+      "image_url": "https://pcg-search.com/img/1st/1st1011.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1011.php",
       "confidence": "high"
     },
     {
@@ -208,8 +219,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック「ポケットモンスターカードゲーム」第1弾",
       "notes": "英語版Base Setでは#51(コモン)。当時のTCGでは毒タイプは草(くさ)タイプ扱い。イラストは有田満弘(Mitsuhiro Arita)。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/9/96/KoffingBaseSet51.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Koffing_(Base_Set_51)",
+      "image_url": "https://pcg-search.com/img/1st/1st1012.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1012.php",
       "confidence": "high"
     },
     {
@@ -225,8 +236,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック「ポケットモンスターカードゲーム」第1弾",
       "notes": "英語版Base Setでは#66(コモン)。イラストは有田満弘(Mitsuhiro Arita)。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/0/03/TangelaBaseSet66.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Tangela_(Base_Set_66)",
+      "image_url": "https://pcg-search.com/img/1st/1st1013.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1013.php",
       "confidence": "high"
     },
     {
@@ -242,8 +253,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック「ポケットモンスターカードゲーム」第1弾",
       "notes": "リザード→リザードンへ進化するライン。英語版Base Setでは#46(コモン)。イラストは有田満弘(Mitsuhiro Arita)。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/1/1d/CharmanderBaseSet46.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Charmander_(Base_Set_46)",
+      "image_url": "https://pcg-search.com/img/1st/1st1014.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1014.php",
       "confidence": "high"
     },
     {
@@ -259,8 +270,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック「ポケットモンスターカードゲーム」第1弾",
       "notes": "ヒトカゲから進化。英語版Base Setでは#24(アンコモン)。イラストは有田満弘(Mitsuhiro Arita)。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/9/99/CharmeleonBaseSet24.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Charmeleon_(Base_Set_24)",
+      "image_url": "https://pcg-search.com/img/1st/1st1015.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1015.php",
       "confidence": "high"
     },
     {
@@ -276,8 +287,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック「ポケットモンスターカードゲーム」第1弾",
       "notes": "旧裏屈指の人気ホロカード。リザードから進化。初版(無記号版)はレアリティ表記なしのホロレア。技「かいりき(=ほのおのうず相当)」で初版に『かいりきポケモン』表記の誤植版が存在することで有名。英語版Base Setでは#4。1998年にトレードキャンペーンで杉森建イラストの別版プロモ再録あり。本カードのイラストは有田満弘(Mitsuhiro Arita)。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/4/4e/CharizardBaseSet4.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Charizard_(Base_Set_4)",
+      "image_url": "https://pcg-search.com/img/1st/1st1016.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1016.php",
       "confidence": "high"
     },
     {
@@ -293,8 +304,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "技「あやしいひかり」。弱点：水。英語版Base Set No.68。英語版1stEd/Shadowless/Unlimitedでは『HP 50』表記の誤植が知られる。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/8/8e/VulpixBaseSet68.jpg/180px-VulpixBaseSet68.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Vulpix_(Base_Set_68)",
+      "image_url": "https://pcg-search.com/img/1st/1st1017.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1017.php",
       "confidence": "high"
     },
     {
@@ -310,8 +321,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "ロコンから進化。キラ（ホロ）レア。弱点：水。英語版Base Set No.12/102。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/8/8b/NinetalesBaseSet12.jpg/180px-NinetalesBaseSet12.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Ninetales_(Base_Set_12)",
+      "image_url": "https://pcg-search.com/img/1st/1st1018.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1018.php",
       "confidence": "high"
     },
     {
@@ -327,8 +338,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "弱点：水。英語版Base Set No.28。アンコモン。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/b/b1/GrowlitheBaseSet28.jpg/180px-GrowlitheBaseSet28.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Growlithe_(Base_Set_28)",
+      "image_url": "https://pcg-search.com/img/1st/1st1019.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1019.php",
       "confidence": "high"
     },
     {
@@ -344,8 +355,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "ガーディから進化。HP100の高耐久。弱点：水。英語版Base Set No.23。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/4/48/ArcanineBaseSet23.jpg/180px-ArcanineBaseSet23.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Arcanine_(Base_Set_23)",
+      "image_url": "https://pcg-search.com/img/1st/1st1020.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1020.php",
       "confidence": "high"
     },
     {
@@ -361,8 +372,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "技「スマッシュキック」「ほのおのしっぽ」。弱点：水。英語版Base Set No.60。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/1/13/PonytaBaseSet60.jpg/180px-PonytaBaseSet60.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Ponyta_(Base_Set_60)",
+      "image_url": "https://pcg-search.com/img/1st/1st1021.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1021.php",
       "confidence": "high"
     },
     {
@@ -378,8 +389,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "技「ファイヤーパンチ」「かえんほうしゃ」。弱点：水。英語版Base Set No.36。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/9/9f/MagmarBaseSet36.jpg/180px-MagmarBaseSet36.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Magmar_(Base_Set_36)",
+      "image_url": "https://pcg-search.com/img/1st/1st1022.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1022.php",
       "confidence": "high"
     },
     {
@@ -395,8 +406,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "御三家みず。カメール→カメックスへ進化。弱点：雷。英語版Base Set No.63。イラストは有田満弘。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/7/74/SquirtleBaseSet63.jpg/180px-SquirtleBaseSet63.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Base_Set_63)",
+      "image_url": "https://pcg-search.com/img/1st/1st1023.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1023.php",
       "confidence": "high"
     },
     {
@@ -412,8 +423,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "ゼニガメから進化。弱点：雷。英語版Base Set No.42。アンコモン。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/6/64/WartortleBaseSet42.jpg/180px-WartortleBaseSet42.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Wartortle_(Base_Set_42)",
+      "image_url": "https://pcg-search.com/img/1st/1st1024.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1024.php",
       "confidence": "high"
     },
     {
@@ -429,8 +440,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "ゼニガメ→カメール→カメックスの最終進化。イラストレーターはBulbapedia英語版ではKen Sugimori（杉森建）と記載。レアホロ（キラ）枠。英語版Base Setでは2/102。技：ハイドロポンプ。後にBase Set 2・Legendary Collectionに再録。Trade Pleaseキャンペーン(1998)で別イラストのプロモも存在。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/b/b6/BlastoiseBaseSet2.jpg/180px-BlastoiseBaseSet2.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Base_Set_2)",
+      "image_url": "https://pcg-search.com/img/1st/1st1025.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1025.php",
       "confidence": "medium"
     },
     {
@@ -446,8 +457,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "ニョロモ→ニョロゾ→ニョロボンの基本形。技：みずでっぽう。英語版Base Setでは59/102のコモン。後にBase Set 2に再録。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/7/79/PoliwagBaseSet59.jpg/200px-PoliwagBaseSet59.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Poliwag_(Base_Set_59)",
+      "image_url": "https://pcg-search.com/img/1st/1st1026.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1026.php",
       "confidence": "high"
     },
     {
@@ -463,8 +474,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "ニョロモから進化。英語版Base Setでは38/102のアンコモン。後にBase Set 2・Legendary Collectionに再録。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/4/46/PoliwhirlBaseSet38.jpg/180px-PoliwhirlBaseSet38.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Poliwhirl_(Base_Set_38)",
+      "image_url": "https://pcg-search.com/img/1st/1st1027.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1027.php",
       "confidence": "high"
     },
     {
@@ -480,8 +491,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "ニョロゾから水の石で進化する2進化。レアホロ（キラ）枠。英語版Base Setでは13/102のRare Holo。後にBase Set 2に再録。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/b/b2/PoliwrathBaseSet13.jpg/180px-PoliwrathBaseSet13.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Poliwrath_(Base_Set_13)",
+      "image_url": "https://pcg-search.com/img/1st/1st1028.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1028.php",
       "confidence": "high"
     },
     {
@@ -497,8 +508,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "パウワウ→ジュゴンの基本形。英語版Base Setでは41/102のアンコモン。後にBase Set 2・Legendary Collectionに再録。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/8/8a/SeelBaseSet41.jpg/180px-SeelBaseSet41.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Seel_(Base_Set_41)",
+      "image_url": "https://pcg-search.com/img/1st/1st1029.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1029.php",
       "confidence": "high"
     },
     {
@@ -514,8 +525,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "パウワウから進化。イラストはMitsuhiro Arita（有田満弘）。英語版Base Setでは25/102のアンコモン。後にBase Set 2・Legendary Collectionに再録。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/d/dc/DewgongBaseSet25.jpg/180px-DewgongBaseSet25.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Dewgong_(Base_Set_25)",
+      "image_url": "https://pcg-search.com/img/1st/1st1030.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1030.php",
       "confidence": "high"
     },
     {
@@ -531,8 +542,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "ヒトデマン→スターミーの基本形。イラストはKeiji Kinebuchi。英語版Base Setでは65/102のコモン。日本版と英語版で若干アートワークが異なる。後にBase Set 2に再録。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/b/b8/StaryuBaseSet65.jpg/180px-StaryuBaseSet65.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Staryu_(Base_Set_65)",
+      "image_url": "https://pcg-search.com/img/1st/1st1031.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1031.php",
       "confidence": "high"
     },
     {
@@ -548,8 +559,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "ヒトデマンから水の石で進化。イラストはKeiji Kinebuchi。技：リカバー／スターフリーズ。英語版Base Setでは64/102のコモン。後にBase Set 2に再録。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/8/8e/StarmieBaseSet64.jpg/180px-StarmieBaseSet64.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Starmie_(Base_Set_64)",
+      "image_url": "https://pcg-search.com/img/1st/1st1032.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1032.php",
       "confidence": "high"
     },
     {
@@ -565,8 +576,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは35/102（アンコモン）。日本版第1弾の標準タイプ順採番ではNo.33。ギャラドスの進化前。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/7/76/MagikarpBaseSet35.jpg/180px-MagikarpBaseSet35.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Magikarp_(Base_Set_35)",
+      "image_url": "https://pcg-search.com/img/1st/1st1033.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1033.php",
       "confidence": "high"
     },
     {
@@ -582,8 +593,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは6/102（レアホロ／キラ）。コイキングから進化。第1弾の代表的なキラカードの一つ。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/3/3d/GyaradosBaseSet6.jpg/180px-GyaradosBaseSet6.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Gyarados_(Base_Set_6)",
+      "image_url": "https://pcg-search.com/img/1st/1st1034.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1034.php",
       "confidence": "high"
     },
     {
@@ -599,8 +610,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは58/102（コモン）。英語版初期（First Edition／Shadowless）では「ほっぺが赤い（Red Cheeks）」誤植版が存在し、後にほっぺが黄色に修正された。アリタは放電中のためあえて黄色く描いていた。日本版はほっぺ黄色。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/0/0a/PikachuBaseSet58.jpg/180px-PikachuBaseSet58.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Base_Set_58)",
+      "image_url": "https://pcg-search.com/img/1st/1st1035.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1035.php",
       "confidence": "high"
     },
     {
@@ -616,8 +627,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは14/102（レアホロ／キラ）。ピカチュウから進化。イラストはポケモンのキャラクターデザイナー杉森建による。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/9/90/RaichuBaseSet14.jpg/180px-RaichuBaseSet14.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Raichu_(Base_Set_14)",
+      "image_url": "https://pcg-search.com/img/1st/1st1036.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1036.php",
       "confidence": "high"
     },
     {
@@ -633,8 +644,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは53/102（コモン）。レアコイルの進化前。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/3/3b/MagnemiteBaseSet53.jpg/180px-MagnemiteBaseSet53.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Magnemite_(Base_Set_53)",
+      "image_url": "https://pcg-search.com/img/1st/1st1037.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1037.php",
       "confidence": "high"
     },
     {
@@ -650,8 +661,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは9/102（レアホロ／キラ）。コイルから進化。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/b/b7/MagnetonBaseSet9.jpg/180px-MagnetonBaseSet9.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Magneton_(Base_Set_9)",
+      "image_url": "https://pcg-search.com/img/1st/1st1038.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1038.php",
       "confidence": "high"
     },
     {
@@ -667,8 +678,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは67/102（コモン）。マルマインの進化前。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/2/2d/VoltorbBaseSet67.jpg/180px-VoltorbBaseSet67.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Voltorb_(Base_Set_67)",
+      "image_url": "https://pcg-search.com/img/1st/1st1039.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1039.php",
       "confidence": "high"
     },
     {
@@ -684,8 +695,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは21/102（レア、非キラ）。ビリリダマから進化。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/e/e7/ElectrodeBaseSet21.jpg/180px-ElectrodeBaseSet21.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Electrode_(Base_Set_21)",
+      "image_url": "https://pcg-search.com/img/1st/1st1040.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1040.php",
       "confidence": "high"
     },
     {
@@ -701,8 +712,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "日本版拡張パック第1弾（旧裏）収録のたねポケモン。レア。英語版ではBase Set No.20。画像はイラスト共通の英語版Base Setプリント。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/f/fe/ElectabuzzBaseSet20.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Electabuzz_(Base_Set_20)",
+      "image_url": "https://pcg-search.com/img/1st/1st1041.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1041.php",
       "confidence": "high"
     },
     {
@@ -718,8 +729,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "Rare Holo（キラ）。伝説の鳥ポケモン。英語版ではBase Set No.16、後にBase Set 2・Legendary Collectionに再録。画像はイラスト共通の英語版Base Setプリント。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/7/78/ZapdosBaseSet16.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Zapdos_(Base_Set_16)",
+      "image_url": "https://pcg-search.com/img/1st/1st1042.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1042.php",
       "confidence": "high"
     },
     {
@@ -735,8 +746,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "ユンゲラー→フーディンへ進化するたねポケモン。コモン。英語版ではBase Set No.43。画像はイラスト共通の英語版Base Setプリント。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/2/2d/AbraBaseSet43.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Abra_(Base_Set_43)",
+      "image_url": "https://pcg-search.com/img/1st/1st1043.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1043.php",
       "confidence": "high"
     },
     {
@@ -752,8 +763,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "ケーシィから進化する1進化ポケモン。アンコモン。英語版ではBase Set No.32。画像はイラスト共通の英語版Base Setプリント。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/c/ce/KadabraBaseSet32.jpg/180px-KadabraBaseSet32.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Kadabra_(Base_Set_32)",
+      "image_url": "https://pcg-search.com/img/1st/1st1044.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1044.php",
       "confidence": "high"
     },
     {
@@ -769,8 +780,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "Rare Holo（キラ）。ユンゲラーから進化する2進化ポケモン。英語版ではBase Set No.1。画像はイラスト共通の英語版Base Setプリント。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/9/94/AlakazamBaseSet1.jpg/180px-AlakazamBaseSet1.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Alakazam_(Base_Set_1)",
+      "image_url": "https://pcg-search.com/img/1st/1st1045.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1045.php",
       "confidence": "high"
     },
     {
@@ -786,8 +797,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "ゴースト→ゲンガーへ進化するたねポケモン。コモン。英語版ではBase Set No.50。画像はイラスト共通の英語版Base Setプリント。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/6/63/GastlyBaseSet50.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Gastly_(Base_Set_50)",
+      "image_url": "https://pcg-search.com/img/1st/1st1046.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1046.php",
       "confidence": "high"
     },
     {
@@ -803,8 +814,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "ゴースから進化する1進化ポケモン。アンコモン。英語版ではBase Set No.29、後にBase Set 2へ再録。画像はイラスト共通の英語版Base Setプリント。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/9/9b/HaunterBaseSet29.jpg/180px-HaunterBaseSet29.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Haunter_(Base_Set_29)",
+      "image_url": "https://pcg-search.com/img/1st/1st1047.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1047.php",
       "confidence": "high"
     },
     {
@@ -820,8 +831,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "release_date": "1996-10-20",
       "notes": "スリーパーへ進化するたねポケモン。コモン。英語版ではBase Set No.49。日本版ではスターターパック（フシギダネデッキ）にもNo.2として収録。画像はイラスト共通の英語版Base Setプリント。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/a/a1/DrowzeeBaseSet49.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Drowzee_(Base_Set_49)",
+      "image_url": "https://pcg-search.com/img/1st/1st1048.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1048.php",
       "confidence": "high"
     },
     {
@@ -837,8 +848,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.124。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_049_%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A5%E3%83%A9_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-049-rougela/",
+      "image_url": "https://pcg-search.com/img/1st/1st1049.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1049.php",
       "confidence": "high"
     },
     {
@@ -854,8 +865,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.150。キラ(ホロ)仕様。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_050_%E3%83%9F%E3%83%A5%E3%82%A6%E3%83%84%E3%83%BC_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-050-mewtwo/",
+      "image_url": "https://pcg-search.com/img/1st/1st1050.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1050.php",
       "confidence": "high"
     },
     {
@@ -871,8 +882,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.027。LV.12。スターターパックにも収録。初版はレアリティマークなし。ワザ「すなかけ」。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_051_%E3%82%B5%E3%83%B3%E3%83%89_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-051-sand/",
+      "image_url": "https://pcg-search.com/img/1st/1st1051.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1051.php",
       "confidence": "high"
     },
     {
@@ -888,8 +899,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.050。弱点くさ×2、抵抗力でんき-30。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_052_%E3%83%87%E3%82%A3%E3%82%B0%E3%83%80_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-052-digda/",
+      "image_url": "https://pcg-search.com/img/1st/1st1052.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1052.php",
       "confidence": "high"
     },
     {
@@ -905,8 +916,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.051。ディグダから進化。弱点くさ×2、抵抗力でんき-30。ワザ「じしん」はベンチにも10ダメージ。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_053_%E3%83%80%E3%82%B0%E3%83%88%E3%83%AA%E3%82%AA_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-053-dugtrio/",
+      "image_url": "https://pcg-search.com/img/1st/1st1053.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1053.php",
       "confidence": "high"
     },
     {
@@ -922,8 +933,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.066。弱点エスパー×2。ワザ「けたぐり」20ダメージ。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_054_%E3%83%AF%E3%83%B3%E3%83%AA%E3%82%AD%E3%83%BC_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-054-wanriky/",
+      "image_url": "https://pcg-search.com/img/1st/1st1054.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1054.php",
       "confidence": "high"
     },
     {
@@ -939,8 +950,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.067。ワンリキーから進化。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_055_%E3%82%B4%E3%83%BC%E3%83%AA%E3%82%AD%E3%83%BC_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-055-goriky/",
+      "image_url": "https://pcg-search.com/img/1st/1st1055.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1055.php",
       "confidence": "high"
     },
     {
@@ -956,8 +967,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.068。ゴーリキーから進化。特殊能力「はんげき」(ダメージを受けるたび相手に10ダメージ)、ワザ「じならし」60。弱点エスパー×2、抵抗力ノーマル-30。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_056_%E3%82%AB%E3%82%A4%E3%83%AA%E3%82%AD%E3%83%BC_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-056-kairiky/",
+      "image_url": "https://pcg-search.com/img/1st/1st1056.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1056.php",
       "confidence": "high"
     },
     {
@@ -973,8 +984,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.095。レアリティはコモン(●)。ワザ:いわおとし(闘/10)、かたくなる(闘闘/次の相手の番のダメージを0にする、ただし40以上のダメージは軽減できない)。弱点:草(×2)、にげる:無3個。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_057_イワーク_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-057-iwark/",
+      "image_url": "https://pcg-search.com/img/1st/1st1057.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1057.php",
       "confidence": "high"
     },
     {
@@ -990,8 +1001,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.107。LV.33。レアリティはレア(★)。ワザ:ジャブ(闘/20)、スペシャルパンチ(闘闘無/40)。弱点:超(×2)、にげる:無2個。分類:パンチポケモン。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_058_エビワラー_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-058-ebiwalar/",
+      "image_url": "https://pcg-search.com/img/1st/1st1058.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1058.php",
       "confidence": "high"
     },
     {
@@ -1007,8 +1018,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.016。LV.8。レアリティはコモン(●)。ワザ:かぜおこし(無無/10/相手のベンチポケモンと入れ替える)。弱点:雷(×2)、抵抗力:闘(-30)、にげる:無1個。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_059_ポッポ_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-059-poppo/",
+      "image_url": "https://pcg-search.com/img/1st/1st1059.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1059.php",
       "confidence": "high"
     },
     {
@@ -1024,8 +1035,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.017。LV.36。ポッポからの1進化。レアリティはレア(★)。ワザ:ふきとばし、オウムがえし。弱点:雷(×2)、抵抗力:闘(-30)、にげる:無1個。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_060_ピジョン_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-060-pigeon/",
+      "image_url": "https://pcg-search.com/img/1st/1st1060.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1060.php",
       "confidence": "high"
     },
     {
@@ -1041,8 +1052,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.019。LV.9。レアリティはコモン(●)。ワザ:かみつく(無/20)。弱点:闘(×2)、抵抗力:超(-30)、にげる:0。分類:ねずみポケモン。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_061_コラッタ_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-061-koratta/",
+      "image_url": "https://pcg-search.com/img/1st/1st1061.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1061.php",
       "confidence": "high"
     },
     {
@@ -1058,8 +1069,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.020。LV.41。コラッタからの1進化。レアリティはアンコモン(◆)。ワザ:かみつく(無/20)、いかりのまえば(無無無/相手の残りHPの半分(切り上げ)のダメージ)。弱点:闘(×2)、抵抗力:超(-30)、にげる:無1個。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_062_ラッタ_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-062-ratta/",
+      "image_url": "https://pcg-search.com/img/1st/1st1062.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1062.php",
       "confidence": "high"
     },
     {
@@ -1075,8 +1086,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.035。レアリティはレア(★)。ワザ:うたう、ゆびをふる(相手のワザをコピーして使う)。弱点:闘(×2)、抵抗力:超(-30)、にげる:無1個。第1弾拡張パックのパッケージ中央に描かれた看板ポケモン。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_063_ピッピ_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-063-pippi/",
+      "image_url": "https://pcg-search.com/img/1st/1st1063.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1063.php",
       "confidence": "high"
     },
     {
@@ -1092,8 +1103,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "全国図鑑No.083。レアリティはアンコモン(◆)。ワザ:ネギでたたく(無/30)、ナベでたたく(無無無/30)。弱点:雷(×2)、抵抗力:闘(-30)、にげる:無1個。分類:かるがもポケモン。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_064_カモネギ_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-064-kamonegi/",
+      "image_url": "https://pcg-search.com/img/1st/1st1064.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1064.php",
       "confidence": "high"
     },
     {
@@ -1109,8 +1120,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは48番。日本版第1弾（無番）。タイプは無色（英語版Colorless）。たねポケモン。逃げるエネルギー0。後にイントロパック等にも再録あり。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/6/6e/DoduoBaseSet48.jpg/180px-DoduoBaseSet48.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Doduo_(Base_Set_48)",
+      "image_url": "https://pcg-search.com/img/1st/1st1065.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1065.php",
       "confidence": "high"
     },
     {
@@ -1126,8 +1137,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは3番。レアホロ（キラ）。当時最高クラスのHP120。技「すてみタックル」（ダメージ80、自分にも反動30）。日本では1999年春の「64マリオスタジアム ポケモンスナップ ベストフォトコンテスト」入賞作（イラスト：寒谷香織/Kaori Samoya）による別バージョンも存在。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/f/fc/ChanseyBaseSet3.jpg/200px-ChanseyBaseSet3.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Chansey_(Base_Set_3)",
+      "image_url": "https://pcg-search.com/img/1st/1st1066.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1066.php",
       "confidence": "high"
     },
     {
@@ -1143,8 +1154,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは39番。アンコモン。第1弾の特筆点として、初期Base Set絵の大半が杉森・有田・木下圭治の3名による中、本カードはいまくに?が手掛けた唯一の例外（画風は木下に近いと指摘される）。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/6/66/PorygonBaseSet39.jpg/180px-PorygonBaseSet39.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Porygon_(Base_Set_39)",
+      "image_url": "https://pcg-search.com/img/1st/1st1067.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1067.php",
       "confidence": "high"
     },
     {
@@ -1160,8 +1171,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは26番。アンコモン。たねポケモン（ハクリューへ進化）。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/8/84/DratiniBaseSet26.jpg/180px-DratiniBaseSet26.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Dratini_(Base_Set_26)",
+      "image_url": "https://pcg-search.com/img/1st/1st1068.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1068.php",
       "confidence": "high"
     },
     {
@@ -1177,8 +1188,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは18番。レア。ミニリュウから進化する1進化ポケモン。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/c/c9/DragonairBaseSet18.jpg/180px-DragonairBaseSet18.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Base_Set_18)",
+      "image_url": "https://pcg-search.com/img/1st/1st1069.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1069.php",
       "confidence": "high"
     },
     {
@@ -1194,8 +1205,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは90番。アンコモン。トレーナーカード（グッズ）。自分のポケモンからエネルギー1個をトラッシュし、HPを40回復する。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/f/fa/SuperPotionBaseSet90.jpg/180px-SuperPotionBaseSet90.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Super_Potion_(Base_Set_90)",
+      "image_url": "https://pcg-search.com/img/1st/1st1070.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1070.php",
       "confidence": "high"
     },
     {
@@ -1211,8 +1222,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは81番。アンコモン。トレーナーカード。手札の他のカードを1枚トラッシュし、トラッシュから基本エネルギーを2枚手札に戻す。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/f/fa/EnergyRetrievalBaseSet81.jpg/200px-EnergyRetrievalBaseSet81.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Energy_Retrieval_(Base_Set_81)",
+      "image_url": "https://pcg-search.com/img/1st/1st1071.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1071.php",
       "confidence": "high"
     },
     {
@@ -1228,8 +1239,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "英語版Base Setでは92番。コモン。トレーナーカード。相手のポケモン1匹からエネルギー1個をトラッシュする妨害カード。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/5/50/EnergyRemovalBaseSet92.jpg/180px-EnergyRemovalBaseSet92.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Energy_Removal_(Base_Set_92)",
+      "image_url": "https://pcg-search.com/img/1st/1st1072.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1072.php",
       "confidence": "high"
     },
     {
@@ -1246,8 +1257,8 @@ window.POKECA = {
       "release_set": "拡張パック第1弾",
       "pokemon_type_note": "",
       "notes": "効果:自分の手札を全部すてて、山札から新たに7枚引く。スターターパックにも収録。初版はレアリティマークなし。本セットのトレーナーカードでは珍しくイラストレーターが杉森建（他の多くはKeiji Kinebuchi）。発売日はセット発売日1996-10-20（出典サイトの2020.10.23はサイト掲載日）。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_073_オーキドはかせ_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-073-ookidohakase/",
+      "image_url": "https://pcg-search.com/img/1st/1st1073.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1073.php",
       "confidence": "high"
     },
     {
@@ -1263,8 +1274,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果:自分の場のポケモンにのっているダメージカウンターを2個までとりのぞく。スターターパックにも収録。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_074_きずぐすり_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-074-kizugusuri/",
+      "image_url": "https://pcg-search.com/img/1st/1st1074.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1074.php",
       "confidence": "high"
     },
     {
@@ -1280,8 +1291,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果:トラッシュからたねポケモンを1匹選び、HPの半分のダメージカウンターをのせてベンチに出す（進化カードは選べない）。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_075_元気のかけら_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-075-genkinokakera/",
+      "image_url": "https://pcg-search.com/img/1st/1st1075.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1075.php",
       "confidence": "high"
     },
     {
@@ -1297,8 +1308,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果:自分の進化ポケモンを1匹選び、進化カードを何枚でもはがしてすてる。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_076_退化スプレー_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-076-taikaspray/",
+      "image_url": "https://pcg-search.com/img/1st/1st1076.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1076.php",
       "confidence": "high"
     },
     {
@@ -1314,8 +1325,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果:手札を2枚すてることで、トラッシュのトレーナーカード1枚を手札に加える。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_077_ダウジングマシーン_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-077-dowsingmachine/",
+      "image_url": "https://pcg-search.com/img/1st/1st1077.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1077.php",
       "confidence": "high"
     },
     {
@@ -1331,8 +1342,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果:自分の場のポケモンのエネルギー1枚をすてることで、相手のポケモン1匹からエネルギー2枚をはがしてすてる。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_078_超エネルギーリムーブ_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-078-choenergyremove/",
+      "image_url": "https://pcg-search.com/img/1st/1st1078.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1078.php",
       "confidence": "high"
     },
     {
@@ -1348,8 +1359,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果:自分のポケモンにつけ、次の相手の番の終わりまで、ワザのダメージを20減らす。次の自分の番のはじめにはがす。スターターパックにも収録。初版はレアリティマークなし。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_079_ディフェンダー_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-079-defender/",
+      "image_url": "https://pcg-search.com/img/1st/1st1079.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1079.php",
       "confidence": "high"
     },
     {
@@ -1365,8 +1376,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果:相手の対戦ポケモンと控えポケモンを入れ替える。出させる控えは自分が選ぶ。相手に控えがいない場合は使えない。スターターパックにも収録。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/PCMG1_B_080_突風_copy-300x419.jpg",
-      "source_url": "https://nazonobasho.com/pmcg01-080-toppu/",
+      "image_url": "https://pcg-search.com/img/1st/1st1080.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1080.php",
       "confidence": "high"
     },
     {
@@ -1382,8 +1393,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "場のポケモンの特殊状態をすべて回復するトレーナーカード。英語版Base Setでは#82/102、アンコモン(◆)。Base Set2など多数再録。なぞのばしょの旧裏まとめ採番では#081。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/pmcg01-081-nandemonaoshi-copy.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Full_Heal_(Base_Set_82)",
+      "image_url": "https://pcg-search.com/img/1st/1st1081.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1081.php",
       "confidence": "high"
     },
     {
@@ -1399,8 +1410,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "相手に手札を捨てさせ7枚引かせるトレーナーカード。英語版Base Setでは#73/102、レア(★)。英語1st Edition/Shadowlessでは綴り「Imposter」、その後「Impostor」に修正。なぞのばしょ採番では#082。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/pmcg01-082-niseookidohakase-copy.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Imposter_Professor_Oak_(Base_Set_73)",
+      "image_url": "https://pcg-search.com/img/1st/1st1082.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1082.php",
       "confidence": "high"
     },
     {
@@ -1416,8 +1427,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "手札2枚をトラッシュして山札から好きなカード1枚をサーチする強力なトレーナーカード。英語版Base Setでは#71/102、レア(★)。Base Set2やBoundaries Crossedなど多数再録。なぞのばしょ採番では#083。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/pmcg01-083-pasokontsuushin-copy.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Computer_Search_(Base_Set_71)",
+      "image_url": "https://pcg-search.com/img/1st/1st1083.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1083.php",
       "confidence": "high"
     },
     {
@@ -1433,8 +1444,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "トレーナーカードだがHP10のポケモンとして場に出せる特殊なカード(進化・退化・特殊状態にできない、きぜつでサイドを取られる)。英語版Base Setでは#70/102、レア(★)。なぞのばしょ採番では#084。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/pmcg01-084-pippiningyou-copy.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Clefairy_Doll_(Base_Set_70)",
+      "image_url": "https://pcg-search.com/img/1st/1st1084.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1084.php",
       "confidence": "high"
     },
     {
@@ -1450,8 +1461,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "そのターンのワザのダメージを+10するトレーナーカード。英語版Base Setでは#84/102、アンコモン(◆)。後年のシリーズで多数再録(イラスト変更あり)。なぞのばしょ採番では#085。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/pmcg01-085-pluspower-copy.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/PlusPower_(Base_Set_84)",
+      "image_url": "https://pcg-search.com/img/1st/1st1085.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1085.php",
       "confidence": "high"
     },
     {
@@ -1467,8 +1478,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "バトルポケモンをベンチポケモンと入れ替えるトレーナーカード。英語版Base Setでは#95/102、コモン(●)。以降のほぼ全シリーズで定番として再録。なぞのばしょ採番では#086。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/pmcg01-086-pokemonirekae-copy.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Switch_(Base_Set_95)",
+      "image_url": "https://pcg-search.com/img/1st/1st1086.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1086.php",
       "confidence": "high"
     },
     {
@@ -1484,8 +1495,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "場のポケモン1匹(たねポケモン)を手札に戻すトレーナーカード。英語版Base Setでは#78/102、レア(★)。Base Set2やLegendary Collectionに再録。なぞのばしょ採番では#087。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/pmcg01-087-pokemonkaishu-copy.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Scoop_Up_(Base_Set_78)",
+      "image_url": "https://pcg-search.com/img/1st/1st1087.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1087.php",
       "confidence": "high"
     },
     {
@@ -1501,8 +1512,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "手札のポケモン1枚と山札のポケモン1枚を交換(サーチ)するトレーナーカード。英語版Base Setでは#77/102、レア(★)。Base Set2やLegendary Collectionに再録。試作版がTrainer Deck Bで先行配布された。なぞのばしょ採番では#088。",
-      "image_url": "https://nazonobasho.com/wp-content/uploads/2020/10/pmcg01-088-pokemonkoukanojisan-copy.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Trader_(Base_Set_77)",
+      "image_url": "https://pcg-search.com/img/1st/1st1088.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1088.php",
       "confidence": "high"
     },
     {
@@ -1518,8 +1529,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果: 自分の山札の上から5枚を見て好きな順に並べ替え、山札の上に戻す。初期3D系トレーナーカード。再録: ポケモンジム(タケシ/カツラのデッキ)等。日本版カードは無番号で、英語版Base Setでは87/102。なお日本語まとめWiki(wikiwiki pcg-base-neo)はイラストレーターを杉森建と記載しているが、英語版Bulbapediaの印刷クレジットでは Keiji Kinebuchi。クレジット表記に揺れがあるため medium とした。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/e/e5/Pokédex_BaseSet87.jpg/180px-Pokédex_BaseSet87.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex_(Base_Set_87)",
+      "image_url": "https://pcg-search.com/img/1st/1st1089.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1089.php",
       "confidence": "medium"
     },
     {
@@ -1535,8 +1546,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果: 自分の場の全ポケモンのダメージを回復する代わりに、ついている全エネルギーをトラッシュする。英語版Base Setでは85/102、アンコモン。初期トレーナーカードでKinebuchiの3Dアート。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/4/4c/Pok%C3%A9monCenterBaseSet85.jpg/180px-Pok%C3%A9monCenterBaseSet85.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Center_(Base_Set_85)",
+      "image_url": "https://pcg-search.com/img/1st/1st1090.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1090.php",
       "confidence": "high"
     },
     {
@@ -1552,8 +1563,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果: 手札の2進化ポケモンを、対応するたねポケモン(進化前)に直接重ねて進化させる(1進化を飛ばす)。英語版Base Setでは76/102、レア。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/5/56/Pok%C3%A9monBreederBaseSet76.jpg/180px-Pok%C3%A9monBreederBaseSet76.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Breeder_(Base_Set_76)",
+      "image_url": "https://pcg-search.com/img/1st/1st1091.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1091.php",
       "confidence": "high"
     },
     {
@@ -1569,8 +1580,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果: 相手のトラッシュにあるたねポケモン1枚を選び、相手のベンチに出させる(相手のベンチが埋まっている場合は使えない)。英語版Base Setでは86/102、アンコモン。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/d/d5/PokémonFluteBaseSet86.jpg/180px-PokémonFluteBaseSet86.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Flute_(Base_Set_86)",
+      "image_url": "https://pcg-search.com/img/1st/1st1092.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1092.php",
       "confidence": "high"
     },
     {
@@ -1586,8 +1597,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果: 自分の山札からカードを2枚引く。シンプルなドローサポート。英語版Base Setでは91/102、コモン。後にHeartGold&SoulSilver等で再録(89番)。日本のキャラ「マサキ」=英語版「Bill」。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/2/21/BillBaseSet91.jpg/200px-BillBaseSet91.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Bill_(Base_Set_91)",
+      "image_url": "https://pcg-search.com/img/1st/1st1093.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1093.php",
       "confidence": "high"
     },
     {
@@ -1603,8 +1614,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果: お互いのプレイヤーは手札のトレーナーカードを全て見せ合い、山札に戻してシャッフルする(手札ロック系)。英語版Base Setでは75/102、レア。赤・緑の「ミニスカート」トレーナーがモチーフ。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/b/b5/LassBaseSet75.jpg/180px-LassBaseSet75.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Lass_(Base_Set_75)",
+      "image_url": "https://pcg-search.com/img/1st/1st1094.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1094.php",
       "confidence": "high"
     },
     {
@@ -1620,8 +1631,8 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "効果: 手札を2枚山札に戻してシャッフルした後、カードを1枚引く。英語版Base Setでは83/102、アンコモン。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/4/4e/MaintenanceBaseSet83.jpg/200px-MaintenanceBaseSet83.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Maintenance_(Base_Set_83)",
+      "image_url": "https://pcg-search.com/img/1st/1st1095.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1095.php",
       "confidence": "high"
     },
     {
@@ -1637,10 +1648,9 @@ window.POKECA = {
       "release_date": "1996-10-20",
       "release_set": "拡張パック第1弾",
       "notes": "特殊エネルギー。無色エネルギー2個分として扱う(色エネルギーには使えない)。英語版Base Setでは96/102、アンコモン。多数の後続セットで再録される定番特殊エネルギー。",
-      "image_url": "https://archives.bulbagarden.net/media/upload/thumb/c/c1/DoubleColorlessEnergyBaseSet96.jpg/200px-DoubleColorlessEnergyBaseSet96.jpg",
-      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Double_Colorless_Energy_(Base_Set_96)",
+      "image_url": "https://pcg-search.com/img/1st/1st1096.png",
+      "source_url": "https://pcg-search.com/card/1st/1st1096.php",
       "confidence": "high"
     }
   ]
-}
-;
+};

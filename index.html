@@ -20,7 +20,16 @@
     <header class="site-header">
       <div class="container header-inner">
         <p class="kicker">Pocket Monsters Card Game / Old Back</p>
-        <h1>旧裏ポケカ図鑑 — 拡張パック第1弾</h1>
+        <h1>
+          旧裏ポケカ図鑑 —
+          <button
+            id="package-open"
+            class="package-trigger"
+            type="button"
+            aria-haspopup="dialog"
+            aria-controls="package-modal"
+          >拡張パック第1弾</button>
+        </h1>
         <div class="set-meta" aria-label="セット情報">
           <span>発売 1996年10月20日</span>
           <span>全96枚</span>
@@ -90,7 +99,14 @@
             <div id="modal-chips" class="modal-chips" aria-label="カード概要"></div>
           </div>
 
-          <dl id="modal-details" class="detail-list"></dl>
+          <div class="modal-info">
+            <dl id="modal-details" class="detail-list"></dl>
+            <section class="market-section" aria-labelledby="market-title">
+              <h3 id="market-title">相場を調べる</h3>
+              <div id="market-links" class="market-links"></div>
+              <p>相場は変動します。最新は各サイトでご確認ください。</p>
+            </section>
+          </div>
         </div>
 
         <footer class="modal-footer">
@@ -101,12 +117,47 @@
       </article>
     </dialog>
 
+    <dialog id="package-modal" class="modal package-modal" aria-labelledby="package-title">
+      <article class="modal-panel package-panel">
+        <header class="modal-header package-header">
+          <div class="modal-title-wrap">
+            <span class="modal-no">Pack</span>
+            <h2 id="package-title">拡張パック第1弾</h2>
+          </div>
+          <button id="package-close" class="icon-button close-button" type="button" aria-label="閉じる">×</button>
+        </header>
+
+        <div class="package-body">
+          <div id="package-image-frame" class="package-image-frame">
+            <img id="package-image" alt="" width="640" height="430" decoding="async">
+            <span class="fallback-ball" aria-hidden="true"></span>
+            <span class="fallback-text"></span>
+          </div>
+
+          <dl class="detail-list package-details">
+            <dt>発売日</dt>
+            <dd id="package-release">-</dd>
+            <dt>価格</dt>
+            <dd id="package-price">-</dd>
+            <dt>1パック</dt>
+            <dd id="package-per-pack">-</dd>
+            <dt>収録種類数</dt>
+            <dd id="package-total">-</dd>
+            <dt>レアリティ構成</dt>
+            <dd id="package-rarity">-</dd>
+            <dt>看板ポケモン</dt>
+            <dd id="package-cover">-</dd>
+          </dl>
+        </div>
+      </article>
+    </dialog>
+
     <footer class="site-footer">
       <div class="container">
         <p>
           カード画像および『ポケモン』関連の著作権は任天堂・クリーチャーズ・ゲームフリークに帰属します。本サイトはファンによる非営利のまとめであり、公式とは関係ありません。
         </p>
-        <p>データ出典: なぞのばしょ / Bulbapedia を参照。</p>
+        <p>画像: pcg-search.com（ポケモンカード旧シリーズ検索） / パッケージ画像・一部データ: なぞのばしょ。データ補助: Bulbapedia を参照。</p>
       </div>
     </footer>
 
