@@ -915,7 +915,9 @@
       fragment.append(buildVariantButton(card, viewModel, index));
     }
     els.modalVariantStrip.replaceChildren(fragment);
-    selectVariant(card, viewModels[0], 0);
+    const selectedIndex = viewModels.findIndex((viewModel) => viewModel.variant.id === card.id);
+    const initialIndex = selectedIndex >= 0 ? selectedIndex : 0;
+    selectVariant(card, viewModels[initialIndex], initialIndex);
   }
 
   function buildPSAGradeRow(grade, count, total) {
