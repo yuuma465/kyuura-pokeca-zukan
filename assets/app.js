@@ -3,6 +3,7 @@
 
   const dataset = window.POKECA || { meta: { total_count: 0 }, cards: [] };
   const variantsByNo = window.POKECA_VARIANTS || {};
+  const psaByNo = window.POKECA_PSA || {};
   const cards = [...dataset.cards].sort((a, b) => Number(a.no) - Number(b.no));
   const totalCount = Number(dataset.meta?.total_count || cards.length);
   const packageInfo = dataset.meta?.package || null;
@@ -65,6 +66,8 @@
     modalVariantStrip: null,
     modalDetails: document.getElementById("modal-details"),
     marketLinks: document.getElementById("market-links"),
+    psaSection: document.getElementById("psa-section"),
+    psaBody: document.getElementById("psa-body"),
     prevCard: document.getElementById("prev-card"),
     nextCard: document.getElementById("next-card"),
     sourceLink: document.getElementById("source-link"),
@@ -157,6 +160,16 @@
       return dateText || "-";
     }
     return `${match[1]}年${Number(match[2])}月${Number(match[3])}日`;
+  }
+
+  function formatNumber(value) {
+    const number = Number(value);
+    return Number.isFinite(number) ? number.toLocaleString("ja-JP") : "0";
+  }
+
+  function formatPercent(value) {
+    const number = Number(value);
+    return Number.isFinite(number) ? number.toFixed(1) : "0.0";
   }
 
   function createElement(tag, options = {}) {
@@ -667,6 +680,86 @@
     );
   }
 
+  function buildPSAGradeRow(grade, count, total) {
+    const safeTotal = Math.max(Number(total) || 0, 0);
+    const safeCount = Math.max(Number(count) || 0, 0);
+    const percent = safeTotal > 0 ? (safeCount / safeTotal) * 100 : 0;
+    const width = Math.min(100, Math.max(0, percent));
+    const row = createElement("div", {
+      className: `psa-grade-row psa-grade-row--g${grade}`,
+    });
+    const fill = createElement("span", {
+      className: "psa-grade-fill",
+      attrs: { "aria-hidden": "true" },
+    });
+    fill.style.width = `${width}%`;
+
+    row.append(
+      createElement("span", { className: "psa-grade-label", text: `PSA${grade}` }),
+      createElement("span", {
+        className: "psa-grade-track",
+        attrs: { "aria-hidden": "true" },
+      }),
+      createElement("span", { className: "psa-grade-count", text: `${formatNumber(safeCount)}枚` }),
+      createElement("span", { className: "psa-grade-percent", text: `${formatPercent(percent)}%` })
+    );
+    row.querySelector(".psa-grade-track").append(fill);
+    return row;
+  }
+
+  function renderPSA(card) {
+    if (!els.psaSection || !els.psaBody) {
+      return;
+    }
+
+    const psa = psaByNo[String(card.no)];
+    els.psaBody.replaceChildren();
+    if (!psa) {
+      els.psaSection.hidden = true;
+      return;
+    }
+
+    els.psaSection.hidden = false;
+    const total = Math.max(Number(psa.total) || 0, 0);
+    const grades = psa.grades || {};
+    const summary = createElement("div", { className: "psa-summary" });
+    summary.append(
+      createElement("div", {
+        className: "psa-metric psa-metric--gem",
+        html: '<span class="psa-metric-label">GEM率（PSA10取得率）</span><span class="psa-metric-value"></span><span class="psa-metric-sub">提出した際にPSA10になる割合</span>',
+      }),
+      createElement("div", {
+        className: "psa-metric",
+        html: '<span class="psa-metric-label">総鑑定数</span><span class="psa-metric-value"></span><span class="psa-metric-sub">世界累計</span>',
+      })
+    );
+    summary.querySelector(".psa-metric--gem .psa-metric-value").textContent = `${formatPercent(psa.gem_rate)}%`;
+    summary.querySelector(".psa-metric:not(.psa-metric--gem) .psa-metric-value").textContent = `${formatNumber(total)}枚`;
+
+    const list = createElement("div", { className: "psa-grade-list" });
+    for (let grade = 10; grade >= 1; grade -= 1) {
+      const count = Number(grades[`g${grade}`]) || 0;
+      if (count > 0) {
+        list.append(buildPSAGradeRow(grade, count, total));
+      }
+    }
+
+    const source = createElement("p", { className: "psa-source" });
+    source.append(
+      document.createTextNode(`PSA公式データ / 最終更新 ${formatDate(psa.updated)} / `),
+      createElement("a", {
+        text: "psacard.com",
+        attrs: {
+          href: "https://www.psacard.com/pop/tcg-cards/1996/pokemon-japanese-basic/55428",
+          target: "_blank",
+          rel: "noopener noreferrer",
+        },
+      })
+    );
+
+    els.psaBody.append(summary, list, source);
+  }
+
   function buildEvolutionLine(card) {
     if (!card.stage || card.stage === "-") {
       return document.createTextNode("-");
@@ -743,6 +836,7 @@
     renderVariants(card);
     renderModalDetails(card);
     renderMarketLinks(card);
+    renderPSA(card);
 
     const index = getCardIndex(card.no);
     els.prevCard.disabled = index <= 0;
