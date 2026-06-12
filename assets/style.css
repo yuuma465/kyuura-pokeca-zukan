@@ -18,6 +18,7 @@
 }
 
 html {
+  -webkit-text-size-adjust: 100%;
   color: var(--ink);
   background: var(--white);
   font-family: var(--font-body);
@@ -362,6 +363,7 @@ h1 {
 }
 
 .thumb {
+  display: block;
   position: relative;
   aspect-ratio: 63 / 88;
   overflow: hidden;
@@ -512,6 +514,7 @@ h1 {
 }
 
 .type-bar {
+  display: block;
   height: 4px;
   margin-top: 7px;
   border-radius: 2px;
