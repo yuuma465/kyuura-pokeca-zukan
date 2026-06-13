@@ -287,6 +287,8 @@
     resultCount: document.getElementById("result-count"),
     emptyState: document.getElementById("empty-state"),
     searchInput: document.getElementById("search-input"),
+    quickSearchInput: document.getElementById("quick-search-input"),
+    quickSearchClear: document.getElementById("quick-search-clear"),
     resetButton: document.getElementById("reset-button"),
     regionFilters: document.getElementById("region-filters"),
     setFilter: document.getElementById("set-filter"),
@@ -490,6 +492,17 @@
     els.psaOnly.checked = state.psaOnly;
   }
 
+  function setSearchInputs(value) {
+    const text = String(value || "");
+    els.searchInput.value = text;
+    if (els.quickSearchInput) {
+      els.quickSearchInput.value = text;
+    }
+    if (els.quickSearchClear) {
+      els.quickSearchClear.hidden = text.length === 0;
+    }
+  }
+
   function buildTile(card) {
     const typeInfo = getTypeInfo(card);
     const rarityInfo = getRarityInfo(card);
@@ -630,7 +643,7 @@
     state.selectedSet = knownSets.has(set) ? set : "";
     state.psaOnly = params.get("psa") === "1";
     state.query = params.get("q") || "";
-    els.searchInput.value = state.query;
+    setSearchInputs(state.query);
   }
 
   function writeFiltersToUrl() {
@@ -676,7 +689,7 @@
     state.selectedRarities.clear();
     state.psaOnly = false;
     state.query = "";
-    els.searchInput.value = "";
+    setSearchInputs("");
     applyFilters({ updateUrl: true });
   }
 
@@ -1187,10 +1200,23 @@
   }
 
   function bindEvents() {
-    els.searchInput.addEventListener("input", debounce((event) => {
-      state.query = event.target.value.trim();
+    const applySearchInput = debounce(() => {
+      state.query = els.searchInput.value.trim();
       applyFilters({ updateUrl: true });
-    }, 200));
+    }, 200);
+    const handleSearchInput = (event) => {
+      setSearchInputs(event.target.value);
+      applySearchInput();
+    };
+
+    els.searchInput.addEventListener("input", handleSearchInput);
+    els.quickSearchInput?.addEventListener("input", handleSearchInput);
+    els.quickSearchClear?.addEventListener("click", () => {
+      state.query = "";
+      setSearchInputs("");
+      applyFilters({ updateUrl: true });
+      els.quickSearchInput?.focus();
+    });
     els.setFilter.addEventListener("change", (event) => {
       state.selectedSet = event.target.value;
       applyFilters({ updateUrl: true });

@@ -11,6 +11,7 @@
   --border: #ddd;
   --font-body: "Noto Sans JP", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   --font-latin: "Fjalla One", sans-serif;
+  --quick-search-height: 78px;
 }
 
 * {
@@ -30,6 +31,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
+  padding-bottom: calc(var(--quick-search-height) + env(safe-area-inset-bottom));
   background: var(--white);
 }
 
@@ -253,6 +255,7 @@ h1 {
 }
 
 .search-row input,
+.quick-search input,
 .select-row select {
   width: 100%;
   min-height: 44px;
@@ -264,10 +267,61 @@ h1 {
 }
 
 .search-row input:focus,
+.quick-search input:focus,
 .select-row select:focus {
   border-color: var(--blue);
   outline: 0;
   box-shadow: 0 0 0 2px var(--blue);
+}
+
+.quick-search {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding: 10px max(12px, calc((100vw - 1200px) / 2 + 12px)) calc(10px + env(safe-area-inset-bottom));
+  background: var(--white);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.12);
+}
+
+body.scroll-locked .quick-search {
+  display: none;
+}
+
+.quick-search input {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.quick-search-clear {
+  display: inline-flex;
+  width: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  padding: 0 0 2px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.quick-search-clear:hover {
+  opacity: 0.8;
+}
+
+.quick-search-clear[hidden] {
+  display: none;
 }
 
 .select-row select {
