@@ -2,7 +2,6 @@
   "use strict";
 
   const dataset = window.POKECA_ALL || { cards: [] };
-  const variantsById = window.POKECA_VARIANTS || {};
   const psaById = window.POKECA_PSA || {};
   const sourceCards = Array.isArray(dataset.cards) ? dataset.cards : [];
 
@@ -278,7 +277,6 @@
     query: "",
     visibleCards: [...cards],
     activeCardId: null,
-    activeVariantIndex: 0,
     lastFocusedTile: null,
   };
 
@@ -305,11 +303,8 @@
     modalThumb: document.getElementById("modal-thumb"),
     modalImage: document.getElementById("modal-image"),
     modalFallback: document.getElementById("modal-fallback"),
+    modalCaption: document.getElementById("modal-caption"),
     modalChips: document.getElementById("modal-chips"),
-    modalVariantCaption: null,
-    modalVariants: null,
-    modalVariantsTitle: null,
-    modalVariantStrip: null,
     modalDetails: document.getElementById("modal-details"),
     marketLinks: document.getElementById("market-links"),
     psaSection: document.getElementById("psa-section"),
@@ -771,168 +766,6 @@
     );
   }
 
-  function setupVariantElements() {
-    const caption = createElement("p", {
-      className: "variant-caption",
-      attrs: { id: "modal-variant-caption" },
-    });
-    const section = createElement("section", {
-      className: "variant-section",
-      attrs: { "aria-labelledby": "modal-variant-title" },
-    });
-    const title = createElement("h3", {
-      className: "variant-title",
-      attrs: { id: "modal-variant-title" },
-    });
-    const strip = createElement("div", {
-      className: "variant-strip",
-      attrs: { role: "list" },
-    });
-
-    section.append(title, strip);
-    els.modalThumb.insertAdjacentElement("afterend", caption);
-    els.modalChips.insertAdjacentElement("afterend", section);
-
-    els.modalVariantCaption = caption;
-    els.modalVariants = section;
-    els.modalVariantsTitle = title;
-    els.modalVariantStrip = strip;
-  }
-
-  function getCardVariants(card) {
-    const variants = variantsById[card.id];
-    if (Array.isArray(variants) && variants.length > 0) {
-      return variants;
-    }
-    return [{
-      id: card.id,
-      set: card.set,
-      region: card.region,
-      image_url: card.image_url,
-    }];
-  }
-
-  function shortenSetName(setName) {
-    return String(setName || "バリエーション")
-      .replace("クイックスターターギフト", "クイックギフト")
-      .replace("映画公開記念パック", "映画記念")
-      .replace("ポケモンジム", "ジム")
-      .replace("イントロパック★neo", "イントロneo")
-      .replace("イントロパック", "イントロ")
-      .replace("拡張シート", "シート")
-      .replace("拡張パック", "拡張");
-  }
-
-  function buildVariantViewModels(card) {
-    const variants = getCardVariants(card);
-    const setCounts = new Map();
-    const setIndexes = new Map();
-
-    for (const variant of variants) {
-      const setName = variant.set || "バリエーション";
-      setCounts.set(setName, (setCounts.get(setName) || 0) + 1);
-    }
-
-    return variants.map((variant) => {
-      const setName = variant.set || "バリエーション";
-      const index = (setIndexes.get(setName) || 0) + 1;
-      const suffix = setCounts.get(setName) > 1 && index > 1 ? `（${index}）` : "";
-      setIndexes.set(setName, index);
-      return {
-        variant,
-        fullLabel: `${variant.region ? `${variant.region} / ` : ""}${setName}${suffix}`,
-        shortLabel: `${variant.region ? `${variant.region} ` : ""}${shortenSetName(setName)}${suffix}`,
-      };
-    });
-  }
-
-  function selectVariant(card, viewModel, index) {
-    const { variant, fullLabel } = viewModel;
-    state.activeVariantIndex = index;
-
-    clearImageFallback(els.modalThumb);
-    els.modalFallback.textContent = "";
-    els.modalImage.onerror = () => markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
-    els.modalImage.alt = `${card.name_ja} ${fullLabel}のカード画像`;
-
-    if (variant.image_url) {
-      els.modalImage.src = variant.image_url;
-    } else {
-      els.modalImage.removeAttribute("src");
-      markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
-    }
-
-    els.modalVariantCaption.textContent = fullLabel;
-    for (const button of els.modalVariantStrip.querySelectorAll(".variant-thumb-button")) {
-      button.setAttribute("aria-pressed", String(Number(button.dataset.variantIndex) === index));
-    }
-  }
-
-  function buildVariantButton(card, viewModel, index) {
-    const { variant, fullLabel, shortLabel } = viewModel;
-    const button = createElement("button", {
-      className: "variant-thumb-button",
-      attrs: {
-        type: "button",
-        "aria-label": `${fullLabel}版を表示`,
-        "aria-pressed": "false",
-        "data-variant-index": String(index),
-      },
-    });
-    const frame = createElement("span", { className: "variant-thumb-frame" });
-    const imageAttrs = {
-      alt: "",
-      loading: "lazy",
-      decoding: "async",
-      width: "64",
-      height: "89",
-    };
-    if (variant.image_url) {
-      imageAttrs.src = variant.image_url;
-    }
-    const image = createElement("img", { attrs: imageAttrs });
-
-    button.title = fullLabel;
-    image.addEventListener("error", () => markImageFallback(frame, "画像なし"), { once: true });
-    frame.append(
-      image,
-      createElement("span", { className: "fallback-ball", attrs: { "aria-hidden": "true" } }),
-      createElement("span", { className: "fallback-text" }),
-    );
-    if (!variant.image_url) {
-      markImageFallback(frame, "画像なし");
-    }
-    button.append(
-      frame,
-      createElement("span", { className: "variant-thumb-label", text: shortLabel }),
-    );
-    button.addEventListener("click", () => {
-      const targetCard = cardById.get(variant.id);
-      if (targetCard && targetCard.id !== card.id) {
-        openModal(targetCard.id, { updateHash: true, push: true });
-        return;
-      }
-      selectVariant(card, viewModel, index);
-    });
-    return button;
-  }
-
-  function renderVariants(card) {
-    const viewModels = buildVariantViewModels(card);
-    const fragment = document.createDocumentFragment();
-
-    els.modalVariants.hidden = viewModels.length <= 1;
-    els.modalVariantCaption.hidden = viewModels.length <= 1;
-    els.modalVariantsTitle.textContent = `バリエーション ${viewModels.length}種`;
-    for (const [index, viewModel] of viewModels.entries()) {
-      fragment.append(buildVariantButton(card, viewModel, index));
-    }
-    els.modalVariantStrip.replaceChildren(fragment);
-    const selectedIndex = viewModels.findIndex((viewModel) => viewModel.variant.id === card.id);
-    const initialIndex = selectedIndex >= 0 ? selectedIndex : 0;
-    selectVariant(card, viewModels[initialIndex], initialIndex);
-  }
-
   function buildPSAGradeRow(grade, count, total) {
     const safeTotal = Math.max(Number(total) || 0, 0);
     const safeCount = Math.max(Number(count) || 0, 0);
@@ -1068,6 +901,7 @@
   function renderModal(card) {
     const typeInfo = getTypeInfo(card);
     const rarityInfo = getRarityInfo(card);
+    const caption = [card.region, card.set].filter(Boolean).join(" / ") || "-";
     state.activeCardId = card.id;
 
     setTypeStyle(els.modalPanel, card);
@@ -1076,8 +910,17 @@
 
     els.modalNo.textContent = getCardNumberLabel(card);
     els.modalTitle.textContent = card.name_ja;
+    els.modalCaption.textContent = caption;
     els.modalFallback.textContent = "";
     clearImageFallback(els.modalThumb);
+    els.modalImage.onerror = () => markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
+    els.modalImage.alt = `${card.name_ja} ${caption}のカード画像`;
+    if (card.image_url) {
+      els.modalImage.src = card.image_url;
+    } else {
+      els.modalImage.removeAttribute("src");
+      markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
+    }
 
     els.modalChips.replaceChildren(
       createSummaryChip(typeInfo.fullLabel, typeInfo, null),
@@ -1085,7 +928,6 @@
       createSummaryChip(getStageLabel(card), typeInfo, null),
       createSummaryChip(card.set || "-", null, null),
     );
-    renderVariants(card);
     renderModalDetails(card);
     renderMarketLinks(card);
     renderPSA(card);
@@ -1163,7 +1005,6 @@
     }
     document.body.classList.remove("scroll-locked");
     state.activeCardId = null;
-    state.activeVariantIndex = 0;
 
     if (updateHash && getIdFromHash(location.hash)) {
       const url = makeUrlWithHash("");
@@ -1257,7 +1098,6 @@
 
   function init() {
     renderFilters();
-    setupVariantElements();
     readFiltersFromUrl();
     bindEvents();
     applyFilters();
