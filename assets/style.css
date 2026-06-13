@@ -1002,6 +1002,89 @@ body.scroll-locked .quick-search {
   font-size: 13px;
 }
 
+.quote-section {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--white);
+}
+
+.quote-section[hidden] {
+  display: none;
+}
+
+.quote-section h3 {
+  margin: 0 0 10px;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+#quote-body,
+.quote-body {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.quote-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.quote-card {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  background: var(--band);
+}
+
+.quote-card--sell {
+  border-color: var(--blue);
+  background: var(--white);
+}
+
+.quote-label {
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.quote-amount {
+  display: block;
+  min-width: 0;
+  color: var(--ink);
+  font-family: var(--font-latin);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.quote-card--sell .quote-amount {
+  color: var(--blue);
+}
+
+.quote-note,
+.quote-source {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.quote-source {
+  border-top: 1px solid var(--border);
+  padding-top: 9px;
+}
+
 .psa-section {
   border: 1px solid var(--border);
   border-radius: 8px;

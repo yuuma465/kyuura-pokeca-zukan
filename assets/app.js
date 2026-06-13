@@ -3,6 +3,7 @@
 
   const dataset = window.POKECA_ALL || { cards: [] };
   const psaById = window.POKECA_PSA || {};
+  const priceById = window.POKECA_PRICE || {};
   const sourceCards = Array.isArray(dataset.cards) ? dataset.cards : [];
 
   const seriesOrder = new Map([
@@ -181,6 +182,10 @@
     return Boolean(psaById[card.id]);
   }
 
+  function hasQuoteData(card) {
+    return Boolean(priceById[card.id]);
+  }
+
   function cardMatchesQuery(card, normalizedQuery) {
     if (!normalizedQuery) {
       return true;
@@ -260,6 +265,9 @@
     getTypeKey,
     getHashForCard,
     getIdFromHash,
+    hasQuoteData,
+    formatYen,
+    formatDate,
     parseCardNumber,
   };
 
@@ -307,6 +315,8 @@
     modalChips: document.getElementById("modal-chips"),
     modalDetails: document.getElementById("modal-details"),
     marketLinks: document.getElementById("market-links"),
+    quoteSection: document.getElementById("quote-section"),
+    quoteBody: document.getElementById("quote-body"),
     psaSection: document.getElementById("psa-section"),
     psaBody: document.getElementById("psa-body"),
     prevCard: document.getElementById("prev-card"),
@@ -326,6 +336,11 @@
   function formatNumber(value) {
     const number = Number(value);
     return Number.isFinite(number) ? number.toLocaleString("ja-JP") : "0";
+  }
+
+  function formatYen(value) {
+    const number = Number(value);
+    return Number.isFinite(number) ? `¥${number.toLocaleString("ja-JP")}` : "¥0";
   }
 
   function formatPercent(value) {
@@ -766,6 +781,46 @@
     );
   }
 
+  function buildQuoteCard(label, amount, count, modifier) {
+    const card = createElement("div", { className: `quote-card quote-card--${modifier}` });
+    card.append(
+      createElement("span", { className: "quote-label", text: label }),
+      createElement("span", { className: "quote-amount", text: formatYen(amount) }),
+      createElement("span", {
+        className: "quote-note",
+        text: `複数出品 ${formatNumber(count)} 件の中央値ベース / 状態・版により変動します`,
+      }),
+    );
+    return card;
+  }
+
+  function renderQuote(card) {
+    if (!els.quoteSection || !els.quoteBody) {
+      return;
+    }
+
+    const quote = priceById[card.id];
+    els.quoteBody.replaceChildren();
+    if (!quote) {
+      els.quoteSection.hidden = true;
+      return;
+    }
+
+    els.quoteSection.hidden = false;
+    const metrics = createElement("div", { className: "quote-metrics" });
+    metrics.append(
+      buildQuoteCard("買取目安", quote.buy, quote.n, "buy"),
+      buildQuoteCard("販売目安", quote.sell, quote.n, "sell"),
+    );
+    els.quoteBody.append(
+      metrics,
+      createElement("p", {
+        className: "quote-source",
+        text: `最終更新 ${formatDate(quote.updated)} / 価格参考: magi等の出品相場`,
+      }),
+    );
+  }
+
   function buildPSAGradeRow(grade, count, total) {
     const safeTotal = Math.max(Number(total) || 0, 0);
     const safeCount = Math.max(Number(count) || 0, 0);
@@ -930,6 +985,7 @@
     );
     renderModalDetails(card);
     renderMarketLinks(card);
+    renderQuote(card);
     renderPSA(card);
     updateModalNavigation(card);
     els.sourceLink.href = card.source_url || "#";
