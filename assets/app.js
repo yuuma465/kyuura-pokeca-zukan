@@ -4,7 +4,24 @@
   const dataset = window.POKECA_ALL || { cards: [] };
   const psaById = window.POKECA_PSA || {};
   const priceById = window.POKECA_PRICE || {};
+  const priceHistoryById = window.POKECA_PRICE_HISTORY || {};
   const sourceCards = Array.isArray(dataset.cards) ? dataset.cards : [];
+  const oneDayMs = 24 * 60 * 60 * 1000;
+  const quoteChartRanges = [
+    { key: "week", days: 7 },
+    { key: "month", days: 30 },
+    { key: "all", days: null },
+  ];
+  const quoteChartRangeByKey = new Map(quoteChartRanges.map((range) => [range.key, range]));
+  const quoteChartLayout = {
+    width: 640,
+    height: 160,
+    top: 18,
+    right: 72,
+    bottom: 34,
+    left: 52,
+  };
+  const svgNamespace = "http://www.w3.org/2000/svg";
 
   const seriesOrder = new Map([
     ["PMCG", 0],
@@ -256,6 +273,151 @@
     return match ? decodeURIComponent(match[1]) : "";
   }
 
+  function parseHistoryDate(dateText) {
+    const match = String(dateText || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!match) {
+      return NaN;
+    }
+    return Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  }
+
+  function normalizePriceHistoryPoint(point) {
+    const date = String(point?.date || "").trim();
+    const time = parseHistoryDate(date);
+    const buy = Number(point?.buy);
+    const sell = Number(point?.sell);
+    if (!date || !Number.isFinite(time) || !Number.isFinite(buy) || !Number.isFinite(sell)) {
+      return null;
+    }
+    return { date, time, buy, sell };
+  }
+
+  function normalizePriceHistory(points) {
+    if (!Array.isArray(points)) {
+      return [];
+    }
+    return points
+      .map(normalizePriceHistoryPoint)
+      .filter(Boolean)
+      .sort((a, b) => a.time - b.time);
+  }
+
+  function getPriceHistoryPoints(cardOrId) {
+    const id = typeof cardOrId === "string" ? cardOrId : cardOrId?.id;
+    return normalizePriceHistory(priceHistoryById[id] || []);
+  }
+
+  function resolvePriceHistoryRange(points, rangeKey = "all") {
+    const normalized = normalizePriceHistory(points);
+    const requestedKey = quoteChartRangeByKey.has(rangeKey) ? rangeKey : "all";
+    const range = quoteChartRangeByKey.get(requestedKey) || quoteChartRangeByKey.get("all");
+    if (!normalized.length || !range?.days) {
+      return { rangeKey: "all", points: normalized };
+    }
+
+    const latestTime = normalized.at(-1).time;
+    const fromTime = latestTime - (range.days - 1) * oneDayMs;
+    const filtered = normalized.filter((point) => point.time >= fromTime && point.time <= latestTime);
+    if (!filtered.length) {
+      return { rangeKey: "all", points: normalized };
+    }
+    return { rangeKey: requestedKey, points: filtered };
+  }
+
+  function filterPriceHistoryPoints(points, rangeKey = "all") {
+    return resolvePriceHistoryRange(points, rangeKey).points;
+  }
+
+  function formatChartDate(dateText) {
+    const match = String(dateText || "").match(/^\d{4}-(\d{2})-(\d{2})$/);
+    if (!match) {
+      return dateText || "-";
+    }
+    return `${Number(match[1])}/${Number(match[2])}`;
+  }
+
+  function roundSvgNumber(value) {
+    return String(Math.round(value * 100) / 100);
+  }
+
+  function buildSvgPath(points, yKey) {
+    return points
+      .map((point, index) => `${index === 0 ? "M" : "L"} ${roundSvgNumber(point.x)} ${roundSvgNumber(point[yKey])}`)
+      .join(" ");
+  }
+
+  function buildQuoteChartModel(points, rangeKey = "all") {
+    const resolved = resolvePriceHistoryRange(points, rangeKey);
+    const selectedPoints = resolved.points;
+    const layout = quoteChartLayout;
+    if (!selectedPoints.length) {
+      return {
+        mode: "empty",
+        rangeKey: resolved.rangeKey,
+        points: [],
+        yMin: 0,
+        yMax: 0,
+        yTicks: [],
+        sellPath: "",
+        buyPath: "",
+        sellAreaPath: "",
+        latest: null,
+        layout,
+      };
+    }
+
+    const rawValues = selectedPoints.flatMap((point) => [point.buy, point.sell]);
+    const rawMin = Math.min(...rawValues);
+    const rawMax = Math.max(...rawValues);
+    const rawRange = rawMax - rawMin;
+    const padding = rawRange > 0 ? rawRange * 0.12 : Math.max(rawMax * 0.08, 100);
+    const yMin = Math.max(0, rawMin - padding);
+    const yMax = rawMax + padding;
+    const plotWidth = layout.width - layout.left - layout.right;
+    const plotHeight = layout.height - layout.top - layout.bottom;
+    const firstTime = selectedPoints[0].time;
+    const lastTime = selectedPoints.at(-1).time;
+    const timeRange = lastTime - firstTime;
+    const valueRange = yMax - yMin || 1;
+    const baselineY = layout.height - layout.bottom;
+
+    const chartPoints = selectedPoints.map((point, index) => {
+      const ratio = selectedPoints.length === 1
+        ? 0.5
+        : timeRange > 0
+          ? (point.time - firstTime) / timeRange
+          : index / Math.max(selectedPoints.length - 1, 1);
+      const x = layout.left + ratio * plotWidth;
+      const ySell = layout.top + (1 - (point.sell - yMin) / valueRange) * plotHeight;
+      const yBuy = layout.top + (1 - (point.buy - yMin) / valueRange) * plotHeight;
+      return { ...point, x, ySell, yBuy };
+    });
+
+    const yTicks = [yMax, (yMax + yMin) / 2, yMin].map((value) => ({
+      value,
+      y: layout.top + (1 - (value - yMin) / valueRange) * plotHeight,
+    }));
+    const sellPath = buildSvgPath(chartPoints, "ySell");
+    const buyPath = buildSvgPath(chartPoints, "yBuy");
+    const sellAreaPath = chartPoints.length > 1
+      ? `${sellPath} L ${roundSvgNumber(chartPoints.at(-1).x)} ${roundSvgNumber(baselineY)} L ${roundSvgNumber(chartPoints[0].x)} ${roundSvgNumber(baselineY)} Z`
+      : "";
+
+    return {
+      mode: chartPoints.length > 1 ? "line" : "single",
+      rangeKey: resolved.rangeKey,
+      points: chartPoints,
+      yMin,
+      yMax,
+      yTicks,
+      sellPath,
+      buyPath,
+      sellAreaPath,
+      latest: chartPoints.at(-1),
+      layout,
+    };
+  }
+
   window.POKECA_APP_TESTS = {
     normalizeText,
     sortCards,
@@ -266,8 +428,12 @@
     getHashForCard,
     getIdFromHash,
     hasQuoteData,
+    getPriceHistoryPoints,
+    filterPriceHistoryPoints,
+    buildQuoteChartModel,
     formatYen,
     formatDate,
+    formatChartDate,
     parseCardNumber,
   };
 
@@ -286,6 +452,7 @@
     visibleCards: [...cards],
     activeCardId: null,
     lastFocusedTile: null,
+    quoteChartRange: "all",
   };
 
   const els = {
@@ -317,6 +484,9 @@
     marketLinks: document.getElementById("market-links"),
     quoteSection: document.getElementById("quote-section"),
     quoteBody: document.getElementById("quote-body"),
+    quoteChartWrap: document.querySelector(".quote-chart-wrap"),
+    quoteChartTabs: document.querySelector(".quote-chart-tabs"),
+    quoteChart: document.getElementById("quote-chart"),
     psaSection: document.getElementById("psa-section"),
     psaBody: document.getElementById("psa-body"),
     prevCard: document.getElementById("prev-card"),
@@ -356,6 +526,19 @@
     return `${match[1]}年${Number(match[2])}月${Number(match[3])}日`;
   }
 
+  function formatCompactYen(value) {
+    const number = Number(value);
+    if (!Number.isFinite(number)) {
+      return "¥0";
+    }
+    if (Math.abs(number) >= 10000) {
+      const man = number / 10000;
+      const text = Number.isInteger(man) ? String(man) : man.toFixed(1).replace(/\.0$/, "");
+      return `¥${text}万`;
+    }
+    return formatYen(number);
+  }
+
   function getCardNumberLabel(card) {
     const number = String(card.card_number || "").trim();
     return number && number !== "-/-" ? number : "番号なし";
@@ -389,6 +572,18 @@
       }
     }
     return element;
+  }
+
+  function createSvgElement(tag, attrs = {}) {
+    const element = document.createElementNS(svgNamespace, tag);
+    for (const [key, value] of Object.entries(attrs)) {
+      element.setAttribute(key, String(value));
+    }
+    return element;
+  }
+
+  function prefersReducedMotion() {
+    return window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches === true;
   }
 
   function setTypeStyle(element, cardOrKey) {
@@ -781,6 +976,213 @@
     );
   }
 
+  function hideQuoteChart() {
+    if (els.quoteChart) {
+      els.quoteChart.replaceChildren();
+    }
+    if (els.quoteChartWrap) {
+      els.quoteChartWrap.hidden = true;
+    }
+  }
+
+  function setQuoteChartTabState(activeRange) {
+    if (!els.quoteChartTabs) {
+      return;
+    }
+    for (const button of els.quoteChartTabs.querySelectorAll("[data-chart-range]")) {
+      const selected = button.getAttribute("data-chart-range") === activeRange;
+      button.setAttribute("aria-selected", String(selected));
+      button.tabIndex = selected ? 0 : -1;
+    }
+  }
+
+  function appendSvgText(svg, attrs, text) {
+    const label = createSvgElement("text", attrs);
+    label.textContent = text;
+    svg.append(label);
+    return label;
+  }
+
+  function buildQuoteChartLegend() {
+    const legend = createElement("div", { className: "quote-chart-legend", attrs: { "aria-hidden": "true" } });
+    legend.append(
+      createElement("span", { className: "quote-chart-legend-item quote-chart-legend-item--sell", text: "販売" }),
+      createElement("span", { className: "quote-chart-legend-item quote-chart-legend-item--buy", text: "買取" }),
+    );
+    return legend;
+  }
+
+  function buildQuoteChartSvg(model, card) {
+    const { layout, latest } = model;
+    const svg = createSvgElement("svg", {
+      class: `quote-chart-svg${prefersReducedMotion() ? "" : " quote-chart-svg--motion"}`,
+      viewBox: `0 0 ${layout.width} ${layout.height}`,
+      role: "img",
+      "aria-label": `${card.name_ja}の売買相場推移`,
+      preserveAspectRatio: "none",
+    });
+    const title = createSvgElement("title");
+    title.textContent = `${card.name_ja}の売買相場推移`;
+    svg.append(title);
+
+    const baselineY = layout.height - layout.bottom;
+    const plotRight = layout.width - layout.right;
+    for (const tick of model.yTicks) {
+      svg.append(createSvgElement("line", {
+        class: "quote-chart-grid",
+        x1: layout.left,
+        y1: roundSvgNumber(tick.y),
+        x2: plotRight,
+        y2: roundSvgNumber(tick.y),
+      }));
+      appendSvgText(svg, {
+        class: "quote-chart-label quote-chart-label--price",
+        x: 6,
+        y: roundSvgNumber(tick.y + 3),
+      }, formatCompactYen(tick.value));
+    }
+
+    svg.append(createSvgElement("line", {
+      class: "quote-chart-axis",
+      x1: layout.left,
+      y1: baselineY,
+      x2: plotRight,
+      y2: baselineY,
+    }));
+    appendSvgText(svg, {
+      class: "quote-chart-axis-title",
+      x: layout.left,
+      y: 12,
+    }, "価格");
+    appendSvgText(svg, {
+      class: "quote-chart-axis-title",
+      x: plotRight,
+      y: layout.height - 5,
+      "text-anchor": "end",
+    }, "日付");
+
+    if (model.points.length > 1) {
+      svg.append(createSvgElement("path", {
+        class: "quote-chart-area quote-chart-area--sell",
+        d: model.sellAreaPath,
+      }));
+      svg.append(createSvgElement("path", {
+        class: "quote-chart-line quote-chart-line--buy",
+        d: model.buyPath,
+      }));
+      svg.append(createSvgElement("path", {
+        class: "quote-chart-line quote-chart-line--sell",
+        d: model.sellPath,
+      }));
+    }
+
+    const firstPoint = model.points[0];
+    const lastPoint = model.points.at(-1);
+    appendSvgText(svg, {
+      class: "quote-chart-label quote-chart-label--date",
+      x: roundSvgNumber(firstPoint.x),
+      y: layout.height - 15,
+      "text-anchor": model.points.length === 1 ? "middle" : "start",
+    }, formatChartDate(firstPoint.date));
+    if (model.points.length > 1) {
+      appendSvgText(svg, {
+        class: "quote-chart-label quote-chart-label--date",
+        x: roundSvgNumber(lastPoint.x),
+        y: layout.height - 15,
+        "text-anchor": "end",
+      }, formatChartDate(lastPoint.date));
+    }
+
+    svg.append(createSvgElement("circle", {
+      class: "quote-chart-dot quote-chart-dot--buy",
+      cx: roundSvgNumber(latest.x),
+      cy: roundSvgNumber(latest.yBuy),
+      r: 3,
+    }));
+    svg.append(createSvgElement("circle", {
+      class: "quote-chart-dot quote-chart-dot--sell",
+      cx: roundSvgNumber(latest.x),
+      cy: roundSvgNumber(latest.ySell),
+      r: 4,
+    }));
+
+    const labelAnchor = latest.x > layout.width - layout.right - 100 ? "end" : "start";
+    const labelX = labelAnchor === "end" ? latest.x - 8 : latest.x + 8;
+    appendSvgText(svg, {
+      class: "quote-chart-value quote-chart-value--sell",
+      x: roundSvgNumber(labelX),
+      y: roundSvgNumber(Math.max(layout.top + 10, latest.ySell - 7)),
+      "text-anchor": labelAnchor,
+    }, `販売 ${formatYen(latest.sell)}`);
+    appendSvgText(svg, {
+      class: "quote-chart-value quote-chart-value--buy",
+      x: roundSvgNumber(labelX),
+      y: roundSvgNumber(Math.min(baselineY - 4, latest.yBuy + 14)),
+      "text-anchor": labelAnchor,
+    }, `買取 ${formatYen(latest.buy)}`);
+
+    return svg;
+  }
+
+  function renderQuoteChart(card) {
+    if (!els.quoteChartWrap || !els.quoteChart) {
+      return;
+    }
+
+    const history = getPriceHistoryPoints(card);
+    els.quoteChart.replaceChildren();
+    if (!history.length) {
+      hideQuoteChart();
+      return;
+    }
+
+    const model = buildQuoteChartModel(history, state.quoteChartRange);
+    if (model.mode === "empty") {
+      hideQuoteChart();
+      return;
+    }
+
+    state.quoteChartRange = model.rangeKey;
+    setQuoteChartTabState(model.rangeKey);
+    els.quoteChartWrap.hidden = false;
+    const statusText = history.length === 1 ? "推移は記録中（日次で増えます）" : "この期間の推移は1点のみです";
+    if (model.mode === "single") {
+      els.quoteChart.append(createElement("p", { className: "quote-chart-status", text: statusText }));
+    }
+    els.quoteChart.append(buildQuoteChartLegend(), buildQuoteChartSvg(model, card));
+  }
+
+  function handleQuoteChartTabClick(event) {
+    const button = event.target.closest?.("[data-chart-range]");
+    if (!button || !quoteChartRangeByKey.has(button.getAttribute("data-chart-range"))) {
+      return;
+    }
+    state.quoteChartRange = button.getAttribute("data-chart-range");
+    const card = cardById.get(state.activeCardId);
+    if (card) {
+      renderQuoteChart(card);
+    }
+  }
+
+  function handleQuoteChartTabKeydown(event) {
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key) || !els.quoteChartTabs) {
+      return;
+    }
+    const tabs = [...els.quoteChartTabs.querySelectorAll("[data-chart-range]")];
+    const currentIndex = tabs.findIndex((tab) => tab === document.activeElement);
+    if (currentIndex < 0) {
+      return;
+    }
+    event.preventDefault();
+    const nextIndex = event.key === "Home"
+      ? 0
+      : event.key === "End"
+        ? tabs.length - 1
+        : (currentIndex + (event.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+    tabs[nextIndex].focus();
+    tabs[nextIndex].click();
+  }
+
   function buildQuoteCard(label, amount, count, modifier) {
     const card = createElement("div", { className: `quote-card quote-card--${modifier}` });
     card.append(
@@ -803,6 +1205,7 @@
     els.quoteBody.replaceChildren();
     if (!quote) {
       els.quoteSection.hidden = true;
+      hideQuoteChart();
       return;
     }
 
@@ -819,6 +1222,7 @@
         text: `最終更新 ${formatDate(quote.updated)} / 価格参考: magi等の出品相場`,
       }),
     );
+    renderQuoteChart(card);
   }
 
   function buildPSAGradeRow(grade, count, total) {
@@ -1135,6 +1539,8 @@
     });
     els.prevCard.addEventListener("click", () => navigateModal(-1));
     els.nextCard.addEventListener("click", () => navigateModal(1));
+    els.quoteChartTabs?.addEventListener("click", handleQuoteChartTabClick);
+    els.quoteChartTabs?.addEventListener("keydown", handleQuoteChartTabKeydown);
     window.addEventListener("keydown", (event) => {
       if (!els.modal.open) {
         return;

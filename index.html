@@ -128,6 +128,14 @@
             <section class="quote-section" id="quote-section" aria-labelledby="quote-title" hidden>
               <h3 id="quote-title">売買相場（目安）</h3>
               <div id="quote-body"></div>
+              <div class="quote-chart-wrap" hidden>
+                <div class="quote-chart-tabs" role="tablist" aria-label="相場推移の期間">
+                  <button id="quote-chart-tab-week" class="quote-chart-tab" type="button" role="tab" aria-selected="false" aria-controls="quote-chart" data-chart-range="week">1週間</button>
+                  <button id="quote-chart-tab-month" class="quote-chart-tab" type="button" role="tab" aria-selected="false" aria-controls="quote-chart" data-chart-range="month">1ヶ月</button>
+                  <button id="quote-chart-tab-all" class="quote-chart-tab" type="button" role="tab" aria-selected="true" aria-controls="quote-chart" data-chart-range="all">すべて</button>
+                </div>
+                <div id="quote-chart" class="quote-chart"></div>
+              </div>
             </section>
             <section class="psa-section" aria-labelledby="psa-title" id="psa-section">
               <h3 id="psa-title">PSA鑑定数（世界）</h3>
@@ -162,6 +170,7 @@
     <script src="data/cards_all.js"></script>
     <script src="data/psa_pop_all.js"></script>
     <script src="data/price_all.js"></script>
+    <script src="data/price_history.js"></script>
     <script src="assets/app.js"></script>
   </body>
 </html>
