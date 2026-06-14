@@ -1336,7 +1336,7 @@
     if (psa.status === "pending") {
       els.psaBody.append(createElement("p", {
         className: "psa-empty",
-        text: "PSA spec ID照合済み・鑑定数は次回更新待ちです",
+        text: `PSA spec ID照合済み（${psa.spec_id || "-"}）・鑑定数は次回更新待ちです`,
       }));
       return;
     }

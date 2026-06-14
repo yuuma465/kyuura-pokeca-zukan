@@ -1690,10 +1690,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ポケモン図鑑HANDY505 089 Japanese",
+      "ポケモン図鑑HANDY505 89 Japanese",
       "ポケモン図鑑HANDY505 089 第1弾 拡張パック",
+      "ポケモン図鑑HANDY505 89 第1弾 拡張パック",
       "ポケモン図鑑HANDY505 089 PMCG",
+      "ポケモン図鑑HANDY505 89 PMCG",
       "ポケモン図鑑HANDY505 089 japanese basic",
-      "ポケモン図鑑HANDY505 089 japanese base"
+      "ポケモン図鑑HANDY505 89 japanese basic",
+      "ポケモン図鑑HANDY505 089 japanese base",
+      "ポケモン図鑑HANDY505 89 japanese base"
     ]
   },
   "1st1090": {
@@ -2891,10 +2896,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "モンスターボール 048 Japanese",
+      "モンスターボール 48 Japanese",
       "モンスターボール 048 第2弾 拡張パック「ポケモンジャングル」",
+      "モンスターボール 48 第2弾 拡張パック「ポケモンジャングル」",
       "モンスターボール 048 PMCG",
+      "モンスターボール 48 PMCG",
       "モンスターボール 048 japanese jungle",
-      "モンスターボール 048 pokemon japanese jungle"
+      "モンスターボール 48 japanese jungle",
+      "モンスターボール 048 pokemon japanese jungle",
+      "モンスターボール 48 pokemon japanese jungle"
     ]
   },
   "1st3001": {
@@ -3733,10 +3743,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エネルギー転送 044 Japanese",
+      "エネルギー転送 44 Japanese",
       "エネルギー転送 044 第3弾 拡張パック「化石の秘密」",
+      "エネルギー転送 44 第3弾 拡張パック「化石の秘密」",
       "エネルギー転送 044 PMCG",
+      "エネルギー転送 44 PMCG",
       "エネルギー転送 044 japanese fossil",
-      "エネルギー転送 044 mystery of the fossils"
+      "エネルギー転送 44 japanese fossil",
+      "エネルギー転送 044 mystery of the fossils",
+      "エネルギー転送 44 mystery of the fossils"
     ]
   },
   "1st3045": {
@@ -3758,10 +3773,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ギャンブラー 045 Japanese",
+      "ギャンブラー 45 Japanese",
       "ギャンブラー 045 第3弾 拡張パック「化石の秘密」",
+      "ギャンブラー 45 第3弾 拡張パック「化石の秘密」",
       "ギャンブラー 045 PMCG",
+      "ギャンブラー 45 PMCG",
       "ギャンブラー 045 japanese fossil",
-      "ギャンブラー 045 mystery of the fossils"
+      "ギャンブラー 45 japanese fossil",
+      "ギャンブラー 045 mystery of the fossils",
+      "ギャンブラー 45 mystery of the fossils"
     ]
   },
   "1st3046": {
@@ -3783,10 +3803,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "なにかの化石 046 Japanese",
+      "なにかの化石 46 Japanese",
       "なにかの化石 046 第3弾 拡張パック「化石の秘密」",
+      "なにかの化石 46 第3弾 拡張パック「化石の秘密」",
       "なにかの化石 046 PMCG",
+      "なにかの化石 46 PMCG",
       "なにかの化石 046 japanese fossil",
-      "なにかの化石 046 mystery of the fossils"
+      "なにかの化石 46 japanese fossil",
+      "なにかの化石 046 mystery of the fossils",
+      "なにかの化石 46 mystery of the fossils"
     ]
   },
   "1st3047": {
@@ -3808,10 +3833,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "フジろうじん 047 Japanese",
+      "フジろうじん 47 Japanese",
       "フジろうじん 047 第3弾 拡張パック「化石の秘密」",
+      "フジろうじん 47 第3弾 拡張パック「化石の秘密」",
       "フジろうじん 047 PMCG",
+      "フジろうじん 47 PMCG",
       "フジろうじん 047 japanese fossil",
-      "フジろうじん 047 mystery of the fossils"
+      "フジろうじん 47 japanese fossil",
+      "フジろうじん 047 mystery of the fossils",
+      "フジろうじん 47 mystery of the fossils"
     ]
   },
   "1st3048": {
@@ -3833,10 +3863,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "リサイクル 048 Japanese",
+      "リサイクル 48 Japanese",
       "リサイクル 048 第3弾 拡張パック「化石の秘密」",
+      "リサイクル 48 第3弾 拡張パック「化石の秘密」",
       "リサイクル 048 PMCG",
+      "リサイクル 48 PMCG",
       "リサイクル 048 japanese fossil",
-      "リサイクル 048 mystery of the fossils"
+      "リサイクル 48 japanese fossil",
+      "リサイクル 048 mystery of the fossils",
+      "リサイクル 48 mystery of the fossils"
     ]
   },
   "1st4001": {
@@ -4865,10 +4900,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "たたきつけろ! 挑戦状 054 Japanese",
+      "たたきつけろ! 挑戦状 54 Japanese",
       "たたきつけろ! 挑戦状 054 第4弾 拡張パック「ロケット団」",
+      "たたきつけろ! 挑戦状 54 第4弾 拡張パック「ロケット団」",
       "たたきつけろ! 挑戦状 054 PMCG",
+      "たたきつけろ! 挑戦状 54 PMCG",
       "たたきつけろ! 挑戦状 054 japanese rocket",
-      "たたきつけろ! 挑戦状 054 team rocket"
+      "たたきつけろ! 挑戦状 54 japanese rocket",
+      "たたきつけろ! 挑戦状 054 team rocket",
+      "たたきつけろ! 挑戦状 54 team rocket"
     ]
   },
   "1st4055": {
@@ -4890,10 +4930,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "にせオーキドの逆襲 055 Japanese",
+      "にせオーキドの逆襲 55 Japanese",
       "にせオーキドの逆襲 055 第4弾 拡張パック「ロケット団」",
+      "にせオーキドの逆襲 55 第4弾 拡張パック「ロケット団」",
       "にせオーキドの逆襲 055 PMCG",
+      "にせオーキドの逆襲 55 PMCG",
       "にせオーキドの逆襲 055 japanese rocket",
-      "にせオーキドの逆襲 055 team rocket"
+      "にせオーキドの逆襲 55 japanese rocket",
+      "にせオーキドの逆襲 055 team rocket",
+      "にせオーキドの逆襲 55 team rocket"
     ]
   },
   "1st4056": {
@@ -4915,10 +4960,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ねむれ! ねむれ! 056 Japanese",
+      "ねむれ! ねむれ! 56 Japanese",
       "ねむれ! ねむれ! 056 第4弾 拡張パック「ロケット団」",
+      "ねむれ! ねむれ! 56 第4弾 拡張パック「ロケット団」",
       "ねむれ! ねむれ! 056 PMCG",
+      "ねむれ! ねむれ! 56 PMCG",
       "ねむれ! ねむれ! 056 japanese rocket",
-      "ねむれ! ねむれ! 056 team rocket"
+      "ねむれ! ねむれ! 56 japanese rocket",
+      "ねむれ! ねむれ! 056 team rocket",
+      "ねむれ! ねむれ! 56 team rocket"
     ]
   },
   "1st4057": {
@@ -4940,10 +4990,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "バトル場は穴だらけ! 057 Japanese",
+      "バトル場は穴だらけ! 57 Japanese",
       "バトル場は穴だらけ! 057 第4弾 拡張パック「ロケット団」",
+      "バトル場は穴だらけ! 57 第4弾 拡張パック「ロケット団」",
       "バトル場は穴だらけ! 057 PMCG",
+      "バトル場は穴だらけ! 57 PMCG",
       "バトル場は穴だらけ! 057 japanese rocket",
-      "バトル場は穴だらけ! 057 team rocket"
+      "バトル場は穴だらけ! 57 japanese rocket",
+      "バトル場は穴だらけ! 057 team rocket",
+      "バトル場は穴だらけ! 57 team rocket"
     ]
   },
   "1st4058": {
@@ -4965,10 +5020,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ボスのやりかた 058 Japanese",
+      "ボスのやりかた 58 Japanese",
       "ボスのやりかた 058 第4弾 拡張パック「ロケット団」",
+      "ボスのやりかた 58 第4弾 拡張パック「ロケット団」",
       "ボスのやりかた 058 PMCG",
+      "ボスのやりかた 58 PMCG",
       "ボスのやりかた 058 japanese rocket",
-      "ボスのやりかた 058 team rocket"
+      "ボスのやりかた 58 japanese rocket",
+      "ボスのやりかた 058 team rocket",
+      "ボスのやりかた 58 team rocket"
     ]
   },
   "1st4059": {
@@ -4990,10 +5050,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "まきちらせ! ベトベトガス 059 Japanese",
+      "まきちらせ! ベトベトガス 59 Japanese",
       "まきちらせ! ベトベトガス 059 第4弾 拡張パック「ロケット団」",
+      "まきちらせ! ベトベトガス 59 第4弾 拡張パック「ロケット団」",
       "まきちらせ! ベトベトガス 059 PMCG",
+      "まきちらせ! ベトベトガス 59 PMCG",
       "まきちらせ! ベトベトガス 059 japanese rocket",
-      "まきちらせ! ベトベトガス 059 team rocket"
+      "まきちらせ! ベトベトガス 59 japanese rocket",
+      "まきちらせ! ベトベトガス 059 team rocket",
+      "まきちらせ! ベトベトガス 59 team rocket"
     ]
   },
   "1st4060": {
@@ -5015,10 +5080,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "夜の廃品回収 060 Japanese",
+      "夜の廃品回収 60 Japanese",
       "夜の廃品回収 060 第4弾 拡張パック「ロケット団」",
+      "夜の廃品回収 60 第4弾 拡張パック「ロケット団」",
       "夜の廃品回収 060 PMCG",
+      "夜の廃品回収 60 PMCG",
       "夜の廃品回収 060 japanese rocket",
-      "夜の廃品回収 060 team rocket"
+      "夜の廃品回収 60 japanese rocket",
+      "夜の廃品回収 060 team rocket",
+      "夜の廃品回収 60 team rocket"
     ]
   },
   "1st4061": {
@@ -5040,10 +5110,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ロケット団のおねーさん 061 Japanese",
+      "ロケット団のおねーさん 61 Japanese",
       "ロケット団のおねーさん 061 第4弾 拡張パック「ロケット団」",
+      "ロケット団のおねーさん 61 第4弾 拡張パック「ロケット団」",
       "ロケット団のおねーさん 061 PMCG",
+      "ロケット団のおねーさん 61 PMCG",
       "ロケット団のおねーさん 061 japanese rocket",
-      "ロケット団のおねーさん 061 team rocket"
+      "ロケット団のおねーさん 61 japanese rocket",
+      "ロケット団のおねーさん 061 team rocket",
+      "ロケット団のおねーさん 61 team rocket"
     ]
   },
   "1st4062": {
@@ -5065,10 +5140,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "きずぐすり配合エネルギー 062 Japanese",
+      "きずぐすり配合エネルギー 62 Japanese",
       "きずぐすり配合エネルギー 062 第4弾 拡張パック「ロケット団」",
+      "きずぐすり配合エネルギー 62 第4弾 拡張パック「ロケット団」",
       "きずぐすり配合エネルギー 062 PMCG",
+      "きずぐすり配合エネルギー 62 PMCG",
       "きずぐすり配合エネルギー 062 japanese rocket",
-      "きずぐすり配合エネルギー 062 team rocket"
+      "きずぐすり配合エネルギー 62 japanese rocket",
+      "きずぐすり配合エネルギー 062 team rocket",
+      "きずぐすり配合エネルギー 62 team rocket"
     ]
   },
   "1st4063": {
@@ -5090,10 +5170,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "なんでもなおし配合エネルギー 063 Japanese",
+      "なんでもなおし配合エネルギー 63 Japanese",
       "なんでもなおし配合エネルギー 063 第4弾 拡張パック「ロケット団」",
+      "なんでもなおし配合エネルギー 63 第4弾 拡張パック「ロケット団」",
       "なんでもなおし配合エネルギー 063 PMCG",
+      "なんでもなおし配合エネルギー 63 PMCG",
       "なんでもなおし配合エネルギー 063 japanese rocket",
-      "なんでもなおし配合エネルギー 063 team rocket"
+      "なんでもなおし配合エネルギー 63 japanese rocket",
+      "なんでもなおし配合エネルギー 063 team rocket",
+      "なんでもなおし配合エネルギー 63 team rocket"
     ]
   },
   "1st4064": {
@@ -5115,10 +5200,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "レインボーエネルギー 064 Japanese",
+      "レインボーエネルギー 64 Japanese",
       "レインボーエネルギー 064 第4弾 拡張パック「ロケット団」",
+      "レインボーエネルギー 64 第4弾 拡張パック「ロケット団」",
       "レインボーエネルギー 064 PMCG",
+      "レインボーエネルギー 64 PMCG",
       "レインボーエネルギー 064 japanese rocket",
-      "レインボーエネルギー 064 team rocket"
+      "レインボーエネルギー 64 japanese rocket",
+      "レインボーエネルギー 064 team rocket",
+      "レインボーエネルギー 64 team rocket"
     ]
   },
   "1st4065": {
@@ -5140,10 +5230,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ロケット団参上! 065 Japanese",
+      "ロケット団参上! 65 Japanese",
       "ロケット団参上! 065 第4弾 拡張パック「ロケット団」",
+      "ロケット団参上! 65 第4弾 拡張パック「ロケット団」",
       "ロケット団参上! 065 PMCG",
+      "ロケット団参上! 65 PMCG",
       "ロケット団参上! 065 japanese rocket",
-      "ロケット団参上! 065 team rocket"
+      "ロケット団参上! 65 japanese rocket",
+      "ロケット団参上! 065 team rocket",
+      "ロケット団参上! 65 team rocket"
     ]
   },
   "1stgym1001": {
@@ -6419,10 +6514,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "タケシ 067 Japanese",
+      "タケシ 67 Japanese",
       "タケシ 067 ジム拡張第1弾「リーダーズスタジアム」",
+      "タケシ 67 ジム拡張第1弾「リーダーズスタジアム」",
       "タケシ 067 PMCG",
+      "タケシ 67 PMCG",
       "タケシ 067 leaders stadium",
-      "タケシ 067 japanese gym"
+      "タケシ 67 leaders stadium",
+      "タケシ 067 japanese gym",
+      "タケシ 67 japanese gym"
     ]
   },
   "1stgym1068": {
@@ -6444,10 +6544,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "思い出させる 068 Japanese",
+      "思い出させる 68 Japanese",
       "思い出させる 068 ジム拡張第1弾「リーダーズスタジアム」",
+      "思い出させる 68 ジム拡張第1弾「リーダーズスタジアム」",
       "思い出させる 068 PMCG",
+      "思い出させる 68 PMCG",
       "思い出させる 068 leaders stadium",
-      "思い出させる 068 japanese gym"
+      "思い出させる 68 leaders stadium",
+      "思い出させる 068 japanese gym",
+      "思い出させる 68 japanese gym"
     ]
   },
   "1stgym1069": {
@@ -6469,10 +6574,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "タケシの育て方 069 Japanese",
+      "タケシの育て方 69 Japanese",
       "タケシの育て方 069 ジム拡張第1弾「リーダーズスタジアム」",
+      "タケシの育て方 69 ジム拡張第1弾「リーダーズスタジアム」",
       "タケシの育て方 069 PMCG",
+      "タケシの育て方 69 PMCG",
       "タケシの育て方 069 leaders stadium",
-      "タケシの育て方 069 japanese gym"
+      "タケシの育て方 69 leaders stadium",
+      "タケシの育て方 069 japanese gym",
+      "タケシの育て方 69 japanese gym"
     ]
   },
   "1stgym1070": {
@@ -6494,10 +6604,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "タケシの保護 070 Japanese",
+      "タケシの保護 70 Japanese",
       "タケシの保護 070 ジム拡張第1弾「リーダーズスタジアム」",
+      "タケシの保護 70 ジム拡張第1弾「リーダーズスタジアム」",
       "タケシの保護 070 PMCG",
+      "タケシの保護 70 PMCG",
       "タケシの保護 070 leaders stadium",
-      "タケシの保護 070 japanese gym"
+      "タケシの保護 70 leaders stadium",
+      "タケシの保護 070 japanese gym",
+      "タケシの保護 70 japanese gym"
     ]
   },
   "1stgym1071": {
@@ -6519,10 +6634,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ニビシティジム 071 Japanese",
+      "ニビシティジム 71 Japanese",
       "ニビシティジム 071 ジム拡張第1弾「リーダーズスタジアム」",
+      "ニビシティジム 71 ジム拡張第1弾「リーダーズスタジアム」",
       "ニビシティジム 071 PMCG",
+      "ニビシティジム 71 PMCG",
       "ニビシティジム 071 leaders stadium",
-      "ニビシティジム 071 japanese gym"
+      "ニビシティジム 71 leaders stadium",
+      "ニビシティジム 071 japanese gym",
+      "ニビシティジム 71 japanese gym"
     ]
   },
   "1stgym1072": {
@@ -6544,10 +6664,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カスミ 072 Japanese",
+      "カスミ 72 Japanese",
       "カスミ 072 ジム拡張第1弾「リーダーズスタジアム」",
+      "カスミ 72 ジム拡張第1弾「リーダーズスタジアム」",
       "カスミ 072 PMCG",
+      "カスミ 72 PMCG",
       "カスミ 072 leaders stadium",
-      "カスミ 072 japanese gym"
+      "カスミ 72 leaders stadium",
+      "カスミ 072 japanese gym",
+      "カスミ 72 japanese gym"
     ]
   },
   "1stgym1073": {
@@ -6569,10 +6694,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カスミのいかり 073 Japanese",
+      "カスミのいかり 73 Japanese",
       "カスミのいかり 073 ジム拡張第1弾「リーダーズスタジアム」",
+      "カスミのいかり 73 ジム拡張第1弾「リーダーズスタジアム」",
       "カスミのいかり 073 PMCG",
+      "カスミのいかり 73 PMCG",
       "カスミのいかり 073 leaders stadium",
-      "カスミのいかり 073 japanese gym"
+      "カスミのいかり 73 leaders stadium",
+      "カスミのいかり 073 japanese gym",
+      "カスミのいかり 73 japanese gym"
     ]
   },
   "1stgym1074": {
@@ -6594,10 +6724,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カスミの勝負 074 Japanese",
+      "カスミの勝負 74 Japanese",
       "カスミの勝負 074 ジム拡張第1弾「リーダーズスタジアム」",
+      "カスミの勝負 74 ジム拡張第1弾「リーダーズスタジアム」",
       "カスミの勝負 074 PMCG",
+      "カスミの勝負 74 PMCG",
       "カスミの勝負 074 leaders stadium",
-      "カスミの勝負 074 japanese gym"
+      "カスミの勝負 74 leaders stadium",
+      "カスミの勝負 074 japanese gym",
+      "カスミの勝負 74 japanese gym"
     ]
   },
   "1stgym1075": {
@@ -6619,10 +6754,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カスミのなみだ 075 Japanese",
+      "カスミのなみだ 75 Japanese",
       "カスミのなみだ 075 ジム拡張第1弾「リーダーズスタジアム」",
+      "カスミのなみだ 75 ジム拡張第1弾「リーダーズスタジアム」",
       "カスミのなみだ 075 PMCG",
+      "カスミのなみだ 75 PMCG",
       "カスミのなみだ 075 leaders stadium",
-      "カスミのなみだ 075 japanese gym"
+      "カスミのなみだ 75 leaders stadium",
+      "カスミのなみだ 075 japanese gym",
+      "カスミのなみだ 75 japanese gym"
     ]
   },
   "1stgym1076": {
@@ -6644,10 +6784,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カスミのわがまま 076 Japanese",
+      "カスミのわがまま 76 Japanese",
       "カスミのわがまま 076 ジム拡張第1弾「リーダーズスタジアム」",
+      "カスミのわがまま 76 ジム拡張第1弾「リーダーズスタジアム」",
       "カスミのわがまま 076 PMCG",
+      "カスミのわがまま 76 PMCG",
       "カスミのわがまま 076 leaders stadium",
-      "カスミのわがまま 076 japanese gym"
+      "カスミのわがまま 76 leaders stadium",
+      "カスミのわがまま 076 japanese gym",
+      "カスミのわがまま 76 japanese gym"
     ]
   },
   "1stgym1077": {
@@ -6669,10 +6814,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ハナダシティジム 077 Japanese",
+      "ハナダシティジム 77 Japanese",
       "ハナダシティジム 077 ジム拡張第1弾「リーダーズスタジアム」",
+      "ハナダシティジム 77 ジム拡張第1弾「リーダーズスタジアム」",
       "ハナダシティジム 077 PMCG",
+      "ハナダシティジム 77 PMCG",
       "ハナダシティジム 077 leaders stadium",
-      "ハナダシティジム 077 japanese gym"
+      "ハナダシティジム 77 leaders stadium",
+      "ハナダシティジム 077 japanese gym",
+      "ハナダシティジム 77 japanese gym"
     ]
   },
   "1stgym1078": {
@@ -6694,10 +6844,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マチス 078 Japanese",
+      "マチス 78 Japanese",
       "マチス 078 ジム拡張第1弾「リーダーズスタジアム」",
+      "マチス 78 ジム拡張第1弾「リーダーズスタジアム」",
       "マチス 078 PMCG",
+      "マチス 78 PMCG",
       "マチス 078 leaders stadium",
-      "マチス 078 japanese gym"
+      "マチス 78 leaders stadium",
+      "マチス 078 japanese gym",
+      "マチス 78 japanese gym"
     ]
   },
   "1stgym1079": {
@@ -6719,10 +6874,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エネルギーサーキュレート 079 Japanese",
+      "エネルギーサーキュレート 79 Japanese",
       "エネルギーサーキュレート 079 ジム拡張第1弾「リーダーズスタジアム」",
+      "エネルギーサーキュレート 79 ジム拡張第1弾「リーダーズスタジアム」",
       "エネルギーサーキュレート 079 PMCG",
+      "エネルギーサーキュレート 79 PMCG",
       "エネルギーサーキュレート 079 leaders stadium",
-      "エネルギーサーキュレート 079 japanese gym"
+      "エネルギーサーキュレート 79 leaders stadium",
+      "エネルギーサーキュレート 079 japanese gym",
+      "エネルギーサーキュレート 79 japanese gym"
     ]
   },
   "1stgym1080": {
@@ -6744,10 +6904,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "スパイ作戦 080 Japanese",
+      "スパイ作戦 80 Japanese",
       "スパイ作戦 080 ジム拡張第1弾「リーダーズスタジアム」",
+      "スパイ作戦 80 ジム拡張第1弾「リーダーズスタジアム」",
       "スパイ作戦 080 PMCG",
+      "スパイ作戦 80 PMCG",
       "スパイ作戦 080 leaders stadium",
-      "スパイ作戦 080 japanese gym"
+      "スパイ作戦 80 leaders stadium",
+      "スパイ作戦 080 japanese gym",
+      "スパイ作戦 80 japanese gym"
     ]
   },
   "1stgym1081": {
@@ -6769,10 +6934,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マチスの交渉 081 Japanese",
+      "マチスの交渉 81 Japanese",
       "マチスの交渉 081 ジム拡張第1弾「リーダーズスタジアム」",
+      "マチスの交渉 81 ジム拡張第1弾「リーダーズスタジアム」",
       "マチスの交渉 081 PMCG",
+      "マチスの交渉 81 PMCG",
       "マチスの交渉 081 leaders stadium",
-      "マチスの交渉 081 japanese gym"
+      "マチスの交渉 81 leaders stadium",
+      "マチスの交渉 081 japanese gym",
+      "マチスの交渉 81 japanese gym"
     ]
   },
   "1stgym1082": {
@@ -6794,10 +6964,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マチスの秘策 082 Japanese",
+      "マチスの秘策 82 Japanese",
       "マチスの秘策 082 ジム拡張第1弾「リーダーズスタジアム」",
+      "マチスの秘策 82 ジム拡張第1弾「リーダーズスタジアム」",
       "マチスの秘策 082 PMCG",
+      "マチスの秘策 82 PMCG",
       "マチスの秘策 082 leaders stadium",
-      "マチスの秘策 082 japanese gym"
+      "マチスの秘策 82 leaders stadium",
+      "マチスの秘策 082 japanese gym",
+      "マチスの秘策 82 japanese gym"
     ]
   },
   "1stgym1083": {
@@ -6819,10 +6994,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "クチバシティジム 083 Japanese",
+      "クチバシティジム 83 Japanese",
       "クチバシティジム 083 ジム拡張第1弾「リーダーズスタジアム」",
+      "クチバシティジム 83 ジム拡張第1弾「リーダーズスタジアム」",
       "クチバシティジム 083 PMCG",
+      "クチバシティジム 83 PMCG",
       "クチバシティジム 083 leaders stadium",
-      "クチバシティジム 083 japanese gym"
+      "クチバシティジム 83 leaders stadium",
+      "クチバシティジム 083 japanese gym",
+      "クチバシティジム 83 japanese gym"
     ]
   },
   "1stgym1084": {
@@ -6844,10 +7024,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エリカ 084 Japanese",
+      "エリカ 84 Japanese",
       "エリカ 084 ジム拡張第1弾「リーダーズスタジアム」",
+      "エリカ 84 ジム拡張第1弾「リーダーズスタジアム」",
       "エリカ 084 PMCG",
+      "エリカ 84 PMCG",
       "エリカ 084 leaders stadium",
-      "エリカ 084 japanese gym"
+      "エリカ 84 leaders stadium",
+      "エリカ 084 japanese gym",
+      "エリカ 84 japanese gym"
     ]
   },
   "1stgym1085": {
@@ -6869,10 +7054,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エリカのお付き 085 Japanese",
+      "エリカのお付き 85 Japanese",
       "エリカのお付き 085 ジム拡張第1弾「リーダーズスタジアム」",
+      "エリカのお付き 85 ジム拡張第1弾「リーダーズスタジアム」",
       "エリカのお付き 085 PMCG",
+      "エリカのお付き 85 PMCG",
       "エリカのお付き 085 leaders stadium",
-      "エリカのお付き 085 japanese gym"
+      "エリカのお付き 85 leaders stadium",
+      "エリカのお付き 085 japanese gym",
+      "エリカのお付き 85 japanese gym"
     ]
   },
   "1stgym1086": {
@@ -6894,10 +7084,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エリカの香水 086 Japanese",
+      "エリカの香水 86 Japanese",
       "エリカの香水 086 ジム拡張第1弾「リーダーズスタジアム」",
+      "エリカの香水 86 ジム拡張第1弾「リーダーズスタジアム」",
       "エリカの香水 086 PMCG",
+      "エリカの香水 86 PMCG",
       "エリカの香水 086 leaders stadium",
-      "エリカの香水 086 japanese gym"
+      "エリカの香水 86 leaders stadium",
+      "エリカの香水 086 japanese gym",
+      "エリカの香水 86 japanese gym"
     ]
   },
   "1stgym1087": {
@@ -6919,10 +7114,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "お上品攻撃 087 Japanese",
+      "お上品攻撃 87 Japanese",
       "お上品攻撃 087 ジム拡張第1弾「リーダーズスタジアム」",
+      "お上品攻撃 87 ジム拡張第1弾「リーダーズスタジアム」",
       "お上品攻撃 087 PMCG",
+      "お上品攻撃 87 PMCG",
       "お上品攻撃 087 leaders stadium",
-      "お上品攻撃 087 japanese gym"
+      "お上品攻撃 87 leaders stadium",
+      "お上品攻撃 087 japanese gym",
+      "お上品攻撃 87 japanese gym"
     ]
   },
   "1stgym1088": {
@@ -6944,10 +7144,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "礼儀作法 088 Japanese",
+      "礼儀作法 88 Japanese",
       "礼儀作法 088 ジム拡張第1弾「リーダーズスタジアム」",
+      "礼儀作法 88 ジム拡張第1弾「リーダーズスタジアム」",
       "礼儀作法 088 PMCG",
+      "礼儀作法 88 PMCG",
       "礼儀作法 088 leaders stadium",
-      "礼儀作法 088 japanese gym"
+      "礼儀作法 88 leaders stadium",
+      "礼儀作法 088 japanese gym",
+      "礼儀作法 88 japanese gym"
     ]
   },
   "1stgym1089": {
@@ -6969,10 +7174,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エリカの親切 089 Japanese",
+      "エリカの親切 89 Japanese",
       "エリカの親切 089 ジム拡張第1弾「リーダーズスタジアム」",
+      "エリカの親切 89 ジム拡張第1弾「リーダーズスタジアム」",
       "エリカの親切 089 PMCG",
+      "エリカの親切 89 PMCG",
       "エリカの親切 089 leaders stadium",
-      "エリカの親切 089 japanese gym"
+      "エリカの親切 89 leaders stadium",
+      "エリカの親切 089 japanese gym",
+      "エリカの親切 89 japanese gym"
     ]
   },
   "1stgym1090": {
@@ -6994,10 +7204,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "タマムシシティジム 090 Japanese",
+      "タマムシシティジム 90 Japanese",
       "タマムシシティジム 090 ジム拡張第1弾「リーダーズスタジアム」",
+      "タマムシシティジム 90 ジム拡張第1弾「リーダーズスタジアム」",
       "タマムシシティジム 090 PMCG",
+      "タマムシシティジム 90 PMCG",
       "タマムシシティジム 090 leaders stadium",
-      "タマムシシティジム 090 japanese gym"
+      "タマムシシティジム 90 leaders stadium",
+      "タマムシシティジム 090 japanese gym",
+      "タマムシシティジム 90 japanese gym"
     ]
   },
   "1stgym1091": {
@@ -7019,10 +7234,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "せまいジム 091 Japanese",
+      "せまいジム 91 Japanese",
       "せまいジム 091 ジム拡張第1弾「リーダーズスタジアム」",
+      "せまいジム 91 ジム拡張第1弾「リーダーズスタジアム」",
       "せまいジム 091 PMCG",
+      "せまいジム 91 PMCG",
       "せまいジム 091 leaders stadium",
-      "せまいジム 091 japanese gym"
+      "せまいジム 91 leaders stadium",
+      "せまいジム 091 japanese gym",
+      "せまいジム 91 japanese gym"
     ]
   },
   "1stgym1092": {
@@ -7044,10 +7264,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "錯乱ジム 092 Japanese",
+      "錯乱ジム 92 Japanese",
       "錯乱ジム 092 ジム拡張第1弾「リーダーズスタジアム」",
+      "錯乱ジム 92 ジム拡張第1弾「リーダーズスタジアム」",
       "錯乱ジム 092 PMCG",
+      "錯乱ジム 92 PMCG",
       "錯乱ジム 092 leaders stadium",
-      "錯乱ジム 092 japanese gym"
+      "錯乱ジム 92 leaders stadium",
+      "錯乱ジム 092 japanese gym",
+      "錯乱ジム 92 japanese gym"
     ]
   },
   "1stgym1093": {
@@ -7069,10 +7294,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "抵抗力低下ジム 093 Japanese",
+      "抵抗力低下ジム 93 Japanese",
       "抵抗力低下ジム 093 ジム拡張第1弾「リーダーズスタジアム」",
+      "抵抗力低下ジム 93 ジム拡張第1弾「リーダーズスタジアム」",
       "抵抗力低下ジム 093 PMCG",
+      "抵抗力低下ジム 93 PMCG",
       "抵抗力低下ジム 093 leaders stadium",
-      "抵抗力低下ジム 093 japanese gym"
+      "抵抗力低下ジム 93 leaders stadium",
+      "抵抗力低下ジム 093 japanese gym",
+      "抵抗力低下ジム 93 japanese gym"
     ]
   },
   "1stgym1094": {
@@ -7094,10 +7324,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "リムーブ禁止ジム 094 Japanese",
+      "リムーブ禁止ジム 94 Japanese",
       "リムーブ禁止ジム 094 ジム拡張第1弾「リーダーズスタジアム」",
+      "リムーブ禁止ジム 94 ジム拡張第1弾「リーダーズスタジアム」",
       "リムーブ禁止ジム 094 PMCG",
+      "リムーブ禁止ジム 94 PMCG",
       "リムーブ禁止ジム 094 leaders stadium",
-      "リムーブ禁止ジム 094 japanese gym"
+      "リムーブ禁止ジム 94 leaders stadium",
+      "リムーブ禁止ジム 094 japanese gym",
+      "リムーブ禁止ジム 94 japanese gym"
     ]
   },
   "1stgym1095": {
@@ -7119,10 +7354,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ロケット団の特訓ジム 095 Japanese",
+      "ロケット団の特訓ジム 95 Japanese",
       "ロケット団の特訓ジム 095 ジム拡張第1弾「リーダーズスタジアム」",
+      "ロケット団の特訓ジム 95 ジム拡張第1弾「リーダーズスタジアム」",
       "ロケット団の特訓ジム 095 PMCG",
+      "ロケット団の特訓ジム 95 PMCG",
       "ロケット団の特訓ジム 095 leaders stadium",
-      "ロケット団の特訓ジム 095 japanese gym"
+      "ロケット団の特訓ジム 95 leaders stadium",
+      "ロケット団の特訓ジム 095 japanese gym",
+      "ロケット団の特訓ジム 95 japanese gym"
     ]
   },
   "1stgym1096": {
@@ -7144,10 +7384,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ロケット団のワナ 096 Japanese",
+      "ロケット団のワナ 96 Japanese",
       "ロケット団のワナ 096 ジム拡張第1弾「リーダーズスタジアム」",
+      "ロケット団のワナ 96 ジム拡張第1弾「リーダーズスタジアム」",
       "ロケット団のワナ 096 PMCG",
+      "ロケット団のワナ 96 PMCG",
       "ロケット団のワナ 096 leaders stadium",
-      "ロケット団のワナ 096 japanese gym"
+      "ロケット団のワナ 96 leaders stadium",
+      "ロケット団のワナ 096 japanese gym",
+      "ロケット団のワナ 96 japanese gym"
     ]
   },
   "1stgym2001": {
@@ -8442,10 +8687,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Blaine's Doduo 068 Japanese",
+      "Blaine's Doduo 68 Japanese",
       "Blaine's Doduo 068 ジム拡張第2弾「闇からの挑戦」",
+      "Blaine's Doduo 68 ジム拡張第2弾「闇からの挑戦」",
       "Blaine's Doduo 068 PMCG",
+      "Blaine's Doduo 68 PMCG",
       "Blaine's Doduo 068 challenge from the darkness",
-      "Blaine's Doduo 068 japanese gym 2"
+      "Blaine's Doduo 68 challenge from the darkness",
+      "Blaine's Doduo 068 japanese gym 2",
+      "Blaine's Doduo 68 japanese gym 2",
+      "カツラのドードー 068 Japanese",
+      "カツラのドードー 68 Japanese",
+      "カツラのドードー 068 ジム拡張第2弾「闇からの挑戦」",
+      "カツラのドードー 68 ジム拡張第2弾「闇からの挑戦」",
+      "カツラのドードー 068 PMCG",
+      "カツラのドードー 68 PMCG",
+      "カツラのドードー 068 challenge from the darkness",
+      "カツラのドードー 68 challenge from the darkness",
+      "カツラのドードー 068 japanese gym 2",
+      "カツラのドードー 68 japanese gym 2"
     ]
   },
   "1stgym2069": {
@@ -8562,10 +8822,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ナツメ 074 Japanese",
+      "ナツメ 74 Japanese",
       "ナツメ 074 ジム拡張第2弾「闇からの挑戦」",
+      "ナツメ 74 ジム拡張第2弾「闇からの挑戦」",
       "ナツメ 074 PMCG",
+      "ナツメ 74 PMCG",
       "ナツメ 074 challenge from the darkness",
-      "ナツメ 074 japanese gym 2"
+      "ナツメ 74 challenge from the darkness",
+      "ナツメ 074 japanese gym 2",
+      "ナツメ 74 japanese gym 2"
     ]
   },
   "1stgym2075": {
@@ -8587,10 +8852,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ナツメのESP 075 Japanese",
+      "ナツメのESP 75 Japanese",
       "ナツメのESP 075 ジム拡張第2弾「闇からの挑戦」",
+      "ナツメのESP 75 ジム拡張第2弾「闇からの挑戦」",
       "ナツメのESP 075 PMCG",
+      "ナツメのESP 75 PMCG",
       "ナツメのESP 075 challenge from the darkness",
-      "ナツメのESP 075 japanese gym 2"
+      "ナツメのESP 75 challenge from the darkness",
+      "ナツメのESP 075 japanese gym 2",
+      "ナツメのESP 75 japanese gym 2"
     ]
   },
   "1stgym2076": {
@@ -8612,10 +8882,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ナツメの眼 076 Japanese",
+      "ナツメの眼 76 Japanese",
       "ナツメの眼 076 ジム拡張第2弾「闇からの挑戦」",
+      "ナツメの眼 76 ジム拡張第2弾「闇からの挑戦」",
       "ナツメの眼 076 PMCG",
+      "ナツメの眼 76 PMCG",
       "ナツメの眼 076 challenge from the darkness",
-      "ナツメの眼 076 japanese gym 2"
+      "ナツメの眼 76 challenge from the darkness",
+      "ナツメの眼 076 japanese gym 2",
+      "ナツメの眼 76 japanese gym 2"
     ]
   },
   "1stgym2077": {
@@ -8637,10 +8912,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ナツメのサイキックコントロール 077 Japanese",
+      "ナツメのサイキックコントロール 77 Japanese",
       "ナツメのサイキックコントロール 077 ジム拡張第2弾「闇からの挑戦」",
+      "ナツメのサイキックコントロール 77 ジム拡張第2弾「闇からの挑戦」",
       "ナツメのサイキックコントロール 077 PMCG",
+      "ナツメのサイキックコントロール 77 PMCG",
       "ナツメのサイキックコントロール 077 challenge from the darkness",
-      "ナツメのサイキックコントロール 077 japanese gym 2"
+      "ナツメのサイキックコントロール 77 challenge from the darkness",
+      "ナツメのサイキックコントロール 077 japanese gym 2",
+      "ナツメのサイキックコントロール 77 japanese gym 2"
     ]
   },
   "1stgym2078": {
@@ -8662,10 +8942,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ワープポイント 078 Japanese",
+      "ワープポイント 78 Japanese",
       "ワープポイント 078 ジム拡張第2弾「闇からの挑戦」",
+      "ワープポイント 78 ジム拡張第2弾「闇からの挑戦」",
       "ワープポイント 078 PMCG",
+      "ワープポイント 78 PMCG",
       "ワープポイント 078 challenge from the darkness",
-      "ワープポイント 078 japanese gym 2"
+      "ワープポイント 78 challenge from the darkness",
+      "ワープポイント 078 japanese gym 2",
+      "ワープポイント 78 japanese gym 2"
     ]
   },
   "1stgym2079": {
@@ -8687,10 +8972,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ヤマブキシティジム 079 Japanese",
+      "ヤマブキシティジム 79 Japanese",
       "ヤマブキシティジム 079 ジム拡張第2弾「闇からの挑戦」",
+      "ヤマブキシティジム 79 ジム拡張第2弾「闇からの挑戦」",
       "ヤマブキシティジム 079 PMCG",
+      "ヤマブキシティジム 79 PMCG",
       "ヤマブキシティジム 079 challenge from the darkness",
-      "ヤマブキシティジム 079 japanese gym 2"
+      "ヤマブキシティジム 79 challenge from the darkness",
+      "ヤマブキシティジム 079 japanese gym 2",
+      "ヤマブキシティジム 79 japanese gym 2"
     ]
   },
   "1stgym2080": {
@@ -8712,10 +9002,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "キョウ 080 Japanese",
+      "キョウ 80 Japanese",
       "キョウ 080 ジム拡張第2弾「闇からの挑戦」",
+      "キョウ 80 ジム拡張第2弾「闇からの挑戦」",
       "キョウ 080 PMCG",
+      "キョウ 80 PMCG",
       "キョウ 080 challenge from the darkness",
-      "キョウ 080 japanese gym 2"
+      "キョウ 80 challenge from the darkness",
+      "キョウ 080 japanese gym 2",
+      "キョウ 80 japanese gym 2"
     ]
   },
   "1stgym2081": {
@@ -8737,10 +9032,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "キョウ秘伝,変わり身の術 081 Japanese",
+      "キョウ秘伝,変わり身の術 81 Japanese",
       "キョウ秘伝,変わり身の術 081 ジム拡張第2弾「闇からの挑戦」",
+      "キョウ秘伝,変わり身の術 81 ジム拡張第2弾「闇からの挑戦」",
       "キョウ秘伝,変わり身の術 081 PMCG",
+      "キョウ秘伝,変わり身の術 81 PMCG",
       "キョウ秘伝,変わり身の術 081 challenge from the darkness",
-      "キョウ秘伝,変わり身の術 081 japanese gym 2"
+      "キョウ秘伝,変わり身の術 81 challenge from the darkness",
+      "キョウ秘伝,変わり身の術 081 japanese gym 2",
+      "キョウ秘伝,変わり身の術 81 japanese gym 2"
     ]
   },
   "1stgym2082": {
@@ -8762,10 +9062,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "トラッシュ交換 082 Japanese",
+      "トラッシュ交換 82 Japanese",
       "トラッシュ交換 082 ジム拡張第2弾「闇からの挑戦」",
+      "トラッシュ交換 82 ジム拡張第2弾「闇からの挑戦」",
       "トラッシュ交換 082 PMCG",
+      "トラッシュ交換 82 PMCG",
       "トラッシュ交換 082 challenge from the darkness",
-      "トラッシュ交換 082 japanese gym 2"
+      "トラッシュ交換 82 challenge from the darkness",
+      "トラッシュ交換 082 japanese gym 2",
+      "トラッシュ交換 82 japanese gym 2"
     ]
   },
   "1stgym2083": {
@@ -8787,10 +9092,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "見えない壁 083 Japanese",
+      "見えない壁 83 Japanese",
       "見えない壁 083 ジム拡張第2弾「闇からの挑戦」",
+      "見えない壁 83 ジム拡張第2弾「闇からの挑戦」",
       "見えない壁 083 PMCG",
+      "見えない壁 83 PMCG",
       "見えない壁 083 challenge from the darkness",
-      "見えない壁 083 japanese gym 2"
+      "見えない壁 83 challenge from the darkness",
+      "見えない壁 083 japanese gym 2",
+      "見えない壁 83 japanese gym 2"
     ]
   },
   "1stgym2084": {
@@ -8812,10 +9122,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "セキチクシティジム 084 Japanese",
+      "セキチクシティジム 84 Japanese",
       "セキチクシティジム 084 ジム拡張第2弾「闇からの挑戦」",
+      "セキチクシティジム 84 ジム拡張第2弾「闇からの挑戦」",
       "セキチクシティジム 084 PMCG",
+      "セキチクシティジム 84 PMCG",
       "セキチクシティジム 084 challenge from the darkness",
-      "セキチクシティジム 084 japanese gym 2"
+      "セキチクシティジム 84 challenge from the darkness",
+      "セキチクシティジム 084 japanese gym 2",
+      "セキチクシティジム 84 japanese gym 2"
     ]
   },
   "1stgym2085": {
@@ -8837,10 +9152,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カツラ 085 Japanese",
+      "カツラ 85 Japanese",
       "カツラ 085 ジム拡張第2弾「闇からの挑戦」",
+      "カツラ 85 ジム拡張第2弾「闇からの挑戦」",
       "カツラ 085 PMCG",
+      "カツラ 85 PMCG",
       "カツラ 085 challenge from the darkness",
-      "カツラ 085 japanese gym 2"
+      "カツラ 85 challenge from the darkness",
+      "カツラ 085 japanese gym 2",
+      "カツラ 85 japanese gym 2"
     ]
   },
   "1stgym2086": {
@@ -8862,10 +9182,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カツラの奥の手 086 Japanese",
+      "カツラの奥の手 86 Japanese",
       "カツラの奥の手 086 ジム拡張第2弾「闇からの挑戦」",
+      "カツラの奥の手 86 ジム拡張第2弾「闇からの挑戦」",
       "カツラの奥の手 086 PMCG",
+      "カツラの奥の手 86 PMCG",
       "カツラの奥の手 086 challenge from the darkness",
-      "カツラの奥の手 086 japanese gym 2"
+      "カツラの奥の手 86 challenge from the darkness",
+      "カツラの奥の手 086 japanese gym 2",
+      "カツラの奥の手 86 japanese gym 2"
     ]
   },
   "1stgym2087": {
@@ -8887,10 +9212,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カツラのギャンブル 087 Japanese",
+      "カツラのギャンブル 87 Japanese",
       "カツラのギャンブル 087 ジム拡張第2弾「闇からの挑戦」",
+      "カツラのギャンブル 87 ジム拡張第2弾「闇からの挑戦」",
       "カツラのギャンブル 087 PMCG",
+      "カツラのギャンブル 87 PMCG",
       "カツラのギャンブル 087 challenge from the darkness",
-      "カツラのギャンブル 087 japanese gym 2"
+      "カツラのギャンブル 87 challenge from the darkness",
+      "カツラのギャンブル 087 japanese gym 2",
+      "カツラのギャンブル 87 japanese gym 2"
     ]
   },
   "1stgym2088": {
@@ -8912,10 +9242,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カツラのクイズ その3 088 Japanese",
+      "カツラのクイズ その3 88 Japanese",
       "カツラのクイズ その3 088 ジム拡張第2弾「闇からの挑戦」",
+      "カツラのクイズ その3 88 ジム拡張第2弾「闇からの挑戦」",
       "カツラのクイズ その3 088 PMCG",
+      "カツラのクイズ その3 88 PMCG",
       "カツラのクイズ その3 088 challenge from the darkness",
-      "カツラのクイズ その3 088 japanese gym 2"
+      "カツラのクイズ その3 88 challenge from the darkness",
+      "カツラのクイズ その3 088 japanese gym 2",
+      "カツラのクイズ その3 88 japanese gym 2"
     ]
   },
   "1stgym2089": {
@@ -8937,10 +9272,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "グレンタウンジム 089 Japanese",
+      "グレンタウンジム 89 Japanese",
       "グレンタウンジム 089 ジム拡張第2弾「闇からの挑戦」",
+      "グレンタウンジム 89 ジム拡張第2弾「闇からの挑戦」",
       "グレンタウンジム 089 PMCG",
+      "グレンタウンジム 89 PMCG",
       "グレンタウンジム 089 challenge from the darkness",
-      "グレンタウンジム 089 japanese gym 2"
+      "グレンタウンジム 89 challenge from the darkness",
+      "グレンタウンジム 089 japanese gym 2",
+      "グレンタウンジム 89 japanese gym 2"
     ]
   },
   "1stgym2090": {
@@ -8962,10 +9302,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "サカキ 090 Japanese",
+      "サカキ 90 Japanese",
       "サカキ 090 ジム拡張第2弾「闇からの挑戦」",
+      "サカキ 90 ジム拡張第2弾「闇からの挑戦」",
       "サカキ 090 PMCG",
+      "サカキ 90 PMCG",
       "サカキ 090 challenge from the darkness",
-      "サカキ 090 japanese gym 2"
+      "サカキ 90 challenge from the darkness",
+      "サカキ 090 japanese gym 2",
+      "サカキ 90 japanese gym 2"
     ]
   },
   "1stgym2091": {
@@ -8987,10 +9332,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "サカキの切り札 091 Japanese",
+      "サカキの切り札 91 Japanese",
       "サカキの切り札 091 ジム拡張第2弾「闇からの挑戦」",
+      "サカキの切り札 91 ジム拡張第2弾「闇からの挑戦」",
       "サカキの切り札 091 PMCG",
+      "サカキの切り札 91 PMCG",
       "サカキの切り札 091 challenge from the darkness",
-      "サカキの切り札 091 japanese gym 2"
+      "サカキの切り札 91 challenge from the darkness",
+      "サカキの切り札 091 japanese gym 2",
+      "サカキの切り札 91 japanese gym 2"
     ]
   },
   "1stgym2092": {
@@ -9012,10 +9362,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "トキワシティジム 092 Japanese",
+      "トキワシティジム 92 Japanese",
       "トキワシティジム 092 ジム拡張第2弾「闇からの挑戦」",
+      "トキワシティジム 92 ジム拡張第2弾「闇からの挑戦」",
       "トキワシティジム 092 PMCG",
+      "トキワシティジム 92 PMCG",
       "トキワシティジム 092 challenge from the darkness",
-      "トキワシティジム 092 japanese gym 2"
+      "トキワシティジム 92 challenge from the darkness",
+      "トキワシティジム 092 japanese gym 2",
+      "トキワシティジム 92 japanese gym 2"
     ]
   },
   "1stgym2093": {
@@ -9037,10 +9392,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "くすぐりマシーン 093 Japanese",
+      "くすぐりマシーン 93 Japanese",
       "くすぐりマシーン 093 ジム拡張第2弾「闇からの挑戦」",
+      "くすぐりマシーン 93 ジム拡張第2弾「闇からの挑戦」",
       "くすぐりマシーン 093 PMCG",
+      "くすぐりマシーン 93 PMCG",
       "くすぐりマシーン 093 challenge from the darkness",
-      "くすぐりマシーン 093 japanese gym 2"
+      "くすぐりマシーン 93 challenge from the darkness",
+      "くすぐりマシーン 093 japanese gym 2",
+      "くすぐりマシーン 93 japanese gym 2"
     ]
   },
   "1stgym2094": {
@@ -9062,10 +9422,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ロケット団員 094 Japanese",
+      "ロケット団員 94 Japanese",
       "ロケット団員 094 ジム拡張第2弾「闇からの挑戦」",
+      "ロケット団員 94 ジム拡張第2弾「闇からの挑戦」",
       "ロケット団員 094 PMCG",
+      "ロケット団員 94 PMCG",
       "ロケット団員 094 challenge from the darkness",
-      "ロケット団員 094 japanese gym 2"
+      "ロケット団員 94 challenge from the darkness",
+      "ロケット団員 094 japanese gym 2",
+      "ロケット団員 94 japanese gym 2"
     ]
   },
   "1stgym2095": {
@@ -9087,10 +9452,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ロケット団の実験 095 Japanese",
+      "ロケット団の実験 95 Japanese",
       "ロケット団の実験 095 ジム拡張第2弾「闇からの挑戦」",
+      "ロケット団の実験 95 ジム拡張第2弾「闇からの挑戦」",
       "ロケット団の実験 095 PMCG",
+      "ロケット団の実験 95 PMCG",
       "ロケット団の実験 095 challenge from the darkness",
-      "ロケット団の実験 095 japanese gym 2"
+      "ロケット団の実験 95 challenge from the darkness",
+      "ロケット団の実験 095 japanese gym 2",
+      "ロケット団の実験 95 japanese gym 2"
     ]
   },
   "1stgym2096": {
@@ -9112,10 +9482,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ロケット団の爆発ジム 096 Japanese",
+      "ロケット団の爆発ジム 96 Japanese",
       "ロケット団の爆発ジム 096 ジム拡張第2弾「闇からの挑戦」",
+      "ロケット団の爆発ジム 96 ジム拡張第2弾「闇からの挑戦」",
       "ロケット団の爆発ジム 096 PMCG",
+      "ロケット団の爆発ジム 96 PMCG",
       "ロケット団の爆発ジム 096 challenge from the darkness",
-      "ロケット団の爆発ジム 096 japanese gym 2"
+      "ロケット団の爆発ジム 96 challenge from the darkness",
+      "ロケット団の爆発ジム 096 japanese gym 2",
+      "ロケット団の爆発ジム 96 japanese gym 2"
     ]
   },
   "1stgym2097": {
@@ -9137,10 +9512,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "_のラッキー 097 Japanese",
+      "_のラッキー 97 Japanese",
       "_のラッキー 097 ジム拡張第2弾「闇からの挑戦」",
+      "_のラッキー 97 ジム拡張第2弾「闇からの挑戦」",
       "_のラッキー 097 PMCG",
+      "_のラッキー 97 PMCG",
       "_のラッキー 097 challenge from the darkness",
-      "_のラッキー 097 japanese gym 2"
+      "_のラッキー 97 challenge from the darkness",
+      "_のラッキー 097 japanese gym 2",
+      "_のラッキー 97 japanese gym 2"
     ]
   },
   "1stgym2098": {
@@ -9162,10 +9542,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "イマクニ?のドードー 098 Japanese",
+      "イマクニ?のドードー 98 Japanese",
       "イマクニ?のドードー 098 ジム拡張第2弾「闇からの挑戦」",
+      "イマクニ?のドードー 98 ジム拡張第2弾「闇からの挑戦」",
       "イマクニ?のドードー 098 PMCG",
+      "イマクニ?のドードー 98 PMCG",
       "イマクニ?のドードー 098 challenge from the darkness",
-      "イマクニ?のドードー 098 japanese gym 2"
+      "イマクニ?のドードー 98 challenge from the darkness",
+      "イマクニ?のドードー 098 japanese gym 2",
+      "イマクニ?のドードー 98 japanese gym 2"
     ]
   },
   "1stgymd1001": {
@@ -9434,10 +9819,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Energy Retrieval 014 Japanese",
+      "Energy Retrieval 14 Japanese",
       "Energy Retrieval 014 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "Energy Retrieval 14 ポケモンジム第1弾「ニビシティジム タケシ」",
       "Energy Retrieval 014 PMCG",
+      "Energy Retrieval 14 PMCG",
       "Energy Retrieval 014 brock",
-      "Energy Retrieval 014 pewter city gym"
+      "Energy Retrieval 14 brock",
+      "Energy Retrieval 014 pewter city gym",
+      "Energy Retrieval 14 pewter city gym",
+      "エネルギー回収 014 Japanese",
+      "エネルギー回収 14 Japanese",
+      "エネルギー回収 014 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "エネルギー回収 14 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "エネルギー回収 014 PMCG",
+      "エネルギー回収 14 PMCG",
+      "エネルギー回収 014 brock",
+      "エネルギー回収 14 brock",
+      "エネルギー回収 014 pewter city gym",
+      "エネルギー回収 14 pewter city gym"
     ]
   },
   "1stgymd1015": {
@@ -9459,10 +9859,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "思い出させる 015 Japanese",
+      "思い出させる 15 Japanese",
       "思い出させる 015 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "思い出させる 15 ポケモンジム第1弾「ニビシティジム タケシ」",
       "思い出させる 015 PMCG",
+      "思い出させる 15 PMCG",
       "思い出させる 015 brock",
-      "思い出させる 015 pewter city gym"
+      "思い出させる 15 brock",
+      "思い出させる 015 pewter city gym",
+      "思い出させる 15 pewter city gym"
     ]
   },
   "1stgymd1016": {
@@ -9484,10 +9889,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Potion 016 Japanese",
+      "Potion 16 Japanese",
       "Potion 016 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "Potion 16 ポケモンジム第1弾「ニビシティジム タケシ」",
       "Potion 016 PMCG",
+      "Potion 16 PMCG",
       "Potion 016 brock",
-      "Potion 016 pewter city gym"
+      "Potion 16 brock",
+      "Potion 016 pewter city gym",
+      "Potion 16 pewter city gym",
+      "きずぐすり 016 Japanese",
+      "きずぐすり 16 Japanese",
+      "きずぐすり 016 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "きずぐすり 16 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "きずぐすり 016 PMCG",
+      "きずぐすり 16 PMCG",
+      "きずぐすり 016 brock",
+      "きずぐすり 16 brock",
+      "きずぐすり 016 pewter city gym",
+      "きずぐすり 16 pewter city gym"
     ]
   },
   "1stgymd1017": {
@@ -9528,10 +9948,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "タケシ 018 Japanese",
+      "タケシ 18 Japanese",
       "タケシ 018 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "タケシ 18 ポケモンジム第1弾「ニビシティジム タケシ」",
       "タケシ 018 PMCG",
+      "タケシ 18 PMCG",
       "タケシ 018 brock",
-      "タケシ 018 pewter city gym"
+      "タケシ 18 brock",
+      "タケシ 018 pewter city gym",
+      "タケシ 18 pewter city gym"
     ]
   },
   "1stgymd1019": {
@@ -9553,10 +9978,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "タケシの育て方 019 Japanese",
+      "タケシの育て方 19 Japanese",
       "タケシの育て方 019 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "タケシの育て方 19 ポケモンジム第1弾「ニビシティジム タケシ」",
       "タケシの育て方 019 PMCG",
+      "タケシの育て方 19 PMCG",
       "タケシの育て方 019 brock",
-      "タケシの育て方 019 pewter city gym"
+      "タケシの育て方 19 brock",
+      "タケシの育て方 019 pewter city gym",
+      "タケシの育て方 19 pewter city gym"
     ]
   },
   "1stgymd1020": {
@@ -9578,10 +10008,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Full Heal 020 Japanese",
+      "Full Heal 20 Japanese",
       "Full Heal 020 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "Full Heal 20 ポケモンジム第1弾「ニビシティジム タケシ」",
       "Full Heal 020 PMCG",
+      "Full Heal 20 PMCG",
       "Full Heal 020 brock",
-      "Full Heal 020 pewter city gym"
+      "Full Heal 20 brock",
+      "Full Heal 020 pewter city gym",
+      "Full Heal 20 pewter city gym",
+      "なんでもなおし 020 Japanese",
+      "なんでもなおし 20 Japanese",
+      "なんでもなおし 020 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "なんでもなおし 20 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "なんでもなおし 020 PMCG",
+      "なんでもなおし 20 PMCG",
+      "なんでもなおし 020 brock",
+      "なんでもなおし 20 brock",
+      "なんでもなおし 020 pewter city gym",
+      "なんでもなおし 20 pewter city gym"
     ]
   },
   "1stgymd1021": {
@@ -9603,10 +10048,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Switch 021 Japanese",
+      "Switch 21 Japanese",
       "Switch 021 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "Switch 21 ポケモンジム第1弾「ニビシティジム タケシ」",
       "Switch 021 PMCG",
+      "Switch 21 PMCG",
       "Switch 021 brock",
-      "Switch 021 pewter city gym"
+      "Switch 21 brock",
+      "Switch 021 pewter city gym",
+      "Switch 21 pewter city gym",
+      "ポケモンいれかえ 021 Japanese",
+      "ポケモンいれかえ 21 Japanese",
+      "ポケモンいれかえ 021 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "ポケモンいれかえ 21 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "ポケモンいれかえ 021 PMCG",
+      "ポケモンいれかえ 21 PMCG",
+      "ポケモンいれかえ 021 brock",
+      "ポケモンいれかえ 21 brock",
+      "ポケモンいれかえ 021 pewter city gym",
+      "ポケモンいれかえ 21 pewter city gym"
     ]
   },
   "1stgymd1022": {
@@ -9628,10 +10088,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ポケモン図鑑 022 Japanese",
+      "ポケモン図鑑 22 Japanese",
       "ポケモン図鑑 022 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "ポケモン図鑑 22 ポケモンジム第1弾「ニビシティジム タケシ」",
       "ポケモン図鑑 022 PMCG",
+      "ポケモン図鑑 22 PMCG",
       "ポケモン図鑑 022 brock",
-      "ポケモン図鑑 022 pewter city gym"
+      "ポケモン図鑑 22 brock",
+      "ポケモン図鑑 022 pewter city gym",
+      "ポケモン図鑑 22 pewter city gym"
     ]
   },
   "1stgymd1023": {
@@ -9653,10 +10118,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pokémon Center 023 Japanese",
+      "Pokémon Center 23 Japanese",
       "Pokémon Center 023 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "Pokémon Center 23 ポケモンジム第1弾「ニビシティジム タケシ」",
       "Pokémon Center 023 PMCG",
+      "Pokémon Center 23 PMCG",
       "Pokémon Center 023 brock",
-      "Pokémon Center 023 pewter city gym"
+      "Pokémon Center 23 brock",
+      "Pokémon Center 023 pewter city gym",
+      "Pokémon Center 23 pewter city gym",
+      "ポケモンセンター 023 Japanese",
+      "ポケモンセンター 23 Japanese",
+      "ポケモンセンター 023 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "ポケモンセンター 23 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "ポケモンセンター 023 PMCG",
+      "ポケモンセンター 23 PMCG",
+      "ポケモンセンター 023 brock",
+      "ポケモンセンター 23 brock",
+      "ポケモンセンター 023 pewter city gym",
+      "ポケモンセンター 23 pewter city gym"
     ]
   },
   "1stgymd1024": {
@@ -9678,10 +10158,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ニビシティジム 024 Japanese",
+      "ニビシティジム 24 Japanese",
       "ニビシティジム 024 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "ニビシティジム 24 ポケモンジム第1弾「ニビシティジム タケシ」",
       "ニビシティジム 024 PMCG",
+      "ニビシティジム 24 PMCG",
       "ニビシティジム 024 brock",
-      "ニビシティジム 024 pewter city gym"
+      "ニビシティジム 24 brock",
+      "ニビシティジム 024 pewter city gym",
+      "ニビシティジム 24 pewter city gym"
     ]
   },
   "1stgymd1025": {
@@ -9703,10 +10188,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Double Colorless Energy 025 Japanese",
+      "Double Colorless Energy 25 Japanese",
       "Double Colorless Energy 025 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "Double Colorless Energy 25 ポケモンジム第1弾「ニビシティジム タケシ」",
       "Double Colorless Energy 025 PMCG",
+      "Double Colorless Energy 25 PMCG",
       "Double Colorless Energy 025 brock",
-      "Double Colorless Energy 025 pewter city gym"
+      "Double Colorless Energy 25 brock",
+      "Double Colorless Energy 025 pewter city gym",
+      "Double Colorless Energy 25 pewter city gym",
+      "無色2個エネルギー 025 Japanese",
+      "無色2個エネルギー 25 Japanese",
+      "無色2個エネルギー 025 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "無色2個エネルギー 25 ポケモンジム第1弾「ニビシティジム タケシ」",
+      "無色2個エネルギー 025 PMCG",
+      "無色2個エネルギー 25 PMCG",
+      "無色2個エネルギー 025 brock",
+      "無色2個エネルギー 25 brock",
+      "無色2個エネルギー 025 pewter city gym",
+      "無色2個エネルギー 25 pewter city gym"
     ]
   },
   "1stgymd2001": {
@@ -9994,10 +10494,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カスミ 015 Japanese",
+      "カスミ 15 Japanese",
       "カスミ 015 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "カスミ 15 ポケモンジム第1弾「ハナダシティジム カスミ」",
       "カスミ 015 PMCG",
+      "カスミ 15 PMCG",
       "カスミ 015 misty",
-      "カスミ 015 cerulean city gym"
+      "カスミ 15 misty",
+      "カスミ 015 cerulean city gym",
+      "カスミ 15 cerulean city gym"
     ]
   },
   "1stgymd2016": {
@@ -10019,10 +10524,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カスミのいかり 016 Japanese",
+      "カスミのいかり 16 Japanese",
       "カスミのいかり 016 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "カスミのいかり 16 ポケモンジム第1弾「ハナダシティジム カスミ」",
       "カスミのいかり 016 PMCG",
+      "カスミのいかり 16 PMCG",
       "カスミのいかり 016 misty",
-      "カスミのいかり 016 cerulean city gym"
+      "カスミのいかり 16 misty",
+      "カスミのいかり 016 cerulean city gym",
+      "カスミのいかり 16 cerulean city gym"
     ]
   },
   "1stgymd2017": {
@@ -10044,10 +10554,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カスミの勝負 017 Japanese",
+      "カスミの勝負 17 Japanese",
       "カスミの勝負 017 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "カスミの勝負 17 ポケモンジム第1弾「ハナダシティジム カスミ」",
       "カスミの勝負 017 PMCG",
+      "カスミの勝負 17 PMCG",
       "カスミの勝負 017 misty",
-      "カスミの勝負 017 cerulean city gym"
+      "カスミの勝負 17 misty",
+      "カスミの勝負 017 cerulean city gym",
+      "カスミの勝負 17 cerulean city gym"
     ]
   },
   "1stgymd2018": {
@@ -10069,10 +10584,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カスミのなみだ 018 Japanese",
+      "カスミのなみだ 18 Japanese",
       "カスミのなみだ 018 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "カスミのなみだ 18 ポケモンジム第1弾「ハナダシティジム カスミ」",
       "カスミのなみだ 018 PMCG",
+      "カスミのなみだ 18 PMCG",
       "カスミのなみだ 018 misty",
-      "カスミのなみだ 018 cerulean city gym"
+      "カスミのなみだ 18 misty",
+      "カスミのなみだ 018 cerulean city gym",
+      "カスミのなみだ 18 cerulean city gym"
     ]
   },
   "1stgymd2019": {
@@ -10094,10 +10614,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Potion 019 Japanese",
+      "Potion 19 Japanese",
       "Potion 019 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "Potion 19 ポケモンジム第1弾「ハナダシティジム カスミ」",
       "Potion 019 PMCG",
+      "Potion 19 PMCG",
       "Potion 019 misty",
-      "Potion 019 cerulean city gym"
+      "Potion 19 misty",
+      "Potion 019 cerulean city gym",
+      "Potion 19 cerulean city gym",
+      "きずぐすり 019 Japanese",
+      "きずぐすり 19 Japanese",
+      "きずぐすり 019 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "きずぐすり 19 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "きずぐすり 019 PMCG",
+      "きずぐすり 19 PMCG",
+      "きずぐすり 019 misty",
+      "きずぐすり 19 misty",
+      "きずぐすり 019 cerulean city gym",
+      "きずぐすり 19 cerulean city gym"
     ]
   },
   "1stgymd2020": {
@@ -10119,10 +10654,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Defender 020 Japanese",
+      "Defender 20 Japanese",
       "Defender 020 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "Defender 20 ポケモンジム第1弾「ハナダシティジム カスミ」",
       "Defender 020 PMCG",
+      "Defender 20 PMCG",
       "Defender 020 misty",
-      "Defender 020 cerulean city gym"
+      "Defender 20 misty",
+      "Defender 020 cerulean city gym",
+      "Defender 20 cerulean city gym",
+      "ディフェンダー 020 Japanese",
+      "ディフェンダー 20 Japanese",
+      "ディフェンダー 020 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "ディフェンダー 20 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "ディフェンダー 020 PMCG",
+      "ディフェンダー 20 PMCG",
+      "ディフェンダー 020 misty",
+      "ディフェンダー 20 misty",
+      "ディフェンダー 020 cerulean city gym",
+      "ディフェンダー 20 cerulean city gym"
     ]
   },
   "1stgymd2021": {
@@ -10163,10 +10713,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "モンスターボール 022 Japanese",
+      "モンスターボール 22 Japanese",
       "モンスターボール 022 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "モンスターボール 22 ポケモンジム第1弾「ハナダシティジム カスミ」",
       "モンスターボール 022 PMCG",
+      "モンスターボール 22 PMCG",
       "モンスターボール 022 misty",
-      "モンスターボール 022 cerulean city gym"
+      "モンスターボール 22 misty",
+      "モンスターボール 022 cerulean city gym",
+      "モンスターボール 22 cerulean city gym"
     ]
   },
   "1stgymd2023": {
@@ -10188,10 +10743,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ハナダシティジム 023 Japanese",
+      "ハナダシティジム 23 Japanese",
       "ハナダシティジム 023 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "ハナダシティジム 23 ポケモンジム第1弾「ハナダシティジム カスミ」",
       "ハナダシティジム 023 PMCG",
+      "ハナダシティジム 23 PMCG",
       "ハナダシティジム 023 misty",
-      "ハナダシティジム 023 cerulean city gym"
+      "ハナダシティジム 23 misty",
+      "ハナダシティジム 023 cerulean city gym",
+      "ハナダシティジム 23 cerulean city gym"
     ]
   },
   "1stgymd2024": {
@@ -10213,10 +10773,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Double Colorless Energy 024 Japanese",
+      "Double Colorless Energy 24 Japanese",
       "Double Colorless Energy 024 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "Double Colorless Energy 24 ポケモンジム第1弾「ハナダシティジム カスミ」",
       "Double Colorless Energy 024 PMCG",
+      "Double Colorless Energy 24 PMCG",
       "Double Colorless Energy 024 misty",
-      "Double Colorless Energy 024 cerulean city gym"
+      "Double Colorless Energy 24 misty",
+      "Double Colorless Energy 024 cerulean city gym",
+      "Double Colorless Energy 24 cerulean city gym",
+      "無色2個エネルギー 024 Japanese",
+      "無色2個エネルギー 24 Japanese",
+      "無色2個エネルギー 024 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "無色2個エネルギー 24 ポケモンジム第1弾「ハナダシティジム カスミ」",
+      "無色2個エネルギー 024 PMCG",
+      "無色2個エネルギー 24 PMCG",
+      "無色2個エネルギー 024 misty",
+      "無色2個エネルギー 24 misty",
+      "無色2個エネルギー 024 cerulean city gym",
+      "無色2個エネルギー 24 cerulean city gym"
     ]
   },
   "1stgymd3001": {
@@ -10504,10 +11079,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エネルギーサーキュレート 015 Japanese",
+      "エネルギーサーキュレート 15 Japanese",
       "エネルギーサーキュレート 015 ポケモンジム第2弾「クチバシティジム マチス」",
+      "エネルギーサーキュレート 15 ポケモンジム第2弾「クチバシティジム マチス」",
       "エネルギーサーキュレート 015 PMCG",
+      "エネルギーサーキュレート 15 PMCG",
       "エネルギーサーキュレート 015 lt. surge",
-      "エネルギーサーキュレート 015 lt surge"
+      "エネルギーサーキュレート 15 lt. surge",
+      "エネルギーサーキュレート 015 lt surge",
+      "エネルギーサーキュレート 15 lt surge"
     ]
   },
   "1stgymd3016": {
@@ -10529,10 +11109,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "スパイ作戦 016 Japanese",
+      "スパイ作戦 16 Japanese",
       "スパイ作戦 016 ポケモンジム第2弾「クチバシティジム マチス」",
+      "スパイ作戦 16 ポケモンジム第2弾「クチバシティジム マチス」",
       "スパイ作戦 016 PMCG",
+      "スパイ作戦 16 PMCG",
       "スパイ作戦 016 lt. surge",
-      "スパイ作戦 016 lt surge"
+      "スパイ作戦 16 lt. surge",
+      "スパイ作戦 016 lt surge",
+      "スパイ作戦 16 lt surge"
     ]
   },
   "1stgymd3017": {
@@ -10630,10 +11215,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マチス 021 Japanese",
+      "マチス 21 Japanese",
       "マチス 021 ポケモンジム第2弾「クチバシティジム マチス」",
+      "マチス 21 ポケモンジム第2弾「クチバシティジム マチス」",
       "マチス 021 PMCG",
+      "マチス 21 PMCG",
       "マチス 021 lt. surge",
-      "マチス 021 lt surge"
+      "マチス 21 lt. surge",
+      "マチス 021 lt surge",
+      "マチス 21 lt surge"
     ]
   },
   "1stgymd3022": {
@@ -10655,10 +11245,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マチスの交渉 022 Japanese",
+      "マチスの交渉 22 Japanese",
       "マチスの交渉 022 ポケモンジム第2弾「クチバシティジム マチス」",
+      "マチスの交渉 22 ポケモンジム第2弾「クチバシティジム マチス」",
       "マチスの交渉 022 PMCG",
+      "マチスの交渉 22 PMCG",
       "マチスの交渉 022 lt. surge",
-      "マチスの交渉 022 lt surge"
+      "マチスの交渉 22 lt. surge",
+      "マチスの交渉 022 lt surge",
+      "マチスの交渉 22 lt surge"
     ]
   },
   "1stgymd3023": {
@@ -10680,10 +11275,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "モンスターボール 023 Japanese",
+      "モンスターボール 23 Japanese",
       "モンスターボール 023 ポケモンジム第2弾「クチバシティジム マチス」",
+      "モンスターボール 23 ポケモンジム第2弾「クチバシティジム マチス」",
       "モンスターボール 023 PMCG",
+      "モンスターボール 23 PMCG",
       "モンスターボール 023 lt. surge",
-      "モンスターボール 023 lt surge"
+      "モンスターボール 23 lt. surge",
+      "モンスターボール 023 lt surge",
+      "モンスターボール 23 lt surge"
     ]
   },
   "1stgymd3024": {
@@ -10705,10 +11305,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "クチバシティジム 024 Japanese",
+      "クチバシティジム 24 Japanese",
       "クチバシティジム 024 ポケモンジム第2弾「クチバシティジム マチス」",
+      "クチバシティジム 24 ポケモンジム第2弾「クチバシティジム マチス」",
       "クチバシティジム 024 PMCG",
+      "クチバシティジム 24 PMCG",
       "クチバシティジム 024 lt. surge",
-      "クチバシティジム 024 lt surge"
+      "クチバシティジム 24 lt. surge",
+      "クチバシティジム 024 lt surge",
+      "クチバシティジム 24 lt surge"
     ]
   },
   "1stgymd3025": {
@@ -10996,10 +11601,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Energy Retrieval 014 Japanese",
+      "Energy Retrieval 14 Japanese",
       "Energy Retrieval 014 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "Energy Retrieval 14 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "Energy Retrieval 014 PMCG",
+      "Energy Retrieval 14 PMCG",
       "Energy Retrieval 014 erika",
-      "Energy Retrieval 014 celadon city gym"
+      "Energy Retrieval 14 erika",
+      "Energy Retrieval 014 celadon city gym",
+      "Energy Retrieval 14 celadon city gym",
+      "エネルギー回収 014 Japanese",
+      "エネルギー回収 14 Japanese",
+      "エネルギー回収 014 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "エネルギー回収 14 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "エネルギー回収 014 PMCG",
+      "エネルギー回収 14 PMCG",
+      "エネルギー回収 014 erika",
+      "エネルギー回収 14 erika",
+      "エネルギー回収 014 celadon city gym",
+      "エネルギー回収 14 celadon city gym"
     ]
   },
   "1stgymd4015": {
@@ -11021,10 +11641,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エネルギー転送 015 Japanese",
+      "エネルギー転送 15 Japanese",
       "エネルギー転送 015 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "エネルギー転送 15 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "エネルギー転送 015 PMCG",
+      "エネルギー転送 15 PMCG",
       "エネルギー転送 015 erika",
-      "エネルギー転送 015 celadon city gym"
+      "エネルギー転送 15 erika",
+      "エネルギー転送 015 celadon city gym",
+      "エネルギー転送 15 celadon city gym"
     ]
   },
   "1stgymd4016": {
@@ -11046,10 +11671,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エリカ 016 Japanese",
+      "エリカ 16 Japanese",
       "エリカ 016 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "エリカ 16 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "エリカ 016 PMCG",
+      "エリカ 16 PMCG",
       "エリカ 016 erika",
-      "エリカ 016 celadon city gym"
+      "エリカ 16 erika",
+      "エリカ 016 celadon city gym",
+      "エリカ 16 celadon city gym"
     ]
   },
   "1stgymd4017": {
@@ -11071,10 +11701,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エリカのお付き 017 Japanese",
+      "エリカのお付き 17 Japanese",
       "エリカのお付き 017 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "エリカのお付き 17 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "エリカのお付き 017 PMCG",
+      "エリカのお付き 17 PMCG",
       "エリカのお付き 017 erika",
-      "エリカのお付き 017 celadon city gym"
+      "エリカのお付き 17 erika",
+      "エリカのお付き 017 celadon city gym",
+      "エリカのお付き 17 celadon city gym"
     ]
   },
   "1stgymd4018": {
@@ -11096,10 +11731,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エリカの香水 018 Japanese",
+      "エリカの香水 18 Japanese",
       "エリカの香水 018 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "エリカの香水 18 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "エリカの香水 018 PMCG",
+      "エリカの香水 18 PMCG",
       "エリカの香水 018 erika",
-      "エリカの香水 018 celadon city gym"
+      "エリカの香水 18 erika",
+      "エリカの香水 018 celadon city gym",
+      "エリカの香水 18 celadon city gym"
     ]
   },
   "1stgymd4019": {
@@ -11121,10 +11761,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "お上品攻撃 019 Japanese",
+      "お上品攻撃 19 Japanese",
       "お上品攻撃 019 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "お上品攻撃 19 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "お上品攻撃 019 PMCG",
+      "お上品攻撃 19 PMCG",
       "お上品攻撃 019 erika",
-      "お上品攻撃 019 celadon city gym"
+      "お上品攻撃 19 erika",
+      "お上品攻撃 019 celadon city gym",
+      "お上品攻撃 19 celadon city gym"
     ]
   },
   "1stgymd4020": {
@@ -11146,10 +11791,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Potion 020 Japanese",
+      "Potion 20 Japanese",
       "Potion 020 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "Potion 20 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "Potion 020 PMCG",
+      "Potion 20 PMCG",
       "Potion 020 erika",
-      "Potion 020 celadon city gym"
+      "Potion 20 erika",
+      "Potion 020 celadon city gym",
+      "Potion 20 celadon city gym",
+      "きずぐすり 020 Japanese",
+      "きずぐすり 20 Japanese",
+      "きずぐすり 020 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "きずぐすり 20 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "きずぐすり 020 PMCG",
+      "きずぐすり 20 PMCG",
+      "きずぐすり 020 erika",
+      "きずぐすり 20 erika",
+      "きずぐすり 020 celadon city gym",
+      "きずぐすり 20 celadon city gym"
     ]
   },
   "1stgymd4021": {
@@ -11171,10 +11831,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Defender 021 Japanese",
+      "Defender 21 Japanese",
       "Defender 021 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "Defender 21 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "Defender 021 PMCG",
+      "Defender 21 PMCG",
       "Defender 021 erika",
-      "Defender 021 celadon city gym"
+      "Defender 21 erika",
+      "Defender 021 celadon city gym",
+      "Defender 21 celadon city gym",
+      "ディフェンダー 021 Japanese",
+      "ディフェンダー 21 Japanese",
+      "ディフェンダー 021 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "ディフェンダー 21 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "ディフェンダー 021 PMCG",
+      "ディフェンダー 21 PMCG",
+      "ディフェンダー 021 erika",
+      "ディフェンダー 21 erika",
+      "ディフェンダー 021 celadon city gym",
+      "ディフェンダー 21 celadon city gym"
     ]
   },
   "1stgymd4022": {
@@ -11196,10 +11871,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Full Heal 022 Japanese",
+      "Full Heal 22 Japanese",
       "Full Heal 022 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "Full Heal 22 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "Full Heal 022 PMCG",
+      "Full Heal 22 PMCG",
       "Full Heal 022 erika",
-      "Full Heal 022 celadon city gym"
+      "Full Heal 22 erika",
+      "Full Heal 022 celadon city gym",
+      "Full Heal 22 celadon city gym",
+      "なんでもなおし 022 Japanese",
+      "なんでもなおし 22 Japanese",
+      "なんでもなおし 022 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "なんでもなおし 22 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "なんでもなおし 022 PMCG",
+      "なんでもなおし 22 PMCG",
+      "なんでもなおし 022 erika",
+      "なんでもなおし 22 erika",
+      "なんでもなおし 022 celadon city gym",
+      "なんでもなおし 22 celadon city gym"
     ]
   },
   "1stgymd4023": {
@@ -11221,10 +11911,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "PlusPower 023 Japanese",
+      "PlusPower 23 Japanese",
       "PlusPower 023 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "PlusPower 23 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "PlusPower 023 PMCG",
+      "PlusPower 23 PMCG",
       "PlusPower 023 erika",
-      "PlusPower 023 celadon city gym"
+      "PlusPower 23 erika",
+      "PlusPower 023 celadon city gym",
+      "PlusPower 23 celadon city gym",
+      "プラスパワー 023 Japanese",
+      "プラスパワー 23 Japanese",
+      "プラスパワー 023 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "プラスパワー 23 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "プラスパワー 023 PMCG",
+      "プラスパワー 23 PMCG",
+      "プラスパワー 023 erika",
+      "プラスパワー 23 erika",
+      "プラスパワー 023 celadon city gym",
+      "プラスパワー 23 celadon city gym"
     ]
   },
   "1stgymd4024": {
@@ -11246,10 +11951,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Switch 024 Japanese",
+      "Switch 24 Japanese",
       "Switch 024 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "Switch 24 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "Switch 024 PMCG",
+      "Switch 24 PMCG",
       "Switch 024 erika",
-      "Switch 024 celadon city gym"
+      "Switch 24 erika",
+      "Switch 024 celadon city gym",
+      "Switch 24 celadon city gym",
+      "ポケモンいれかえ 024 Japanese",
+      "ポケモンいれかえ 24 Japanese",
+      "ポケモンいれかえ 024 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "ポケモンいれかえ 24 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "ポケモンいれかえ 024 PMCG",
+      "ポケモンいれかえ 24 PMCG",
+      "ポケモンいれかえ 024 erika",
+      "ポケモンいれかえ 24 erika",
+      "ポケモンいれかえ 024 celadon city gym",
+      "ポケモンいれかえ 24 celadon city gym"
     ]
   },
   "1stgymd4025": {
@@ -11271,10 +11991,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "リサイクル 025 Japanese",
+      "リサイクル 25 Japanese",
       "リサイクル 025 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "リサイクル 25 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "リサイクル 025 PMCG",
+      "リサイクル 25 PMCG",
       "リサイクル 025 erika",
-      "リサイクル 025 celadon city gym"
+      "リサイクル 25 erika",
+      "リサイクル 025 celadon city gym",
+      "リサイクル 25 celadon city gym"
     ]
   },
   "1stgymd4026": {
@@ -11296,10 +12021,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "礼儀作法 026 Japanese",
+      "礼儀作法 26 Japanese",
       "礼儀作法 026 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "礼儀作法 26 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "礼儀作法 026 PMCG",
+      "礼儀作法 26 PMCG",
       "礼儀作法 026 erika",
-      "礼儀作法 026 celadon city gym"
+      "礼儀作法 26 erika",
+      "礼儀作法 026 celadon city gym",
+      "礼儀作法 26 celadon city gym"
     ]
   },
   "1stgymd4027": {
@@ -11321,10 +12051,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "タマムシシティジム 027 Japanese",
+      "タマムシシティジム 27 Japanese",
       "タマムシシティジム 027 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "タマムシシティジム 27 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "タマムシシティジム 027 PMCG",
+      "タマムシシティジム 27 PMCG",
       "タマムシシティジム 027 erika",
-      "タマムシシティジム 027 celadon city gym"
+      "タマムシシティジム 27 erika",
+      "タマムシシティジム 027 celadon city gym",
+      "タマムシシティジム 27 celadon city gym"
     ]
   },
   "1stgymd4028": {
@@ -11346,10 +12081,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Double Colorless Energy 028 Japanese",
+      "Double Colorless Energy 28 Japanese",
       "Double Colorless Energy 028 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "Double Colorless Energy 28 ポケモンジム第2弾「タマムシシティジム エリカ」",
       "Double Colorless Energy 028 PMCG",
+      "Double Colorless Energy 28 PMCG",
       "Double Colorless Energy 028 erika",
-      "Double Colorless Energy 028 celadon city gym"
+      "Double Colorless Energy 28 erika",
+      "Double Colorless Energy 028 celadon city gym",
+      "Double Colorless Energy 28 celadon city gym",
+      "無色2個エネルギー 028 Japanese",
+      "無色2個エネルギー 28 Japanese",
+      "無色2個エネルギー 028 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "無色2個エネルギー 28 ポケモンジム第2弾「タマムシシティジム エリカ」",
+      "無色2個エネルギー 028 PMCG",
+      "無色2個エネルギー 28 PMCG",
+      "無色2個エネルギー 028 erika",
+      "無色2個エネルギー 28 erika",
+      "無色2個エネルギー 028 celadon city gym",
+      "無色2個エネルギー 28 celadon city gym"
     ]
   },
   "1stgymd5001": {
@@ -11618,10 +12368,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カツラ 014 Japanese",
+      "カツラ 14 Japanese",
       "カツラ 014 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "カツラ 14 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "カツラ 014 PMCG",
+      "カツラ 14 PMCG",
       "カツラ 014 blaine",
-      "カツラ 014 cinnabar city gym"
+      "カツラ 14 blaine",
+      "カツラ 014 cinnabar city gym",
+      "カツラ 14 cinnabar city gym"
     ]
   },
   "1stgymd5015": {
@@ -11643,10 +12398,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カツラのギャンブル 015 Japanese",
+      "カツラのギャンブル 15 Japanese",
       "カツラのギャンブル 015 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "カツラのギャンブル 15 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "カツラのギャンブル 015 PMCG",
+      "カツラのギャンブル 15 PMCG",
       "カツラのギャンブル 015 blaine",
-      "カツラのギャンブル 015 cinnabar city gym"
+      "カツラのギャンブル 15 blaine",
+      "カツラのギャンブル 015 cinnabar city gym",
+      "カツラのギャンブル 15 cinnabar city gym"
     ]
   },
   "1stgymd5016": {
@@ -11668,10 +12428,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カツラのクイズ その1 016 Japanese",
+      "カツラのクイズ その1 16 Japanese",
       "カツラのクイズ その1 016 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "カツラのクイズ その1 16 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "カツラのクイズ その1 016 PMCG",
+      "カツラのクイズ その1 16 PMCG",
       "カツラのクイズ その1 016 blaine",
-      "カツラのクイズ その1 016 cinnabar city gym"
+      "カツラのクイズ その1 16 blaine",
+      "カツラのクイズ その1 016 cinnabar city gym",
+      "カツラのクイズ その1 16 cinnabar city gym"
     ]
   },
   "1stgymd5017": {
@@ -11693,10 +12458,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カツラのクイズ その2 017 Japanese",
+      "カツラのクイズ その2 17 Japanese",
       "カツラのクイズ その2 017 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "カツラのクイズ その2 17 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "カツラのクイズ その2 017 PMCG",
+      "カツラのクイズ その2 17 PMCG",
       "カツラのクイズ その2 017 blaine",
-      "カツラのクイズ その2 017 cinnabar city gym"
+      "カツラのクイズ その2 17 blaine",
+      "カツラのクイズ その2 017 cinnabar city gym",
+      "カツラのクイズ その2 17 cinnabar city gym"
     ]
   },
   "1stgymd5018": {
@@ -11718,10 +12488,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Potion 018 Japanese",
+      "Potion 18 Japanese",
       "Potion 018 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "Potion 18 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "Potion 018 PMCG",
+      "Potion 18 PMCG",
       "Potion 018 blaine",
-      "Potion 018 cinnabar city gym"
+      "Potion 18 blaine",
+      "Potion 018 cinnabar city gym",
+      "Potion 18 cinnabar city gym",
+      "きずぐすり 018 Japanese",
+      "きずぐすり 18 Japanese",
+      "きずぐすり 018 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "きずぐすり 18 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "きずぐすり 018 PMCG",
+      "きずぐすり 18 PMCG",
+      "きずぐすり 018 blaine",
+      "きずぐすり 18 blaine",
+      "きずぐすり 018 cinnabar city gym",
+      "きずぐすり 18 cinnabar city gym"
     ]
   },
   "1stgymd5019": {
@@ -11743,10 +12528,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "元気のかたまり 019 Japanese",
+      "元気のかたまり 19 Japanese",
       "元気のかたまり 019 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "元気のかたまり 19 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "元気のかたまり 019 PMCG",
+      "元気のかたまり 19 PMCG",
       "元気のかたまり 019 blaine",
-      "元気のかたまり 019 cinnabar city gym"
+      "元気のかたまり 19 blaine",
+      "元気のかたまり 019 cinnabar city gym",
+      "元気のかたまり 19 cinnabar city gym"
     ]
   },
   "1stgymd5020": {
@@ -11768,10 +12558,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Full Heal 020 Japanese",
+      "Full Heal 20 Japanese",
       "Full Heal 020 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "Full Heal 20 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "Full Heal 020 PMCG",
+      "Full Heal 20 PMCG",
       "Full Heal 020 blaine",
-      "Full Heal 020 cinnabar city gym"
+      "Full Heal 20 blaine",
+      "Full Heal 020 cinnabar city gym",
+      "Full Heal 20 cinnabar city gym",
+      "なんでもなおし 020 Japanese",
+      "なんでもなおし 20 Japanese",
+      "なんでもなおし 020 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "なんでもなおし 20 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "なんでもなおし 020 PMCG",
+      "なんでもなおし 20 PMCG",
+      "なんでもなおし 020 blaine",
+      "なんでもなおし 20 blaine",
+      "なんでもなおし 020 cinnabar city gym",
+      "なんでもなおし 20 cinnabar city gym"
     ]
   },
   "1stgymd5021": {
@@ -11793,10 +12598,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "熱血! 021 Japanese",
+      "熱血! 21 Japanese",
       "熱血! 021 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "熱血! 21 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "熱血! 021 PMCG",
+      "熱血! 21 PMCG",
       "熱血! 021 blaine",
-      "熱血! 021 cinnabar city gym"
+      "熱血! 21 blaine",
+      "熱血! 021 cinnabar city gym",
+      "熱血! 21 cinnabar city gym"
     ]
   },
   "1stgymd5022": {
@@ -11837,10 +12647,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ポケモン図鑑HANDY505 023 Japanese",
+      "ポケモン図鑑HANDY505 23 Japanese",
       "ポケモン図鑑HANDY505 023 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "ポケモン図鑑HANDY505 23 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "ポケモン図鑑HANDY505 023 PMCG",
+      "ポケモン図鑑HANDY505 23 PMCG",
       "ポケモン図鑑HANDY505 023 blaine",
-      "ポケモン図鑑HANDY505 023 cinnabar city gym"
+      "ポケモン図鑑HANDY505 23 blaine",
+      "ポケモン図鑑HANDY505 023 cinnabar city gym",
+      "ポケモン図鑑HANDY505 23 cinnabar city gym"
     ]
   },
   "1stgymd5024": {
@@ -11862,10 +12677,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "グレンタウンジム 024 Japanese",
+      "グレンタウンジム 24 Japanese",
       "グレンタウンジム 024 ポケモンジム第3弾「グレンタウンジム カツラ」",
+      "グレンタウンジム 24 ポケモンジム第3弾「グレンタウンジム カツラ」",
       "グレンタウンジム 024 PMCG",
+      "グレンタウンジム 24 PMCG",
       "グレンタウンジム 024 blaine",
-      "グレンタウンジム 024 cinnabar city gym"
+      "グレンタウンジム 24 blaine",
+      "グレンタウンジム 024 cinnabar city gym",
+      "グレンタウンジム 24 cinnabar city gym"
     ]
   },
   "1stgymd5025": {
@@ -12172,10 +12992,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Potion 015 Japanese",
+      "Potion 15 Japanese",
       "Potion 015 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
+      "Potion 15 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
       "Potion 015 PMCG",
+      "Potion 15 PMCG",
       "Potion 015 sabrina",
-      "Potion 015 saffron city gym"
+      "Potion 15 sabrina",
+      "Potion 015 saffron city gym",
+      "Potion 15 saffron city gym",
+      "きずぐすり 015 Japanese",
+      "きずぐすり 15 Japanese",
+      "きずぐすり 015 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
+      "きずぐすり 15 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
+      "きずぐすり 015 PMCG",
+      "きずぐすり 15 PMCG",
+      "きずぐすり 015 sabrina",
+      "きずぐすり 15 sabrina",
+      "きずぐすり 015 saffron city gym",
+      "きずぐすり 15 saffron city gym"
     ]
   },
   "1stgymd6016": {
@@ -12216,10 +13051,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ナツメ 017 Japanese",
+      "ナツメ 17 Japanese",
       "ナツメ 017 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
+      "ナツメ 17 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
       "ナツメ 017 PMCG",
+      "ナツメ 17 PMCG",
       "ナツメ 017 sabrina",
-      "ナツメ 017 saffron city gym"
+      "ナツメ 17 sabrina",
+      "ナツメ 017 saffron city gym",
+      "ナツメ 17 saffron city gym"
     ]
   },
   "1stgymd6018": {
@@ -12241,10 +13081,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ナツメのESP 018 Japanese",
+      "ナツメのESP 18 Japanese",
       "ナツメのESP 018 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
+      "ナツメのESP 18 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
       "ナツメのESP 018 PMCG",
+      "ナツメのESP 18 PMCG",
       "ナツメのESP 018 sabrina",
-      "ナツメのESP 018 saffron city gym"
+      "ナツメのESP 18 sabrina",
+      "ナツメのESP 018 saffron city gym",
+      "ナツメのESP 18 saffron city gym"
     ]
   },
   "1stgymd6019": {
@@ -12266,10 +13111,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ナツメの眼 019 Japanese",
+      "ナツメの眼 19 Japanese",
       "ナツメの眼 019 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
+      "ナツメの眼 19 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
       "ナツメの眼 019 PMCG",
+      "ナツメの眼 19 PMCG",
       "ナツメの眼 019 sabrina",
-      "ナツメの眼 019 saffron city gym"
+      "ナツメの眼 19 sabrina",
+      "ナツメの眼 019 saffron city gym",
+      "ナツメの眼 19 saffron city gym"
     ]
   },
   "1stgymd6020": {
@@ -12348,10 +13198,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マスターボール 023 Japanese",
+      "マスターボール 23 Japanese",
       "マスターボール 023 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
+      "マスターボール 23 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
       "マスターボール 023 PMCG",
+      "マスターボール 23 PMCG",
       "マスターボール 023 sabrina",
-      "マスターボール 023 saffron city gym"
+      "マスターボール 23 sabrina",
+      "マスターボール 023 saffron city gym",
+      "マスターボール 23 saffron city gym"
     ]
   },
   "1stgymd6024": {
@@ -12373,10 +13228,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ワープポイント 024 Japanese",
+      "ワープポイント 24 Japanese",
       "ワープポイント 024 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
+      "ワープポイント 24 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
       "ワープポイント 024 PMCG",
+      "ワープポイント 24 PMCG",
       "ワープポイント 024 sabrina",
-      "ワープポイント 024 saffron city gym"
+      "ワープポイント 24 sabrina",
+      "ワープポイント 024 saffron city gym",
+      "ワープポイント 24 saffron city gym"
     ]
   },
   "1stgymd6025": {
@@ -12398,10 +13258,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ヤマブキシティジム 025 Japanese",
+      "ヤマブキシティジム 25 Japanese",
       "ヤマブキシティジム 025 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
+      "ヤマブキシティジム 25 ポケモンジム第3弾「ヤマブキシティジム ナツメ」",
       "ヤマブキシティジム 025 PMCG",
+      "ヤマブキシティジム 25 PMCG",
       "ヤマブキシティジム 025 sabrina",
-      "ヤマブキシティジム 025 saffron city gym"
+      "ヤマブキシティジム 25 sabrina",
+      "ヤマブキシティジム 025 saffron city gym",
+      "ヤマブキシティジム 25 saffron city gym"
     ]
   },
   "1stgymd6026": {
@@ -12442,10 +13307,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Bulbasaur 001 Japanese",
+      "Bulbasaur 1 Japanese",
       "Bulbasaur 001 拡張シート 第1弾(青版)",
+      "Bulbasaur 1 拡張シート 第1弾(青版)",
       "Bulbasaur 001 PMCG",
+      "Bulbasaur 1 PMCG",
       "Bulbasaur 001 pokemon japanese vending series expansion sheet blue",
-      "Bulbasaur 001 japanese vending series 1"
+      "Bulbasaur 1 pokemon japanese vending series expansion sheet blue",
+      "Bulbasaur 001 japanese vending series 1",
+      "Bulbasaur 1 japanese vending series 1",
+      "フシギダネ 001 Japanese",
+      "フシギダネ 1 Japanese",
+      "フシギダネ 001 拡張シート 第1弾(青版)",
+      "フシギダネ 1 拡張シート 第1弾(青版)",
+      "フシギダネ 001 PMCG",
+      "フシギダネ 1 PMCG",
+      "フシギダネ 001 pokemon japanese vending series expansion sheet blue",
+      "フシギダネ 1 pokemon japanese vending series expansion sheet blue",
+      "フシギダネ 001 japanese vending series 1",
+      "フシギダネ 1 japanese vending series 1"
     ]
   },
   "1stex1002": {
@@ -12467,10 +13347,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Caterpie 002 Japanese",
+      "Caterpie 2 Japanese",
+      "Caterpie 10 Japanese",
       "Caterpie 002 拡張シート 第1弾(青版)",
+      "Caterpie 2 拡張シート 第1弾(青版)",
+      "Caterpie 10 拡張シート 第1弾(青版)",
       "Caterpie 002 PMCG",
+      "Caterpie 2 PMCG",
+      "Caterpie 10 PMCG",
       "Caterpie 002 pokemon japanese vending series expansion sheet blue",
-      "Caterpie 002 japanese vending series 1"
+      "Caterpie 2 pokemon japanese vending series expansion sheet blue",
+      "Caterpie 10 pokemon japanese vending series expansion sheet blue",
+      "Caterpie 002 japanese vending series 1",
+      "Caterpie 2 japanese vending series 1",
+      "Caterpie 10 japanese vending series 1",
+      "キャタピー 002 Japanese",
+      "キャタピー 2 Japanese",
+      "キャタピー 10 Japanese",
+      "キャタピー 002 拡張シート 第1弾(青版)",
+      "キャタピー 2 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1003": {
@@ -12492,10 +13387,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Metapod 003 Japanese",
+      "Metapod 3 Japanese",
+      "Metapod 11 Japanese",
       "Metapod 003 拡張シート 第1弾(青版)",
+      "Metapod 3 拡張シート 第1弾(青版)",
+      "Metapod 11 拡張シート 第1弾(青版)",
       "Metapod 003 PMCG",
+      "Metapod 3 PMCG",
+      "Metapod 11 PMCG",
       "Metapod 003 pokemon japanese vending series expansion sheet blue",
-      "Metapod 003 japanese vending series 1"
+      "Metapod 3 pokemon japanese vending series expansion sheet blue",
+      "Metapod 11 pokemon japanese vending series expansion sheet blue",
+      "Metapod 003 japanese vending series 1",
+      "Metapod 3 japanese vending series 1",
+      "Metapod 11 japanese vending series 1",
+      "トランセル 003 Japanese",
+      "トランセル 3 Japanese",
+      "トランセル 11 Japanese",
+      "トランセル 003 拡張シート 第1弾(青版)",
+      "トランセル 3 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1004": {
@@ -12517,10 +13427,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Weedle 004 Japanese",
+      "Weedle 4 Japanese",
+      "Weedle 13 Japanese",
       "Weedle 004 拡張シート 第1弾(青版)",
+      "Weedle 4 拡張シート 第1弾(青版)",
+      "Weedle 13 拡張シート 第1弾(青版)",
       "Weedle 004 PMCG",
+      "Weedle 4 PMCG",
+      "Weedle 13 PMCG",
       "Weedle 004 pokemon japanese vending series expansion sheet blue",
-      "Weedle 004 japanese vending series 1"
+      "Weedle 4 pokemon japanese vending series expansion sheet blue",
+      "Weedle 13 pokemon japanese vending series expansion sheet blue",
+      "Weedle 004 japanese vending series 1",
+      "Weedle 4 japanese vending series 1",
+      "Weedle 13 japanese vending series 1",
+      "ビードル 004 Japanese",
+      "ビードル 4 Japanese",
+      "ビードル 13 Japanese",
+      "ビードル 004 拡張シート 第1弾(青版)",
+      "ビードル 4 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1005": {
@@ -12542,10 +13467,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Kakuna 005 Japanese",
+      "Kakuna 5 Japanese",
+      "Kakuna 14 Japanese",
       "Kakuna 005 拡張シート 第1弾(青版)",
+      "Kakuna 5 拡張シート 第1弾(青版)",
+      "Kakuna 14 拡張シート 第1弾(青版)",
       "Kakuna 005 PMCG",
+      "Kakuna 5 PMCG",
+      "Kakuna 14 PMCG",
       "Kakuna 005 pokemon japanese vending series expansion sheet blue",
-      "Kakuna 005 japanese vending series 1"
+      "Kakuna 5 pokemon japanese vending series expansion sheet blue",
+      "Kakuna 14 pokemon japanese vending series expansion sheet blue",
+      "Kakuna 005 japanese vending series 1",
+      "Kakuna 5 japanese vending series 1",
+      "Kakuna 14 japanese vending series 1",
+      "コクーン 005 Japanese",
+      "コクーン 5 Japanese",
+      "コクーン 14 Japanese",
+      "コクーン 005 拡張シート 第1弾(青版)",
+      "コクーン 5 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1006": {
@@ -12567,10 +13507,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Nidoran 006 Japanese",
+      "Nidoran 6 Japanese",
+      "Nidoran 29 Japanese",
       "Nidoran 006 拡張シート 第1弾(青版)",
+      "Nidoran 6 拡張シート 第1弾(青版)",
+      "Nidoran 29 拡張シート 第1弾(青版)",
       "Nidoran 006 PMCG",
+      "Nidoran 6 PMCG",
+      "Nidoran 29 PMCG",
       "Nidoran 006 pokemon japanese vending series expansion sheet blue",
-      "Nidoran 006 japanese vending series 1"
+      "Nidoran 6 pokemon japanese vending series expansion sheet blue",
+      "Nidoran 29 pokemon japanese vending series expansion sheet blue",
+      "Nidoran 006 japanese vending series 1",
+      "Nidoran 6 japanese vending series 1",
+      "Nidoran 29 japanese vending series 1",
+      "ニドラン♀ 006 Japanese",
+      "ニドラン♀ 6 Japanese",
+      "ニドラン♀ 29 Japanese",
+      "ニドラン♀ 006 拡張シート 第1弾(青版)",
+      "ニドラン♀ 6 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1007": {
@@ -12592,10 +13547,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Nidoran 007 Japanese",
+      "Nidoran 7 Japanese",
+      "Nidoran 32 Japanese",
       "Nidoran 007 拡張シート 第1弾(青版)",
+      "Nidoran 7 拡張シート 第1弾(青版)",
+      "Nidoran 32 拡張シート 第1弾(青版)",
       "Nidoran 007 PMCG",
+      "Nidoran 7 PMCG",
+      "Nidoran 32 PMCG",
       "Nidoran 007 pokemon japanese vending series expansion sheet blue",
-      "Nidoran 007 japanese vending series 1"
+      "Nidoran 7 pokemon japanese vending series expansion sheet blue",
+      "Nidoran 32 pokemon japanese vending series expansion sheet blue",
+      "Nidoran 007 japanese vending series 1",
+      "Nidoran 7 japanese vending series 1",
+      "Nidoran 32 japanese vending series 1",
+      "ニドラン♂ 007 Japanese",
+      "ニドラン♂ 7 Japanese",
+      "ニドラン♂ 32 Japanese",
+      "ニドラン♂ 007 拡張シート 第1弾(青版)",
+      "ニドラン♂ 7 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1008": {
@@ -12617,10 +13587,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Zubat 008 Japanese",
+      "Zubat 8 Japanese",
+      "Zubat 41 Japanese",
       "Zubat 008 拡張シート 第1弾(青版)",
+      "Zubat 8 拡張シート 第1弾(青版)",
+      "Zubat 41 拡張シート 第1弾(青版)",
       "Zubat 008 PMCG",
+      "Zubat 8 PMCG",
+      "Zubat 41 PMCG",
       "Zubat 008 pokemon japanese vending series expansion sheet blue",
-      "Zubat 008 japanese vending series 1"
+      "Zubat 8 pokemon japanese vending series expansion sheet blue",
+      "Zubat 41 pokemon japanese vending series expansion sheet blue",
+      "Zubat 008 japanese vending series 1",
+      "Zubat 8 japanese vending series 1",
+      "Zubat 41 japanese vending series 1",
+      "ズバット 008 Japanese",
+      "ズバット 8 Japanese",
+      "ズバット 41 Japanese",
+      "ズバット 008 拡張シート 第1弾(青版)",
+      "ズバット 8 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1009": {
@@ -12642,10 +13627,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Golbat 009 Japanese",
+      "Golbat 9 Japanese",
+      "Golbat 42 Japanese",
       "Golbat 009 拡張シート 第1弾(青版)",
+      "Golbat 9 拡張シート 第1弾(青版)",
+      "Golbat 42 拡張シート 第1弾(青版)",
       "Golbat 009 PMCG",
+      "Golbat 9 PMCG",
+      "Golbat 42 PMCG",
       "Golbat 009 pokemon japanese vending series expansion sheet blue",
-      "Golbat 009 japanese vending series 1"
+      "Golbat 9 pokemon japanese vending series expansion sheet blue",
+      "Golbat 42 pokemon japanese vending series expansion sheet blue",
+      "Golbat 009 japanese vending series 1",
+      "Golbat 9 japanese vending series 1",
+      "Golbat 42 japanese vending series 1",
+      "ゴルバット 009 Japanese",
+      "ゴルバット 9 Japanese",
+      "ゴルバット 42 Japanese",
+      "ゴルバット 009 拡張シート 第1弾(青版)",
+      "ゴルバット 9 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1010": {
@@ -12667,10 +13667,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Paras 010 Japanese",
+      "Paras 10 Japanese",
+      "Paras 46 Japanese",
       "Paras 010 拡張シート 第1弾(青版)",
+      "Paras 10 拡張シート 第1弾(青版)",
+      "Paras 46 拡張シート 第1弾(青版)",
       "Paras 010 PMCG",
+      "Paras 10 PMCG",
+      "Paras 46 PMCG",
       "Paras 010 pokemon japanese vending series expansion sheet blue",
-      "Paras 010 japanese vending series 1"
+      "Paras 10 pokemon japanese vending series expansion sheet blue",
+      "Paras 46 pokemon japanese vending series expansion sheet blue",
+      "Paras 010 japanese vending series 1",
+      "Paras 10 japanese vending series 1",
+      "Paras 46 japanese vending series 1",
+      "パラス 010 Japanese",
+      "パラス 10 Japanese",
+      "パラス 46 Japanese",
+      "パラス 010 拡張シート 第1弾(青版)",
+      "パラス 10 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1011": {
@@ -12692,10 +13707,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Parasect 011 Japanese",
+      "Parasect 11 Japanese",
+      "Parasect 47 Japanese",
       "Parasect 011 拡張シート 第1弾(青版)",
+      "Parasect 11 拡張シート 第1弾(青版)",
+      "Parasect 47 拡張シート 第1弾(青版)",
       "Parasect 011 PMCG",
+      "Parasect 11 PMCG",
+      "Parasect 47 PMCG",
       "Parasect 011 pokemon japanese vending series expansion sheet blue",
-      "Parasect 011 japanese vending series 1"
+      "Parasect 11 pokemon japanese vending series expansion sheet blue",
+      "Parasect 47 pokemon japanese vending series expansion sheet blue",
+      "Parasect 011 japanese vending series 1",
+      "Parasect 11 japanese vending series 1",
+      "Parasect 47 japanese vending series 1",
+      "パラセクト 011 Japanese",
+      "パラセクト 11 Japanese",
+      "パラセクト 47 Japanese",
+      "パラセクト 011 拡張シート 第1弾(青版)",
+      "パラセクト 11 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1012": {
@@ -12717,10 +13747,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pinsir 012 Japanese",
+      "Pinsir 12 Japanese",
+      "Pinsir 127 Japanese",
       "Pinsir 012 拡張シート 第1弾(青版)",
+      "Pinsir 12 拡張シート 第1弾(青版)",
+      "Pinsir 127 拡張シート 第1弾(青版)",
       "Pinsir 012 PMCG",
+      "Pinsir 12 PMCG",
+      "Pinsir 127 PMCG",
       "Pinsir 012 pokemon japanese vending series expansion sheet blue",
-      "Pinsir 012 japanese vending series 1"
+      "Pinsir 12 pokemon japanese vending series expansion sheet blue",
+      "Pinsir 127 pokemon japanese vending series expansion sheet blue",
+      "Pinsir 012 japanese vending series 1",
+      "Pinsir 12 japanese vending series 1",
+      "Pinsir 127 japanese vending series 1",
+      "カイロス 012 Japanese",
+      "カイロス 12 Japanese",
+      "カイロス 127 Japanese",
+      "カイロス 012 拡張シート 第1弾(青版)",
+      "カイロス 12 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1013": {
@@ -12742,10 +13787,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Charmander 013 Japanese",
+      "Charmander 13 Japanese",
+      "Charmander 4 Japanese",
       "Charmander 013 拡張シート 第1弾(青版)",
+      "Charmander 13 拡張シート 第1弾(青版)",
+      "Charmander 4 拡張シート 第1弾(青版)",
       "Charmander 013 PMCG",
+      "Charmander 13 PMCG",
+      "Charmander 4 PMCG",
       "Charmander 013 pokemon japanese vending series expansion sheet blue",
-      "Charmander 013 japanese vending series 1"
+      "Charmander 13 pokemon japanese vending series expansion sheet blue",
+      "Charmander 4 pokemon japanese vending series expansion sheet blue",
+      "Charmander 013 japanese vending series 1",
+      "Charmander 13 japanese vending series 1",
+      "Charmander 4 japanese vending series 1",
+      "ヒトカゲ 013 Japanese",
+      "ヒトカゲ 13 Japanese",
+      "ヒトカゲ 4 Japanese",
+      "ヒトカゲ 013 拡張シート 第1弾(青版)",
+      "ヒトカゲ 13 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1014": {
@@ -12767,10 +13827,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Rapidash 014 Japanese",
+      "Rapidash 14 Japanese",
+      "Rapidash 78 Japanese",
       "Rapidash 014 拡張シート 第1弾(青版)",
+      "Rapidash 14 拡張シート 第1弾(青版)",
+      "Rapidash 78 拡張シート 第1弾(青版)",
       "Rapidash 014 PMCG",
+      "Rapidash 14 PMCG",
+      "Rapidash 78 PMCG",
       "Rapidash 014 pokemon japanese vending series expansion sheet blue",
-      "Rapidash 014 japanese vending series 1"
+      "Rapidash 14 pokemon japanese vending series expansion sheet blue",
+      "Rapidash 78 pokemon japanese vending series expansion sheet blue",
+      "Rapidash 014 japanese vending series 1",
+      "Rapidash 14 japanese vending series 1",
+      "Rapidash 78 japanese vending series 1",
+      "ギャロップ 014 Japanese",
+      "ギャロップ 14 Japanese",
+      "ギャロップ 78 Japanese",
+      "ギャロップ 014 拡張シート 第1弾(青版)",
+      "ギャロップ 14 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1015": {
@@ -12792,10 +13867,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Squirtle 015 Japanese",
+      "Squirtle 15 Japanese",
+      "Squirtle 7 Japanese",
       "Squirtle 015 拡張シート 第1弾(青版)",
+      "Squirtle 15 拡張シート 第1弾(青版)",
+      "Squirtle 7 拡張シート 第1弾(青版)",
       "Squirtle 015 PMCG",
+      "Squirtle 15 PMCG",
+      "Squirtle 7 PMCG",
       "Squirtle 015 pokemon japanese vending series expansion sheet blue",
-      "Squirtle 015 japanese vending series 1"
+      "Squirtle 15 pokemon japanese vending series expansion sheet blue",
+      "Squirtle 7 pokemon japanese vending series expansion sheet blue",
+      "Squirtle 015 japanese vending series 1",
+      "Squirtle 15 japanese vending series 1",
+      "Squirtle 7 japanese vending series 1",
+      "ゼニガメ 015 Japanese",
+      "ゼニガメ 15 Japanese",
+      "ゼニガメ 7 Japanese",
+      "ゼニガメ 015 拡張シート 第1弾(青版)",
+      "ゼニガメ 15 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1016": {
@@ -12817,10 +13907,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Poliwag 016 Japanese",
+      "Poliwag 16 Japanese",
+      "Poliwag 60 Japanese",
       "Poliwag 016 拡張シート 第1弾(青版)",
+      "Poliwag 16 拡張シート 第1弾(青版)",
+      "Poliwag 60 拡張シート 第1弾(青版)",
       "Poliwag 016 PMCG",
+      "Poliwag 16 PMCG",
+      "Poliwag 60 PMCG",
       "Poliwag 016 pokemon japanese vending series expansion sheet blue",
-      "Poliwag 016 japanese vending series 1"
+      "Poliwag 16 pokemon japanese vending series expansion sheet blue",
+      "Poliwag 60 pokemon japanese vending series expansion sheet blue",
+      "Poliwag 016 japanese vending series 1",
+      "Poliwag 16 japanese vending series 1",
+      "Poliwag 60 japanese vending series 1",
+      "ニョロモ 016 Japanese",
+      "ニョロモ 16 Japanese",
+      "ニョロモ 60 Japanese",
+      "ニョロモ 016 拡張シート 第1弾(青版)",
+      "ニョロモ 16 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1017": {
@@ -12842,10 +13947,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Poliwhirl 017 Japanese",
+      "Poliwhirl 17 Japanese",
+      "Poliwhirl 61 Japanese",
       "Poliwhirl 017 拡張シート 第1弾(青版)",
+      "Poliwhirl 17 拡張シート 第1弾(青版)",
+      "Poliwhirl 61 拡張シート 第1弾(青版)",
       "Poliwhirl 017 PMCG",
+      "Poliwhirl 17 PMCG",
+      "Poliwhirl 61 PMCG",
       "Poliwhirl 017 pokemon japanese vending series expansion sheet blue",
-      "Poliwhirl 017 japanese vending series 1"
+      "Poliwhirl 17 pokemon japanese vending series expansion sheet blue",
+      "Poliwhirl 61 pokemon japanese vending series expansion sheet blue",
+      "Poliwhirl 017 japanese vending series 1",
+      "Poliwhirl 17 japanese vending series 1",
+      "Poliwhirl 61 japanese vending series 1",
+      "ニョロゾ 017 Japanese",
+      "ニョロゾ 17 Japanese",
+      "ニョロゾ 61 Japanese",
+      "ニョロゾ 017 拡張シート 第1弾(青版)",
+      "ニョロゾ 17 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1018": {
@@ -12867,10 +13987,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Poliwrath 018 Japanese",
+      "Poliwrath 18 Japanese",
+      "Poliwrath 62 Japanese",
       "Poliwrath 018 拡張シート 第1弾(青版)",
+      "Poliwrath 18 拡張シート 第1弾(青版)",
+      "Poliwrath 62 拡張シート 第1弾(青版)",
       "Poliwrath 018 PMCG",
+      "Poliwrath 18 PMCG",
+      "Poliwrath 62 PMCG",
       "Poliwrath 018 pokemon japanese vending series expansion sheet blue",
-      "Poliwrath 018 japanese vending series 1"
+      "Poliwrath 18 pokemon japanese vending series expansion sheet blue",
+      "Poliwrath 62 pokemon japanese vending series expansion sheet blue",
+      "Poliwrath 018 japanese vending series 1",
+      "Poliwrath 18 japanese vending series 1",
+      "Poliwrath 62 japanese vending series 1",
+      "ニョロボン 018 Japanese",
+      "ニョロボン 18 Japanese",
+      "ニョロボン 62 Japanese",
+      "ニョロボン 018 拡張シート 第1弾(青版)",
+      "ニョロボン 18 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1019": {
@@ -12892,10 +14027,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pikachu 019 Japanese",
+      "Pikachu 19 Japanese",
+      "Pikachu 25 Japanese",
       "Pikachu 019 拡張シート 第1弾(青版)",
+      "Pikachu 19 拡張シート 第1弾(青版)",
+      "Pikachu 25 拡張シート 第1弾(青版)",
       "Pikachu 019 PMCG",
+      "Pikachu 19 PMCG",
+      "Pikachu 25 PMCG",
       "Pikachu 019 pokemon japanese vending series expansion sheet blue",
-      "Pikachu 019 japanese vending series 1"
+      "Pikachu 19 pokemon japanese vending series expansion sheet blue",
+      "Pikachu 25 pokemon japanese vending series expansion sheet blue",
+      "Pikachu 019 japanese vending series 1",
+      "Pikachu 19 japanese vending series 1",
+      "Pikachu 25 japanese vending series 1",
+      "ピカチュウ 019 Japanese",
+      "ピカチュウ 19 Japanese",
+      "ピカチュウ 25 Japanese",
+      "ピカチュウ 019 拡張シート 第1弾(青版)",
+      "ピカチュウ 19 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1020": {
@@ -12917,10 +14067,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Abra 020 Japanese",
+      "Abra 20 Japanese",
+      "Abra 63 Japanese",
       "Abra 020 拡張シート 第1弾(青版)",
+      "Abra 20 拡張シート 第1弾(青版)",
+      "Abra 63 拡張シート 第1弾(青版)",
       "Abra 020 PMCG",
+      "Abra 20 PMCG",
+      "Abra 63 PMCG",
       "Abra 020 pokemon japanese vending series expansion sheet blue",
-      "Abra 020 japanese vending series 1"
+      "Abra 20 pokemon japanese vending series expansion sheet blue",
+      "Abra 63 pokemon japanese vending series expansion sheet blue",
+      "Abra 020 japanese vending series 1",
+      "Abra 20 japanese vending series 1",
+      "Abra 63 japanese vending series 1",
+      "ケーシィ 020 Japanese",
+      "ケーシィ 20 Japanese",
+      "ケーシィ 63 Japanese",
+      "ケーシィ 020 拡張シート 第1弾(青版)",
+      "ケーシィ 20 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1021": {
@@ -12942,10 +14107,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mr. Mime 021 Japanese",
+      "Mr. Mime 21 Japanese",
+      "Mr. Mime 122 Japanese",
       "Mr. Mime 021 拡張シート 第1弾(青版)",
+      "Mr. Mime 21 拡張シート 第1弾(青版)",
+      "Mr. Mime 122 拡張シート 第1弾(青版)",
       "Mr. Mime 021 PMCG",
+      "Mr. Mime 21 PMCG",
+      "Mr. Mime 122 PMCG",
       "Mr. Mime 021 pokemon japanese vending series expansion sheet blue",
-      "Mr. Mime 021 japanese vending series 1"
+      "Mr. Mime 21 pokemon japanese vending series expansion sheet blue",
+      "Mr. Mime 122 pokemon japanese vending series expansion sheet blue",
+      "Mr. Mime 021 japanese vending series 1",
+      "Mr. Mime 21 japanese vending series 1",
+      "Mr. Mime 122 japanese vending series 1",
+      "バリヤード 021 Japanese",
+      "バリヤード 21 Japanese",
+      "バリヤード 122 Japanese",
+      "バリヤード 021 拡張シート 第1弾(青版)",
+      "バリヤード 21 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1022": {
@@ -12967,10 +14147,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mewtwo 022 Japanese",
+      "Mewtwo 22 Japanese",
+      "Mewtwo 150 Japanese",
       "Mewtwo 022 拡張シート 第1弾(青版)",
+      "Mewtwo 22 拡張シート 第1弾(青版)",
+      "Mewtwo 150 拡張シート 第1弾(青版)",
       "Mewtwo 022 PMCG",
+      "Mewtwo 22 PMCG",
+      "Mewtwo 150 PMCG",
       "Mewtwo 022 pokemon japanese vending series expansion sheet blue",
-      "Mewtwo 022 japanese vending series 1"
+      "Mewtwo 22 pokemon japanese vending series expansion sheet blue",
+      "Mewtwo 150 pokemon japanese vending series expansion sheet blue",
+      "Mewtwo 022 japanese vending series 1",
+      "Mewtwo 22 japanese vending series 1",
+      "Mewtwo 150 japanese vending series 1",
+      "ミュウツー 022 Japanese",
+      "ミュウツー 22 Japanese",
+      "ミュウツー 150 Japanese",
+      "ミュウツー 022 拡張シート 第1弾(青版)",
+      "ミュウツー 22 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1023": {
@@ -12992,10 +14187,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Geodude 023 Japanese",
+      "Geodude 23 Japanese",
+      "Geodude 74 Japanese",
       "Geodude 023 拡張シート 第1弾(青版)",
+      "Geodude 23 拡張シート 第1弾(青版)",
+      "Geodude 74 拡張シート 第1弾(青版)",
       "Geodude 023 PMCG",
+      "Geodude 23 PMCG",
+      "Geodude 74 PMCG",
       "Geodude 023 pokemon japanese vending series expansion sheet blue",
-      "Geodude 023 japanese vending series 1"
+      "Geodude 23 pokemon japanese vending series expansion sheet blue",
+      "Geodude 74 pokemon japanese vending series expansion sheet blue",
+      "Geodude 023 japanese vending series 1",
+      "Geodude 23 japanese vending series 1",
+      "Geodude 74 japanese vending series 1",
+      "イシツブテ 023 Japanese",
+      "イシツブテ 23 Japanese",
+      "イシツブテ 74 Japanese",
+      "イシツブテ 023 拡張シート 第1弾(青版)",
+      "イシツブテ 23 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1024": {
@@ -13017,10 +14227,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pidgey 024 Japanese",
+      "Pidgey 24 Japanese",
+      "Pidgey 16 Japanese",
       "Pidgey 024 拡張シート 第1弾(青版)",
+      "Pidgey 24 拡張シート 第1弾(青版)",
+      "Pidgey 16 拡張シート 第1弾(青版)",
       "Pidgey 024 PMCG",
+      "Pidgey 24 PMCG",
+      "Pidgey 16 PMCG",
       "Pidgey 024 pokemon japanese vending series expansion sheet blue",
-      "Pidgey 024 japanese vending series 1"
+      "Pidgey 24 pokemon japanese vending series expansion sheet blue",
+      "Pidgey 16 pokemon japanese vending series expansion sheet blue",
+      "Pidgey 024 japanese vending series 1",
+      "Pidgey 24 japanese vending series 1",
+      "Pidgey 16 japanese vending series 1",
+      "ポッポ 024 Japanese",
+      "ポッポ 24 Japanese",
+      "ポッポ 16 Japanese",
+      "ポッポ 024 拡張シート 第1弾(青版)",
+      "ポッポ 24 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1025": {
@@ -13042,10 +14267,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Rattata 025 Japanese",
+      "Rattata 25 Japanese",
+      "Rattata 19 Japanese",
       "Rattata 025 拡張シート 第1弾(青版)",
+      "Rattata 25 拡張シート 第1弾(青版)",
+      "Rattata 19 拡張シート 第1弾(青版)",
       "Rattata 025 PMCG",
+      "Rattata 25 PMCG",
+      "Rattata 19 PMCG",
       "Rattata 025 pokemon japanese vending series expansion sheet blue",
-      "Rattata 025 japanese vending series 1"
+      "Rattata 25 pokemon japanese vending series expansion sheet blue",
+      "Rattata 19 pokemon japanese vending series expansion sheet blue",
+      "Rattata 025 japanese vending series 1",
+      "Rattata 25 japanese vending series 1",
+      "Rattata 19 japanese vending series 1",
+      "コラッタ 025 Japanese",
+      "コラッタ 25 Japanese",
+      "コラッタ 19 Japanese",
+      "コラッタ 025 拡張シート 第1弾(青版)",
+      "コラッタ 25 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1026": {
@@ -13067,10 +14307,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Clefairy 026 Japanese",
+      "Clefairy 26 Japanese",
+      "Clefairy 35 Japanese",
       "Clefairy 026 拡張シート 第1弾(青版)",
+      "Clefairy 26 拡張シート 第1弾(青版)",
+      "Clefairy 35 拡張シート 第1弾(青版)",
       "Clefairy 026 PMCG",
+      "Clefairy 26 PMCG",
+      "Clefairy 35 PMCG",
       "Clefairy 026 pokemon japanese vending series expansion sheet blue",
-      "Clefairy 026 japanese vending series 1"
+      "Clefairy 26 pokemon japanese vending series expansion sheet blue",
+      "Clefairy 35 pokemon japanese vending series expansion sheet blue",
+      "Clefairy 026 japanese vending series 1",
+      "Clefairy 26 japanese vending series 1",
+      "Clefairy 35 japanese vending series 1",
+      "ピッピ 026 Japanese",
+      "ピッピ 26 Japanese",
+      "ピッピ 35 Japanese",
+      "ピッピ 026 拡張シート 第1弾(青版)",
+      "ピッピ 26 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1027": {
@@ -13092,10 +14347,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Wigglytuff 027 Japanese",
+      "Wigglytuff 27 Japanese",
+      "Wigglytuff 40 Japanese",
       "Wigglytuff 027 拡張シート 第1弾(青版)",
+      "Wigglytuff 27 拡張シート 第1弾(青版)",
+      "Wigglytuff 40 拡張シート 第1弾(青版)",
       "Wigglytuff 027 PMCG",
+      "Wigglytuff 27 PMCG",
+      "Wigglytuff 40 PMCG",
       "Wigglytuff 027 pokemon japanese vending series expansion sheet blue",
-      "Wigglytuff 027 japanese vending series 1"
+      "Wigglytuff 27 pokemon japanese vending series expansion sheet blue",
+      "Wigglytuff 40 pokemon japanese vending series expansion sheet blue",
+      "Wigglytuff 027 japanese vending series 1",
+      "Wigglytuff 27 japanese vending series 1",
+      "Wigglytuff 40 japanese vending series 1",
+      "プクリン 027 Japanese",
+      "プクリン 27 Japanese",
+      "プクリン 40 Japanese",
+      "プクリン 027 拡張シート 第1弾(青版)",
+      "プクリン 27 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1028": {
@@ -13117,10 +14387,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Doduo 028 Japanese",
+      "Doduo 28 Japanese",
+      "Doduo 84 Japanese",
       "Doduo 028 拡張シート 第1弾(青版)",
+      "Doduo 28 拡張シート 第1弾(青版)",
+      "Doduo 84 拡張シート 第1弾(青版)",
       "Doduo 028 PMCG",
+      "Doduo 28 PMCG",
+      "Doduo 84 PMCG",
       "Doduo 028 pokemon japanese vending series expansion sheet blue",
-      "Doduo 028 japanese vending series 1"
+      "Doduo 28 pokemon japanese vending series expansion sheet blue",
+      "Doduo 84 pokemon japanese vending series expansion sheet blue",
+      "Doduo 028 japanese vending series 1",
+      "Doduo 28 japanese vending series 1",
+      "Doduo 84 japanese vending series 1",
+      "ドードー 028 Japanese",
+      "ドードー 28 Japanese",
+      "ドードー 84 Japanese",
+      "ドードー 028 拡張シート 第1弾(青版)",
+      "ドードー 28 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1029": {
@@ -13142,10 +14427,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Dodrio 029 Japanese",
+      "Dodrio 29 Japanese",
+      "Dodrio 85 Japanese",
       "Dodrio 029 拡張シート 第1弾(青版)",
+      "Dodrio 29 拡張シート 第1弾(青版)",
+      "Dodrio 85 拡張シート 第1弾(青版)",
       "Dodrio 029 PMCG",
+      "Dodrio 29 PMCG",
+      "Dodrio 85 PMCG",
       "Dodrio 029 pokemon japanese vending series expansion sheet blue",
-      "Dodrio 029 japanese vending series 1"
+      "Dodrio 29 pokemon japanese vending series expansion sheet blue",
+      "Dodrio 85 pokemon japanese vending series expansion sheet blue",
+      "Dodrio 029 japanese vending series 1",
+      "Dodrio 29 japanese vending series 1",
+      "Dodrio 85 japanese vending series 1",
+      "ドードリオ 029 Japanese",
+      "ドードリオ 29 Japanese",
+      "ドードリオ 85 Japanese",
+      "ドードリオ 029 拡張シート 第1弾(青版)",
+      "ドードリオ 29 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1030": {
@@ -13167,10 +14467,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Lickitung 030 Japanese",
+      "Lickitung 30 Japanese",
+      "Lickitung 108 Japanese",
       "Lickitung 030 拡張シート 第1弾(青版)",
+      "Lickitung 30 拡張シート 第1弾(青版)",
+      "Lickitung 108 拡張シート 第1弾(青版)",
       "Lickitung 030 PMCG",
+      "Lickitung 30 PMCG",
+      "Lickitung 108 PMCG",
       "Lickitung 030 pokemon japanese vending series expansion sheet blue",
-      "Lickitung 030 japanese vending series 1"
+      "Lickitung 30 pokemon japanese vending series expansion sheet blue",
+      "Lickitung 108 pokemon japanese vending series expansion sheet blue",
+      "Lickitung 030 japanese vending series 1",
+      "Lickitung 30 japanese vending series 1",
+      "Lickitung 108 japanese vending series 1",
+      "ベロリンガ 030 Japanese",
+      "ベロリンガ 30 Japanese",
+      "ベロリンガ 108 Japanese",
+      "ベロリンガ 030 拡張シート 第1弾(青版)",
+      "ベロリンガ 30 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1031": {
@@ -13192,10 +14507,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Chansey 031 Japanese",
+      "Chansey 31 Japanese",
+      "Chansey 113 Japanese",
       "Chansey 031 拡張シート 第1弾(青版)",
+      "Chansey 31 拡張シート 第1弾(青版)",
+      "Chansey 113 拡張シート 第1弾(青版)",
       "Chansey 031 PMCG",
+      "Chansey 31 PMCG",
+      "Chansey 113 PMCG",
       "Chansey 031 pokemon japanese vending series expansion sheet blue",
-      "Chansey 031 japanese vending series 1"
+      "Chansey 31 pokemon japanese vending series expansion sheet blue",
+      "Chansey 113 pokemon japanese vending series expansion sheet blue",
+      "Chansey 031 japanese vending series 1",
+      "Chansey 31 japanese vending series 1",
+      "Chansey 113 japanese vending series 1",
+      "ラッキー 031 Japanese",
+      "ラッキー 31 Japanese",
+      "ラッキー 113 Japanese",
+      "ラッキー 031 拡張シート 第1弾(青版)",
+      "ラッキー 31 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1032": {
@@ -13217,10 +14547,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Eevee 032 Japanese",
+      "Eevee 32 Japanese",
+      "Eevee 133 Japanese",
       "Eevee 032 拡張シート 第1弾(青版)",
+      "Eevee 32 拡張シート 第1弾(青版)",
+      "Eevee 133 拡張シート 第1弾(青版)",
       "Eevee 032 PMCG",
+      "Eevee 32 PMCG",
+      "Eevee 133 PMCG",
       "Eevee 032 pokemon japanese vending series expansion sheet blue",
-      "Eevee 032 japanese vending series 1"
+      "Eevee 32 pokemon japanese vending series expansion sheet blue",
+      "Eevee 133 pokemon japanese vending series expansion sheet blue",
+      "Eevee 032 japanese vending series 1",
+      "Eevee 32 japanese vending series 1",
+      "Eevee 133 japanese vending series 1",
+      "イーブイ 032 Japanese",
+      "イーブイ 32 Japanese",
+      "イーブイ 133 Japanese",
+      "イーブイ 032 拡張シート 第1弾(青版)",
+      "イーブイ 32 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1033": {
@@ -13242,10 +14587,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Porygon 033 Japanese",
+      "Porygon 33 Japanese",
+      "Porygon 137 Japanese",
       "Porygon 033 拡張シート 第1弾(青版)",
+      "Porygon 33 拡張シート 第1弾(青版)",
+      "Porygon 137 拡張シート 第1弾(青版)",
       "Porygon 033 PMCG",
+      "Porygon 33 PMCG",
+      "Porygon 137 PMCG",
       "Porygon 033 pokemon japanese vending series expansion sheet blue",
-      "Porygon 033 japanese vending series 1"
+      "Porygon 33 pokemon japanese vending series expansion sheet blue",
+      "Porygon 137 pokemon japanese vending series expansion sheet blue",
+      "Porygon 033 japanese vending series 1",
+      "Porygon 33 japanese vending series 1",
+      "Porygon 137 japanese vending series 1",
+      "ポリゴン 033 Japanese",
+      "ポリゴン 33 Japanese",
+      "ポリゴン 137 Japanese",
+      "ポリゴン 033 拡張シート 第1弾(青版)",
+      "ポリゴン 33 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1034": {
@@ -13267,10 +14627,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Snorlax 034 Japanese",
+      "Snorlax 34 Japanese",
+      "Snorlax 143 Japanese",
       "Snorlax 034 拡張シート 第1弾(青版)",
+      "Snorlax 34 拡張シート 第1弾(青版)",
+      "Snorlax 143 拡張シート 第1弾(青版)",
       "Snorlax 034 PMCG",
+      "Snorlax 34 PMCG",
+      "Snorlax 143 PMCG",
       "Snorlax 034 pokemon japanese vending series expansion sheet blue",
-      "Snorlax 034 japanese vending series 1"
+      "Snorlax 34 pokemon japanese vending series expansion sheet blue",
+      "Snorlax 143 pokemon japanese vending series expansion sheet blue",
+      "Snorlax 034 japanese vending series 1",
+      "Snorlax 34 japanese vending series 1",
+      "Snorlax 143 japanese vending series 1",
+      "カビゴン 034 Japanese",
+      "カビゴン 34 Japanese",
+      "カビゴン 143 Japanese",
+      "カビゴン 034 拡張シート 第1弾(青版)",
+      "カビゴン 34 拡張シート 第1弾(青版)"
     ]
   },
   "1stex1035": {
@@ -13292,10 +14667,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "化石の発掘 035 Japanese",
+      "化石の発掘 35 Japanese",
       "化石の発掘 035 拡張シート 第1弾(青版)",
+      "化石の発掘 35 拡張シート 第1弾(青版)",
       "化石の発掘 035 PMCG",
+      "化石の発掘 35 PMCG",
       "化石の発掘 035 pokemon japanese vending series expansion sheet blue",
-      "化石の発掘 035 japanese vending series 1"
+      "化石の発掘 35 pokemon japanese vending series expansion sheet blue",
+      "化石の発掘 035 japanese vending series 1",
+      "化石の発掘 35 japanese vending series 1"
     ]
   },
   "1stex1036": {
@@ -13317,10 +14697,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "月の石 036 Japanese",
+      "月の石 36 Japanese",
       "月の石 036 拡張シート 第1弾(青版)",
+      "月の石 36 拡張シート 第1弾(青版)",
       "月の石 036 PMCG",
+      "月の石 36 PMCG",
       "月の石 036 pokemon japanese vending series expansion sheet blue",
-      "月の石 036 japanese vending series 1"
+      "月の石 36 pokemon japanese vending series expansion sheet blue",
+      "月の石 036 japanese vending series 1",
+      "月の石 36 japanese vending series 1"
     ]
   },
   "1stex2001": {
@@ -13342,10 +14727,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Venomoth 001 Japanese",
+      "Venomoth 1 Japanese",
+      "Venomoth 49 Japanese",
       "Venomoth 001 拡張シート 第2弾(赤版)",
+      "Venomoth 1 拡張シート 第2弾(赤版)",
+      "Venomoth 49 拡張シート 第2弾(赤版)",
       "Venomoth 001 PMCG",
+      "Venomoth 1 PMCG",
+      "Venomoth 49 PMCG",
       "Venomoth 001 pokemon japanese vending series expansion sheet red",
-      "Venomoth 001 japanese vending series 2"
+      "Venomoth 1 pokemon japanese vending series expansion sheet red",
+      "Venomoth 49 pokemon japanese vending series expansion sheet red",
+      "Venomoth 001 japanese vending series 2",
+      "Venomoth 1 japanese vending series 2",
+      "Venomoth 49 japanese vending series 2",
+      "モルフォン 001 Japanese",
+      "モルフォン 1 Japanese",
+      "モルフォン 49 Japanese",
+      "モルフォン 001 拡張シート 第2弾(赤版)",
+      "モルフォン 1 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2002": {
@@ -13367,10 +14767,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Grimer 002 Japanese",
+      "Grimer 2 Japanese",
+      "Grimer 88 Japanese",
       "Grimer 002 拡張シート 第2弾(赤版)",
+      "Grimer 2 拡張シート 第2弾(赤版)",
+      "Grimer 88 拡張シート 第2弾(赤版)",
       "Grimer 002 PMCG",
+      "Grimer 2 PMCG",
+      "Grimer 88 PMCG",
       "Grimer 002 pokemon japanese vending series expansion sheet red",
-      "Grimer 002 japanese vending series 2"
+      "Grimer 2 pokemon japanese vending series expansion sheet red",
+      "Grimer 88 pokemon japanese vending series expansion sheet red",
+      "Grimer 002 japanese vending series 2",
+      "Grimer 2 japanese vending series 2",
+      "Grimer 88 japanese vending series 2",
+      "ベトベター 002 Japanese",
+      "ベトベター 2 Japanese",
+      "ベトベター 88 Japanese",
+      "ベトベター 002 拡張シート 第2弾(赤版)",
+      "ベトベター 2 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2003": {
@@ -13392,10 +14807,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Koffing 003 Japanese",
+      "Koffing 3 Japanese",
+      "Koffing 109 Japanese",
       "Koffing 003 拡張シート 第2弾(赤版)",
+      "Koffing 3 拡張シート 第2弾(赤版)",
+      "Koffing 109 拡張シート 第2弾(赤版)",
       "Koffing 003 PMCG",
+      "Koffing 3 PMCG",
+      "Koffing 109 PMCG",
       "Koffing 003 pokemon japanese vending series expansion sheet red",
-      "Koffing 003 japanese vending series 2"
+      "Koffing 3 pokemon japanese vending series expansion sheet red",
+      "Koffing 109 pokemon japanese vending series expansion sheet red",
+      "Koffing 003 japanese vending series 2",
+      "Koffing 3 japanese vending series 2",
+      "Koffing 109 japanese vending series 2",
+      "ドガース 003 Japanese",
+      "ドガース 3 Japanese",
+      "ドガース 109 Japanese",
+      "ドガース 003 拡張シート 第2弾(赤版)",
+      "ドガース 3 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2004": {
@@ -13417,10 +14847,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Tangela 004 Japanese",
+      "Tangela 4 Japanese",
+      "Tangela 114 Japanese",
       "Tangela 004 拡張シート 第2弾(赤版)",
+      "Tangela 4 拡張シート 第2弾(赤版)",
+      "Tangela 114 拡張シート 第2弾(赤版)",
       "Tangela 004 PMCG",
+      "Tangela 4 PMCG",
+      "Tangela 114 PMCG",
       "Tangela 004 pokemon japanese vending series expansion sheet red",
-      "Tangela 004 japanese vending series 2"
+      "Tangela 4 pokemon japanese vending series expansion sheet red",
+      "Tangela 114 pokemon japanese vending series expansion sheet red",
+      "Tangela 004 japanese vending series 2",
+      "Tangela 4 japanese vending series 2",
+      "Tangela 114 japanese vending series 2",
+      "モンジャラ 004 Japanese",
+      "モンジャラ 4 Japanese",
+      "モンジャラ 114 Japanese",
+      "モンジャラ 004 拡張シート 第2弾(赤版)",
+      "モンジャラ 4 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2005": {
@@ -13442,10 +14887,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Moltres 005 Japanese",
+      "Moltres 5 Japanese",
+      "Moltres 146 Japanese",
       "Moltres 005 拡張シート 第2弾(赤版)",
+      "Moltres 5 拡張シート 第2弾(赤版)",
+      "Moltres 146 拡張シート 第2弾(赤版)",
       "Moltres 005 PMCG",
+      "Moltres 5 PMCG",
+      "Moltres 146 PMCG",
       "Moltres 005 pokemon japanese vending series expansion sheet red",
-      "Moltres 005 japanese vending series 2"
+      "Moltres 5 pokemon japanese vending series expansion sheet red",
+      "Moltres 146 pokemon japanese vending series expansion sheet red",
+      "Moltres 005 japanese vending series 2",
+      "Moltres 5 japanese vending series 2",
+      "Moltres 146 japanese vending series 2",
+      "ファイヤー 005 Japanese",
+      "ファイヤー 5 Japanese",
+      "ファイヤー 146 Japanese",
+      "ファイヤー 005 拡張シート 第2弾(赤版)",
+      "ファイヤー 5 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2006": {
@@ -13467,10 +14927,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Seel 006 Japanese",
+      "Seel 6 Japanese",
+      "Seel 86 Japanese",
       "Seel 006 拡張シート 第2弾(赤版)",
+      "Seel 6 拡張シート 第2弾(赤版)",
+      "Seel 86 拡張シート 第2弾(赤版)",
       "Seel 006 PMCG",
+      "Seel 6 PMCG",
+      "Seel 86 PMCG",
       "Seel 006 pokemon japanese vending series expansion sheet red",
-      "Seel 006 japanese vending series 2"
+      "Seel 6 pokemon japanese vending series expansion sheet red",
+      "Seel 86 pokemon japanese vending series expansion sheet red",
+      "Seel 006 japanese vending series 2",
+      "Seel 6 japanese vending series 2",
+      "Seel 86 japanese vending series 2",
+      "パウワウ 006 Japanese",
+      "パウワウ 6 Japanese",
+      "パウワウ 86 Japanese",
+      "パウワウ 006 拡張シート 第2弾(赤版)",
+      "パウワウ 6 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2007": {
@@ -13492,10 +14967,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Dewgong 007 Japanese",
+      "Dewgong 7 Japanese",
+      "Dewgong 87 Japanese",
       "Dewgong 007 拡張シート 第2弾(赤版)",
+      "Dewgong 7 拡張シート 第2弾(赤版)",
+      "Dewgong 87 拡張シート 第2弾(赤版)",
       "Dewgong 007 PMCG",
+      "Dewgong 7 PMCG",
+      "Dewgong 87 PMCG",
       "Dewgong 007 pokemon japanese vending series expansion sheet red",
-      "Dewgong 007 japanese vending series 2"
+      "Dewgong 7 pokemon japanese vending series expansion sheet red",
+      "Dewgong 87 pokemon japanese vending series expansion sheet red",
+      "Dewgong 007 japanese vending series 2",
+      "Dewgong 7 japanese vending series 2",
+      "Dewgong 87 japanese vending series 2",
+      "ジュゴン 007 Japanese",
+      "ジュゴン 7 Japanese",
+      "ジュゴン 87 Japanese",
+      "ジュゴン 007 拡張シート 第2弾(赤版)",
+      "ジュゴン 7 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2008": {
@@ -13517,10 +15007,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Shellder 008 Japanese",
+      "Shellder 8 Japanese",
+      "Shellder 90 Japanese",
       "Shellder 008 拡張シート 第2弾(赤版)",
+      "Shellder 8 拡張シート 第2弾(赤版)",
+      "Shellder 90 拡張シート 第2弾(赤版)",
       "Shellder 008 PMCG",
+      "Shellder 8 PMCG",
+      "Shellder 90 PMCG",
       "Shellder 008 pokemon japanese vending series expansion sheet red",
-      "Shellder 008 japanese vending series 2"
+      "Shellder 8 pokemon japanese vending series expansion sheet red",
+      "Shellder 90 pokemon japanese vending series expansion sheet red",
+      "Shellder 008 japanese vending series 2",
+      "Shellder 8 japanese vending series 2",
+      "Shellder 90 japanese vending series 2",
+      "シェルダー 008 Japanese",
+      "シェルダー 8 Japanese",
+      "シェルダー 90 Japanese",
+      "シェルダー 008 拡張シート 第2弾(赤版)",
+      "シェルダー 8 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2009": {
@@ -13542,10 +15047,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Krabby 009 Japanese",
+      "Krabby 9 Japanese",
+      "Krabby 98 Japanese",
       "Krabby 009 拡張シート 第2弾(赤版)",
+      "Krabby 9 拡張シート 第2弾(赤版)",
+      "Krabby 98 拡張シート 第2弾(赤版)",
       "Krabby 009 PMCG",
+      "Krabby 9 PMCG",
+      "Krabby 98 PMCG",
       "Krabby 009 pokemon japanese vending series expansion sheet red",
-      "Krabby 009 japanese vending series 2"
+      "Krabby 9 pokemon japanese vending series expansion sheet red",
+      "Krabby 98 pokemon japanese vending series expansion sheet red",
+      "Krabby 009 japanese vending series 2",
+      "Krabby 9 japanese vending series 2",
+      "Krabby 98 japanese vending series 2",
+      "クラブ 009 Japanese",
+      "クラブ 9 Japanese",
+      "クラブ 98 Japanese",
+      "クラブ 009 拡張シート 第2弾(赤版)",
+      "クラブ 9 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2010": {
@@ -13567,10 +15087,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Lapras 010 Japanese",
+      "Lapras 10 Japanese",
+      "Lapras 131 Japanese",
       "Lapras 010 拡張シート 第2弾(赤版)",
+      "Lapras 10 拡張シート 第2弾(赤版)",
+      "Lapras 131 拡張シート 第2弾(赤版)",
       "Lapras 010 PMCG",
+      "Lapras 10 PMCG",
+      "Lapras 131 PMCG",
       "Lapras 010 pokemon japanese vending series expansion sheet red",
-      "Lapras 010 japanese vending series 2"
+      "Lapras 10 pokemon japanese vending series expansion sheet red",
+      "Lapras 131 pokemon japanese vending series expansion sheet red",
+      "Lapras 010 japanese vending series 2",
+      "Lapras 10 japanese vending series 2",
+      "Lapras 131 japanese vending series 2",
+      "ラプラス 010 Japanese",
+      "ラプラス 10 Japanese",
+      "ラプラス 131 Japanese",
+      "ラプラス 010 拡張シート 第2弾(赤版)",
+      "ラプラス 10 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2011": {
@@ -13592,10 +15127,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Omanyte 011 Japanese",
+      "Omanyte 11 Japanese",
+      "Omanyte 138 Japanese",
       "Omanyte 011 拡張シート 第2弾(赤版)",
+      "Omanyte 11 拡張シート 第2弾(赤版)",
+      "Omanyte 138 拡張シート 第2弾(赤版)",
       "Omanyte 011 PMCG",
+      "Omanyte 11 PMCG",
+      "Omanyte 138 PMCG",
       "Omanyte 011 pokemon japanese vending series expansion sheet red",
-      "Omanyte 011 japanese vending series 2"
+      "Omanyte 11 pokemon japanese vending series expansion sheet red",
+      "Omanyte 138 pokemon japanese vending series expansion sheet red",
+      "Omanyte 011 japanese vending series 2",
+      "Omanyte 11 japanese vending series 2",
+      "Omanyte 138 japanese vending series 2",
+      "オムナイト 011 Japanese",
+      "オムナイト 11 Japanese",
+      "オムナイト 138 Japanese",
+      "オムナイト 011 拡張シート 第2弾(赤版)",
+      "オムナイト 11 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2012": {
@@ -13617,10 +15167,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Articuno 012 Japanese",
+      "Articuno 12 Japanese",
+      "Articuno 144 Japanese",
       "Articuno 012 拡張シート 第2弾(赤版)",
+      "Articuno 12 拡張シート 第2弾(赤版)",
+      "Articuno 144 拡張シート 第2弾(赤版)",
       "Articuno 012 PMCG",
+      "Articuno 12 PMCG",
+      "Articuno 144 PMCG",
       "Articuno 012 pokemon japanese vending series expansion sheet red",
-      "Articuno 012 japanese vending series 2"
+      "Articuno 12 pokemon japanese vending series expansion sheet red",
+      "Articuno 144 pokemon japanese vending series expansion sheet red",
+      "Articuno 012 japanese vending series 2",
+      "Articuno 12 japanese vending series 2",
+      "Articuno 144 japanese vending series 2",
+      "フリーザー 012 Japanese",
+      "フリーザー 12 Japanese",
+      "フリーザー 144 Japanese",
+      "フリーザー 012 拡張シート 第2弾(赤版)",
+      "フリーザー 12 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2013": {
@@ -13642,10 +15207,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Raichu 013 Japanese",
+      "Raichu 13 Japanese",
+      "Raichu 26 Japanese",
       "Raichu 013 拡張シート 第2弾(赤版)",
+      "Raichu 13 拡張シート 第2弾(赤版)",
+      "Raichu 26 拡張シート 第2弾(赤版)",
       "Raichu 013 PMCG",
+      "Raichu 13 PMCG",
+      "Raichu 26 PMCG",
       "Raichu 013 pokemon japanese vending series expansion sheet red",
-      "Raichu 013 japanese vending series 2"
+      "Raichu 13 pokemon japanese vending series expansion sheet red",
+      "Raichu 26 pokemon japanese vending series expansion sheet red",
+      "Raichu 013 japanese vending series 2",
+      "Raichu 13 japanese vending series 2",
+      "Raichu 26 japanese vending series 2",
+      "ライチュウ 013 Japanese",
+      "ライチュウ 13 Japanese",
+      "ライチュウ 26 Japanese",
+      "ライチュウ 013 拡張シート 第2弾(赤版)",
+      "ライチュウ 13 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2014": {
@@ -13667,10 +15247,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Magnemite 014 Japanese",
+      "Magnemite 14 Japanese",
+      "Magnemite 81 Japanese",
       "Magnemite 014 拡張シート 第2弾(赤版)",
+      "Magnemite 14 拡張シート 第2弾(赤版)",
+      "Magnemite 81 拡張シート 第2弾(赤版)",
       "Magnemite 014 PMCG",
+      "Magnemite 14 PMCG",
+      "Magnemite 81 PMCG",
       "Magnemite 014 pokemon japanese vending series expansion sheet red",
-      "Magnemite 014 japanese vending series 2"
+      "Magnemite 14 pokemon japanese vending series expansion sheet red",
+      "Magnemite 81 pokemon japanese vending series expansion sheet red",
+      "Magnemite 014 japanese vending series 2",
+      "Magnemite 14 japanese vending series 2",
+      "Magnemite 81 japanese vending series 2",
+      "コイル 014 Japanese",
+      "コイル 14 Japanese",
+      "コイル 81 Japanese",
+      "コイル 014 拡張シート 第2弾(赤版)",
+      "コイル 14 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2015": {
@@ -13692,10 +15287,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Magneton 015 Japanese",
+      "Magneton 15 Japanese",
+      "Magneton 82 Japanese",
       "Magneton 015 拡張シート 第2弾(赤版)",
+      "Magneton 15 拡張シート 第2弾(赤版)",
+      "Magneton 82 拡張シート 第2弾(赤版)",
       "Magneton 015 PMCG",
+      "Magneton 15 PMCG",
+      "Magneton 82 PMCG",
       "Magneton 015 pokemon japanese vending series expansion sheet red",
-      "Magneton 015 japanese vending series 2"
+      "Magneton 15 pokemon japanese vending series expansion sheet red",
+      "Magneton 82 pokemon japanese vending series expansion sheet red",
+      "Magneton 015 japanese vending series 2",
+      "Magneton 15 japanese vending series 2",
+      "Magneton 82 japanese vending series 2",
+      "レアコイル 015 Japanese",
+      "レアコイル 15 Japanese",
+      "レアコイル 82 Japanese",
+      "レアコイル 015 拡張シート 第2弾(赤版)",
+      "レアコイル 15 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2016": {
@@ -13717,10 +15327,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Voltorb 016 Japanese",
+      "Voltorb 16 Japanese",
+      "Voltorb 100 Japanese",
       "Voltorb 016 拡張シート 第2弾(赤版)",
+      "Voltorb 16 拡張シート 第2弾(赤版)",
+      "Voltorb 100 拡張シート 第2弾(赤版)",
       "Voltorb 016 PMCG",
+      "Voltorb 16 PMCG",
+      "Voltorb 100 PMCG",
       "Voltorb 016 pokemon japanese vending series expansion sheet red",
-      "Voltorb 016 japanese vending series 2"
+      "Voltorb 16 pokemon japanese vending series expansion sheet red",
+      "Voltorb 100 pokemon japanese vending series expansion sheet red",
+      "Voltorb 016 japanese vending series 2",
+      "Voltorb 16 japanese vending series 2",
+      "Voltorb 100 japanese vending series 2",
+      "ビリリダマ 016 Japanese",
+      "ビリリダマ 16 Japanese",
+      "ビリリダマ 100 Japanese",
+      "ビリリダマ 016 拡張シート 第2弾(赤版)",
+      "ビリリダマ 16 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2017": {
@@ -13742,10 +15367,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Electabuzz 017 Japanese",
+      "Electabuzz 17 Japanese",
+      "Electabuzz 125 Japanese",
       "Electabuzz 017 拡張シート 第2弾(赤版)",
+      "Electabuzz 17 拡張シート 第2弾(赤版)",
+      "Electabuzz 125 拡張シート 第2弾(赤版)",
       "Electabuzz 017 PMCG",
+      "Electabuzz 17 PMCG",
+      "Electabuzz 125 PMCG",
       "Electabuzz 017 pokemon japanese vending series expansion sheet red",
-      "Electabuzz 017 japanese vending series 2"
+      "Electabuzz 17 pokemon japanese vending series expansion sheet red",
+      "Electabuzz 125 pokemon japanese vending series expansion sheet red",
+      "Electabuzz 017 japanese vending series 2",
+      "Electabuzz 17 japanese vending series 2",
+      "Electabuzz 125 japanese vending series 2",
+      "エレブー 017 Japanese",
+      "エレブー 17 Japanese",
+      "エレブー 125 Japanese",
+      "エレブー 017 拡張シート 第2弾(赤版)",
+      "エレブー 17 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2018": {
@@ -13767,10 +15407,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Zapdos 018 Japanese",
+      "Zapdos 18 Japanese",
+      "Zapdos 145 Japanese",
       "Zapdos 018 拡張シート 第2弾(赤版)",
+      "Zapdos 18 拡張シート 第2弾(赤版)",
+      "Zapdos 145 拡張シート 第2弾(赤版)",
       "Zapdos 018 PMCG",
+      "Zapdos 18 PMCG",
+      "Zapdos 145 PMCG",
       "Zapdos 018 pokemon japanese vending series expansion sheet red",
-      "Zapdos 018 japanese vending series 2"
+      "Zapdos 18 pokemon japanese vending series expansion sheet red",
+      "Zapdos 145 pokemon japanese vending series expansion sheet red",
+      "Zapdos 018 japanese vending series 2",
+      "Zapdos 18 japanese vending series 2",
+      "Zapdos 145 japanese vending series 2",
+      "サンダー 018 Japanese",
+      "サンダー 18 Japanese",
+      "サンダー 145 Japanese",
+      "サンダー 018 拡張シート 第2弾(赤版)",
+      "サンダー 18 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2019": {
@@ -13792,10 +15447,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Jynx 019 Japanese",
+      "Jynx 19 Japanese",
+      "Jynx 124 Japanese",
       "Jynx 019 拡張シート 第2弾(赤版)",
+      "Jynx 19 拡張シート 第2弾(赤版)",
+      "Jynx 124 拡張シート 第2弾(赤版)",
       "Jynx 019 PMCG",
+      "Jynx 19 PMCG",
+      "Jynx 124 PMCG",
       "Jynx 019 pokemon japanese vending series expansion sheet red",
-      "Jynx 019 japanese vending series 2"
+      "Jynx 19 pokemon japanese vending series expansion sheet red",
+      "Jynx 124 pokemon japanese vending series expansion sheet red",
+      "Jynx 019 japanese vending series 2",
+      "Jynx 19 japanese vending series 2",
+      "Jynx 124 japanese vending series 2",
+      "ルージュラ 019 Japanese",
+      "ルージュラ 19 Japanese",
+      "ルージュラ 124 Japanese",
+      "ルージュラ 019 拡張シート 第2弾(赤版)",
+      "ルージュラ 19 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2020": {
@@ -13817,10 +15487,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Sandshrew 020 Japanese",
+      "Sandshrew 20 Japanese",
+      "Sandshrew 27 Japanese",
       "Sandshrew 020 拡張シート 第2弾(赤版)",
+      "Sandshrew 20 拡張シート 第2弾(赤版)",
+      "Sandshrew 27 拡張シート 第2弾(赤版)",
       "Sandshrew 020 PMCG",
+      "Sandshrew 20 PMCG",
+      "Sandshrew 27 PMCG",
       "Sandshrew 020 pokemon japanese vending series expansion sheet red",
-      "Sandshrew 020 japanese vending series 2"
+      "Sandshrew 20 pokemon japanese vending series expansion sheet red",
+      "Sandshrew 27 pokemon japanese vending series expansion sheet red",
+      "Sandshrew 020 japanese vending series 2",
+      "Sandshrew 20 japanese vending series 2",
+      "Sandshrew 27 japanese vending series 2",
+      "サンド 020 Japanese",
+      "サンド 20 Japanese",
+      "サンド 27 Japanese",
+      "サンド 020 拡張シート 第2弾(赤版)",
+      "サンド 20 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2021": {
@@ -13842,10 +15527,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Machop 021 Japanese",
+      "Machop 21 Japanese",
+      "Machop 66 Japanese",
       "Machop 021 拡張シート 第2弾(赤版)",
+      "Machop 21 拡張シート 第2弾(赤版)",
+      "Machop 66 拡張シート 第2弾(赤版)",
       "Machop 021 PMCG",
+      "Machop 21 PMCG",
+      "Machop 66 PMCG",
       "Machop 021 pokemon japanese vending series expansion sheet red",
-      "Machop 021 japanese vending series 2"
+      "Machop 21 pokemon japanese vending series expansion sheet red",
+      "Machop 66 pokemon japanese vending series expansion sheet red",
+      "Machop 021 japanese vending series 2",
+      "Machop 21 japanese vending series 2",
+      "Machop 66 japanese vending series 2",
+      "ワンリキー 021 Japanese",
+      "ワンリキー 21 Japanese",
+      "ワンリキー 66 Japanese",
+      "ワンリキー 021 拡張シート 第2弾(赤版)",
+      "ワンリキー 21 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2022": {
@@ -13867,10 +15567,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Machoke 022 Japanese",
+      "Machoke 22 Japanese",
+      "Machoke 67 Japanese",
       "Machoke 022 拡張シート 第2弾(赤版)",
+      "Machoke 22 拡張シート 第2弾(赤版)",
+      "Machoke 67 拡張シート 第2弾(赤版)",
       "Machoke 022 PMCG",
+      "Machoke 22 PMCG",
+      "Machoke 67 PMCG",
       "Machoke 022 pokemon japanese vending series expansion sheet red",
-      "Machoke 022 japanese vending series 2"
+      "Machoke 22 pokemon japanese vending series expansion sheet red",
+      "Machoke 67 pokemon japanese vending series expansion sheet red",
+      "Machoke 022 japanese vending series 2",
+      "Machoke 22 japanese vending series 2",
+      "Machoke 67 japanese vending series 2",
+      "ゴーリキー 022 Japanese",
+      "ゴーリキー 22 Japanese",
+      "ゴーリキー 67 Japanese",
+      "ゴーリキー 022 拡張シート 第2弾(赤版)",
+      "ゴーリキー 22 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2023": {
@@ -13892,10 +15607,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Graveler 023 Japanese",
+      "Graveler 23 Japanese",
+      "Graveler 75 Japanese",
       "Graveler 023 拡張シート 第2弾(赤版)",
+      "Graveler 23 拡張シート 第2弾(赤版)",
+      "Graveler 75 拡張シート 第2弾(赤版)",
       "Graveler 023 PMCG",
+      "Graveler 23 PMCG",
+      "Graveler 75 PMCG",
       "Graveler 023 pokemon japanese vending series expansion sheet red",
-      "Graveler 023 japanese vending series 2"
+      "Graveler 23 pokemon japanese vending series expansion sheet red",
+      "Graveler 75 pokemon japanese vending series expansion sheet red",
+      "Graveler 023 japanese vending series 2",
+      "Graveler 23 japanese vending series 2",
+      "Graveler 75 japanese vending series 2",
+      "ゴローン 023 Japanese",
+      "ゴローン 23 Japanese",
+      "ゴローン 75 Japanese",
+      "ゴローン 023 拡張シート 第2弾(赤版)",
+      "ゴローン 23 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2024": {
@@ -13917,10 +15647,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Onix 024 Japanese",
+      "Onix 24 Japanese",
+      "Onix 95 Japanese",
       "Onix 024 拡張シート 第2弾(赤版)",
+      "Onix 24 拡張シート 第2弾(赤版)",
+      "Onix 95 拡張シート 第2弾(赤版)",
       "Onix 024 PMCG",
+      "Onix 24 PMCG",
+      "Onix 95 PMCG",
       "Onix 024 pokemon japanese vending series expansion sheet red",
-      "Onix 024 japanese vending series 2"
+      "Onix 24 pokemon japanese vending series expansion sheet red",
+      "Onix 95 pokemon japanese vending series expansion sheet red",
+      "Onix 024 japanese vending series 2",
+      "Onix 24 japanese vending series 2",
+      "Onix 95 japanese vending series 2",
+      "イワーク 024 Japanese",
+      "イワーク 24 Japanese",
+      "イワーク 95 Japanese",
+      "イワーク 024 拡張シート 第2弾(赤版)",
+      "イワーク 24 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2025": {
@@ -13942,10 +15687,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Marowak 025 Japanese",
+      "Marowak 25 Japanese",
+      "Marowak 105 Japanese",
       "Marowak 025 拡張シート 第2弾(赤版)",
+      "Marowak 25 拡張シート 第2弾(赤版)",
+      "Marowak 105 拡張シート 第2弾(赤版)",
       "Marowak 025 PMCG",
+      "Marowak 25 PMCG",
+      "Marowak 105 PMCG",
       "Marowak 025 pokemon japanese vending series expansion sheet red",
-      "Marowak 025 japanese vending series 2"
+      "Marowak 25 pokemon japanese vending series expansion sheet red",
+      "Marowak 105 pokemon japanese vending series expansion sheet red",
+      "Marowak 025 japanese vending series 2",
+      "Marowak 25 japanese vending series 2",
+      "Marowak 105 japanese vending series 2",
+      "ガラガラ 025 Japanese",
+      "ガラガラ 25 Japanese",
+      "ガラガラ 105 Japanese",
+      "ガラガラ 025 拡張シート 第2弾(赤版)",
+      "ガラガラ 25 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2026": {
@@ -13967,10 +15727,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Hitmonlee 026 Japanese",
+      "Hitmonlee 26 Japanese",
+      "Hitmonlee 106 Japanese",
       "Hitmonlee 026 拡張シート 第2弾(赤版)",
+      "Hitmonlee 26 拡張シート 第2弾(赤版)",
+      "Hitmonlee 106 拡張シート 第2弾(赤版)",
       "Hitmonlee 026 PMCG",
+      "Hitmonlee 26 PMCG",
+      "Hitmonlee 106 PMCG",
       "Hitmonlee 026 pokemon japanese vending series expansion sheet red",
-      "Hitmonlee 026 japanese vending series 2"
+      "Hitmonlee 26 pokemon japanese vending series expansion sheet red",
+      "Hitmonlee 106 pokemon japanese vending series expansion sheet red",
+      "Hitmonlee 026 japanese vending series 2",
+      "Hitmonlee 26 japanese vending series 2",
+      "Hitmonlee 106 japanese vending series 2",
+      "サワムラー 026 Japanese",
+      "サワムラー 26 Japanese",
+      "サワムラー 106 Japanese",
+      "サワムラー 026 拡張シート 第2弾(赤版)",
+      "サワムラー 26 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2027": {
@@ -13992,14 +15767,29 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Hitmonchan 027 Japanese",
+      "Hitmonchan 27 Japanese",
+      "Hitmonchan 107 Japanese",
       "Hitmonchan 027 拡張シート 第2弾(赤版)",
+      "Hitmonchan 27 拡張シート 第2弾(赤版)",
+      "Hitmonchan 107 拡張シート 第2弾(赤版)",
       "Hitmonchan 027 PMCG",
+      "Hitmonchan 27 PMCG",
+      "Hitmonchan 107 PMCG",
       "Hitmonchan 027 pokemon japanese vending series expansion sheet red",
-      "Hitmonchan 027 japanese vending series 2"
+      "Hitmonchan 27 pokemon japanese vending series expansion sheet red",
+      "Hitmonchan 107 pokemon japanese vending series expansion sheet red",
+      "Hitmonchan 027 japanese vending series 2",
+      "Hitmonchan 27 japanese vending series 2",
+      "Hitmonchan 107 japanese vending series 2",
+      "エビワラー 027 Japanese",
+      "エビワラー 27 Japanese",
+      "エビワラー 107 Japanese",
+      "エビワラー 027 拡張シート 第2弾(赤版)",
+      "エビワラー 27 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2028": {
-    "status": "spec_unmatched",
+    "status": "pending",
     "total": null,
     "grades": {
       "g10": 0,
@@ -14015,13 +15805,7 @@ window.POKECA_PSA = {
     },
     "gem_rate": null,
     "updated": null,
-    "spec_search_queries": [
-      "Kabuto 028 Japanese",
-      "Kabuto 028 拡張シート 第2弾(赤版)",
-      "Kabuto 028 PMCG",
-      "Kabuto 028 pokemon japanese vending series expansion sheet red",
-      "Kabuto 028 japanese vending series 2"
-    ]
+    "spec_id": 2065599
   },
   "1stex2029": {
     "status": "spec_unmatched",
@@ -14042,10 +15826,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Aerodactyl 029 Japanese",
+      "Aerodactyl 29 Japanese",
+      "Aerodactyl 142 Japanese",
       "Aerodactyl 029 拡張シート 第2弾(赤版)",
+      "Aerodactyl 29 拡張シート 第2弾(赤版)",
+      "Aerodactyl 142 拡張シート 第2弾(赤版)",
       "Aerodactyl 029 PMCG",
+      "Aerodactyl 29 PMCG",
+      "Aerodactyl 142 PMCG",
       "Aerodactyl 029 pokemon japanese vending series expansion sheet red",
-      "Aerodactyl 029 japanese vending series 2"
+      "Aerodactyl 29 pokemon japanese vending series expansion sheet red",
+      "Aerodactyl 142 pokemon japanese vending series expansion sheet red",
+      "Aerodactyl 029 japanese vending series 2",
+      "Aerodactyl 29 japanese vending series 2",
+      "Aerodactyl 142 japanese vending series 2",
+      "プテラ 029 Japanese",
+      "プテラ 29 Japanese",
+      "プテラ 142 Japanese",
+      "プテラ 029 拡張シート 第2弾(赤版)",
+      "プテラ 29 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2030": {
@@ -14067,10 +15866,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Spearow 030 Japanese",
+      "Spearow 30 Japanese",
+      "Spearow 21 Japanese",
       "Spearow 030 拡張シート 第2弾(赤版)",
+      "Spearow 30 拡張シート 第2弾(赤版)",
+      "Spearow 21 拡張シート 第2弾(赤版)",
       "Spearow 030 PMCG",
+      "Spearow 30 PMCG",
+      "Spearow 21 PMCG",
       "Spearow 030 pokemon japanese vending series expansion sheet red",
-      "Spearow 030 japanese vending series 2"
+      "Spearow 30 pokemon japanese vending series expansion sheet red",
+      "Spearow 21 pokemon japanese vending series expansion sheet red",
+      "Spearow 030 japanese vending series 2",
+      "Spearow 30 japanese vending series 2",
+      "Spearow 21 japanese vending series 2",
+      "オニスズメ 030 Japanese",
+      "オニスズメ 30 Japanese",
+      "オニスズメ 21 Japanese",
+      "オニスズメ 030 拡張シート 第2弾(赤版)",
+      "オニスズメ 30 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2031": {
@@ -14092,10 +15906,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Fearow 031 Japanese",
+      "Fearow 31 Japanese",
+      "Fearow 22 Japanese",
       "Fearow 031 拡張シート 第2弾(赤版)",
+      "Fearow 31 拡張シート 第2弾(赤版)",
+      "Fearow 22 拡張シート 第2弾(赤版)",
       "Fearow 031 PMCG",
+      "Fearow 31 PMCG",
+      "Fearow 22 PMCG",
       "Fearow 031 pokemon japanese vending series expansion sheet red",
-      "Fearow 031 japanese vending series 2"
+      "Fearow 31 pokemon japanese vending series expansion sheet red",
+      "Fearow 22 pokemon japanese vending series expansion sheet red",
+      "Fearow 031 japanese vending series 2",
+      "Fearow 31 japanese vending series 2",
+      "Fearow 22 japanese vending series 2",
+      "オニドリル 031 Japanese",
+      "オニドリル 31 Japanese",
+      "オニドリル 22 Japanese",
+      "オニドリル 031 拡張シート 第2弾(赤版)",
+      "オニドリル 31 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2032": {
@@ -14117,10 +15946,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Ditto 032 Japanese",
+      "Ditto 32 Japanese",
+      "Ditto 132 Japanese",
       "Ditto 032 拡張シート 第2弾(赤版)",
+      "Ditto 32 拡張シート 第2弾(赤版)",
+      "Ditto 132 拡張シート 第2弾(赤版)",
       "Ditto 032 PMCG",
+      "Ditto 32 PMCG",
+      "Ditto 132 PMCG",
       "Ditto 032 pokemon japanese vending series expansion sheet red",
-      "Ditto 032 japanese vending series 2"
+      "Ditto 32 pokemon japanese vending series expansion sheet red",
+      "Ditto 132 pokemon japanese vending series expansion sheet red",
+      "Ditto 032 japanese vending series 2",
+      "Ditto 32 japanese vending series 2",
+      "Ditto 132 japanese vending series 2",
+      "メタモン 032 Japanese",
+      "メタモン 32 Japanese",
+      "メタモン 132 Japanese",
+      "メタモン 032 拡張シート 第2弾(赤版)",
+      "メタモン 32 拡張シート 第2弾(赤版)"
     ]
   },
   "1stex2033": {
@@ -14142,10 +15986,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エフェクトガード 033 Japanese",
+      "エフェクトガード 33 Japanese",
       "エフェクトガード 033 拡張シート 第2弾(赤版)",
+      "エフェクトガード 33 拡張シート 第2弾(赤版)",
       "エフェクトガード 033 PMCG",
+      "エフェクトガード 33 PMCG",
       "エフェクトガード 033 pokemon japanese vending series expansion sheet red",
-      "エフェクトガード 033 japanese vending series 2"
+      "エフェクトガード 33 pokemon japanese vending series expansion sheet red",
+      "エフェクトガード 033 japanese vending series 2",
+      "エフェクトガード 33 japanese vending series 2"
     ]
   },
   "1stex2034": {
@@ -14167,10 +16016,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "元気のかたまり 034 Japanese",
+      "元気のかたまり 34 Japanese",
       "元気のかたまり 034 拡張シート 第2弾(赤版)",
+      "元気のかたまり 34 拡張シート 第2弾(赤版)",
       "元気のかたまり 034 PMCG",
+      "元気のかたまり 34 PMCG",
       "元気のかたまり 034 pokemon japanese vending series expansion sheet red",
-      "元気のかたまり 034 japanese vending series 2"
+      "元気のかたまり 34 pokemon japanese vending series expansion sheet red",
+      "元気のかたまり 034 japanese vending series 2",
+      "元気のかたまり 34 japanese vending series 2"
     ]
   },
   "1stex2035": {
@@ -14192,10 +16046,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "フラッシュ 035 Japanese",
+      "フラッシュ 35 Japanese",
       "フラッシュ 035 拡張シート 第2弾(赤版)",
+      "フラッシュ 35 拡張シート 第2弾(赤版)",
       "フラッシュ 035 PMCG",
+      "フラッシュ 35 PMCG",
       "フラッシュ 035 pokemon japanese vending series expansion sheet red",
-      "フラッシュ 035 japanese vending series 2"
+      "フラッシュ 35 pokemon japanese vending series expansion sheet red",
+      "フラッシュ 035 japanese vending series 2",
+      "フラッシュ 35 japanese vending series 2"
     ]
   },
   "1stex2036": {
@@ -14217,10 +16076,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マスターボール 036 Japanese",
+      "マスターボール 36 Japanese",
       "マスターボール 036 拡張シート 第2弾(赤版)",
+      "マスターボール 36 拡張シート 第2弾(赤版)",
       "マスターボール 036 PMCG",
+      "マスターボール 36 PMCG",
       "マスターボール 036 pokemon japanese vending series expansion sheet red",
-      "マスターボール 036 japanese vending series 2"
+      "マスターボール 36 pokemon japanese vending series expansion sheet red",
+      "マスターボール 036 japanese vending series 2",
+      "マスターボール 36 japanese vending series 2"
     ]
   },
   "1stex3001": {
@@ -14242,10 +16106,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Arbok 001 Japanese",
+      "Arbok 1 Japanese",
+      "Arbok 24 Japanese",
       "Arbok 001 拡張シート 第3弾(緑版)",
+      "Arbok 1 拡張シート 第3弾(緑版)",
+      "Arbok 24 拡張シート 第3弾(緑版)",
       "Arbok 001 PMCG",
+      "Arbok 1 PMCG",
+      "Arbok 24 PMCG",
       "Arbok 001 pokemon japanese vending series expansion sheet green",
-      "Arbok 001 japanese vending series 3"
+      "Arbok 1 pokemon japanese vending series expansion sheet green",
+      "Arbok 24 pokemon japanese vending series expansion sheet green",
+      "Arbok 001 japanese vending series 3",
+      "Arbok 1 japanese vending series 3",
+      "Arbok 24 japanese vending series 3",
+      "アーボック 001 Japanese",
+      "アーボック 1 Japanese",
+      "アーボック 24 Japanese",
+      "アーボック 001 拡張シート 第3弾(緑版)",
+      "アーボック 1 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3002": {
@@ -14267,10 +16146,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Nidorina 002 Japanese",
+      "Nidorina 2 Japanese",
+      "Nidorina 30 Japanese",
       "Nidorina 002 拡張シート 第3弾(緑版)",
+      "Nidorina 2 拡張シート 第3弾(緑版)",
+      "Nidorina 30 拡張シート 第3弾(緑版)",
       "Nidorina 002 PMCG",
+      "Nidorina 2 PMCG",
+      "Nidorina 30 PMCG",
       "Nidorina 002 pokemon japanese vending series expansion sheet green",
-      "Nidorina 002 japanese vending series 3"
+      "Nidorina 2 pokemon japanese vending series expansion sheet green",
+      "Nidorina 30 pokemon japanese vending series expansion sheet green",
+      "Nidorina 002 japanese vending series 3",
+      "Nidorina 2 japanese vending series 3",
+      "Nidorina 30 japanese vending series 3",
+      "ニドリーナ 002 Japanese",
+      "ニドリーナ 2 Japanese",
+      "ニドリーナ 30 Japanese",
+      "ニドリーナ 002 拡張シート 第3弾(緑版)",
+      "ニドリーナ 2 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3003": {
@@ -14292,10 +16186,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Nidorino 003 Japanese",
+      "Nidorino 3 Japanese",
+      "Nidorino 33 Japanese",
       "Nidorino 003 拡張シート 第3弾(緑版)",
+      "Nidorino 3 拡張シート 第3弾(緑版)",
+      "Nidorino 33 拡張シート 第3弾(緑版)",
       "Nidorino 003 PMCG",
+      "Nidorino 3 PMCG",
+      "Nidorino 33 PMCG",
       "Nidorino 003 pokemon japanese vending series expansion sheet green",
-      "Nidorino 003 japanese vending series 3"
+      "Nidorino 3 pokemon japanese vending series expansion sheet green",
+      "Nidorino 33 pokemon japanese vending series expansion sheet green",
+      "Nidorino 003 japanese vending series 3",
+      "Nidorino 3 japanese vending series 3",
+      "Nidorino 33 japanese vending series 3",
+      "ニドリーノ 003 Japanese",
+      "ニドリーノ 3 Japanese",
+      "ニドリーノ 33 Japanese",
+      "ニドリーノ 003 拡張シート 第3弾(緑版)",
+      "ニドリーノ 3 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3004": {
@@ -14317,10 +16226,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Venonat 004 Japanese",
+      "Venonat 4 Japanese",
+      "Venonat 48 Japanese",
       "Venonat 004 拡張シート 第3弾(緑版)",
+      "Venonat 4 拡張シート 第3弾(緑版)",
+      "Venonat 48 拡張シート 第3弾(緑版)",
       "Venonat 004 PMCG",
+      "Venonat 4 PMCG",
+      "Venonat 48 PMCG",
       "Venonat 004 pokemon japanese vending series expansion sheet green",
-      "Venonat 004 japanese vending series 3"
+      "Venonat 4 pokemon japanese vending series expansion sheet green",
+      "Venonat 48 pokemon japanese vending series expansion sheet green",
+      "Venonat 004 japanese vending series 3",
+      "Venonat 4 japanese vending series 3",
+      "Venonat 48 japanese vending series 3",
+      "コンパン 004 Japanese",
+      "コンパン 4 Japanese",
+      "コンパン 48 Japanese",
+      "コンパン 004 拡張シート 第3弾(緑版)",
+      "コンパン 4 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3005": {
@@ -14342,10 +16266,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Bellsprout 005 Japanese",
+      "Bellsprout 5 Japanese",
+      "Bellsprout 69 Japanese",
       "Bellsprout 005 拡張シート 第3弾(緑版)",
+      "Bellsprout 5 拡張シート 第3弾(緑版)",
+      "Bellsprout 69 拡張シート 第3弾(緑版)",
       "Bellsprout 005 PMCG",
+      "Bellsprout 5 PMCG",
+      "Bellsprout 69 PMCG",
       "Bellsprout 005 pokemon japanese vending series expansion sheet green",
-      "Bellsprout 005 japanese vending series 3"
+      "Bellsprout 5 pokemon japanese vending series expansion sheet green",
+      "Bellsprout 69 pokemon japanese vending series expansion sheet green",
+      "Bellsprout 005 japanese vending series 3",
+      "Bellsprout 5 japanese vending series 3",
+      "Bellsprout 69 japanese vending series 3",
+      "マダツボミ 005 Japanese",
+      "マダツボミ 5 Japanese",
+      "マダツボミ 69 Japanese",
+      "マダツボミ 005 拡張シート 第3弾(緑版)",
+      "マダツボミ 5 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3006": {
@@ -14367,10 +16306,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Weepinbell 006 Japanese",
+      "Weepinbell 6 Japanese",
+      "Weepinbell 70 Japanese",
       "Weepinbell 006 拡張シート 第3弾(緑版)",
+      "Weepinbell 6 拡張シート 第3弾(緑版)",
+      "Weepinbell 70 拡張シート 第3弾(緑版)",
       "Weepinbell 006 PMCG",
+      "Weepinbell 6 PMCG",
+      "Weepinbell 70 PMCG",
       "Weepinbell 006 pokemon japanese vending series expansion sheet green",
-      "Weepinbell 006 japanese vending series 3"
+      "Weepinbell 6 pokemon japanese vending series expansion sheet green",
+      "Weepinbell 70 pokemon japanese vending series expansion sheet green",
+      "Weepinbell 006 japanese vending series 3",
+      "Weepinbell 6 japanese vending series 3",
+      "Weepinbell 70 japanese vending series 3",
+      "ウツドン 006 Japanese",
+      "ウツドン 6 Japanese",
+      "ウツドン 70 Japanese",
+      "ウツドン 006 拡張シート 第3弾(緑版)",
+      "ウツドン 6 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3007": {
@@ -14392,10 +16346,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Weezing 007 Japanese",
+      "Weezing 7 Japanese",
+      "Weezing 110 Japanese",
       "Weezing 007 拡張シート 第3弾(緑版)",
+      "Weezing 7 拡張シート 第3弾(緑版)",
+      "Weezing 110 拡張シート 第3弾(緑版)",
       "Weezing 007 PMCG",
+      "Weezing 7 PMCG",
+      "Weezing 110 PMCG",
       "Weezing 007 pokemon japanese vending series expansion sheet green",
-      "Weezing 007 japanese vending series 3"
+      "Weezing 7 pokemon japanese vending series expansion sheet green",
+      "Weezing 110 pokemon japanese vending series expansion sheet green",
+      "Weezing 007 japanese vending series 3",
+      "Weezing 7 japanese vending series 3",
+      "Weezing 110 japanese vending series 3",
+      "マタドガス 007 Japanese",
+      "マタドガス 7 Japanese",
+      "マタドガス 110 Japanese",
+      "マタドガス 007 拡張シート 第3弾(緑版)",
+      "マタドガス 7 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3008": {
@@ -14417,10 +16386,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Scyther 008 Japanese",
+      "Scyther 8 Japanese",
+      "Scyther 123 Japanese",
       "Scyther 008 拡張シート 第3弾(緑版)",
+      "Scyther 8 拡張シート 第3弾(緑版)",
+      "Scyther 123 拡張シート 第3弾(緑版)",
       "Scyther 008 PMCG",
+      "Scyther 8 PMCG",
+      "Scyther 123 PMCG",
       "Scyther 008 pokemon japanese vending series expansion sheet green",
-      "Scyther 008 japanese vending series 3"
+      "Scyther 8 pokemon japanese vending series expansion sheet green",
+      "Scyther 123 pokemon japanese vending series expansion sheet green",
+      "Scyther 008 japanese vending series 3",
+      "Scyther 8 japanese vending series 3",
+      "Scyther 123 japanese vending series 3",
+      "ストライク 008 Japanese",
+      "ストライク 8 Japanese",
+      "ストライク 123 Japanese",
+      "ストライク 008 拡張シート 第3弾(緑版)",
+      "ストライク 8 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3009": {
@@ -14442,10 +16426,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Vulpix 009 Japanese",
+      "Vulpix 9 Japanese",
+      "Vulpix 37 Japanese",
       "Vulpix 009 拡張シート 第3弾(緑版)",
+      "Vulpix 9 拡張シート 第3弾(緑版)",
+      "Vulpix 37 拡張シート 第3弾(緑版)",
       "Vulpix 009 PMCG",
+      "Vulpix 9 PMCG",
+      "Vulpix 37 PMCG",
       "Vulpix 009 pokemon japanese vending series expansion sheet green",
-      "Vulpix 009 japanese vending series 3"
+      "Vulpix 9 pokemon japanese vending series expansion sheet green",
+      "Vulpix 37 pokemon japanese vending series expansion sheet green",
+      "Vulpix 009 japanese vending series 3",
+      "Vulpix 9 japanese vending series 3",
+      "Vulpix 37 japanese vending series 3",
+      "ロコン 009 Japanese",
+      "ロコン 9 Japanese",
+      "ロコン 37 Japanese",
+      "ロコン 009 拡張シート 第3弾(緑版)",
+      "ロコン 9 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3010": {
@@ -14467,10 +16466,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Growlithe 010 Japanese",
+      "Growlithe 10 Japanese",
+      "Growlithe 58 Japanese",
       "Growlithe 010 拡張シート 第3弾(緑版)",
+      "Growlithe 10 拡張シート 第3弾(緑版)",
+      "Growlithe 58 拡張シート 第3弾(緑版)",
       "Growlithe 010 PMCG",
+      "Growlithe 10 PMCG",
+      "Growlithe 58 PMCG",
       "Growlithe 010 pokemon japanese vending series expansion sheet green",
-      "Growlithe 010 japanese vending series 3"
+      "Growlithe 10 pokemon japanese vending series expansion sheet green",
+      "Growlithe 58 pokemon japanese vending series expansion sheet green",
+      "Growlithe 010 japanese vending series 3",
+      "Growlithe 10 japanese vending series 3",
+      "Growlithe 58 japanese vending series 3",
+      "ガーディ 010 Japanese",
+      "ガーディ 10 Japanese",
+      "ガーディ 58 Japanese",
+      "ガーディ 010 拡張シート 第3弾(緑版)",
+      "ガーディ 10 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3011": {
@@ -14492,10 +16506,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Ponyta 011 Japanese",
+      "Ponyta 11 Japanese",
+      "Ponyta 77 Japanese",
       "Ponyta 011 拡張シート 第3弾(緑版)",
+      "Ponyta 11 拡張シート 第3弾(緑版)",
+      "Ponyta 77 拡張シート 第3弾(緑版)",
       "Ponyta 011 PMCG",
+      "Ponyta 11 PMCG",
+      "Ponyta 77 PMCG",
       "Ponyta 011 pokemon japanese vending series expansion sheet green",
-      "Ponyta 011 japanese vending series 3"
+      "Ponyta 11 pokemon japanese vending series expansion sheet green",
+      "Ponyta 77 pokemon japanese vending series expansion sheet green",
+      "Ponyta 011 japanese vending series 3",
+      "Ponyta 11 japanese vending series 3",
+      "Ponyta 77 japanese vending series 3",
+      "ポニータ 011 Japanese",
+      "ポニータ 11 Japanese",
+      "ポニータ 77 Japanese",
+      "ポニータ 011 拡張シート 第3弾(緑版)",
+      "ポニータ 11 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3012": {
@@ -14517,10 +16546,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Magmar 012 Japanese",
+      "Magmar 12 Japanese",
+      "Magmar 126 Japanese",
       "Magmar 012 拡張シート 第3弾(緑版)",
+      "Magmar 12 拡張シート 第3弾(緑版)",
+      "Magmar 126 拡張シート 第3弾(緑版)",
       "Magmar 012 PMCG",
+      "Magmar 12 PMCG",
+      "Magmar 126 PMCG",
       "Magmar 012 pokemon japanese vending series expansion sheet green",
-      "Magmar 012 japanese vending series 3"
+      "Magmar 12 pokemon japanese vending series expansion sheet green",
+      "Magmar 126 pokemon japanese vending series expansion sheet green",
+      "Magmar 012 japanese vending series 3",
+      "Magmar 12 japanese vending series 3",
+      "Magmar 126 japanese vending series 3",
+      "ブーバー 012 Japanese",
+      "ブーバー 12 Japanese",
+      "ブーバー 126 Japanese",
+      "ブーバー 012 拡張シート 第3弾(緑版)",
+      "ブーバー 12 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3013": {
@@ -14542,10 +16586,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Golduck 013 Japanese",
+      "Golduck 13 Japanese",
+      "Golduck 55 Japanese",
       "Golduck 013 拡張シート 第3弾(緑版)",
+      "Golduck 13 拡張シート 第3弾(緑版)",
+      "Golduck 55 拡張シート 第3弾(緑版)",
       "Golduck 013 PMCG",
+      "Golduck 13 PMCG",
+      "Golduck 55 PMCG",
       "Golduck 013 pokemon japanese vending series expansion sheet green",
-      "Golduck 013 japanese vending series 3"
+      "Golduck 13 pokemon japanese vending series expansion sheet green",
+      "Golduck 55 pokemon japanese vending series expansion sheet green",
+      "Golduck 013 japanese vending series 3",
+      "Golduck 13 japanese vending series 3",
+      "Golduck 55 japanese vending series 3",
+      "ゴルダック 013 Japanese",
+      "ゴルダック 13 Japanese",
+      "ゴルダック 55 Japanese",
+      "ゴルダック 013 拡張シート 第3弾(緑版)",
+      "ゴルダック 13 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3014": {
@@ -14567,10 +16626,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Kingler 014 Japanese",
+      "Kingler 14 Japanese",
+      "Kingler 99 Japanese",
       "Kingler 014 拡張シート 第3弾(緑版)",
+      "Kingler 14 拡張シート 第3弾(緑版)",
+      "Kingler 99 拡張シート 第3弾(緑版)",
       "Kingler 014 PMCG",
+      "Kingler 14 PMCG",
+      "Kingler 99 PMCG",
       "Kingler 014 pokemon japanese vending series expansion sheet green",
-      "Kingler 014 japanese vending series 3"
+      "Kingler 14 pokemon japanese vending series expansion sheet green",
+      "Kingler 99 pokemon japanese vending series expansion sheet green",
+      "Kingler 014 japanese vending series 3",
+      "Kingler 14 japanese vending series 3",
+      "Kingler 99 japanese vending series 3",
+      "キングラー 014 Japanese",
+      "キングラー 14 Japanese",
+      "キングラー 99 Japanese",
+      "キングラー 014 拡張シート 第3弾(緑版)",
+      "キングラー 14 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3015": {
@@ -14592,10 +16666,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Horsea 015 Japanese",
+      "Horsea 15 Japanese",
+      "Horsea 116 Japanese",
       "Horsea 015 拡張シート 第3弾(緑版)",
+      "Horsea 15 拡張シート 第3弾(緑版)",
+      "Horsea 116 拡張シート 第3弾(緑版)",
       "Horsea 015 PMCG",
+      "Horsea 15 PMCG",
+      "Horsea 116 PMCG",
       "Horsea 015 pokemon japanese vending series expansion sheet green",
-      "Horsea 015 japanese vending series 3"
+      "Horsea 15 pokemon japanese vending series expansion sheet green",
+      "Horsea 116 pokemon japanese vending series expansion sheet green",
+      "Horsea 015 japanese vending series 3",
+      "Horsea 15 japanese vending series 3",
+      "Horsea 116 japanese vending series 3",
+      "タッツー 015 Japanese",
+      "タッツー 15 Japanese",
+      "タッツー 116 Japanese",
+      "タッツー 015 拡張シート 第3弾(緑版)",
+      "タッツー 15 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3016": {
@@ -14617,10 +16706,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Seadra 016 Japanese",
+      "Seadra 16 Japanese",
+      "Seadra 117 Japanese",
       "Seadra 016 拡張シート 第3弾(緑版)",
+      "Seadra 16 拡張シート 第3弾(緑版)",
+      "Seadra 117 拡張シート 第3弾(緑版)",
       "Seadra 016 PMCG",
+      "Seadra 16 PMCG",
+      "Seadra 117 PMCG",
       "Seadra 016 pokemon japanese vending series expansion sheet green",
-      "Seadra 016 japanese vending series 3"
+      "Seadra 16 pokemon japanese vending series expansion sheet green",
+      "Seadra 117 pokemon japanese vending series expansion sheet green",
+      "Seadra 016 japanese vending series 3",
+      "Seadra 16 japanese vending series 3",
+      "Seadra 117 japanese vending series 3",
+      "シードラ 016 Japanese",
+      "シードラ 16 Japanese",
+      "シードラ 117 Japanese",
+      "シードラ 016 拡張シート 第3弾(緑版)",
+      "シードラ 16 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3017": {
@@ -14642,10 +16746,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Staryu 017 Japanese",
+      "Staryu 17 Japanese",
+      "Staryu 120 Japanese",
       "Staryu 017 拡張シート 第3弾(緑版)",
+      "Staryu 17 拡張シート 第3弾(緑版)",
+      "Staryu 120 拡張シート 第3弾(緑版)",
       "Staryu 017 PMCG",
+      "Staryu 17 PMCG",
+      "Staryu 120 PMCG",
       "Staryu 017 pokemon japanese vending series expansion sheet green",
-      "Staryu 017 japanese vending series 3"
+      "Staryu 17 pokemon japanese vending series expansion sheet green",
+      "Staryu 120 pokemon japanese vending series expansion sheet green",
+      "Staryu 017 japanese vending series 3",
+      "Staryu 17 japanese vending series 3",
+      "Staryu 120 japanese vending series 3",
+      "ヒトデマン 017 Japanese",
+      "ヒトデマン 17 Japanese",
+      "ヒトデマン 120 Japanese",
+      "ヒトデマン 017 拡張シート 第3弾(緑版)",
+      "ヒトデマン 17 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3018": {
@@ -14667,10 +16786,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Omanyte 018 Japanese",
+      "Omanyte 18 Japanese",
+      "Omanyte 138 Japanese",
       "Omanyte 018 拡張シート 第3弾(緑版)",
+      "Omanyte 18 拡張シート 第3弾(緑版)",
+      "Omanyte 138 拡張シート 第3弾(緑版)",
       "Omanyte 018 PMCG",
+      "Omanyte 18 PMCG",
+      "Omanyte 138 PMCG",
       "Omanyte 018 pokemon japanese vending series expansion sheet green",
-      "Omanyte 018 japanese vending series 3"
+      "Omanyte 18 pokemon japanese vending series expansion sheet green",
+      "Omanyte 138 pokemon japanese vending series expansion sheet green",
+      "Omanyte 018 japanese vending series 3",
+      "Omanyte 18 japanese vending series 3",
+      "Omanyte 138 japanese vending series 3",
+      "オムナイト 018 Japanese",
+      "オムナイト 18 Japanese",
+      "オムナイト 138 Japanese",
+      "オムナイト 018 拡張シート 第3弾(緑版)",
+      "オムナイト 18 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3019": {
@@ -14692,10 +16826,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Kadabra 019 Japanese",
+      "Kadabra 19 Japanese",
+      "Kadabra 64 Japanese",
       "Kadabra 019 拡張シート 第3弾(緑版)",
+      "Kadabra 19 拡張シート 第3弾(緑版)",
+      "Kadabra 64 拡張シート 第3弾(緑版)",
       "Kadabra 019 PMCG",
+      "Kadabra 19 PMCG",
+      "Kadabra 64 PMCG",
       "Kadabra 019 pokemon japanese vending series expansion sheet green",
-      "Kadabra 019 japanese vending series 3"
+      "Kadabra 19 pokemon japanese vending series expansion sheet green",
+      "Kadabra 64 pokemon japanese vending series expansion sheet green",
+      "Kadabra 019 japanese vending series 3",
+      "Kadabra 19 japanese vending series 3",
+      "Kadabra 64 japanese vending series 3",
+      "ユンゲラー 019 Japanese",
+      "ユンゲラー 19 Japanese",
+      "ユンゲラー 64 Japanese",
+      "ユンゲラー 019 拡張シート 第3弾(緑版)",
+      "ユンゲラー 19 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3020": {
@@ -14717,10 +16866,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Kadabra 020 Japanese",
+      "Kadabra 20 Japanese",
+      "Kadabra 64 Japanese",
       "Kadabra 020 拡張シート 第3弾(緑版)",
+      "Kadabra 20 拡張シート 第3弾(緑版)",
+      "Kadabra 64 拡張シート 第3弾(緑版)",
       "Kadabra 020 PMCG",
+      "Kadabra 20 PMCG",
+      "Kadabra 64 PMCG",
       "Kadabra 020 pokemon japanese vending series expansion sheet green",
-      "Kadabra 020 japanese vending series 3"
+      "Kadabra 20 pokemon japanese vending series expansion sheet green",
+      "Kadabra 64 pokemon japanese vending series expansion sheet green",
+      "Kadabra 020 japanese vending series 3",
+      "Kadabra 20 japanese vending series 3",
+      "Kadabra 64 japanese vending series 3",
+      "ユンゲラー 020 Japanese",
+      "ユンゲラー 20 Japanese",
+      "ユンゲラー 64 Japanese",
+      "ユンゲラー 020 拡張シート 第3弾(緑版)",
+      "ユンゲラー 20 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3021": {
@@ -14742,10 +16906,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Slowbro 021 Japanese",
+      "Slowbro 21 Japanese",
+      "Slowbro 80 Japanese",
       "Slowbro 021 拡張シート 第3弾(緑版)",
+      "Slowbro 21 拡張シート 第3弾(緑版)",
+      "Slowbro 80 拡張シート 第3弾(緑版)",
       "Slowbro 021 PMCG",
+      "Slowbro 21 PMCG",
+      "Slowbro 80 PMCG",
       "Slowbro 021 pokemon japanese vending series expansion sheet green",
-      "Slowbro 021 japanese vending series 3"
+      "Slowbro 21 pokemon japanese vending series expansion sheet green",
+      "Slowbro 80 pokemon japanese vending series expansion sheet green",
+      "Slowbro 021 japanese vending series 3",
+      "Slowbro 21 japanese vending series 3",
+      "Slowbro 80 japanese vending series 3",
+      "ヤドラン 021 Japanese",
+      "ヤドラン 21 Japanese",
+      "ヤドラン 80 Japanese",
+      "ヤドラン 021 拡張シート 第3弾(緑版)",
+      "ヤドラン 21 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3022": {
@@ -14767,10 +16946,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Gastly 022 Japanese",
+      "Gastly 22 Japanese",
+      "Gastly 92 Japanese",
       "Gastly 022 拡張シート 第3弾(緑版)",
+      "Gastly 22 拡張シート 第3弾(緑版)",
+      "Gastly 92 拡張シート 第3弾(緑版)",
       "Gastly 022 PMCG",
+      "Gastly 22 PMCG",
+      "Gastly 92 PMCG",
       "Gastly 022 pokemon japanese vending series expansion sheet green",
-      "Gastly 022 japanese vending series 3"
+      "Gastly 22 pokemon japanese vending series expansion sheet green",
+      "Gastly 92 pokemon japanese vending series expansion sheet green",
+      "Gastly 022 japanese vending series 3",
+      "Gastly 22 japanese vending series 3",
+      "Gastly 92 japanese vending series 3",
+      "ゴース 022 Japanese",
+      "ゴース 22 Japanese",
+      "ゴース 92 Japanese",
+      "ゴース 022 拡張シート 第3弾(緑版)",
+      "ゴース 22 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3023": {
@@ -14792,10 +16986,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Haunter 023 Japanese",
+      "Haunter 23 Japanese",
+      "Haunter 93 Japanese",
       "Haunter 023 拡張シート 第3弾(緑版)",
+      "Haunter 23 拡張シート 第3弾(緑版)",
+      "Haunter 93 拡張シート 第3弾(緑版)",
       "Haunter 023 PMCG",
+      "Haunter 23 PMCG",
+      "Haunter 93 PMCG",
       "Haunter 023 pokemon japanese vending series expansion sheet green",
-      "Haunter 023 japanese vending series 3"
+      "Haunter 23 pokemon japanese vending series expansion sheet green",
+      "Haunter 93 pokemon japanese vending series expansion sheet green",
+      "Haunter 023 japanese vending series 3",
+      "Haunter 23 japanese vending series 3",
+      "Haunter 93 japanese vending series 3",
+      "ゴースト 023 Japanese",
+      "ゴースト 23 Japanese",
+      "ゴースト 93 Japanese",
+      "ゴースト 023 拡張シート 第3弾(緑版)",
+      "ゴースト 23 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3024": {
@@ -14817,10 +17026,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Haunter 024 Japanese",
+      "Haunter 24 Japanese",
+      "Haunter 93 Japanese",
       "Haunter 024 拡張シート 第3弾(緑版)",
+      "Haunter 24 拡張シート 第3弾(緑版)",
+      "Haunter 93 拡張シート 第3弾(緑版)",
       "Haunter 024 PMCG",
+      "Haunter 24 PMCG",
+      "Haunter 93 PMCG",
       "Haunter 024 pokemon japanese vending series expansion sheet green",
-      "Haunter 024 japanese vending series 3"
+      "Haunter 24 pokemon japanese vending series expansion sheet green",
+      "Haunter 93 pokemon japanese vending series expansion sheet green",
+      "Haunter 024 japanese vending series 3",
+      "Haunter 24 japanese vending series 3",
+      "Haunter 93 japanese vending series 3",
+      "ゴースト 024 Japanese",
+      "ゴースト 24 Japanese",
+      "ゴースト 93 Japanese",
+      "ゴースト 024 拡張シート 第3弾(緑版)",
+      "ゴースト 24 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3025": {
@@ -14842,10 +17066,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Hypno 025 Japanese",
+      "Hypno 25 Japanese",
+      "Hypno 97 Japanese",
       "Hypno 025 拡張シート 第3弾(緑版)",
+      "Hypno 25 拡張シート 第3弾(緑版)",
+      "Hypno 97 拡張シート 第3弾(緑版)",
       "Hypno 025 PMCG",
+      "Hypno 25 PMCG",
+      "Hypno 97 PMCG",
       "Hypno 025 pokemon japanese vending series expansion sheet green",
-      "Hypno 025 japanese vending series 3"
+      "Hypno 25 pokemon japanese vending series expansion sheet green",
+      "Hypno 97 pokemon japanese vending series expansion sheet green",
+      "Hypno 025 japanese vending series 3",
+      "Hypno 25 japanese vending series 3",
+      "Hypno 97 japanese vending series 3",
+      "スリーパー 025 Japanese",
+      "スリーパー 25 Japanese",
+      "スリーパー 97 Japanese",
+      "スリーパー 025 拡張シート 第3弾(緑版)",
+      "スリーパー 25 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3026": {
@@ -14867,10 +17106,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mewtwo 026 Japanese",
+      "Mewtwo 26 Japanese",
+      "Mewtwo 150 Japanese",
       "Mewtwo 026 拡張シート 第3弾(緑版)",
+      "Mewtwo 26 拡張シート 第3弾(緑版)",
+      "Mewtwo 150 拡張シート 第3弾(緑版)",
       "Mewtwo 026 PMCG",
+      "Mewtwo 26 PMCG",
+      "Mewtwo 150 PMCG",
       "Mewtwo 026 pokemon japanese vending series expansion sheet green",
-      "Mewtwo 026 japanese vending series 3"
+      "Mewtwo 26 pokemon japanese vending series expansion sheet green",
+      "Mewtwo 150 pokemon japanese vending series expansion sheet green",
+      "Mewtwo 026 japanese vending series 3",
+      "Mewtwo 26 japanese vending series 3",
+      "Mewtwo 150 japanese vending series 3",
+      "ミュウツー 026 Japanese",
+      "ミュウツー 26 Japanese",
+      "ミュウツー 150 Japanese",
+      "ミュウツー 026 拡張シート 第3弾(緑版)",
+      "ミュウツー 26 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3027": {
@@ -14892,10 +17146,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Sandslash 027 Japanese",
+      "Sandslash 27 Japanese",
+      "Sandslash 28 Japanese",
       "Sandslash 027 拡張シート 第3弾(緑版)",
+      "Sandslash 27 拡張シート 第3弾(緑版)",
+      "Sandslash 28 拡張シート 第3弾(緑版)",
       "Sandslash 027 PMCG",
+      "Sandslash 27 PMCG",
+      "Sandslash 28 PMCG",
       "Sandslash 027 pokemon japanese vending series expansion sheet green",
-      "Sandslash 027 japanese vending series 3"
+      "Sandslash 27 pokemon japanese vending series expansion sheet green",
+      "Sandslash 28 pokemon japanese vending series expansion sheet green",
+      "Sandslash 027 japanese vending series 3",
+      "Sandslash 27 japanese vending series 3",
+      "Sandslash 28 japanese vending series 3",
+      "サンドパン 027 Japanese",
+      "サンドパン 27 Japanese",
+      "サンドパン 28 Japanese",
+      "サンドパン 027 拡張シート 第3弾(緑版)",
+      "サンドパン 27 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3028": {
@@ -14917,10 +17186,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Machoke 028 Japanese",
+      "Machoke 28 Japanese",
+      "Machoke 67 Japanese",
       "Machoke 028 拡張シート 第3弾(緑版)",
+      "Machoke 28 拡張シート 第3弾(緑版)",
+      "Machoke 67 拡張シート 第3弾(緑版)",
       "Machoke 028 PMCG",
+      "Machoke 28 PMCG",
+      "Machoke 67 PMCG",
       "Machoke 028 pokemon japanese vending series expansion sheet green",
-      "Machoke 028 japanese vending series 3"
+      "Machoke 28 pokemon japanese vending series expansion sheet green",
+      "Machoke 67 pokemon japanese vending series expansion sheet green",
+      "Machoke 028 japanese vending series 3",
+      "Machoke 28 japanese vending series 3",
+      "Machoke 67 japanese vending series 3",
+      "ゴーリキー 028 Japanese",
+      "ゴーリキー 28 Japanese",
+      "ゴーリキー 67 Japanese",
+      "ゴーリキー 028 拡張シート 第3弾(緑版)",
+      "ゴーリキー 28 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3029": {
@@ -14942,10 +17226,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Graveler 029 Japanese",
+      "Graveler 29 Japanese",
+      "Graveler 75 Japanese",
       "Graveler 029 拡張シート 第3弾(緑版)",
+      "Graveler 29 拡張シート 第3弾(緑版)",
+      "Graveler 75 拡張シート 第3弾(緑版)",
       "Graveler 029 PMCG",
+      "Graveler 29 PMCG",
+      "Graveler 75 PMCG",
       "Graveler 029 pokemon japanese vending series expansion sheet green",
-      "Graveler 029 japanese vending series 3"
+      "Graveler 29 pokemon japanese vending series expansion sheet green",
+      "Graveler 75 pokemon japanese vending series expansion sheet green",
+      "Graveler 029 japanese vending series 3",
+      "Graveler 29 japanese vending series 3",
+      "Graveler 75 japanese vending series 3",
+      "ゴローン 029 Japanese",
+      "ゴローン 29 Japanese",
+      "ゴローン 75 Japanese",
+      "ゴローン 029 拡張シート 第3弾(緑版)",
+      "ゴローン 29 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3030": {
@@ -14967,10 +17266,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Cubone 030 Japanese",
+      "Cubone 30 Japanese",
+      "Cubone 104 Japanese",
       "Cubone 030 拡張シート 第3弾(緑版)",
+      "Cubone 30 拡張シート 第3弾(緑版)",
+      "Cubone 104 拡張シート 第3弾(緑版)",
       "Cubone 030 PMCG",
+      "Cubone 30 PMCG",
+      "Cubone 104 PMCG",
       "Cubone 030 pokemon japanese vending series expansion sheet green",
-      "Cubone 030 japanese vending series 3"
+      "Cubone 30 pokemon japanese vending series expansion sheet green",
+      "Cubone 104 pokemon japanese vending series expansion sheet green",
+      "Cubone 030 japanese vending series 3",
+      "Cubone 30 japanese vending series 3",
+      "Cubone 104 japanese vending series 3",
+      "カラカラ 030 Japanese",
+      "カラカラ 30 Japanese",
+      "カラカラ 104 Japanese",
+      "カラカラ 030 拡張シート 第3弾(緑版)",
+      "カラカラ 30 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3031": {
@@ -14992,10 +17306,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Rhydon 031 Japanese",
+      "Rhydon 31 Japanese",
+      "Rhydon 112 Japanese",
       "Rhydon 031 拡張シート 第3弾(緑版)",
+      "Rhydon 31 拡張シート 第3弾(緑版)",
+      "Rhydon 112 拡張シート 第3弾(緑版)",
       "Rhydon 031 PMCG",
+      "Rhydon 31 PMCG",
+      "Rhydon 112 PMCG",
       "Rhydon 031 pokemon japanese vending series expansion sheet green",
-      "Rhydon 031 japanese vending series 3"
+      "Rhydon 31 pokemon japanese vending series expansion sheet green",
+      "Rhydon 112 pokemon japanese vending series expansion sheet green",
+      "Rhydon 031 japanese vending series 3",
+      "Rhydon 31 japanese vending series 3",
+      "Rhydon 112 japanese vending series 3",
+      "サイドン 031 Japanese",
+      "サイドン 31 Japanese",
+      "サイドン 112 Japanese",
+      "サイドン 031 拡張シート 第3弾(緑版)",
+      "サイドン 31 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3032": {
@@ -15017,10 +17346,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pidgeotto 032 Japanese",
+      "Pidgeotto 32 Japanese",
+      "Pidgeotto 17 Japanese",
       "Pidgeotto 032 拡張シート 第3弾(緑版)",
+      "Pidgeotto 32 拡張シート 第3弾(緑版)",
+      "Pidgeotto 17 拡張シート 第3弾(緑版)",
       "Pidgeotto 032 PMCG",
+      "Pidgeotto 32 PMCG",
+      "Pidgeotto 17 PMCG",
       "Pidgeotto 032 pokemon japanese vending series expansion sheet green",
-      "Pidgeotto 032 japanese vending series 3"
+      "Pidgeotto 32 pokemon japanese vending series expansion sheet green",
+      "Pidgeotto 17 pokemon japanese vending series expansion sheet green",
+      "Pidgeotto 032 japanese vending series 3",
+      "Pidgeotto 32 japanese vending series 3",
+      "Pidgeotto 17 japanese vending series 3",
+      "ピジョン 032 Japanese",
+      "ピジョン 32 Japanese",
+      "ピジョン 17 Japanese",
+      "ピジョン 032 拡張シート 第3弾(緑版)",
+      "ピジョン 32 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3033": {
@@ -15042,10 +17386,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Kangaskhan 033 Japanese",
+      "Kangaskhan 33 Japanese",
+      "Kangaskhan 115 Japanese",
       "Kangaskhan 033 拡張シート 第3弾(緑版)",
+      "Kangaskhan 33 拡張シート 第3弾(緑版)",
+      "Kangaskhan 115 拡張シート 第3弾(緑版)",
       "Kangaskhan 033 PMCG",
+      "Kangaskhan 33 PMCG",
+      "Kangaskhan 115 PMCG",
       "Kangaskhan 033 pokemon japanese vending series expansion sheet green",
-      "Kangaskhan 033 japanese vending series 3"
+      "Kangaskhan 33 pokemon japanese vending series expansion sheet green",
+      "Kangaskhan 115 pokemon japanese vending series expansion sheet green",
+      "Kangaskhan 033 japanese vending series 3",
+      "Kangaskhan 33 japanese vending series 3",
+      "Kangaskhan 115 japanese vending series 3",
+      "ガルーラ 033 Japanese",
+      "ガルーラ 33 Japanese",
+      "ガルーラ 115 Japanese",
+      "ガルーラ 033 拡張シート 第3弾(緑版)",
+      "ガルーラ 33 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3034": {
@@ -15067,10 +17426,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Tauros 034 Japanese",
+      "Tauros 34 Japanese",
+      "Tauros 128 Japanese",
       "Tauros 034 拡張シート 第3弾(緑版)",
+      "Tauros 34 拡張シート 第3弾(緑版)",
+      "Tauros 128 拡張シート 第3弾(緑版)",
       "Tauros 034 PMCG",
+      "Tauros 34 PMCG",
+      "Tauros 128 PMCG",
       "Tauros 034 pokemon japanese vending series expansion sheet green",
-      "Tauros 034 japanese vending series 3"
+      "Tauros 34 pokemon japanese vending series expansion sheet green",
+      "Tauros 128 pokemon japanese vending series expansion sheet green",
+      "Tauros 034 japanese vending series 3",
+      "Tauros 34 japanese vending series 3",
+      "Tauros 128 japanese vending series 3",
+      "ケンタロス 034 Japanese",
+      "ケンタロス 34 Japanese",
+      "ケンタロス 128 Japanese",
+      "ケンタロス 034 拡張シート 第3弾(緑版)",
+      "ケンタロス 34 拡張シート 第3弾(緑版)"
     ]
   },
   "1stex3035": {
@@ -15092,10 +17466,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ポケモン再転送 035 Japanese",
+      "ポケモン再転送 35 Japanese",
       "ポケモン再転送 035 拡張シート 第3弾(緑版)",
+      "ポケモン再転送 35 拡張シート 第3弾(緑版)",
       "ポケモン再転送 035 PMCG",
+      "ポケモン再転送 35 PMCG",
       "ポケモン再転送 035 pokemon japanese vending series expansion sheet green",
-      "ポケモン再転送 035 japanese vending series 3"
+      "ポケモン再転送 35 pokemon japanese vending series expansion sheet green",
+      "ポケモン再転送 035 japanese vending series 3",
+      "ポケモン再転送 35 japanese vending series 3"
     ]
   },
   "1stex3036": {
@@ -15117,10 +17496,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ポケモンタワー 036 Japanese",
+      "ポケモンタワー 36 Japanese",
       "ポケモンタワー 036 拡張シート 第3弾(緑版)",
+      "ポケモンタワー 36 拡張シート 第3弾(緑版)",
       "ポケモンタワー 036 PMCG",
+      "ポケモンタワー 36 PMCG",
       "ポケモンタワー 036 pokemon japanese vending series expansion sheet green",
-      "ポケモンタワー 036 japanese vending series 3"
+      "ポケモンタワー 36 pokemon japanese vending series expansion sheet green",
+      "ポケモンタワー 036 japanese vending series 3",
+      "ポケモンタワー 36 japanese vending series 3"
     ]
   },
   "1stex3037": {
@@ -15567,10 +17951,21 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Bulbasaur 001 Japanese",
+      "Bulbasaur 1 Japanese",
       "Bulbasaur 001 クイックスターターギフト",
+      "Bulbasaur 1 クイックスターターギフト",
       "Bulbasaur 001 PMCG",
+      "Bulbasaur 1 PMCG",
       "Bulbasaur 001 quick starter gift",
-      "フシギダネ 001 Japanese"
+      "Bulbasaur 1 quick starter gift",
+      "フシギダネ 001 Japanese",
+      "フシギダネ 1 Japanese",
+      "フシギダネ 001 クイックスターターギフト",
+      "フシギダネ 1 クイックスターターギフト",
+      "フシギダネ 001 PMCG",
+      "フシギダネ 1 PMCG",
+      "フシギダネ 001 quick starter gift",
+      "フシギダネ 1 quick starter gift"
     ]
   },
   "1stqsg002": {
@@ -15592,10 +17987,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Caterpie 002 Japanese",
+      "Caterpie 2 Japanese",
+      "Caterpie 10 Japanese",
       "Caterpie 002 クイックスターターギフト",
+      "Caterpie 2 クイックスターターギフト",
+      "Caterpie 10 クイックスターターギフト",
       "Caterpie 002 PMCG",
+      "Caterpie 2 PMCG",
+      "Caterpie 10 PMCG",
       "Caterpie 002 quick starter gift",
-      "キャタピー 002 Japanese"
+      "Caterpie 2 quick starter gift",
+      "Caterpie 10 quick starter gift",
+      "キャタピー 002 Japanese",
+      "キャタピー 2 Japanese",
+      "キャタピー 10 Japanese",
+      "キャタピー 002 クイックスターターギフト",
+      "キャタピー 2 クイックスターターギフト",
+      "キャタピー 10 クイックスターターギフト",
+      "キャタピー 002 PMCG",
+      "キャタピー 2 PMCG"
     ]
   },
   "1stqsg003": {
@@ -15617,10 +18027,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Metapod 003 Japanese",
+      "Metapod 3 Japanese",
+      "Metapod 11 Japanese",
       "Metapod 003 クイックスターターギフト",
+      "Metapod 3 クイックスターターギフト",
+      "Metapod 11 クイックスターターギフト",
       "Metapod 003 PMCG",
+      "Metapod 3 PMCG",
+      "Metapod 11 PMCG",
       "Metapod 003 quick starter gift",
-      "トランセル 003 Japanese"
+      "Metapod 3 quick starter gift",
+      "Metapod 11 quick starter gift",
+      "トランセル 003 Japanese",
+      "トランセル 3 Japanese",
+      "トランセル 11 Japanese",
+      "トランセル 003 クイックスターターギフト",
+      "トランセル 3 クイックスターターギフト",
+      "トランセル 11 クイックスターターギフト",
+      "トランセル 003 PMCG",
+      "トランセル 3 PMCG"
     ]
   },
   "1stqsg004": {
@@ -15642,10 +18067,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Nidoran 004 Japanese",
+      "Nidoran 4 Japanese",
+      "Nidoran 29 Japanese",
       "Nidoran 004 クイックスターターギフト",
+      "Nidoran 4 クイックスターターギフト",
+      "Nidoran 29 クイックスターターギフト",
       "Nidoran 004 PMCG",
+      "Nidoran 4 PMCG",
+      "Nidoran 29 PMCG",
       "Nidoran 004 quick starter gift",
-      "ニドラン♀ 004 Japanese"
+      "Nidoran 4 quick starter gift",
+      "Nidoran 29 quick starter gift",
+      "ニドラン♀ 004 Japanese",
+      "ニドラン♀ 4 Japanese",
+      "ニドラン♀ 29 Japanese",
+      "ニドラン♀ 004 クイックスターターギフト",
+      "ニドラン♀ 4 クイックスターターギフト",
+      "ニドラン♀ 29 クイックスターターギフト",
+      "ニドラン♀ 004 PMCG",
+      "ニドラン♀ 4 PMCG"
     ]
   },
   "1stqsg005": {
@@ -15667,10 +18107,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Nidoran 005 Japanese",
+      "Nidoran 5 Japanese",
+      "Nidoran 32 Japanese",
       "Nidoran 005 クイックスターターギフト",
+      "Nidoran 5 クイックスターターギフト",
+      "Nidoran 32 クイックスターターギフト",
       "Nidoran 005 PMCG",
+      "Nidoran 5 PMCG",
+      "Nidoran 32 PMCG",
       "Nidoran 005 quick starter gift",
-      "ニドラン♂ 005 Japanese"
+      "Nidoran 5 quick starter gift",
+      "Nidoran 32 quick starter gift",
+      "ニドラン♂ 005 Japanese",
+      "ニドラン♂ 5 Japanese",
+      "ニドラン♂ 32 Japanese",
+      "ニドラン♂ 005 クイックスターターギフト",
+      "ニドラン♂ 5 クイックスターターギフト",
+      "ニドラン♂ 32 クイックスターターギフト",
+      "ニドラン♂ 005 PMCG",
+      "ニドラン♂ 5 PMCG"
     ]
   },
   "1stqsg006": {
@@ -15692,10 +18147,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pinsir 006 Japanese",
+      "Pinsir 6 Japanese",
+      "Pinsir 127 Japanese",
       "Pinsir 006 クイックスターターギフト",
+      "Pinsir 6 クイックスターターギフト",
+      "Pinsir 127 クイックスターターギフト",
       "Pinsir 006 PMCG",
+      "Pinsir 6 PMCG",
+      "Pinsir 127 PMCG",
       "Pinsir 006 quick starter gift",
-      "カイロス 006 Japanese"
+      "Pinsir 6 quick starter gift",
+      "Pinsir 127 quick starter gift",
+      "カイロス 006 Japanese",
+      "カイロス 6 Japanese",
+      "カイロス 127 Japanese",
+      "カイロス 006 クイックスターターギフト",
+      "カイロス 6 クイックスターターギフト",
+      "カイロス 127 クイックスターターギフト",
+      "カイロス 006 PMCG",
+      "カイロス 6 PMCG"
     ]
   },
   "1stqsg007": {
@@ -15717,10 +18187,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Charmander 007 Japanese",
+      "Charmander 7 Japanese",
+      "Charmander 4 Japanese",
       "Charmander 007 クイックスターターギフト",
+      "Charmander 7 クイックスターターギフト",
+      "Charmander 4 クイックスターターギフト",
       "Charmander 007 PMCG",
+      "Charmander 7 PMCG",
+      "Charmander 4 PMCG",
       "Charmander 007 quick starter gift",
-      "ヒトカゲ 007 Japanese"
+      "Charmander 7 quick starter gift",
+      "Charmander 4 quick starter gift",
+      "ヒトカゲ 007 Japanese",
+      "ヒトカゲ 7 Japanese",
+      "ヒトカゲ 4 Japanese",
+      "ヒトカゲ 007 クイックスターターギフト",
+      "ヒトカゲ 7 クイックスターターギフト",
+      "ヒトカゲ 4 クイックスターターギフト",
+      "ヒトカゲ 007 PMCG",
+      "ヒトカゲ 7 PMCG"
     ]
   },
   "1stqsg008": {
@@ -15742,10 +18227,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Vulpix 008 Japanese",
+      "Vulpix 8 Japanese",
+      "Vulpix 37 Japanese",
       "Vulpix 008 クイックスターターギフト",
+      "Vulpix 8 クイックスターターギフト",
+      "Vulpix 37 クイックスターターギフト",
       "Vulpix 008 PMCG",
+      "Vulpix 8 PMCG",
+      "Vulpix 37 PMCG",
       "Vulpix 008 quick starter gift",
-      "ロコン 008 Japanese"
+      "Vulpix 8 quick starter gift",
+      "Vulpix 37 quick starter gift",
+      "ロコン 008 Japanese",
+      "ロコン 8 Japanese",
+      "ロコン 37 Japanese",
+      "ロコン 008 クイックスターターギフト",
+      "ロコン 8 クイックスターターギフト",
+      "ロコン 37 クイックスターターギフト",
+      "ロコン 008 PMCG",
+      "ロコン 8 PMCG"
     ]
   },
   "1stqsg009": {
@@ -15767,10 +18267,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Growlithe 009 Japanese",
+      "Growlithe 9 Japanese",
+      "Growlithe 58 Japanese",
       "Growlithe 009 クイックスターターギフト",
+      "Growlithe 9 クイックスターターギフト",
+      "Growlithe 58 クイックスターターギフト",
       "Growlithe 009 PMCG",
+      "Growlithe 9 PMCG",
+      "Growlithe 58 PMCG",
       "Growlithe 009 quick starter gift",
-      "ガーディ 009 Japanese"
+      "Growlithe 9 quick starter gift",
+      "Growlithe 58 quick starter gift",
+      "ガーディ 009 Japanese",
+      "ガーディ 9 Japanese",
+      "ガーディ 58 Japanese",
+      "ガーディ 009 クイックスターターギフト",
+      "ガーディ 9 クイックスターターギフト",
+      "ガーディ 58 クイックスターターギフト",
+      "ガーディ 009 PMCG",
+      "ガーディ 9 PMCG"
     ]
   },
   "1stqsg010": {
@@ -15792,10 +18307,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Ponyta 010 Japanese",
+      "Ponyta 10 Japanese",
+      "Ponyta 77 Japanese",
       "Ponyta 010 クイックスターターギフト",
+      "Ponyta 10 クイックスターターギフト",
+      "Ponyta 77 クイックスターターギフト",
       "Ponyta 010 PMCG",
+      "Ponyta 10 PMCG",
+      "Ponyta 77 PMCG",
       "Ponyta 010 quick starter gift",
-      "ポニータ 010 Japanese"
+      "Ponyta 10 quick starter gift",
+      "Ponyta 77 quick starter gift",
+      "ポニータ 010 Japanese",
+      "ポニータ 10 Japanese",
+      "ポニータ 77 Japanese",
+      "ポニータ 010 クイックスターターギフト",
+      "ポニータ 10 クイックスターターギフト",
+      "ポニータ 77 クイックスターターギフト",
+      "ポニータ 010 PMCG",
+      "ポニータ 10 PMCG"
     ]
   },
   "1stqsg011": {
@@ -15817,10 +18347,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Rapidash 011 Japanese",
+      "Rapidash 11 Japanese",
+      "Rapidash 78 Japanese",
       "Rapidash 011 クイックスターターギフト",
+      "Rapidash 11 クイックスターターギフト",
+      "Rapidash 78 クイックスターターギフト",
       "Rapidash 011 PMCG",
+      "Rapidash 11 PMCG",
+      "Rapidash 78 PMCG",
       "Rapidash 011 quick starter gift",
-      "ギャロップ 011 Japanese"
+      "Rapidash 11 quick starter gift",
+      "Rapidash 78 quick starter gift",
+      "ギャロップ 011 Japanese",
+      "ギャロップ 11 Japanese",
+      "ギャロップ 78 Japanese",
+      "ギャロップ 011 クイックスターターギフト",
+      "ギャロップ 11 クイックスターターギフト",
+      "ギャロップ 78 クイックスターターギフト",
+      "ギャロップ 011 PMCG",
+      "ギャロップ 11 PMCG"
     ]
   },
   "1stqsg012": {
@@ -15842,10 +18387,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Magmar 012 Japanese",
+      "Magmar 12 Japanese",
+      "Magmar 126 Japanese",
       "Magmar 012 クイックスターターギフト",
+      "Magmar 12 クイックスターターギフト",
+      "Magmar 126 クイックスターターギフト",
       "Magmar 012 PMCG",
+      "Magmar 12 PMCG",
+      "Magmar 126 PMCG",
       "Magmar 012 quick starter gift",
-      "ブーバー 012 Japanese"
+      "Magmar 12 quick starter gift",
+      "Magmar 126 quick starter gift",
+      "ブーバー 012 Japanese",
+      "ブーバー 12 Japanese",
+      "ブーバー 126 Japanese",
+      "ブーバー 012 クイックスターターギフト",
+      "ブーバー 12 クイックスターターギフト",
+      "ブーバー 126 クイックスターターギフト",
+      "ブーバー 012 PMCG",
+      "ブーバー 12 PMCG"
     ]
   },
   "1stqsg013": {
@@ -15867,10 +18427,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Squirtle 013 Japanese",
+      "Squirtle 13 Japanese",
+      "Squirtle 7 Japanese",
       "Squirtle 013 クイックスターターギフト",
+      "Squirtle 13 クイックスターターギフト",
+      "Squirtle 7 クイックスターターギフト",
       "Squirtle 013 PMCG",
+      "Squirtle 13 PMCG",
+      "Squirtle 7 PMCG",
       "Squirtle 013 quick starter gift",
-      "ゼニガメ 013 Japanese"
+      "Squirtle 13 quick starter gift",
+      "Squirtle 7 quick starter gift",
+      "ゼニガメ 013 Japanese",
+      "ゼニガメ 13 Japanese",
+      "ゼニガメ 7 Japanese",
+      "ゼニガメ 013 クイックスターターギフト",
+      "ゼニガメ 13 クイックスターターギフト",
+      "ゼニガメ 7 クイックスターターギフト",
+      "ゼニガメ 013 PMCG",
+      "ゼニガメ 13 PMCG"
     ]
   },
   "1stqsg014": {
@@ -15892,10 +18467,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Poliwag 014 Japanese",
+      "Poliwag 14 Japanese",
+      "Poliwag 60 Japanese",
       "Poliwag 014 クイックスターターギフト",
+      "Poliwag 14 クイックスターターギフト",
+      "Poliwag 60 クイックスターターギフト",
       "Poliwag 014 PMCG",
+      "Poliwag 14 PMCG",
+      "Poliwag 60 PMCG",
       "Poliwag 014 quick starter gift",
-      "ニョロモ 014 Japanese"
+      "Poliwag 14 quick starter gift",
+      "Poliwag 60 quick starter gift",
+      "ニョロモ 014 Japanese",
+      "ニョロモ 14 Japanese",
+      "ニョロモ 60 Japanese",
+      "ニョロモ 014 クイックスターターギフト",
+      "ニョロモ 14 クイックスターターギフト",
+      "ニョロモ 60 クイックスターターギフト",
+      "ニョロモ 014 PMCG",
+      "ニョロモ 14 PMCG"
     ]
   },
   "1stqsg015": {
@@ -15917,10 +18507,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Poliwhirl 015 Japanese",
+      "Poliwhirl 15 Japanese",
+      "Poliwhirl 61 Japanese",
       "Poliwhirl 015 クイックスターターギフト",
+      "Poliwhirl 15 クイックスターターギフト",
+      "Poliwhirl 61 クイックスターターギフト",
       "Poliwhirl 015 PMCG",
+      "Poliwhirl 15 PMCG",
+      "Poliwhirl 61 PMCG",
       "Poliwhirl 015 quick starter gift",
-      "ニョロゾ 015 Japanese"
+      "Poliwhirl 15 quick starter gift",
+      "Poliwhirl 61 quick starter gift",
+      "ニョロゾ 015 Japanese",
+      "ニョロゾ 15 Japanese",
+      "ニョロゾ 61 Japanese",
+      "ニョロゾ 015 クイックスターターギフト",
+      "ニョロゾ 15 クイックスターターギフト",
+      "ニョロゾ 61 クイックスターターギフト",
+      "ニョロゾ 015 PMCG",
+      "ニョロゾ 15 PMCG"
     ]
   },
   "1stqsg016": {
@@ -15942,10 +18547,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Poliwrath 016 Japanese",
+      "Poliwrath 16 Japanese",
+      "Poliwrath 62 Japanese",
       "Poliwrath 016 クイックスターターギフト",
+      "Poliwrath 16 クイックスターターギフト",
+      "Poliwrath 62 クイックスターターギフト",
       "Poliwrath 016 PMCG",
+      "Poliwrath 16 PMCG",
+      "Poliwrath 62 PMCG",
       "Poliwrath 016 quick starter gift",
-      "ニョロボン 016 Japanese"
+      "Poliwrath 16 quick starter gift",
+      "Poliwrath 62 quick starter gift",
+      "ニョロボン 016 Japanese",
+      "ニョロボン 16 Japanese",
+      "ニョロボン 62 Japanese",
+      "ニョロボン 016 クイックスターターギフト",
+      "ニョロボン 16 クイックスターターギフト",
+      "ニョロボン 62 クイックスターターギフト",
+      "ニョロボン 016 PMCG",
+      "ニョロボン 16 PMCG"
     ]
   },
   "1stqsg017": {
@@ -15967,10 +18587,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Seel 017 Japanese",
+      "Seel 17 Japanese",
+      "Seel 86 Japanese",
       "Seel 017 クイックスターターギフト",
+      "Seel 17 クイックスターターギフト",
+      "Seel 86 クイックスターターギフト",
       "Seel 017 PMCG",
+      "Seel 17 PMCG",
+      "Seel 86 PMCG",
       "Seel 017 quick starter gift",
-      "パウワウ 017 Japanese"
+      "Seel 17 quick starter gift",
+      "Seel 86 quick starter gift",
+      "パウワウ 017 Japanese",
+      "パウワウ 17 Japanese",
+      "パウワウ 86 Japanese",
+      "パウワウ 017 クイックスターターギフト",
+      "パウワウ 17 クイックスターターギフト",
+      "パウワウ 86 クイックスターターギフト",
+      "パウワウ 017 PMCG",
+      "パウワウ 17 PMCG"
     ]
   },
   "1stqsg018": {
@@ -15992,10 +18627,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Dewgong 018 Japanese",
+      "Dewgong 18 Japanese",
+      "Dewgong 87 Japanese",
       "Dewgong 018 クイックスターターギフト",
+      "Dewgong 18 クイックスターターギフト",
+      "Dewgong 87 クイックスターターギフト",
       "Dewgong 018 PMCG",
+      "Dewgong 18 PMCG",
+      "Dewgong 87 PMCG",
       "Dewgong 018 quick starter gift",
-      "ジュゴン 018 Japanese"
+      "Dewgong 18 quick starter gift",
+      "Dewgong 87 quick starter gift",
+      "ジュゴン 018 Japanese",
+      "ジュゴン 18 Japanese",
+      "ジュゴン 87 Japanese",
+      "ジュゴン 018 クイックスターターギフト",
+      "ジュゴン 18 クイックスターターギフト",
+      "ジュゴン 87 クイックスターターギフト",
+      "ジュゴン 018 PMCG",
+      "ジュゴン 18 PMCG"
     ]
   },
   "1stqsg019": {
@@ -16017,10 +18667,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Lapras 019 Japanese",
+      "Lapras 19 Japanese",
+      "Lapras 131 Japanese",
       "Lapras 019 クイックスターターギフト",
+      "Lapras 19 クイックスターターギフト",
+      "Lapras 131 クイックスターターギフト",
       "Lapras 019 PMCG",
+      "Lapras 19 PMCG",
+      "Lapras 131 PMCG",
       "Lapras 019 quick starter gift",
-      "ラプラス 019 Japanese"
+      "Lapras 19 quick starter gift",
+      "Lapras 131 quick starter gift",
+      "ラプラス 019 Japanese",
+      "ラプラス 19 Japanese",
+      "ラプラス 131 Japanese",
+      "ラプラス 019 クイックスターターギフト",
+      "ラプラス 19 クイックスターターギフト",
+      "ラプラス 131 クイックスターターギフト",
+      "ラプラス 019 PMCG",
+      "ラプラス 19 PMCG"
     ]
   },
   "1stqsg020": {
@@ -16042,10 +18707,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pikachu 020 Japanese",
+      "Pikachu 20 Japanese",
+      "Pikachu 25 Japanese",
       "Pikachu 020 クイックスターターギフト",
+      "Pikachu 20 クイックスターターギフト",
+      "Pikachu 25 クイックスターターギフト",
       "Pikachu 020 PMCG",
+      "Pikachu 20 PMCG",
+      "Pikachu 25 PMCG",
       "Pikachu 020 quick starter gift",
-      "ピカチュウ 020 Japanese"
+      "Pikachu 20 quick starter gift",
+      "Pikachu 25 quick starter gift",
+      "ピカチュウ 020 Japanese",
+      "ピカチュウ 20 Japanese",
+      "ピカチュウ 25 Japanese",
+      "ピカチュウ 020 クイックスターターギフト",
+      "ピカチュウ 20 クイックスターターギフト",
+      "ピカチュウ 25 クイックスターターギフト",
+      "ピカチュウ 020 PMCG",
+      "ピカチュウ 20 PMCG"
     ]
   },
   "1stqsg021": {
@@ -16067,10 +18747,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pikachu 021 Japanese",
+      "Pikachu 21 Japanese",
+      "Pikachu 25 Japanese",
       "Pikachu 021 クイックスターターギフト",
+      "Pikachu 21 クイックスターターギフト",
+      "Pikachu 25 クイックスターターギフト",
       "Pikachu 021 PMCG",
+      "Pikachu 21 PMCG",
+      "Pikachu 25 PMCG",
       "Pikachu 021 quick starter gift",
-      "ピカチュウ 021 Japanese"
+      "Pikachu 21 quick starter gift",
+      "Pikachu 25 quick starter gift",
+      "ピカチュウ 021 Japanese",
+      "ピカチュウ 21 Japanese",
+      "ピカチュウ 25 Japanese",
+      "ピカチュウ 021 クイックスターターギフト",
+      "ピカチュウ 21 クイックスターターギフト",
+      "ピカチュウ 25 クイックスターターギフト",
+      "ピカチュウ 021 PMCG",
+      "ピカチュウ 21 PMCG"
     ]
   },
   "1stqsg022": {
@@ -16092,10 +18787,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Raichu 022 Japanese",
+      "Raichu 22 Japanese",
+      "Raichu 26 Japanese",
       "Raichu 022 クイックスターターギフト",
+      "Raichu 22 クイックスターターギフト",
+      "Raichu 26 クイックスターターギフト",
       "Raichu 022 PMCG",
+      "Raichu 22 PMCG",
+      "Raichu 26 PMCG",
       "Raichu 022 quick starter gift",
-      "ライチュウ 022 Japanese"
+      "Raichu 22 quick starter gift",
+      "Raichu 26 quick starter gift",
+      "ライチュウ 022 Japanese",
+      "ライチュウ 22 Japanese",
+      "ライチュウ 26 Japanese",
+      "ライチュウ 022 クイックスターターギフト",
+      "ライチュウ 22 クイックスターターギフト",
+      "ライチュウ 26 クイックスターターギフト",
+      "ライチュウ 022 PMCG",
+      "ライチュウ 22 PMCG"
     ]
   },
   "1stqsg023": {
@@ -16117,10 +18827,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Magnemite 023 Japanese",
+      "Magnemite 23 Japanese",
+      "Magnemite 81 Japanese",
       "Magnemite 023 クイックスターターギフト",
+      "Magnemite 23 クイックスターターギフト",
+      "Magnemite 81 クイックスターターギフト",
       "Magnemite 023 PMCG",
+      "Magnemite 23 PMCG",
+      "Magnemite 81 PMCG",
       "Magnemite 023 quick starter gift",
-      "コイル 023 Japanese"
+      "Magnemite 23 quick starter gift",
+      "Magnemite 81 quick starter gift",
+      "コイル 023 Japanese",
+      "コイル 23 Japanese",
+      "コイル 81 Japanese",
+      "コイル 023 クイックスターターギフト",
+      "コイル 23 クイックスターターギフト",
+      "コイル 81 クイックスターターギフト",
+      "コイル 023 PMCG",
+      "コイル 23 PMCG"
     ]
   },
   "1stqsg024": {
@@ -16142,10 +18867,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Magneton 024 Japanese",
+      "Magneton 24 Japanese",
+      "Magneton 82 Japanese",
       "Magneton 024 クイックスターターギフト",
+      "Magneton 24 クイックスターターギフト",
+      "Magneton 82 クイックスターターギフト",
       "Magneton 024 PMCG",
+      "Magneton 24 PMCG",
+      "Magneton 82 PMCG",
       "Magneton 024 quick starter gift",
-      "レアコイル 024 Japanese"
+      "Magneton 24 quick starter gift",
+      "Magneton 82 quick starter gift",
+      "レアコイル 024 Japanese",
+      "レアコイル 24 Japanese",
+      "レアコイル 82 Japanese",
+      "レアコイル 024 クイックスターターギフト",
+      "レアコイル 24 クイックスターターギフト",
+      "レアコイル 82 クイックスターターギフト",
+      "レアコイル 024 PMCG",
+      "レアコイル 24 PMCG"
     ]
   },
   "1stqsg025": {
@@ -16167,10 +18907,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Voltorb 025 Japanese",
+      "Voltorb 25 Japanese",
+      "Voltorb 100 Japanese",
       "Voltorb 025 クイックスターターギフト",
+      "Voltorb 25 クイックスターターギフト",
+      "Voltorb 100 クイックスターターギフト",
       "Voltorb 025 PMCG",
+      "Voltorb 25 PMCG",
+      "Voltorb 100 PMCG",
       "Voltorb 025 quick starter gift",
-      "ビリリダマ 025 Japanese"
+      "Voltorb 25 quick starter gift",
+      "Voltorb 100 quick starter gift",
+      "ビリリダマ 025 Japanese",
+      "ビリリダマ 25 Japanese",
+      "ビリリダマ 100 Japanese",
+      "ビリリダマ 025 クイックスターターギフト",
+      "ビリリダマ 25 クイックスターターギフト",
+      "ビリリダマ 100 クイックスターターギフト",
+      "ビリリダマ 025 PMCG",
+      "ビリリダマ 25 PMCG"
     ]
   },
   "1stqsg026": {
@@ -16192,10 +18947,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Abra 026 Japanese",
+      "Abra 26 Japanese",
+      "Abra 63 Japanese",
       "Abra 026 クイックスターターギフト",
+      "Abra 26 クイックスターターギフト",
+      "Abra 63 クイックスターターギフト",
       "Abra 026 PMCG",
+      "Abra 26 PMCG",
+      "Abra 63 PMCG",
       "Abra 026 quick starter gift",
-      "ケーシィ 026 Japanese"
+      "Abra 26 quick starter gift",
+      "Abra 63 quick starter gift",
+      "ケーシィ 026 Japanese",
+      "ケーシィ 26 Japanese",
+      "ケーシィ 63 Japanese",
+      "ケーシィ 026 クイックスターターギフト",
+      "ケーシィ 26 クイックスターターギフト",
+      "ケーシィ 63 クイックスターターギフト",
+      "ケーシィ 026 PMCG",
+      "ケーシィ 26 PMCG"
     ]
   },
   "1stqsg027": {
@@ -16217,10 +18987,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Kadabra 027 Japanese",
+      "Kadabra 27 Japanese",
+      "Kadabra 64 Japanese",
       "Kadabra 027 クイックスターターギフト",
+      "Kadabra 27 クイックスターターギフト",
+      "Kadabra 64 クイックスターターギフト",
       "Kadabra 027 PMCG",
+      "Kadabra 27 PMCG",
+      "Kadabra 64 PMCG",
       "Kadabra 027 quick starter gift",
-      "ユンゲラー 027 Japanese"
+      "Kadabra 27 quick starter gift",
+      "Kadabra 64 quick starter gift",
+      "ユンゲラー 027 Japanese",
+      "ユンゲラー 27 Japanese",
+      "ユンゲラー 64 Japanese",
+      "ユンゲラー 027 クイックスターターギフト",
+      "ユンゲラー 27 クイックスターターギフト",
+      "ユンゲラー 64 クイックスターターギフト",
+      "ユンゲラー 027 PMCG",
+      "ユンゲラー 27 PMCG"
     ]
   },
   "1stqsg028": {
@@ -16242,10 +19027,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Gastly 028 Japanese",
+      "Gastly 28 Japanese",
+      "Gastly 92 Japanese",
       "Gastly 028 クイックスターターギフト",
+      "Gastly 28 クイックスターターギフト",
+      "Gastly 92 クイックスターターギフト",
       "Gastly 028 PMCG",
+      "Gastly 28 PMCG",
+      "Gastly 92 PMCG",
       "Gastly 028 quick starter gift",
-      "ゴース 028 Japanese"
+      "Gastly 28 quick starter gift",
+      "Gastly 92 quick starter gift",
+      "ゴース 028 Japanese",
+      "ゴース 28 Japanese",
+      "ゴース 92 Japanese",
+      "ゴース 028 クイックスターターギフト",
+      "ゴース 28 クイックスターターギフト",
+      "ゴース 92 クイックスターターギフト",
+      "ゴース 028 PMCG",
+      "ゴース 28 PMCG"
     ]
   },
   "1stqsg029": {
@@ -16267,10 +19067,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Haunter 029 Japanese",
+      "Haunter 29 Japanese",
+      "Haunter 93 Japanese",
       "Haunter 029 クイックスターターギフト",
+      "Haunter 29 クイックスターターギフト",
+      "Haunter 93 クイックスターターギフト",
       "Haunter 029 PMCG",
+      "Haunter 29 PMCG",
+      "Haunter 93 PMCG",
       "Haunter 029 quick starter gift",
-      "ゴースト 029 Japanese"
+      "Haunter 29 quick starter gift",
+      "Haunter 93 quick starter gift",
+      "ゴースト 029 Japanese",
+      "ゴースト 29 Japanese",
+      "ゴースト 93 Japanese",
+      "ゴースト 029 クイックスターターギフト",
+      "ゴースト 29 クイックスターターギフト",
+      "ゴースト 93 クイックスターターギフト",
+      "ゴースト 029 PMCG",
+      "ゴースト 29 PMCG"
     ]
   },
   "1stqsg030": {
@@ -16292,10 +19107,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mr. Mime 030 Japanese",
+      "Mr. Mime 30 Japanese",
+      "Mr. Mime 122 Japanese",
       "Mr. Mime 030 クイックスターターギフト",
+      "Mr. Mime 30 クイックスターターギフト",
+      "Mr. Mime 122 クイックスターターギフト",
       "Mr. Mime 030 PMCG",
+      "Mr. Mime 30 PMCG",
+      "Mr. Mime 122 PMCG",
       "Mr. Mime 030 quick starter gift",
-      "バリヤード 030 Japanese"
+      "Mr. Mime 30 quick starter gift",
+      "Mr. Mime 122 quick starter gift",
+      "バリヤード 030 Japanese",
+      "バリヤード 30 Japanese",
+      "バリヤード 122 Japanese",
+      "バリヤード 030 クイックスターターギフト",
+      "バリヤード 30 クイックスターターギフト",
+      "バリヤード 122 クイックスターターギフト",
+      "バリヤード 030 PMCG",
+      "バリヤード 30 PMCG"
     ]
   },
   "1stqsg031": {
@@ -16317,10 +19147,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Jynx 031 Japanese",
+      "Jynx 31 Japanese",
+      "Jynx 124 Japanese",
       "Jynx 031 クイックスターターギフト",
+      "Jynx 31 クイックスターターギフト",
+      "Jynx 124 クイックスターターギフト",
       "Jynx 031 PMCG",
+      "Jynx 31 PMCG",
+      "Jynx 124 PMCG",
       "Jynx 031 quick starter gift",
-      "ルージュラ 031 Japanese"
+      "Jynx 31 quick starter gift",
+      "Jynx 124 quick starter gift",
+      "ルージュラ 031 Japanese",
+      "ルージュラ 31 Japanese",
+      "ルージュラ 124 Japanese",
+      "ルージュラ 031 クイックスターターギフト",
+      "ルージュラ 31 クイックスターターギフト",
+      "ルージュラ 124 クイックスターターギフト",
+      "ルージュラ 031 PMCG",
+      "ルージュラ 31 PMCG"
     ]
   },
   "1stqsg032": {
@@ -16342,10 +19187,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mewtwo 032 Japanese",
+      "Mewtwo 32 Japanese",
+      "Mewtwo 150 Japanese",
       "Mewtwo 032 クイックスターターギフト",
+      "Mewtwo 32 クイックスターターギフト",
+      "Mewtwo 150 クイックスターターギフト",
       "Mewtwo 032 PMCG",
+      "Mewtwo 32 PMCG",
+      "Mewtwo 150 PMCG",
       "Mewtwo 032 quick starter gift",
-      "ミュウツー 032 Japanese"
+      "Mewtwo 32 quick starter gift",
+      "Mewtwo 150 quick starter gift",
+      "ミュウツー 032 Japanese",
+      "ミュウツー 32 Japanese",
+      "ミュウツー 150 Japanese",
+      "ミュウツー 032 クイックスターターギフト",
+      "ミュウツー 32 クイックスターターギフト",
+      "ミュウツー 150 クイックスターターギフト",
+      "ミュウツー 032 PMCG",
+      "ミュウツー 32 PMCG"
     ]
   },
   "1stqsg033": {
@@ -16367,10 +19227,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Sandshrew 033 Japanese",
+      "Sandshrew 33 Japanese",
+      "Sandshrew 27 Japanese",
       "Sandshrew 033 クイックスターターギフト",
+      "Sandshrew 33 クイックスターターギフト",
+      "Sandshrew 27 クイックスターターギフト",
       "Sandshrew 033 PMCG",
+      "Sandshrew 33 PMCG",
+      "Sandshrew 27 PMCG",
       "Sandshrew 033 quick starter gift",
-      "サンド 033 Japanese"
+      "Sandshrew 33 quick starter gift",
+      "Sandshrew 27 quick starter gift",
+      "サンド 033 Japanese",
+      "サンド 33 Japanese",
+      "サンド 27 Japanese",
+      "サンド 033 クイックスターターギフト",
+      "サンド 33 クイックスターターギフト",
+      "サンド 27 クイックスターターギフト",
+      "サンド 033 PMCG",
+      "サンド 33 PMCG"
     ]
   },
   "1stqsg034": {
@@ -16392,10 +19267,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Sandslash 034 Japanese",
+      "Sandslash 34 Japanese",
+      "Sandslash 28 Japanese",
       "Sandslash 034 クイックスターターギフト",
+      "Sandslash 34 クイックスターターギフト",
+      "Sandslash 28 クイックスターターギフト",
       "Sandslash 034 PMCG",
+      "Sandslash 34 PMCG",
+      "Sandslash 28 PMCG",
       "Sandslash 034 quick starter gift",
-      "サンドパン 034 Japanese"
+      "Sandslash 34 quick starter gift",
+      "Sandslash 28 quick starter gift",
+      "サンドパン 034 Japanese",
+      "サンドパン 34 Japanese",
+      "サンドパン 28 Japanese",
+      "サンドパン 034 クイックスターターギフト",
+      "サンドパン 34 クイックスターターギフト",
+      "サンドパン 28 クイックスターターギフト",
+      "サンドパン 034 PMCG",
+      "サンドパン 34 PMCG"
     ]
   },
   "1stqsg035": {
@@ -16417,10 +19307,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Machop 035 Japanese",
+      "Machop 35 Japanese",
+      "Machop 66 Japanese",
       "Machop 035 クイックスターターギフト",
+      "Machop 35 クイックスターターギフト",
+      "Machop 66 クイックスターターギフト",
       "Machop 035 PMCG",
+      "Machop 35 PMCG",
+      "Machop 66 PMCG",
       "Machop 035 quick starter gift",
-      "ワンリキー 035 Japanese"
+      "Machop 35 quick starter gift",
+      "Machop 66 quick starter gift",
+      "ワンリキー 035 Japanese",
+      "ワンリキー 35 Japanese",
+      "ワンリキー 66 Japanese",
+      "ワンリキー 035 クイックスターターギフト",
+      "ワンリキー 35 クイックスターターギフト",
+      "ワンリキー 66 クイックスターターギフト",
+      "ワンリキー 035 PMCG",
+      "ワンリキー 35 PMCG"
     ]
   },
   "1stqsg036": {
@@ -16442,10 +19347,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Machoke 036 Japanese",
+      "Machoke 36 Japanese",
+      "Machoke 67 Japanese",
       "Machoke 036 クイックスターターギフト",
+      "Machoke 36 クイックスターターギフト",
+      "Machoke 67 クイックスターターギフト",
       "Machoke 036 PMCG",
+      "Machoke 36 PMCG",
+      "Machoke 67 PMCG",
       "Machoke 036 quick starter gift",
-      "ゴーリキー 036 Japanese"
+      "Machoke 36 quick starter gift",
+      "Machoke 67 quick starter gift",
+      "ゴーリキー 036 Japanese",
+      "ゴーリキー 36 Japanese",
+      "ゴーリキー 67 Japanese",
+      "ゴーリキー 036 クイックスターターギフト",
+      "ゴーリキー 36 クイックスターターギフト",
+      "ゴーリキー 67 クイックスターターギフト",
+      "ゴーリキー 036 PMCG",
+      "ゴーリキー 36 PMCG"
     ]
   },
   "1stqsg037": {
@@ -16467,10 +19387,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Onix 037 Japanese",
+      "Onix 37 Japanese",
+      "Onix 95 Japanese",
       "Onix 037 クイックスターターギフト",
+      "Onix 37 クイックスターターギフト",
+      "Onix 95 クイックスターターギフト",
       "Onix 037 PMCG",
+      "Onix 37 PMCG",
+      "Onix 95 PMCG",
       "Onix 037 quick starter gift",
-      "イワーク 037 Japanese"
+      "Onix 37 quick starter gift",
+      "Onix 95 quick starter gift",
+      "イワーク 037 Japanese",
+      "イワーク 37 Japanese",
+      "イワーク 95 Japanese",
+      "イワーク 037 クイックスターターギフト",
+      "イワーク 37 クイックスターターギフト",
+      "イワーク 95 クイックスターターギフト",
+      "イワーク 037 PMCG",
+      "イワーク 37 PMCG"
     ]
   },
   "1stqsg038": {
@@ -16492,10 +19427,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Hitmonchan 038 Japanese",
+      "Hitmonchan 38 Japanese",
+      "Hitmonchan 107 Japanese",
       "Hitmonchan 038 クイックスターターギフト",
+      "Hitmonchan 38 クイックスターターギフト",
+      "Hitmonchan 107 クイックスターターギフト",
       "Hitmonchan 038 PMCG",
+      "Hitmonchan 38 PMCG",
+      "Hitmonchan 107 PMCG",
       "Hitmonchan 038 quick starter gift",
-      "エビワラー 038 Japanese"
+      "Hitmonchan 38 quick starter gift",
+      "Hitmonchan 107 quick starter gift",
+      "エビワラー 038 Japanese",
+      "エビワラー 38 Japanese",
+      "エビワラー 107 Japanese",
+      "エビワラー 038 クイックスターターギフト",
+      "エビワラー 38 クイックスターターギフト",
+      "エビワラー 107 クイックスターターギフト",
+      "エビワラー 038 PMCG",
+      "エビワラー 38 PMCG"
     ]
   },
   "1stqsg039": {
@@ -16517,10 +19467,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Rattata 039 Japanese",
+      "Rattata 39 Japanese",
+      "Rattata 19 Japanese",
       "Rattata 039 クイックスターターギフト",
+      "Rattata 39 クイックスターターギフト",
+      "Rattata 19 クイックスターターギフト",
       "Rattata 039 PMCG",
+      "Rattata 39 PMCG",
+      "Rattata 19 PMCG",
       "Rattata 039 quick starter gift",
-      "コラッタ 039 Japanese"
+      "Rattata 39 quick starter gift",
+      "Rattata 19 quick starter gift",
+      "コラッタ 039 Japanese",
+      "コラッタ 39 Japanese",
+      "コラッタ 19 Japanese",
+      "コラッタ 039 クイックスターターギフト",
+      "コラッタ 39 クイックスターターギフト",
+      "コラッタ 19 クイックスターターギフト",
+      "コラッタ 039 PMCG",
+      "コラッタ 39 PMCG"
     ]
   },
   "1stqsg040": {
@@ -16542,10 +19507,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Clefairy 040 Japanese",
+      "Clefairy 40 Japanese",
+      "Clefairy 35 Japanese",
       "Clefairy 040 クイックスターターギフト",
+      "Clefairy 40 クイックスターターギフト",
+      "Clefairy 35 クイックスターターギフト",
       "Clefairy 040 PMCG",
+      "Clefairy 40 PMCG",
+      "Clefairy 35 PMCG",
       "Clefairy 040 quick starter gift",
-      "ピッピ 040 Japanese"
+      "Clefairy 40 quick starter gift",
+      "Clefairy 35 quick starter gift",
+      "ピッピ 040 Japanese",
+      "ピッピ 40 Japanese",
+      "ピッピ 35 Japanese",
+      "ピッピ 040 クイックスターターギフト",
+      "ピッピ 40 クイックスターターギフト",
+      "ピッピ 35 クイックスターターギフト",
+      "ピッピ 040 PMCG",
+      "ピッピ 40 PMCG"
     ]
   },
   "1stqsg041": {
@@ -16567,10 +19547,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Doduo 041 Japanese",
+      "Doduo 41 Japanese",
+      "Doduo 84 Japanese",
       "Doduo 041 クイックスターターギフト",
+      "Doduo 41 クイックスターターギフト",
+      "Doduo 84 クイックスターターギフト",
       "Doduo 041 PMCG",
+      "Doduo 41 PMCG",
+      "Doduo 84 PMCG",
       "Doduo 041 quick starter gift",
-      "ドードー 041 Japanese"
+      "Doduo 41 quick starter gift",
+      "Doduo 84 quick starter gift",
+      "ドードー 041 Japanese",
+      "ドードー 41 Japanese",
+      "ドードー 84 Japanese",
+      "ドードー 041 クイックスターターギフト",
+      "ドードー 41 クイックスターターギフト",
+      "ドードー 84 クイックスターターギフト",
+      "ドードー 041 PMCG",
+      "ドードー 41 PMCG"
     ]
   },
   "1stqsg042": {
@@ -16592,10 +19587,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Lickitung 042 Japanese",
+      "Lickitung 42 Japanese",
+      "Lickitung 108 Japanese",
       "Lickitung 042 クイックスターターギフト",
+      "Lickitung 42 クイックスターターギフト",
+      "Lickitung 108 クイックスターターギフト",
       "Lickitung 042 PMCG",
+      "Lickitung 42 PMCG",
+      "Lickitung 108 PMCG",
       "Lickitung 042 quick starter gift",
-      "ベロリンガ 042 Japanese"
+      "Lickitung 42 quick starter gift",
+      "Lickitung 108 quick starter gift",
+      "ベロリンガ 042 Japanese",
+      "ベロリンガ 42 Japanese",
+      "ベロリンガ 108 Japanese",
+      "ベロリンガ 042 クイックスターターギフト",
+      "ベロリンガ 42 クイックスターターギフト",
+      "ベロリンガ 108 クイックスターターギフト",
+      "ベロリンガ 042 PMCG",
+      "ベロリンガ 42 PMCG"
     ]
   },
   "1stqsg043": {
@@ -16617,10 +19627,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Chansey 043 Japanese",
+      "Chansey 43 Japanese",
+      "Chansey 113 Japanese",
       "Chansey 043 クイックスターターギフト",
+      "Chansey 43 クイックスターターギフト",
+      "Chansey 113 クイックスターターギフト",
       "Chansey 043 PMCG",
+      "Chansey 43 PMCG",
+      "Chansey 113 PMCG",
       "Chansey 043 quick starter gift",
-      "ラッキー 043 Japanese"
+      "Chansey 43 quick starter gift",
+      "Chansey 113 quick starter gift",
+      "ラッキー 043 Japanese",
+      "ラッキー 43 Japanese",
+      "ラッキー 113 Japanese",
+      "ラッキー 043 クイックスターターギフト",
+      "ラッキー 43 クイックスターターギフト",
+      "ラッキー 113 クイックスターターギフト",
+      "ラッキー 043 PMCG",
+      "ラッキー 43 PMCG"
     ]
   },
   "1stqsg044": {
@@ -16642,10 +19667,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Kangaskhan 044 Japanese",
+      "Kangaskhan 44 Japanese",
+      "Kangaskhan 115 Japanese",
       "Kangaskhan 044 クイックスターターギフト",
+      "Kangaskhan 44 クイックスターターギフト",
+      "Kangaskhan 115 クイックスターターギフト",
       "Kangaskhan 044 PMCG",
+      "Kangaskhan 44 PMCG",
+      "Kangaskhan 115 PMCG",
       "Kangaskhan 044 quick starter gift",
-      "ガルーラ 044 Japanese"
+      "Kangaskhan 44 quick starter gift",
+      "Kangaskhan 115 quick starter gift",
+      "ガルーラ 044 Japanese",
+      "ガルーラ 44 Japanese",
+      "ガルーラ 115 Japanese",
+      "ガルーラ 044 クイックスターターギフト",
+      "ガルーラ 44 クイックスターターギフト",
+      "ガルーラ 115 クイックスターターギフト",
+      "ガルーラ 044 PMCG",
+      "ガルーラ 44 PMCG"
     ]
   },
   "1stqsg045": {
@@ -16667,10 +19707,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Porygon 045 Japanese",
+      "Porygon 45 Japanese",
+      "Porygon 137 Japanese",
       "Porygon 045 クイックスターターギフト",
+      "Porygon 45 クイックスターターギフト",
+      "Porygon 137 クイックスターターギフト",
       "Porygon 045 PMCG",
+      "Porygon 45 PMCG",
+      "Porygon 137 PMCG",
       "Porygon 045 quick starter gift",
-      "ポリゴン 045 Japanese"
+      "Porygon 45 quick starter gift",
+      "Porygon 137 quick starter gift",
+      "ポリゴン 045 Japanese",
+      "ポリゴン 45 Japanese",
+      "ポリゴン 137 Japanese",
+      "ポリゴン 045 クイックスターターギフト",
+      "ポリゴン 45 クイックスターターギフト",
+      "ポリゴン 137 クイックスターターギフト",
+      "ポリゴン 045 PMCG",
+      "ポリゴン 45 PMCG"
     ]
   },
   "1stqsg046": {
@@ -16692,10 +19747,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Snorlax 046 Japanese",
+      "Snorlax 46 Japanese",
+      "Snorlax 143 Japanese",
       "Snorlax 046 クイックスターターギフト",
+      "Snorlax 46 クイックスターターギフト",
+      "Snorlax 143 クイックスターターギフト",
       "Snorlax 046 PMCG",
+      "Snorlax 46 PMCG",
+      "Snorlax 143 PMCG",
       "Snorlax 046 quick starter gift",
-      "カビゴン 046 Japanese"
+      "Snorlax 46 quick starter gift",
+      "Snorlax 143 quick starter gift",
+      "カビゴン 046 Japanese",
+      "カビゴン 46 Japanese",
+      "カビゴン 143 Japanese",
+      "カビゴン 046 クイックスターターギフト",
+      "カビゴン 46 クイックスターターギフト",
+      "カビゴン 143 クイックスターターギフト",
+      "カビゴン 046 PMCG",
+      "カビゴン 46 PMCG"
     ]
   },
   "1stqsg047": {
@@ -16717,10 +19787,21 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Energy Retrieval 047 Japanese",
+      "Energy Retrieval 47 Japanese",
       "Energy Retrieval 047 クイックスターターギフト",
+      "Energy Retrieval 47 クイックスターターギフト",
       "Energy Retrieval 047 PMCG",
+      "Energy Retrieval 47 PMCG",
       "Energy Retrieval 047 quick starter gift",
-      "エネルギー回収 047 Japanese"
+      "Energy Retrieval 47 quick starter gift",
+      "エネルギー回収 047 Japanese",
+      "エネルギー回収 47 Japanese",
+      "エネルギー回収 047 クイックスターターギフト",
+      "エネルギー回収 47 クイックスターターギフト",
+      "エネルギー回収 047 PMCG",
+      "エネルギー回収 47 PMCG",
+      "エネルギー回収 047 quick starter gift",
+      "エネルギー回収 47 quick starter gift"
     ]
   },
   "1stqsg048": {
@@ -16742,9 +19823,13 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エネルギー転送 048 Japanese",
+      "エネルギー転送 48 Japanese",
       "エネルギー転送 048 クイックスターターギフト",
+      "エネルギー転送 48 クイックスターターギフト",
       "エネルギー転送 048 PMCG",
-      "エネルギー転送 048 quick starter gift"
+      "エネルギー転送 48 PMCG",
+      "エネルギー転送 048 quick starter gift",
+      "エネルギー転送 48 quick starter gift"
     ]
   },
   "1stqsg049": {
@@ -16766,10 +19851,21 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Potion 049 Japanese",
+      "Potion 49 Japanese",
       "Potion 049 クイックスターターギフト",
+      "Potion 49 クイックスターターギフト",
       "Potion 049 PMCG",
+      "Potion 49 PMCG",
       "Potion 049 quick starter gift",
-      "きずぐすり 049 Japanese"
+      "Potion 49 quick starter gift",
+      "きずぐすり 049 Japanese",
+      "きずぐすり 49 Japanese",
+      "きずぐすり 049 クイックスターターギフト",
+      "きずぐすり 49 クイックスターターギフト",
+      "きずぐすり 049 PMCG",
+      "きずぐすり 49 PMCG",
+      "きずぐすり 049 quick starter gift",
+      "きずぐすり 49 quick starter gift"
     ]
   },
   "1stqsg050": {
@@ -16791,9 +19887,13 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ギャンブラー 050 Japanese",
+      "ギャンブラー 50 Japanese",
       "ギャンブラー 050 クイックスターターギフト",
+      "ギャンブラー 50 クイックスターターギフト",
       "ギャンブラー 050 PMCG",
-      "ギャンブラー 050 quick starter gift"
+      "ギャンブラー 50 PMCG",
+      "ギャンブラー 050 quick starter gift",
+      "ギャンブラー 50 quick starter gift"
     ]
   },
   "1stqsg051": {
@@ -16815,10 +19915,21 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Gust of Wind 051 Japanese",
+      "Gust of Wind 51 Japanese",
       "Gust of Wind 051 クイックスターターギフト",
+      "Gust of Wind 51 クイックスターターギフト",
       "Gust of Wind 051 PMCG",
+      "Gust of Wind 51 PMCG",
       "Gust of Wind 051 quick starter gift",
-      "突風 051 Japanese"
+      "Gust of Wind 51 quick starter gift",
+      "突風 051 Japanese",
+      "突風 51 Japanese",
+      "突風 051 クイックスターターギフト",
+      "突風 51 クイックスターターギフト",
+      "突風 051 PMCG",
+      "突風 51 PMCG",
+      "突風 051 quick starter gift",
+      "突風 51 quick starter gift"
     ]
   },
   "1stqsg052": {
@@ -16840,10 +19951,21 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Switch 052 Japanese",
+      "Switch 52 Japanese",
       "Switch 052 クイックスターターギフト",
+      "Switch 52 クイックスターターギフト",
       "Switch 052 PMCG",
+      "Switch 52 PMCG",
       "Switch 052 quick starter gift",
-      "ポケモンいれかえ 052 Japanese"
+      "Switch 52 quick starter gift",
+      "ポケモンいれかえ 052 Japanese",
+      "ポケモンいれかえ 52 Japanese",
+      "ポケモンいれかえ 052 クイックスターターギフト",
+      "ポケモンいれかえ 52 クイックスターターギフト",
+      "ポケモンいれかえ 052 PMCG",
+      "ポケモンいれかえ 52 PMCG",
+      "ポケモンいれかえ 052 quick starter gift",
+      "ポケモンいれかえ 52 quick starter gift"
     ]
   },
   "1stqsg053": {
@@ -16865,10 +19987,21 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pokémon Trader 053 Japanese",
+      "Pokémon Trader 53 Japanese",
       "Pokémon Trader 053 クイックスターターギフト",
+      "Pokémon Trader 53 クイックスターターギフト",
       "Pokémon Trader 053 PMCG",
+      "Pokémon Trader 53 PMCG",
       "Pokémon Trader 053 quick starter gift",
-      "ポケモン交換おじさん 053 Japanese"
+      "Pokémon Trader 53 quick starter gift",
+      "ポケモン交換おじさん 053 Japanese",
+      "ポケモン交換おじさん 53 Japanese",
+      "ポケモン交換おじさん 053 クイックスターターギフト",
+      "ポケモン交換おじさん 53 クイックスターターギフト",
+      "ポケモン交換おじさん 053 PMCG",
+      "ポケモン交換おじさん 53 PMCG",
+      "ポケモン交換おじさん 053 quick starter gift",
+      "ポケモン交換おじさん 53 quick starter gift"
     ]
   },
   "1stqsg054": {
@@ -16890,10 +20023,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Scyther 054 Japanese",
+      "Scyther 54 Japanese",
+      "Scyther 123 Japanese",
       "Scyther 054 クイックスターターギフト",
+      "Scyther 54 クイックスターターギフト",
+      "Scyther 123 クイックスターターギフト",
       "Scyther 054 PMCG",
+      "Scyther 54 PMCG",
+      "Scyther 123 PMCG",
       "Scyther 054 quick starter gift",
-      "ストライク 054 Japanese"
+      "Scyther 54 quick starter gift",
+      "Scyther 123 quick starter gift",
+      "ストライク 054 Japanese",
+      "ストライク 54 Japanese",
+      "ストライク 123 Japanese",
+      "ストライク 054 クイックスターターギフト",
+      "ストライク 54 クイックスターターギフト",
+      "ストライク 123 クイックスターターギフト",
+      "ストライク 054 PMCG",
+      "ストライク 54 PMCG"
     ]
   },
   "1stqsg055": {
@@ -16915,10 +20063,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Moltres 055 Japanese",
+      "Moltres 55 Japanese",
+      "Moltres 146 Japanese",
       "Moltres 055 クイックスターターギフト",
+      "Moltres 55 クイックスターターギフト",
+      "Moltres 146 クイックスターターギフト",
       "Moltres 055 PMCG",
+      "Moltres 55 PMCG",
+      "Moltres 146 PMCG",
       "Moltres 055 quick starter gift",
-      "ファイヤー 055 Japanese"
+      "Moltres 55 quick starter gift",
+      "Moltres 146 quick starter gift",
+      "ファイヤー 055 Japanese",
+      "ファイヤー 55 Japanese",
+      "ファイヤー 146 Japanese",
+      "ファイヤー 055 クイックスターターギフト",
+      "ファイヤー 55 クイックスターターギフト",
+      "ファイヤー 146 クイックスターターギフト",
+      "ファイヤー 055 PMCG",
+      "ファイヤー 55 PMCG"
     ]
   },
   "1stqsg056": {
@@ -16940,10 +20103,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Zapdos 056 Japanese",
+      "Zapdos 56 Japanese",
+      "Zapdos 145 Japanese",
       "Zapdos 056 クイックスターターギフト",
+      "Zapdos 56 クイックスターターギフト",
+      "Zapdos 145 クイックスターターギフト",
       "Zapdos 056 PMCG",
+      "Zapdos 56 PMCG",
+      "Zapdos 145 PMCG",
       "Zapdos 056 quick starter gift",
-      "サンダー 056 Japanese"
+      "Zapdos 56 quick starter gift",
+      "Zapdos 145 quick starter gift",
+      "サンダー 056 Japanese",
+      "サンダー 56 Japanese",
+      "サンダー 145 Japanese",
+      "サンダー 056 クイックスターターギフト",
+      "サンダー 56 クイックスターターギフト",
+      "サンダー 145 クイックスターターギフト",
+      "サンダー 056 PMCG",
+      "サンダー 56 PMCG"
     ]
   },
   "1stqsg057": {
@@ -16965,10 +20143,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Articuno 057 Japanese",
+      "Articuno 57 Japanese",
+      "Articuno 144 Japanese",
       "Articuno 057 クイックスターターギフト",
+      "Articuno 57 クイックスターターギフト",
+      "Articuno 144 クイックスターターギフト",
       "Articuno 057 PMCG",
+      "Articuno 57 PMCG",
+      "Articuno 144 PMCG",
       "Articuno 057 quick starter gift",
-      "フリーザー 057 Japanese"
+      "Articuno 57 quick starter gift",
+      "Articuno 144 quick starter gift",
+      "フリーザー 057 Japanese",
+      "フリーザー 57 Japanese",
+      "フリーザー 144 Japanese",
+      "フリーザー 057 クイックスターターギフト",
+      "フリーザー 57 クイックスターターギフト",
+      "フリーザー 144 クイックスターターギフト",
+      "フリーザー 057 PMCG",
+      "フリーザー 57 PMCG"
     ]
   },
   "1stqsg058": {
@@ -16990,9 +20183,13 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マスターボール 058 Japanese",
+      "マスターボール 58 Japanese",
       "マスターボール 058 クイックスターターギフト",
+      "マスターボール 58 クイックスターターギフト",
       "マスターボール 058 PMCG",
-      "マスターボール 058 quick starter gift"
+      "マスターボール 58 PMCG",
+      "マスターボール 058 quick starter gift",
+      "マスターボール 58 quick starter gift"
     ]
   },
   "1stmv001": {
@@ -17413,10 +20610,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 004 Japanese",
+      "草エネルギー 4 Japanese",
       "草エネルギー 004 イントロパック(フシギダネデッキ)",
+      "草エネルギー 4 イントロパック(フシギダネデッキ)",
       "草エネルギー 004 PMCG",
+      "草エネルギー 4 PMCG",
       "草エネルギー 004 intro pack",
-      "草エネルギー 004 bulbasaur deck"
+      "草エネルギー 4 intro pack",
+      "草エネルギー 004 bulbasaur deck",
+      "草エネルギー 4 bulbasaur deck"
     ]
   },
   "1stintro1005": {
@@ -17438,10 +20640,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 005 Japanese",
+      "草エネルギー 5 Japanese",
       "草エネルギー 005 イントロパック(フシギダネデッキ)",
+      "草エネルギー 5 イントロパック(フシギダネデッキ)",
       "草エネルギー 005 PMCG",
+      "草エネルギー 5 PMCG",
       "草エネルギー 005 intro pack",
-      "草エネルギー 005 bulbasaur deck"
+      "草エネルギー 5 intro pack",
+      "草エネルギー 005 bulbasaur deck",
+      "草エネルギー 5 bulbasaur deck"
     ]
   },
   "1stintro1006": {
@@ -17463,10 +20670,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 006 Japanese",
+      "雷エネルギー 6 Japanese",
       "雷エネルギー 006 イントロパック(フシギダネデッキ)",
+      "雷エネルギー 6 イントロパック(フシギダネデッキ)",
       "雷エネルギー 006 PMCG",
+      "雷エネルギー 6 PMCG",
       "雷エネルギー 006 intro pack",
-      "雷エネルギー 006 bulbasaur deck"
+      "雷エネルギー 6 intro pack",
+      "雷エネルギー 006 bulbasaur deck",
+      "雷エネルギー 6 bulbasaur deck"
     ]
   },
   "1stintro1007": {
@@ -17507,10 +20719,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 008 Japanese",
+      "草エネルギー 8 Japanese",
       "草エネルギー 008 イントロパック(フシギダネデッキ)",
+      "草エネルギー 8 イントロパック(フシギダネデッキ)",
       "草エネルギー 008 PMCG",
+      "草エネルギー 8 PMCG",
       "草エネルギー 008 intro pack",
-      "草エネルギー 008 bulbasaur deck"
+      "草エネルギー 8 intro pack",
+      "草エネルギー 008 bulbasaur deck",
+      "草エネルギー 8 bulbasaur deck"
     ]
   },
   "1stintro1009": {
@@ -17532,10 +20749,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "スーパーポケモン回収 009 Japanese",
+      "スーパーポケモン回収 9 Japanese",
       "スーパーポケモン回収 009 イントロパック(フシギダネデッキ)",
+      "スーパーポケモン回収 9 イントロパック(フシギダネデッキ)",
       "スーパーポケモン回収 009 PMCG",
+      "スーパーポケモン回収 9 PMCG",
       "スーパーポケモン回収 009 intro pack",
-      "スーパーポケモン回収 009 bulbasaur deck"
+      "スーパーポケモン回収 9 intro pack",
+      "スーパーポケモン回収 009 bulbasaur deck",
+      "スーパーポケモン回収 9 bulbasaur deck"
     ]
   },
   "1stintro1010": {
@@ -17557,10 +20779,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 010 Japanese",
+      "雷エネルギー 10 Japanese",
       "雷エネルギー 010 イントロパック(フシギダネデッキ)",
+      "雷エネルギー 10 イントロパック(フシギダネデッキ)",
       "雷エネルギー 010 PMCG",
+      "雷エネルギー 10 PMCG",
       "雷エネルギー 010 intro pack",
-      "雷エネルギー 010 bulbasaur deck"
+      "雷エネルギー 10 intro pack",
+      "雷エネルギー 010 bulbasaur deck",
+      "雷エネルギー 10 bulbasaur deck"
     ]
   },
   "1stintro1011": {
@@ -17582,10 +20809,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 011 Japanese",
+      "草エネルギー 11 Japanese",
       "草エネルギー 011 イントロパック(フシギダネデッキ)",
+      "草エネルギー 11 イントロパック(フシギダネデッキ)",
       "草エネルギー 011 PMCG",
+      "草エネルギー 11 PMCG",
       "草エネルギー 011 intro pack",
-      "草エネルギー 011 bulbasaur deck"
+      "草エネルギー 11 intro pack",
+      "草エネルギー 011 bulbasaur deck",
+      "草エネルギー 11 bulbasaur deck"
     ]
   },
   "1stintro1012": {
@@ -17607,10 +20839,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 012 Japanese",
+      "雷エネルギー 12 Japanese",
       "雷エネルギー 012 イントロパック(フシギダネデッキ)",
+      "雷エネルギー 12 イントロパック(フシギダネデッキ)",
       "雷エネルギー 012 PMCG",
+      "雷エネルギー 12 PMCG",
       "雷エネルギー 012 intro pack",
-      "雷エネルギー 012 bulbasaur deck"
+      "雷エネルギー 12 intro pack",
+      "雷エネルギー 012 bulbasaur deck",
+      "雷エネルギー 12 bulbasaur deck"
     ]
   },
   "1stintro1013": {
@@ -17651,10 +20888,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 014 Japanese",
+      "雷エネルギー 14 Japanese",
       "雷エネルギー 014 イントロパック(フシギダネデッキ)",
+      "雷エネルギー 14 イントロパック(フシギダネデッキ)",
       "雷エネルギー 014 PMCG",
+      "雷エネルギー 14 PMCG",
       "雷エネルギー 014 intro pack",
-      "雷エネルギー 014 bulbasaur deck"
+      "雷エネルギー 14 intro pack",
+      "雷エネルギー 014 bulbasaur deck",
+      "雷エネルギー 14 bulbasaur deck"
     ]
   },
   "1stintro1015": {
@@ -17676,10 +20918,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 015 Japanese",
+      "草エネルギー 15 Japanese",
       "草エネルギー 015 イントロパック(フシギダネデッキ)",
+      "草エネルギー 15 イントロパック(フシギダネデッキ)",
       "草エネルギー 015 PMCG",
+      "草エネルギー 15 PMCG",
       "草エネルギー 015 intro pack",
-      "草エネルギー 015 bulbasaur deck"
+      "草エネルギー 15 intro pack",
+      "草エネルギー 015 bulbasaur deck",
+      "草エネルギー 15 bulbasaur deck"
     ]
   },
   "1stintro1016": {
@@ -17720,10 +20967,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 017 Japanese",
+      "雷エネルギー 17 Japanese",
       "雷エネルギー 017 イントロパック(フシギダネデッキ)",
+      "雷エネルギー 17 イントロパック(フシギダネデッキ)",
       "雷エネルギー 017 PMCG",
+      "雷エネルギー 17 PMCG",
       "雷エネルギー 017 intro pack",
-      "雷エネルギー 017 bulbasaur deck"
+      "雷エネルギー 17 intro pack",
+      "雷エネルギー 017 bulbasaur deck",
+      "雷エネルギー 17 bulbasaur deck"
     ]
   },
   "1stintro1018": {
@@ -17783,10 +21035,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マサキの転送装置 020 Japanese",
+      "マサキの転送装置 20 Japanese",
       "マサキの転送装置 020 イントロパック(フシギダネデッキ)",
+      "マサキの転送装置 20 イントロパック(フシギダネデッキ)",
       "マサキの転送装置 020 PMCG",
+      "マサキの転送装置 20 PMCG",
       "マサキの転送装置 020 intro pack",
-      "マサキの転送装置 020 bulbasaur deck"
+      "マサキの転送装置 20 intro pack",
+      "マサキの転送装置 020 bulbasaur deck",
+      "マサキの転送装置 20 bulbasaur deck"
     ]
   },
   "1stintro1021": {
@@ -17808,10 +21065,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 021 Japanese",
+      "草エネルギー 21 Japanese",
       "草エネルギー 021 イントロパック(フシギダネデッキ)",
+      "草エネルギー 21 イントロパック(フシギダネデッキ)",
       "草エネルギー 021 PMCG",
+      "草エネルギー 21 PMCG",
       "草エネルギー 021 intro pack",
-      "草エネルギー 021 bulbasaur deck"
+      "草エネルギー 21 intro pack",
+      "草エネルギー 021 bulbasaur deck",
+      "草エネルギー 21 bulbasaur deck"
     ]
   },
   "1stintro1022": {
@@ -17871,10 +21133,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "超エネルギー 024 Japanese",
+      "超エネルギー 24 Japanese",
       "超エネルギー 024 イントロパック(フシギダネデッキ)",
+      "超エネルギー 24 イントロパック(フシギダネデッキ)",
       "超エネルギー 024 PMCG",
+      "超エネルギー 24 PMCG",
       "超エネルギー 024 intro pack",
-      "超エネルギー 024 bulbasaur deck"
+      "超エネルギー 24 intro pack",
+      "超エネルギー 024 bulbasaur deck",
+      "超エネルギー 24 bulbasaur deck"
     ]
   },
   "1stintro1025": {
@@ -17896,10 +21163,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 025 Japanese",
+      "草エネルギー 25 Japanese",
       "草エネルギー 025 イントロパック(フシギダネデッキ)",
+      "草エネルギー 25 イントロパック(フシギダネデッキ)",
       "草エネルギー 025 PMCG",
+      "草エネルギー 25 PMCG",
       "草エネルギー 025 intro pack",
-      "草エネルギー 025 bulbasaur deck"
+      "草エネルギー 25 intro pack",
+      "草エネルギー 025 bulbasaur deck",
+      "草エネルギー 25 bulbasaur deck"
     ]
   },
   "1stintro1026": {
@@ -17940,10 +21212,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "超エネルギー 027 Japanese",
+      "超エネルギー 27 Japanese",
       "超エネルギー 027 イントロパック(フシギダネデッキ)",
+      "超エネルギー 27 イントロパック(フシギダネデッキ)",
       "超エネルギー 027 PMCG",
+      "超エネルギー 27 PMCG",
       "超エネルギー 027 intro pack",
-      "超エネルギー 027 bulbasaur deck"
+      "超エネルギー 27 intro pack",
+      "超エネルギー 027 bulbasaur deck",
+      "超エネルギー 27 bulbasaur deck"
     ]
   },
   "1stintro1028": {
@@ -18022,10 +21299,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "超エネルギー 031 Japanese",
+      "超エネルギー 31 Japanese",
       "超エネルギー 031 イントロパック(フシギダネデッキ)",
+      "超エネルギー 31 イントロパック(フシギダネデッキ)",
       "超エネルギー 031 PMCG",
+      "超エネルギー 31 PMCG",
       "超エネルギー 031 intro pack",
-      "超エネルギー 031 bulbasaur deck"
+      "超エネルギー 31 intro pack",
+      "超エネルギー 031 bulbasaur deck",
+      "超エネルギー 31 bulbasaur deck"
     ]
   },
   "1stintro1032": {
@@ -18066,10 +21348,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 033 Japanese",
+      "雷エネルギー 33 Japanese",
       "雷エネルギー 033 イントロパック(フシギダネデッキ)",
+      "雷エネルギー 33 イントロパック(フシギダネデッキ)",
       "雷エネルギー 033 PMCG",
+      "雷エネルギー 33 PMCG",
       "雷エネルギー 033 intro pack",
-      "雷エネルギー 033 bulbasaur deck"
+      "雷エネルギー 33 intro pack",
+      "雷エネルギー 033 bulbasaur deck",
+      "雷エネルギー 33 bulbasaur deck"
     ]
   },
   "1stintro1034": {
@@ -18091,10 +21378,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 034 Japanese",
+      "草エネルギー 34 Japanese",
       "草エネルギー 034 イントロパック(フシギダネデッキ)",
+      "草エネルギー 34 イントロパック(フシギダネデッキ)",
       "草エネルギー 034 PMCG",
+      "草エネルギー 34 PMCG",
       "草エネルギー 034 intro pack",
-      "草エネルギー 034 bulbasaur deck"
+      "草エネルギー 34 intro pack",
+      "草エネルギー 034 bulbasaur deck",
+      "草エネルギー 34 bulbasaur deck"
     ]
   },
   "1stintro1035": {
@@ -18135,10 +21427,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 036 Japanese",
+      "草エネルギー 36 Japanese",
       "草エネルギー 036 イントロパック(フシギダネデッキ)",
+      "草エネルギー 36 イントロパック(フシギダネデッキ)",
       "草エネルギー 036 PMCG",
+      "草エネルギー 36 PMCG",
       "草エネルギー 036 intro pack",
-      "草エネルギー 036 bulbasaur deck"
+      "草エネルギー 36 intro pack",
+      "草エネルギー 036 bulbasaur deck",
+      "草エネルギー 36 bulbasaur deck"
     ]
   },
   "1stintro1037": {
@@ -18179,10 +21476,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "超エネルギー 038 Japanese",
+      "超エネルギー 38 Japanese",
       "超エネルギー 038 イントロパック(フシギダネデッキ)",
+      "超エネルギー 38 イントロパック(フシギダネデッキ)",
       "超エネルギー 038 PMCG",
+      "超エネルギー 38 PMCG",
       "超エネルギー 038 intro pack",
-      "超エネルギー 038 bulbasaur deck"
+      "超エネルギー 38 intro pack",
+      "超エネルギー 038 bulbasaur deck",
+      "超エネルギー 38 bulbasaur deck"
     ]
   },
   "1stintro1039": {
@@ -18299,10 +21601,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 004 Japanese",
+      "炎エネルギー 4 Japanese",
       "炎エネルギー 004 イントロパック(ゼニガメデッキ)",
+      "炎エネルギー 4 イントロパック(ゼニガメデッキ)",
       "炎エネルギー 004 PMCG",
+      "炎エネルギー 4 PMCG",
       "炎エネルギー 004 intro pack",
-      "炎エネルギー 004 squirtle deck"
+      "炎エネルギー 4 intro pack",
+      "炎エネルギー 004 squirtle deck",
+      "炎エネルギー 4 squirtle deck"
     ]
   },
   "1stintro2005": {
@@ -18324,10 +21631,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 005 Japanese",
+      "水エネルギー 5 Japanese",
       "水エネルギー 005 イントロパック(ゼニガメデッキ)",
+      "水エネルギー 5 イントロパック(ゼニガメデッキ)",
       "水エネルギー 005 PMCG",
+      "水エネルギー 5 PMCG",
       "水エネルギー 005 intro pack",
-      "水エネルギー 005 squirtle deck"
+      "水エネルギー 5 intro pack",
+      "水エネルギー 005 squirtle deck",
+      "水エネルギー 5 squirtle deck"
     ]
   },
   "1stintro2006": {
@@ -18349,10 +21661,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 006 Japanese",
+      "水エネルギー 6 Japanese",
       "水エネルギー 006 イントロパック(ゼニガメデッキ)",
+      "水エネルギー 6 イントロパック(ゼニガメデッキ)",
       "水エネルギー 006 PMCG",
+      "水エネルギー 6 PMCG",
       "水エネルギー 006 intro pack",
-      "水エネルギー 006 squirtle deck"
+      "水エネルギー 6 intro pack",
+      "水エネルギー 006 squirtle deck",
+      "水エネルギー 6 squirtle deck"
     ]
   },
   "1stintro2007": {
@@ -18393,10 +21710,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 008 Japanese",
+      "炎エネルギー 8 Japanese",
       "炎エネルギー 008 イントロパック(ゼニガメデッキ)",
+      "炎エネルギー 8 イントロパック(ゼニガメデッキ)",
       "炎エネルギー 008 PMCG",
+      "炎エネルギー 8 PMCG",
       "炎エネルギー 008 intro pack",
-      "炎エネルギー 008 squirtle deck"
+      "炎エネルギー 8 intro pack",
+      "炎エネルギー 008 squirtle deck",
+      "炎エネルギー 8 squirtle deck"
     ]
   },
   "1stintro2009": {
@@ -18456,10 +21778,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 011 Japanese",
+      "炎エネルギー 11 Japanese",
       "炎エネルギー 011 イントロパック(ゼニガメデッキ)",
+      "炎エネルギー 11 イントロパック(ゼニガメデッキ)",
       "炎エネルギー 011 PMCG",
+      "炎エネルギー 11 PMCG",
       "炎エネルギー 011 intro pack",
-      "炎エネルギー 011 squirtle deck"
+      "炎エネルギー 11 intro pack",
+      "炎エネルギー 011 squirtle deck",
+      "炎エネルギー 11 squirtle deck"
     ]
   },
   "1stintro2012": {
@@ -18481,10 +21808,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "闘エネルギー 012 Japanese",
+      "闘エネルギー 12 Japanese",
       "闘エネルギー 012 イントロパック(ゼニガメデッキ)",
+      "闘エネルギー 12 イントロパック(ゼニガメデッキ)",
       "闘エネルギー 012 PMCG",
+      "闘エネルギー 12 PMCG",
       "闘エネルギー 012 intro pack",
-      "闘エネルギー 012 squirtle deck"
+      "闘エネルギー 12 intro pack",
+      "闘エネルギー 012 squirtle deck",
+      "闘エネルギー 12 squirtle deck"
     ]
   },
   "1stintro2013": {
@@ -18544,10 +21876,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "闘エネルギー 015 Japanese",
+      "闘エネルギー 15 Japanese",
       "闘エネルギー 015 イントロパック(ゼニガメデッキ)",
+      "闘エネルギー 15 イントロパック(ゼニガメデッキ)",
       "闘エネルギー 015 PMCG",
+      "闘エネルギー 15 PMCG",
       "闘エネルギー 015 intro pack",
-      "闘エネルギー 015 squirtle deck"
+      "闘エネルギー 15 intro pack",
+      "闘エネルギー 015 squirtle deck",
+      "闘エネルギー 15 squirtle deck"
     ]
   },
   "1stintro2016": {
@@ -18588,10 +21925,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "闘エネルギー 017 Japanese",
+      "闘エネルギー 17 Japanese",
       "闘エネルギー 017 イントロパック(ゼニガメデッキ)",
+      "闘エネルギー 17 イントロパック(ゼニガメデッキ)",
       "闘エネルギー 017 PMCG",
+      "闘エネルギー 17 PMCG",
       "闘エネルギー 017 intro pack",
-      "闘エネルギー 017 squirtle deck"
+      "闘エネルギー 17 intro pack",
+      "闘エネルギー 017 squirtle deck",
+      "闘エネルギー 17 squirtle deck"
     ]
   },
   "1stintro2018": {
@@ -18651,10 +21993,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 020 Japanese",
+      "水エネルギー 20 Japanese",
       "水エネルギー 020 イントロパック(ゼニガメデッキ)",
+      "水エネルギー 20 イントロパック(ゼニガメデッキ)",
       "水エネルギー 020 PMCG",
+      "水エネルギー 20 PMCG",
       "水エネルギー 020 intro pack",
-      "水エネルギー 020 squirtle deck"
+      "水エネルギー 20 intro pack",
+      "水エネルギー 020 squirtle deck",
+      "水エネルギー 20 squirtle deck"
     ]
   },
   "1stintro2021": {
@@ -18676,10 +22023,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マサキの転送装置 021 Japanese",
+      "マサキの転送装置 21 Japanese",
       "マサキの転送装置 021 イントロパック(ゼニガメデッキ)",
+      "マサキの転送装置 21 イントロパック(ゼニガメデッキ)",
       "マサキの転送装置 021 PMCG",
+      "マサキの転送装置 21 PMCG",
       "マサキの転送装置 021 intro pack",
-      "マサキの転送装置 021 squirtle deck"
+      "マサキの転送装置 21 intro pack",
+      "マサキの転送装置 021 squirtle deck",
+      "マサキの転送装置 21 squirtle deck"
     ]
   },
   "1stintro2022": {
@@ -18701,10 +22053,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 022 Japanese",
+      "水エネルギー 22 Japanese",
       "水エネルギー 022 イントロパック(ゼニガメデッキ)",
+      "水エネルギー 22 イントロパック(ゼニガメデッキ)",
       "水エネルギー 022 PMCG",
+      "水エネルギー 22 PMCG",
       "水エネルギー 022 intro pack",
-      "水エネルギー 022 squirtle deck"
+      "水エネルギー 22 intro pack",
+      "水エネルギー 022 squirtle deck",
+      "水エネルギー 22 squirtle deck"
     ]
   },
   "1stintro2023": {
@@ -18726,10 +22083,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 023 Japanese",
+      "水エネルギー 23 Japanese",
       "水エネルギー 023 イントロパック(ゼニガメデッキ)",
+      "水エネルギー 23 イントロパック(ゼニガメデッキ)",
       "水エネルギー 023 PMCG",
+      "水エネルギー 23 PMCG",
       "水エネルギー 023 intro pack",
-      "水エネルギー 023 squirtle deck"
+      "水エネルギー 23 intro pack",
+      "水エネルギー 023 squirtle deck",
+      "水エネルギー 23 squirtle deck"
     ]
   },
   "1stintro2024": {
@@ -18808,10 +22170,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 027 Japanese",
+      "水エネルギー 27 Japanese",
       "水エネルギー 027 イントロパック(ゼニガメデッキ)",
+      "水エネルギー 27 イントロパック(ゼニガメデッキ)",
       "水エネルギー 027 PMCG",
+      "水エネルギー 27 PMCG",
       "水エネルギー 027 intro pack",
-      "水エネルギー 027 squirtle deck"
+      "水エネルギー 27 intro pack",
+      "水エネルギー 027 squirtle deck",
+      "水エネルギー 27 squirtle deck"
     ]
   },
   "1stintro2028": {
@@ -18833,10 +22200,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 028 Japanese",
+      "炎エネルギー 28 Japanese",
       "炎エネルギー 028 イントロパック(ゼニガメデッキ)",
+      "炎エネルギー 28 イントロパック(ゼニガメデッキ)",
       "炎エネルギー 028 PMCG",
+      "炎エネルギー 28 PMCG",
       "炎エネルギー 028 intro pack",
-      "炎エネルギー 028 squirtle deck"
+      "炎エネルギー 28 intro pack",
+      "炎エネルギー 028 squirtle deck",
+      "炎エネルギー 28 squirtle deck"
     ]
   },
   "1stintro2029": {
@@ -18858,10 +22230,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "スーパーポケモン回収 029 Japanese",
+      "スーパーポケモン回収 29 Japanese",
       "スーパーポケモン回収 029 イントロパック(ゼニガメデッキ)",
+      "スーパーポケモン回収 29 イントロパック(ゼニガメデッキ)",
       "スーパーポケモン回収 029 PMCG",
+      "スーパーポケモン回収 29 PMCG",
       "スーパーポケモン回収 029 intro pack",
-      "スーパーポケモン回収 029 squirtle deck"
+      "スーパーポケモン回収 29 intro pack",
+      "スーパーポケモン回収 029 squirtle deck",
+      "スーパーポケモン回収 29 squirtle deck"
     ]
   },
   "1stintro2030": {
@@ -18883,10 +22260,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 030 Japanese",
+      "水エネルギー 30 Japanese",
       "水エネルギー 030 イントロパック(ゼニガメデッキ)",
+      "水エネルギー 30 イントロパック(ゼニガメデッキ)",
       "水エネルギー 030 PMCG",
+      "水エネルギー 30 PMCG",
       "水エネルギー 030 intro pack",
-      "水エネルギー 030 squirtle deck"
+      "水エネルギー 30 intro pack",
+      "水エネルギー 030 squirtle deck",
+      "水エネルギー 30 squirtle deck"
     ]
   },
   "1stintro2031": {
@@ -18908,10 +22290,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 031 Japanese",
+      "炎エネルギー 31 Japanese",
       "炎エネルギー 031 イントロパック(ゼニガメデッキ)",
+      "炎エネルギー 31 イントロパック(ゼニガメデッキ)",
       "炎エネルギー 031 PMCG",
+      "炎エネルギー 31 PMCG",
       "炎エネルギー 031 intro pack",
-      "炎エネルギー 031 squirtle deck"
+      "炎エネルギー 31 intro pack",
+      "炎エネルギー 031 squirtle deck",
+      "炎エネルギー 31 squirtle deck"
     ]
   },
   "1stintro2032": {
@@ -18952,10 +22339,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 033 Japanese",
+      "炎エネルギー 33 Japanese",
       "炎エネルギー 033 イントロパック(ゼニガメデッキ)",
+      "炎エネルギー 33 イントロパック(ゼニガメデッキ)",
       "炎エネルギー 033 PMCG",
+      "炎エネルギー 33 PMCG",
       "炎エネルギー 033 intro pack",
-      "炎エネルギー 033 squirtle deck"
+      "炎エネルギー 33 intro pack",
+      "炎エネルギー 033 squirtle deck",
+      "炎エネルギー 33 squirtle deck"
     ]
   },
   "1stintro2034": {
@@ -18977,10 +22369,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "闘エネルギー 034 Japanese",
+      "闘エネルギー 34 Japanese",
       "闘エネルギー 034 イントロパック(ゼニガメデッキ)",
+      "闘エネルギー 34 イントロパック(ゼニガメデッキ)",
       "闘エネルギー 034 PMCG",
+      "闘エネルギー 34 PMCG",
       "闘エネルギー 034 intro pack",
-      "闘エネルギー 034 squirtle deck"
+      "闘エネルギー 34 intro pack",
+      "闘エネルギー 034 squirtle deck",
+      "闘エネルギー 34 squirtle deck"
     ]
   },
   "1stintro2035": {
@@ -19021,10 +22418,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 036 Japanese",
+      "水エネルギー 36 Japanese",
       "水エネルギー 036 イントロパック(ゼニガメデッキ)",
+      "水エネルギー 36 イントロパック(ゼニガメデッキ)",
       "水エネルギー 036 PMCG",
+      "水エネルギー 36 PMCG",
       "水エネルギー 036 intro pack",
-      "水エネルギー 036 squirtle deck"
+      "水エネルギー 36 intro pack",
+      "水エネルギー 036 squirtle deck",
+      "水エネルギー 36 squirtle deck"
     ]
   },
   "1stintro2037": {
@@ -19065,10 +22467,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 038 Japanese",
+      "水エネルギー 38 Japanese",
       "水エネルギー 038 イントロパック(ゼニガメデッキ)",
+      "水エネルギー 38 イントロパック(ゼニガメデッキ)",
       "水エネルギー 038 PMCG",
+      "水エネルギー 38 PMCG",
       "水エネルギー 038 intro pack",
-      "水エネルギー 038 squirtle deck"
+      "水エネルギー 38 intro pack",
+      "水エネルギー 038 squirtle deck",
+      "水エネルギー 38 squirtle deck"
     ]
   },
   "1stintro2039": {
@@ -19128,10 +22535,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Venusaur 001 Japanese",
+      "Venusaur 1 Japanese",
+      "Venusaur 3 Japanese",
       "Venusaur 001 イントロパック(おまけカード)",
+      "Venusaur 1 イントロパック(おまけカード)",
+      "Venusaur 3 イントロパック(おまけカード)",
       "Venusaur 001 PMCG",
+      "Venusaur 1 PMCG",
+      "Venusaur 3 PMCG",
       "Venusaur 001 intro pack",
-      "フシギバナ 001 Japanese"
+      "Venusaur 1 intro pack",
+      "Venusaur 3 intro pack",
+      "フシギバナ 001 Japanese",
+      "フシギバナ 1 Japanese",
+      "フシギバナ 3 Japanese",
+      "フシギバナ 001 イントロパック(おまけカード)",
+      "フシギバナ 1 イントロパック(おまけカード)",
+      "フシギバナ 3 イントロパック(おまけカード)",
+      "フシギバナ 001 PMCG",
+      "フシギバナ 1 PMCG"
     ]
   },
   "1stintro002": {
@@ -19153,10 +22575,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Blastoise 002 Japanese",
+      "Blastoise 2 Japanese",
+      "Blastoise 9 Japanese",
       "Blastoise 002 イントロパック(おまけカード)",
+      "Blastoise 2 イントロパック(おまけカード)",
+      "Blastoise 9 イントロパック(おまけカード)",
       "Blastoise 002 PMCG",
+      "Blastoise 2 PMCG",
+      "Blastoise 9 PMCG",
       "Blastoise 002 intro pack",
-      "カメックス 002 Japanese"
+      "Blastoise 2 intro pack",
+      "Blastoise 9 intro pack",
+      "カメックス 002 Japanese",
+      "カメックス 2 Japanese",
+      "カメックス 9 Japanese",
+      "カメックス 002 イントロパック(おまけカード)",
+      "カメックス 2 イントロパック(おまけカード)",
+      "カメックス 9 イントロパック(おまけカード)",
+      "カメックス 002 PMCG",
+      "カメックス 2 PMCG"
     ]
   },
   "1stp001": {
@@ -19178,10 +22615,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pikachu - Japanese",
+      "Pikachu 25 Japanese",
       "Pikachu - プロモ",
+      "Pikachu 25 プロモ",
       "Pikachu - PMCG",
+      "Pikachu 25 PMCG",
       "ピカチュウ - Japanese",
-      "ピカチュウ - プロモ"
+      "ピカチュウ 25 Japanese",
+      "ピカチュウ - プロモ",
+      "ピカチュウ 25 プロモ",
+      "ピカチュウ - PMCG",
+      "ピカチュウ 25 PMCG"
     ]
   },
   "1stp002": {
@@ -19203,10 +22647,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Jigglypuff - Japanese",
+      "Jigglypuff 39 Japanese",
       "Jigglypuff - プロモ",
+      "Jigglypuff 39 プロモ",
       "Jigglypuff - PMCG",
+      "Jigglypuff 39 PMCG",
       "プリン - Japanese",
-      "プリン - プロモ"
+      "プリン 39 Japanese",
+      "プリン - プロモ",
+      "プリン 39 プロモ",
+      "プリン - PMCG",
+      "プリン 39 PMCG"
     ]
   },
   "1stp003": {
@@ -19228,10 +22679,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pikachu - Japanese",
+      "Pikachu 25 Japanese",
       "Pikachu - プロモ",
+      "Pikachu 25 プロモ",
       "Pikachu - PMCG",
+      "Pikachu 25 PMCG",
       "ピカチュウ - Japanese",
-      "ピカチュウ - プロモ"
+      "ピカチュウ 25 Japanese",
+      "ピカチュウ - プロモ",
+      "ピカチュウ 25 プロモ",
+      "ピカチュウ - PMCG",
+      "ピカチュウ 25 PMCG"
     ]
   },
   "1stp004": {
@@ -19253,10 +22711,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Jigglypuff - Japanese",
+      "Jigglypuff 39 Japanese",
       "Jigglypuff - プロモ",
+      "Jigglypuff 39 プロモ",
       "Jigglypuff - PMCG",
+      "Jigglypuff 39 PMCG",
       "プリン - Japanese",
-      "プリン - プロモ"
+      "プリン 39 Japanese",
+      "プリン - プロモ",
+      "プリン 39 プロモ",
+      "プリン - PMCG",
+      "プリン 39 PMCG"
     ]
   },
   "1stp005": {
@@ -19278,10 +22743,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mew - Japanese",
+      "Mew 151 Japanese",
       "Mew - プロモ",
+      "Mew 151 プロモ",
       "Mew - PMCG",
+      "Mew 151 PMCG",
       "ミュウ - Japanese",
-      "ミュウ - プロモ"
+      "ミュウ 151 Japanese",
+      "ミュウ - プロモ",
+      "ミュウ 151 プロモ",
+      "ミュウ - PMCG",
+      "ミュウ 151 PMCG"
     ]
   },
   "1stp006": {
@@ -19303,10 +22775,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Slowpoke - Japanese",
+      "Slowpoke 79 Japanese",
       "Slowpoke - プロモ",
+      "Slowpoke 79 プロモ",
       "Slowpoke - PMCG",
+      "Slowpoke 79 PMCG",
       "ヤドン - Japanese",
-      "ヤドン - プロモ"
+      "ヤドン 79 Japanese",
+      "ヤドン - プロモ",
+      "ヤドン 79 プロモ",
+      "ヤドン - PMCG",
+      "ヤドン 79 PMCG"
     ]
   },
   "1stp007": {
@@ -19328,10 +22807,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mewtwo - Japanese",
+      "Mewtwo 150 Japanese",
       "Mewtwo - プロモ",
+      "Mewtwo 150 プロモ",
       "Mewtwo - PMCG",
+      "Mewtwo 150 PMCG",
       "ミュウツー - Japanese",
-      "ミュウツー - プロモ"
+      "ミュウツー 150 Japanese",
+      "ミュウツー - プロモ",
+      "ミュウツー 150 プロモ",
+      "ミュウツー - PMCG",
+      "ミュウツー 150 PMCG"
     ]
   },
   "1stp008": {
@@ -19353,10 +22839,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mewtwo - Japanese",
+      "Mewtwo 150 Japanese",
       "Mewtwo - プロモ",
+      "Mewtwo 150 プロモ",
       "Mewtwo - PMCG",
+      "Mewtwo 150 PMCG",
       "ミュウツー - Japanese",
-      "ミュウツー - プロモ"
+      "ミュウツー 150 Japanese",
+      "ミュウツー - プロモ",
+      "ミュウツー 150 プロモ",
+      "ミュウツー - PMCG",
+      "ミュウツー 150 PMCG"
     ]
   },
   "1stp009": {
@@ -19401,10 +22894,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Electabuzz - Japanese",
+      "Electabuzz 125 Japanese",
       "Electabuzz - プロモ",
+      "Electabuzz 125 プロモ",
       "Electabuzz - PMCG",
+      "Electabuzz 125 PMCG",
       "エレブー - Japanese",
-      "エレブー - プロモ"
+      "エレブー 125 Japanese",
+      "エレブー - プロモ",
+      "エレブー 125 プロモ",
+      "エレブー - PMCG",
+      "エレブー 125 PMCG"
     ]
   },
   "1stp011": {
@@ -19429,7 +22929,8 @@ window.POKECA_PSA = {
       "Surfing Pikachu - プロモ",
       "Surfing Pikachu - PMCG",
       "なみのりピカチュウ - Japanese",
-      "なみのりピカチュウ - プロモ"
+      "なみのりピカチュウ - プロモ",
+      "なみのりピカチュウ - PMCG"
     ]
   },
   "1stp012": {
@@ -19451,10 +22952,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mew - Japanese",
+      "Mew 151 Japanese",
       "Mew - プロモ",
+      "Mew 151 プロモ",
       "Mew - PMCG",
+      "Mew 151 PMCG",
       "ミュウ - Japanese",
-      "ミュウ - プロモ"
+      "ミュウ 151 Japanese",
+      "ミュウ - プロモ",
+      "ミュウ 151 プロモ",
+      "ミュウ - PMCG",
+      "ミュウ 151 PMCG"
     ]
   },
   "1stp013": {
@@ -19502,7 +23010,8 @@ window.POKECA_PSA = {
       "Surfing Pikachu - プロモ",
       "Surfing Pikachu - PMCG",
       "なみのりピカチュウ - Japanese",
-      "なみのりピカチュウ - プロモ"
+      "なみのりピカチュウ - プロモ",
+      "なみのりピカチュウ - PMCG"
     ]
   },
   "1stp015": {
@@ -19550,7 +23059,8 @@ window.POKECA_PSA = {
       "Arcanine - プロモ",
       "Arcanine - PMCG",
       "ウィンディ - Japanese",
-      "ウィンディ - プロモ"
+      "ウィンディ - プロモ",
+      "ウィンディ - PMCG"
     ]
   },
   "1stp017": {
@@ -19572,10 +23082,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pikachu - Japanese",
+      "Pikachu 25 Japanese",
       "Pikachu - プロモ",
+      "Pikachu 25 プロモ",
       "Pikachu - PMCG",
+      "Pikachu 25 PMCG",
       "ピカチュウ - Japanese",
-      "ピカチュウ - プロモ"
+      "ピカチュウ 25 Japanese",
+      "ピカチュウ - プロモ",
+      "ピカチュウ 25 プロモ",
+      "ピカチュウ - PMCG",
+      "ピカチュウ 25 PMCG"
     ]
   },
   "1stp018": {
@@ -19600,7 +23117,8 @@ window.POKECA_PSA = {
       "Flying Pikachu - プロモ",
       "Flying Pikachu - PMCG",
       "そらをとぶピカチュウ - Japanese",
-      "そらをとぶピカチュウ - プロモ"
+      "そらをとぶピカチュウ - プロモ",
+      "そらをとぶピカチュウ - PMCG"
     ]
   },
   "1stp019": {
@@ -19625,7 +23143,8 @@ window.POKECA_PSA = {
       "Dark Persian - プロモ",
       "Dark Persian - PMCG",
       "わるいペルシアン - Japanese",
-      "わるいペルシアン - プロモ"
+      "わるいペルシアン - プロモ",
+      "わるいペルシアン - PMCG"
     ]
   },
   "1stp020": {
@@ -19647,10 +23166,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pikachu - Japanese",
+      "Pikachu 25 Japanese",
       "Pikachu - プロモ",
+      "Pikachu 25 プロモ",
       "Pikachu - PMCG",
+      "Pikachu 25 PMCG",
       "ピカチュウ - Japanese",
-      "ピカチュウ - プロモ"
+      "ピカチュウ 25 Japanese",
+      "ピカチュウ - プロモ",
+      "ピカチュウ 25 プロモ",
+      "ピカチュウ - PMCG",
+      "ピカチュウ 25 PMCG"
     ]
   },
   "1stp021": {
@@ -19672,10 +23198,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mew - Japanese",
+      "Mew 151 Japanese",
       "Mew - プロモ",
+      "Mew 151 プロモ",
       "Mew - PMCG",
+      "Mew 151 PMCG",
       "ミュウ - Japanese",
-      "ミュウ - プロモ"
+      "ミュウ 151 Japanese",
+      "ミュウ - プロモ",
+      "ミュウ 151 プロモ",
+      "ミュウ - PMCG",
+      "ミュウ 151 PMCG"
     ]
   },
   "1stp022": {
@@ -19697,10 +23230,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mewtwo - Japanese",
+      "Mewtwo 150 Japanese",
       "Mewtwo - プロモ",
+      "Mewtwo 150 プロモ",
       "Mewtwo - PMCG",
+      "Mewtwo 150 PMCG",
       "ミュウツー - Japanese",
-      "ミュウツー - プロモ"
+      "ミュウツー 150 Japanese",
+      "ミュウツー - プロモ",
+      "ミュウツー 150 プロモ",
+      "ミュウツー - PMCG",
+      "ミュウツー 150 PMCG"
     ]
   },
   "1stp023": {
@@ -19725,7 +23265,8 @@ window.POKECA_PSA = {
       "Porygon - プロモ",
       "Porygon - PMCG",
       "かっこいいポリゴン - Japanese",
-      "かっこいいポリゴン - プロモ"
+      "かっこいいポリゴン - プロモ",
+      "かっこいいポリゴン - PMCG"
     ]
   },
   "1stp024": {
@@ -19750,7 +23291,8 @@ window.POKECA_PSA = {
       "Snorlax - プロモ",
       "Snorlax - PMCG",
       "くいしんぼカビゴン - Japanese",
-      "くいしんぼカビゴン - プロモ"
+      "くいしんぼカビゴン - プロモ",
+      "くいしんぼカビゴン - PMCG"
     ]
   },
   "1stp025": {
@@ -19772,10 +23314,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Meowth - Japanese",
+      "Meowth 52 Japanese",
       "Meowth - プロモ",
+      "Meowth 52 プロモ",
       "Meowth - PMCG",
+      "Meowth 52 PMCG",
       "ニャース - Japanese",
-      "ニャース - プロモ"
+      "ニャース 52 Japanese",
+      "ニャース - プロモ",
+      "ニャース 52 プロモ",
+      "ニャース - PMCG",
+      "ニャース 52 PMCG"
     ]
   },
   "1stp026": {
@@ -19843,10 +23392,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Blastoise - Japanese",
+      "Blastoise 9 Japanese",
       "Blastoise - プロモ",
+      "Blastoise 9 プロモ",
       "Blastoise - PMCG",
+      "Blastoise 9 PMCG",
       "カメックス - Japanese",
-      "カメックス - プロモ"
+      "カメックス 9 Japanese",
+      "カメックス - プロモ",
+      "カメックス 9 プロモ",
+      "カメックス - PMCG",
+      "カメックス 9 PMCG"
     ]
   },
   "1stp029": {
@@ -19868,10 +23424,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Venusaur - Japanese",
+      "Venusaur 3 Japanese",
       "Venusaur - プロモ",
+      "Venusaur 3 プロモ",
       "Venusaur - PMCG",
+      "Venusaur 3 PMCG",
       "フシギバナ - Japanese",
-      "フシギバナ - プロモ"
+      "フシギバナ 3 Japanese",
+      "フシギバナ - プロモ",
+      "フシギバナ 3 プロモ",
+      "フシギバナ - PMCG",
+      "フシギバナ 3 PMCG"
     ]
   },
   "1stp030": {
@@ -19893,10 +23456,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Charizard - Japanese",
+      "Charizard 6 Japanese",
       "Charizard - プロモ",
+      "Charizard 6 プロモ",
       "Charizard - PMCG",
+      "Charizard 6 PMCG",
       "リザードン - Japanese",
-      "リザードン - プロモ"
+      "リザードン 6 Japanese",
+      "リザードン - プロモ",
+      "リザードン 6 プロモ",
+      "リザードン - PMCG",
+      "リザードン 6 PMCG"
     ]
   },
   "1stp031": {
@@ -19921,7 +23491,8 @@ window.POKECA_PSA = {
       "Misty's Staryu - プロモ",
       "Misty's Staryu - PMCG",
       "カスミのヒトデマン - Japanese",
-      "カスミのヒトデマン - プロモ"
+      "カスミのヒトデマン - プロモ",
+      "カスミのヒトデマン - PMCG"
     ]
   },
   "1stp032": {
@@ -19946,7 +23517,8 @@ window.POKECA_PSA = {
       "Brock's Onix - プロモ",
       "Brock's Onix - PMCG",
       "タケシのイワーク - Japanese",
-      "タケシのイワーク - プロモ"
+      "タケシのイワーク - プロモ",
+      "タケシのイワーク - PMCG"
     ]
   },
   "1stp033": {
@@ -19968,10 +23540,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Farfetch'd - Japanese",
+      "Farfetch'd 83 Japanese",
       "Farfetch'd - プロモ",
+      "Farfetch'd 83 プロモ",
       "Farfetch'd - PMCG",
+      "Farfetch'd 83 PMCG",
       "カモネギ - Japanese",
-      "カモネギ - プロモ"
+      "カモネギ 83 Japanese",
+      "カモネギ - プロモ",
+      "カモネギ 83 プロモ",
+      "カモネギ - PMCG",
+      "カモネギ 83 PMCG"
     ]
   },
   "1stp034": {
@@ -19993,10 +23572,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Cubone - Japanese",
+      "Cubone 104 Japanese",
       "Cubone - プロモ",
+      "Cubone 104 プロモ",
       "Cubone - PMCG",
+      "Cubone 104 PMCG",
       "カラカラ - Japanese",
-      "カラカラ - プロモ"
+      "カラカラ 104 Japanese",
+      "カラカラ - プロモ",
+      "カラカラ 104 プロモ",
+      "カラカラ - PMCG",
+      "カラカラ 104 PMCG"
     ]
   },
   "1stp035": {
@@ -20018,10 +23604,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Jynx - Japanese",
+      "Jynx 124 Japanese",
       "Jynx - プロモ",
+      "Jynx 124 プロモ",
       "Jynx - PMCG",
+      "Jynx 124 PMCG",
       "ルージュラ - Japanese",
-      "ルージュラ - プロモ"
+      "ルージュラ 124 Japanese",
+      "ルージュラ - プロモ",
+      "ルージュラ 124 プロモ",
+      "ルージュラ - PMCG",
+      "ルージュラ 124 PMCG"
     ]
   },
   "1stp036": {
@@ -20043,10 +23636,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Magikarp - Japanese",
+      "Magikarp 129 Japanese",
       "Magikarp - プロモ",
+      "Magikarp 129 プロモ",
       "Magikarp - PMCG",
+      "Magikarp 129 PMCG",
       "コイキング - Japanese",
-      "コイキング - プロモ"
+      "コイキング 129 Japanese",
+      "コイキング - プロモ",
+      "コイキング 129 プロモ",
+      "コイキング - PMCG",
+      "コイキング 129 PMCG"
     ]
   },
   "1stp037": {
@@ -20068,10 +23668,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Kangaskhan - Japanese",
+      "Kangaskhan 115 Japanese",
       "Kangaskhan - プロモ",
+      "Kangaskhan 115 プロモ",
       "Kangaskhan - PMCG",
+      "Kangaskhan 115 PMCG",
       "ガルーラ - Japanese",
-      "ガルーラ - プロモ"
+      "ガルーラ 115 Japanese",
+      "ガルーラ - プロモ",
+      "ガルーラ 115 プロモ",
+      "ガルーラ - PMCG",
+      "ガルーラ 115 PMCG"
     ]
   },
   "1stp038": {
@@ -20119,7 +23726,8 @@ window.POKECA_PSA = {
       "Erika's Dratini - プロモ",
       "Erika's Dratini - PMCG",
       "エリカのミニリュウ - Japanese",
-      "エリカのミニリュウ - プロモ"
+      "エリカのミニリュウ - プロモ",
+      "エリカのミニリュウ - PMCG"
     ]
   },
   "1stp040": {
@@ -20144,7 +23752,8 @@ window.POKECA_PSA = {
       "Lt. Surge's Electabuzz - プロモ",
       "Lt. Surge's Electabuzz - PMCG",
       "マチスのエレブー - Japanese",
-      "マチスのエレブー - プロモ"
+      "マチスのエレブー - プロモ",
+      "マチスのエレブー - PMCG"
     ]
   },
   "1stp041": {
@@ -20192,7 +23801,8 @@ window.POKECA_PSA = {
       "Flying Pikachu - プロモ",
       "Flying Pikachu - PMCG",
       "そらをとぶピカチュウ - Japanese",
-      "そらをとぶピカチュウ - プロモ"
+      "そらをとぶピカチュウ - プロモ",
+      "そらをとぶピカチュウ - PMCG"
     ]
   },
   "1stp043": {
@@ -20214,10 +23824,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Dragonite - Japanese",
+      "Dragonite 149 Japanese",
       "Dragonite - プロモ",
+      "Dragonite 149 プロモ",
       "Dragonite - PMCG",
+      "Dragonite 149 PMCG",
       "カイリュー - Japanese",
-      "カイリュー - プロモ"
+      "カイリュー 149 Japanese",
+      "カイリュー - プロモ",
+      "カイリュー 149 プロモ",
+      "カイリュー - PMCG",
+      "カイリュー 149 PMCG"
     ]
   },
   "1stp044": {
@@ -20262,10 +23879,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Diglett - Japanese",
+      "Diglett 50 Japanese",
       "Diglett - プロモ",
+      "Diglett 50 プロモ",
       "Diglett - PMCG",
+      "Diglett 50 PMCG",
       "ディグダ - Japanese",
-      "ディグダ - プロモ"
+      "ディグダ 50 Japanese",
+      "ディグダ - プロモ",
+      "ディグダ 50 プロモ",
+      "ディグダ - PMCG",
+      "ディグダ 50 PMCG"
     ]
   },
   "1stp046": {
@@ -20287,10 +23911,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Dugtrio - Japanese",
+      "Dugtrio 51 Japanese",
       "Dugtrio - プロモ",
+      "Dugtrio 51 プロモ",
       "Dugtrio - PMCG",
+      "Dugtrio 51 PMCG",
       "ダグトリオ - Japanese",
-      "ダグトリオ - プロモ"
+      "ダグトリオ 51 Japanese",
+      "ダグトリオ - プロモ",
+      "ダグトリオ 51 プロモ",
+      "ダグトリオ - PMCG",
+      "ダグトリオ 51 PMCG"
     ]
   },
   "1stp047": {
@@ -20315,7 +23946,8 @@ window.POKECA_PSA = {
       "Erika's Bulbasaur - プロモ",
       "Erika's Bulbasaur - PMCG",
       "エリカのフシギダネ - Japanese",
-      "エリカのフシギダネ - プロモ"
+      "エリカのフシギダネ - プロモ",
+      "エリカのフシギダネ - PMCG"
     ]
   },
   "1stp048": {
@@ -20340,7 +23972,8 @@ window.POKECA_PSA = {
       "Misty's Tentacool - プロモ",
       "Misty's Tentacool - PMCG",
       "カスミのメノクラゲ - Japanese",
-      "カスミのメノクラゲ - プロモ"
+      "カスミのメノクラゲ - プロモ",
+      "カスミのメノクラゲ - PMCG"
     ]
   },
   "1stp049": {
@@ -20365,7 +23998,8 @@ window.POKECA_PSA = {
       "Brock's Mankey - プロモ",
       "Brock's Mankey - PMCG",
       "タケシのマンキー - Japanese",
-      "タケシのマンキー - プロモ"
+      "タケシのマンキー - プロモ",
+      "タケシのマンキー - PMCG"
     ]
   },
   "1stp050": {
@@ -20390,7 +24024,8 @@ window.POKECA_PSA = {
       "Lt. Surge's Jolteon - プロモ",
       "Lt. Surge's Jolteon - PMCG",
       "マチスのサンダース - Japanese",
-      "マチスのサンダース - プロモ"
+      "マチスのサンダース - プロモ",
+      "マチスのサンダース - PMCG"
     ]
   },
   "1stp051": {
@@ -20412,10 +24047,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Omastar - Japanese",
+      "Omastar 139 Japanese",
       "Omastar - プロモ",
+      "Omastar 139 プロモ",
       "Omastar - PMCG",
+      "Omastar 139 PMCG",
       "オムスター - Japanese",
-      "オムスター - プロモ"
+      "オムスター 139 Japanese",
+      "オムスター - プロモ",
+      "オムスター 139 プロモ",
+      "オムスター - PMCG",
+      "オムスター 139 PMCG"
     ]
   },
   "1stp052": {
@@ -20437,10 +24079,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Machamp - Japanese",
+      "Machamp 68 Japanese",
       "Machamp - プロモ",
+      "Machamp 68 プロモ",
       "Machamp - PMCG",
+      "Machamp 68 PMCG",
       "カイリキー - Japanese",
-      "カイリキー - プロモ"
+      "カイリキー 68 Japanese",
+      "カイリキー - プロモ",
+      "カイリキー 68 プロモ",
+      "カイリキー - PMCG",
+      "カイリキー 68 PMCG"
     ]
   },
   "1stp053": {
@@ -20462,10 +24111,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Gengar - Japanese",
+      "Gengar 94 Japanese",
       "Gengar - プロモ",
+      "Gengar 94 プロモ",
       "Gengar - PMCG",
+      "Gengar 94 PMCG",
       "ゲンガー - Japanese",
-      "ゲンガー - プロモ"
+      "ゲンガー 94 Japanese",
+      "ゲンガー - プロモ",
+      "ゲンガー 94 プロモ",
+      "ゲンガー - PMCG",
+      "ゲンガー 94 PMCG"
     ]
   },
   "1stp054": {
@@ -20487,10 +24143,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Golem - Japanese",
+      "Golem 76 Japanese",
       "Golem - プロモ",
+      "Golem 76 プロモ",
       "Golem - PMCG",
+      "Golem 76 PMCG",
       "ゴローニャ - Japanese",
-      "ゴローニャ - プロモ"
+      "ゴローニャ 76 Japanese",
+      "ゴローニャ - プロモ",
+      "ゴローニャ 76 プロモ",
+      "ゴローニャ - PMCG",
+      "ゴローニャ 76 PMCG"
     ]
   },
   "1stp055": {
@@ -20512,10 +24175,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Alakazam - Japanese",
+      "Alakazam 65 Japanese",
       "Alakazam - プロモ",
+      "Alakazam 65 プロモ",
       "Alakazam - PMCG",
+      "Alakazam 65 PMCG",
       "フーディン - Japanese",
-      "フーディン - プロモ"
+      "フーディン 65 Japanese",
+      "フーディン - プロモ",
+      "フーディン 65 プロモ",
+      "フーディン - PMCG",
+      "フーディン 65 PMCG"
     ]
   },
   "1stp056": {
@@ -20537,10 +24207,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Dragonite - Japanese",
+      "Dragonite 149 Japanese",
       "Dragonite - プロモ",
+      "Dragonite 149 プロモ",
       "Dragonite - PMCG",
+      "Dragonite 149 PMCG",
       "カイリュー - Japanese",
-      "カイリュー - プロモ"
+      "カイリュー 149 Japanese",
+      "カイリュー - プロモ",
+      "カイリュー 149 プロモ",
+      "カイリュー - PMCG",
+      "カイリュー 149 PMCG"
     ]
   },
   "1stp057": {
@@ -20562,10 +24239,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Meowth - Japanese",
+      "Meowth 52 Japanese",
       "Meowth - プロモ",
+      "Meowth 52 プロモ",
       "Meowth - PMCG",
+      "Meowth 52 PMCG",
       "ニャース - Japanese",
-      "ニャース - プロモ"
+      "ニャース 52 Japanese",
+      "ニャース - プロモ",
+      "ニャース 52 プロモ",
+      "ニャース - PMCG",
+      "ニャース 52 PMCG"
     ]
   },
   "1stp058": {
@@ -20587,10 +24271,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Venusaur - Japanese",
+      "Venusaur 3 Japanese",
       "Venusaur - プロモ",
+      "Venusaur 3 プロモ",
       "Venusaur - PMCG",
+      "Venusaur 3 PMCG",
       "フシギバナ - Japanese",
-      "フシギバナ - プロモ"
+      "フシギバナ 3 Japanese",
+      "フシギバナ - プロモ",
+      "フシギバナ 3 プロモ",
+      "フシギバナ - PMCG",
+      "フシギバナ 3 PMCG"
     ]
   },
   "1stp059": {
@@ -20615,7 +24306,8 @@ window.POKECA_PSA = {
       "Blaine's Growlithe - プロモ",
       "Blaine's Growlithe - PMCG",
       "カツラのガーディ - Japanese",
-      "カツラのガーディ - プロモ"
+      "カツラのガーディ - プロモ",
+      "カツラのガーディ - PMCG"
     ]
   },
   "1stp060": {
@@ -20640,7 +24332,8 @@ window.POKECA_PSA = {
       "Sabrina's Abra - プロモ",
       "Sabrina's Abra - PMCG",
       "ナツメのケーシィ - Japanese",
-      "ナツメのケーシィ - プロモ"
+      "ナツメのケーシィ - プロモ",
+      "ナツメのケーシィ - PMCG"
     ]
   },
   "1stp061": {
@@ -20662,10 +24355,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Mankey - Japanese",
+      "Mankey 56 Japanese",
       "Mankey - プロモ",
+      "Mankey 56 プロモ",
       "Mankey - PMCG",
+      "Mankey 56 PMCG",
       "マンキー - Japanese",
-      "マンキー - プロモ"
+      "マンキー 56 Japanese",
+      "マンキー - プロモ",
+      "マンキー 56 プロモ",
+      "マンキー - PMCG",
+      "マンキー 56 PMCG"
     ]
   },
   "1stp062": {
@@ -20687,10 +24387,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pikachu - Japanese",
+      "Pikachu 25 Japanese",
       "Pikachu - プロモ",
+      "Pikachu 25 プロモ",
       "Pikachu - PMCG",
+      "Pikachu 25 PMCG",
       "ピカチュウ - Japanese",
-      "ピカチュウ - プロモ"
+      "ピカチュウ 25 Japanese",
+      "ピカチュウ - プロモ",
+      "ピカチュウ 25 プロモ",
+      "ピカチュウ - PMCG",
+      "ピカチュウ 25 PMCG"
     ]
   },
   "1stp063": {
@@ -20715,7 +24422,8 @@ window.POKECA_PSA = {
       "Flying Pikachu - プロモ",
       "Flying Pikachu - PMCG",
       "そらをとぶピカチュウ - Japanese",
-      "そらをとぶピカチュウ - プロモ"
+      "そらをとぶピカチュウ - プロモ",
+      "そらをとぶピカチュウ - PMCG"
     ]
   },
   "1stp064": {
@@ -20737,10 +24445,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Articuno - Japanese",
+      "Articuno 144 Japanese",
       "Articuno - プロモ",
+      "Articuno 144 プロモ",
       "Articuno - PMCG",
+      "Articuno 144 PMCG",
       "フリーザー - Japanese",
-      "フリーザー - プロモ"
+      "フリーザー 144 Japanese",
+      "フリーザー - プロモ",
+      "フリーザー 144 プロモ",
+      "フリーザー - PMCG",
+      "フリーザー 144 PMCG"
     ]
   },
   "1stp065": {
@@ -20762,10 +24477,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Togepi - Japanese",
+      "Togepi 175 Japanese",
       "Togepi - プロモ",
+      "Togepi 175 プロモ",
       "Togepi - PMCG",
+      "Togepi 175 PMCG",
       "トゲピー - Japanese",
-      "トゲピー - プロモ"
+      "トゲピー 175 Japanese",
+      "トゲピー - プロモ",
+      "トゲピー 175 プロモ",
+      "トゲピー - PMCG",
+      "トゲピー 175 PMCG"
     ]
   },
   "1stp066": {
@@ -20787,10 +24509,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Marill - Japanese",
+      "Marill 183 Japanese",
       "Marill - プロモ",
+      "Marill 183 プロモ",
       "Marill - PMCG",
+      "Marill 183 PMCG",
       "マリル - Japanese",
-      "マリル - プロモ"
+      "マリル 183 Japanese",
+      "マリル - プロモ",
+      "マリル 183 プロモ",
+      "マリル - PMCG",
+      "マリル 183 PMCG"
     ]
   },
   "1stp067": {
@@ -20838,7 +24567,8 @@ window.POKECA_PSA = {
       "Giovanni's Nidoking - プロモ",
       "Giovanni's Nidoking - PMCG",
       "サカキのニドキング - Japanese",
-      "サカキのニドキング - プロモ"
+      "サカキのニドキング - プロモ",
+      "サカキのニドキング - PMCG"
     ]
   },
   "1stp069": {
@@ -20883,10 +24613,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Zapdos - Japanese",
+      "Zapdos 145 Japanese",
       "Zapdos - プロモ",
+      "Zapdos 145 プロモ",
       "Zapdos - PMCG",
+      "Zapdos 145 PMCG",
       "サンダー - Japanese",
-      "サンダー - プロモ"
+      "サンダー 145 Japanese",
+      "サンダー - プロモ",
+      "サンダー 145 プロモ",
+      "サンダー - PMCG",
+      "サンダー 145 PMCG"
     ]
   },
   "1stp071": {
@@ -20908,10 +24645,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Moltres - Japanese",
+      "Moltres 146 Japanese",
       "Moltres - プロモ",
+      "Moltres 146 プロモ",
       "Moltres - PMCG",
+      "Moltres 146 PMCG",
       "ファイヤー - Japanese",
-      "ファイヤー - プロモ"
+      "ファイヤー 146 Japanese",
+      "ファイヤー - プロモ",
+      "ファイヤー 146 プロモ",
+      "ファイヤー - PMCG",
+      "ファイヤー 146 PMCG"
     ]
   },
   "1stp072": {
@@ -21005,7 +24749,8 @@ window.POKECA_PSA = {
       "Exeggutor - プロモ",
       "Exeggutor - PMCG",
       "ナッシー［Exeggutor］ - Japanese",
-      "ナッシー［Exeggutor］ - プロモ"
+      "ナッシー［Exeggutor］ - プロモ",
+      "ナッシー［Exeggutor］ - PMCG"
     ]
   },
   "1stp076": {
@@ -21027,10 +24772,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Psyduck - Japanese",
+      "Psyduck 54 Japanese",
       "Psyduck - プロモ",
+      "Psyduck 54 プロモ",
       "Psyduck - PMCG",
+      "Psyduck 54 PMCG",
       "コダック - Japanese",
-      "コダック - プロモ"
+      "コダック 54 Japanese",
+      "コダック - プロモ",
+      "コダック 54 プロモ",
+      "コダック - PMCG",
+      "コダック 54 PMCG"
     ]
   },
   "1stp077": {
@@ -21055,7 +24807,8 @@ window.POKECA_PSA = {
       "Exeggutor - プロモ",
       "Exeggutor - PMCG",
       "ナッシー［Exeggutor］ - Japanese",
-      "ナッシー［Exeggutor］ - プロモ"
+      "ナッシー［Exeggutor］ - プロモ",
+      "ナッシー［Exeggutor］ - PMCG"
     ]
   },
   "1stp078": {
@@ -21080,7 +24833,8 @@ window.POKECA_PSA = {
       "Rocket's Meowth - プロモ",
       "Rocket's Meowth - PMCG",
       "ロケット団のニャース - Japanese",
-      "ロケット団のニャース - プロモ"
+      "ロケット団のニャース - プロモ",
+      "ロケット団のニャース - PMCG"
     ]
   },
   "1stp079": {
@@ -21125,10 +24879,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Gyarados - Japanese",
+      "Gyarados 130 Japanese",
       "Gyarados - プロモ",
+      "Gyarados 130 プロモ",
       "Gyarados - PMCG",
+      "Gyarados 130 PMCG",
       "ギャラドス - Japanese",
-      "ギャラドス - プロモ"
+      "ギャラドス 130 Japanese",
+      "ギャラドス - プロモ",
+      "ギャラドス 130 プロモ",
+      "ギャラドス - PMCG",
+      "ギャラドス 130 PMCG"
     ]
   },
   "1stp081": {
@@ -21150,10 +24911,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pikachu - Japanese",
+      "Pikachu 25 Japanese",
       "Pikachu - プロモ",
+      "Pikachu 25 プロモ",
       "Pikachu - PMCG",
+      "Pikachu 25 PMCG",
       "ピカチュウ - Japanese",
-      "ピカチュウ - プロモ"
+      "ピカチュウ 25 Japanese",
+      "ピカチュウ - プロモ",
+      "ピカチュウ 25 プロモ",
+      "ピカチュウ - PMCG",
+      "ピカチュウ 25 PMCG"
     ]
   },
   "1stp082": {
@@ -21175,10 +24943,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Poliwag - Japanese",
+      "Poliwag 60 Japanese",
       "Poliwag - プロモ",
+      "Poliwag 60 プロモ",
       "Poliwag - PMCG",
+      "Poliwag 60 PMCG",
       "ニョロモ - Japanese",
-      "ニョロモ - プロモ"
+      "ニョロモ 60 Japanese",
+      "ニョロモ - プロモ",
+      "ニョロモ 60 プロモ",
+      "ニョロモ - PMCG",
+      "ニョロモ 60 PMCG"
     ]
   },
   "1stp083": {
@@ -21200,10 +24975,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Bulbasaur - Japanese",
+      "Bulbasaur 1 Japanese",
       "Bulbasaur - プロモ",
+      "Bulbasaur 1 プロモ",
       "Bulbasaur - PMCG",
+      "Bulbasaur 1 PMCG",
       "フシギダネ - Japanese",
-      "フシギダネ - プロモ"
+      "フシギダネ 1 Japanese",
+      "フシギダネ - プロモ",
+      "フシギダネ 1 プロモ",
+      "フシギダネ - PMCG",
+      "フシギダネ 1 PMCG"
     ]
   },
   "1stp084": {
@@ -21225,10 +25007,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Magikarp - Japanese",
+      "Magikarp 129 Japanese",
       "Magikarp - プロモ",
+      "Magikarp 129 プロモ",
       "Magikarp - PMCG",
+      "Magikarp 129 PMCG",
       "コイキング - Japanese",
-      "コイキング - プロモ"
+      "コイキング 129 Japanese",
+      "コイキング - プロモ",
+      "コイキング 129 プロモ",
+      "コイキング - PMCG",
+      "コイキング 129 PMCG"
     ]
   },
   "1stp085": {
@@ -21250,10 +25039,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Squirtle - Japanese",
+      "Squirtle 7 Japanese",
       "Squirtle - プロモ",
+      "Squirtle 7 プロモ",
       "Squirtle - PMCG",
+      "Squirtle 7 PMCG",
       "ゼニガメ - Japanese",
-      "ゼニガメ - プロモ"
+      "ゼニガメ 7 Japanese",
+      "ゼニガメ - プロモ",
+      "ゼニガメ 7 プロモ",
+      "ゼニガメ - PMCG",
+      "ゼニガメ 7 PMCG"
     ]
   },
   "1stp086": {
@@ -21275,10 +25071,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Koffing - Japanese",
+      "Koffing 109 Japanese",
       "Koffing - プロモ",
+      "Koffing 109 プロモ",
       "Koffing - PMCG",
+      "Koffing 109 PMCG",
       "ドガース - Japanese",
-      "ドガース - プロモ"
+      "ドガース 109 Japanese",
+      "ドガース - プロモ",
+      "ドガース 109 プロモ",
+      "ドガース - PMCG",
+      "ドガース 109 PMCG"
     ]
   },
   "1stp087": {
@@ -21300,10 +25103,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Chansey - Japanese",
+      "Chansey 113 Japanese",
       "Chansey - プロモ",
+      "Chansey 113 プロモ",
       "Chansey - PMCG",
+      "Chansey 113 PMCG",
       "ラッキー - Japanese",
-      "ラッキー - プロモ"
+      "ラッキー 113 Japanese",
+      "ラッキー - プロモ",
+      "ラッキー 113 プロモ",
+      "ラッキー - PMCG",
+      "ラッキー 113 PMCG"
     ]
   },
   "1stp088": {
@@ -21325,10 +25135,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Articuno - Japanese",
+      "Articuno 144 Japanese",
       "Articuno - プロモ",
+      "Articuno 144 プロモ",
       "Articuno - PMCG",
+      "Articuno 144 PMCG",
       "フリーザー - Japanese",
-      "フリーザー - プロモ"
+      "フリーザー 144 Japanese",
+      "フリーザー - プロモ",
+      "フリーザー 144 プロモ",
+      "フリーザー - PMCG",
+      "フリーザー 144 PMCG"
     ]
   },
   "1stp089": {
@@ -21350,10 +25167,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Charmander - Japanese",
+      "Charmander 4 Japanese",
       "Charmander - プロモ",
+      "Charmander 4 プロモ",
       "Charmander - PMCG",
+      "Charmander 4 PMCG",
       "ヒトカゲ - Japanese",
-      "ヒトカゲ - プロモ"
+      "ヒトカゲ 4 Japanese",
+      "ヒトカゲ - プロモ",
+      "ヒトカゲ 4 プロモ",
+      "ヒトカゲ - PMCG",
+      "ヒトカゲ 4 PMCG"
     ]
   },
   "1stp090": {
@@ -22766,10 +26590,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "きのみ 073 Japanese",
+      "きのみ 73 Japanese",
       "きのみ 073 第1弾「金、銀、新世界へ...」",
+      "きのみ 73 第1弾「金、銀、新世界へ...」",
       "きのみ 073 neo",
+      "きのみ 73 neo",
       "きのみ 073 neo genesis",
-      "きのみ 073 gold silver to a new world"
+      "きのみ 73 neo genesis",
+      "きのみ 073 gold silver to a new world",
+      "きのみ 73 gold silver to a new world"
     ]
   },
   "neo1074": {
@@ -22791,10 +26620,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "すごいつりざお 074 Japanese",
+      "すごいつりざお 74 Japanese",
       "すごいつりざお 074 第1弾「金、銀、新世界へ...」",
+      "すごいつりざお 74 第1弾「金、銀、新世界へ...」",
       "すごいつりざお 074 neo",
+      "すごいつりざお 74 neo",
       "すごいつりざお 074 neo genesis",
-      "すごいつりざお 074 gold silver to a new world"
+      "すごいつりざお 74 neo genesis",
+      "すごいつりざお 074 gold silver to a new world",
+      "すごいつりざお 74 gold silver to a new world"
     ]
   },
   "neo1075": {
@@ -22816,10 +26650,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ポケモンぎゃくしめい 075 Japanese",
+      "ポケモンぎゃくしめい 75 Japanese",
       "ポケモンぎゃくしめい 075 第1弾「金、銀、新世界へ...」",
+      "ポケモンぎゃくしめい 75 第1弾「金、銀、新世界へ...」",
       "ポケモンぎゃくしめい 075 neo",
+      "ポケモンぎゃくしめい 75 neo",
       "ポケモンぎゃくしめい 075 neo genesis",
-      "ポケモンぎゃくしめい 075 gold silver to a new world"
+      "ポケモンぎゃくしめい 75 neo genesis",
+      "ポケモンぎゃくしめい 075 gold silver to a new world",
+      "ポケモンぎゃくしめい 75 gold silver to a new world"
     ]
   },
   "neo1076": {
@@ -22841,10 +26680,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ポケモンマーチ 076 Japanese",
+      "ポケモンマーチ 76 Japanese",
       "ポケモンマーチ 076 第1弾「金、銀、新世界へ...」",
+      "ポケモンマーチ 76 第1弾「金、銀、新世界へ...」",
       "ポケモンマーチ 076 neo",
+      "ポケモンマーチ 76 neo",
       "ポケモンマーチ 076 neo genesis",
-      "ポケモンマーチ 076 gold silver to a new world"
+      "ポケモンマーチ 76 neo genesis",
+      "ポケモンマーチ 076 gold silver to a new world",
+      "ポケモンマーチ 76 gold silver to a new world"
     ]
   },
   "neo1077": {
@@ -22866,10 +26710,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "モーモーミルク 077 Japanese",
+      "モーモーミルク 77 Japanese",
       "モーモーミルク 077 第1弾「金、銀、新世界へ...」",
+      "モーモーミルク 77 第1弾「金、銀、新世界へ...」",
       "モーモーミルク 077 neo",
+      "モーモーミルク 77 neo",
       "モーモーミルク 077 neo genesis",
-      "モーモーミルク 077 gold silver to a new world"
+      "モーモーミルク 77 neo genesis",
+      "モーモーミルク 077 gold silver to a new world",
+      "モーモーミルク 77 gold silver to a new world"
     ]
   },
   "neo1078": {
@@ -22891,10 +26740,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ウツギはかせ 078 Japanese",
+      "ウツギはかせ 78 Japanese",
       "ウツギはかせ 078 第1弾「金、銀、新世界へ...」",
+      "ウツギはかせ 78 第1弾「金、銀、新世界へ...」",
       "ウツギはかせ 078 neo",
+      "ウツギはかせ 78 neo",
       "ウツギはかせ 078 neo genesis",
-      "ウツギはかせ 078 gold silver to a new world"
+      "ウツギはかせ 78 neo genesis",
+      "ウツギはかせ 078 gold silver to a new world",
+      "ウツギはかせ 78 gold silver to a new world"
     ]
   },
   "neo1079": {
@@ -22916,10 +26770,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "おうごんのみ 079 Japanese",
+      "おうごんのみ 79 Japanese",
       "おうごんのみ 079 第1弾「金、銀、新世界へ...」",
+      "おうごんのみ 79 第1弾「金、銀、新世界へ...」",
       "おうごんのみ 079 neo",
+      "おうごんのみ 79 neo",
       "おうごんのみ 079 neo genesis",
-      "おうごんのみ 079 gold silver to a new world"
+      "おうごんのみ 79 neo genesis",
+      "おうごんのみ 079 gold silver to a new world",
+      "おうごんのみ 79 gold silver to a new world"
     ]
   },
   "neo1080": {
@@ -22941,10 +26800,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "カードめくりゲーム 080 Japanese",
+      "カードめくりゲーム 80 Japanese",
       "カードめくりゲーム 080 第1弾「金、銀、新世界へ...」",
+      "カードめくりゲーム 80 第1弾「金、銀、新世界へ...」",
       "カードめくりゲーム 080 neo",
+      "カードめくりゲーム 80 neo",
       "カードめくりゲーム 080 neo genesis",
-      "カードめくりゲーム 080 gold silver to a new world"
+      "カードめくりゲーム 80 neo genesis",
+      "カードめくりゲーム 080 gold silver to a new world",
+      "カードめくりゲーム 80 gold silver to a new world"
     ]
   },
   "neo1081": {
@@ -22966,10 +26830,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "きせきのみ 081 Japanese",
+      "きせきのみ 81 Japanese",
       "きせきのみ 081 第1弾「金、銀、新世界へ...」",
+      "きせきのみ 81 第1弾「金、銀、新世界へ...」",
       "きせきのみ 081 neo",
+      "きせきのみ 81 neo",
       "きせきのみ 081 neo genesis",
-      "きせきのみ 081 gold silver to a new world"
+      "きせきのみ 81 neo genesis",
+      "きせきのみ 081 gold silver to a new world",
+      "きせきのみ 81 gold silver to a new world"
     ]
   },
   "neo1082": {
@@ -22991,10 +26860,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "新ポケモン図鑑HANDY808 082 Japanese",
+      "新ポケモン図鑑HANDY808 82 Japanese",
       "新ポケモン図鑑HANDY808 082 第1弾「金、銀、新世界へ...」",
+      "新ポケモン図鑑HANDY808 82 第1弾「金、銀、新世界へ...」",
       "新ポケモン図鑑HANDY808 082 neo",
+      "新ポケモン図鑑HANDY808 82 neo",
       "新ポケモン図鑑HANDY808 082 neo genesis",
-      "新ポケモン図鑑HANDY808 082 gold silver to a new world"
+      "新ポケモン図鑑HANDY808 82 neo genesis",
+      "新ポケモン図鑑HANDY808 082 gold silver to a new world",
+      "新ポケモン図鑑HANDY808 82 gold silver to a new world"
     ]
   },
   "neo1083": {
@@ -23016,10 +26890,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "スーパーポケモン回収 083 Japanese",
+      "スーパーポケモン回収 83 Japanese",
       "スーパーポケモン回収 083 第1弾「金、銀、新世界へ...」",
+      "スーパーポケモン回収 83 第1弾「金、銀、新世界へ...」",
       "スーパーポケモン回収 083 neo",
+      "スーパーポケモン回収 83 neo",
       "スーパーポケモン回収 083 neo genesis",
-      "スーパーポケモン回収 083 gold silver to a new world"
+      "スーパーポケモン回収 83 neo genesis",
+      "スーパーポケモン回収 083 gold silver to a new world",
+      "スーパーポケモン回収 83 gold silver to a new world"
     ]
   },
   "neo1084": {
@@ -23041,10 +26920,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マサキの転送装置 084 Japanese",
+      "マサキの転送装置 84 Japanese",
       "マサキの転送装置 084 第1弾「金、銀、新世界へ...」",
+      "マサキの転送装置 84 第1弾「金、銀、新世界へ...」",
       "マサキの転送装置 084 neo",
+      "マサキの転送装置 84 neo",
       "マサキの転送装置 084 neo genesis",
-      "マサキの転送装置 084 gold silver to a new world"
+      "マサキの転送装置 84 neo genesis",
+      "マサキの転送装置 084 gold silver to a new world",
+      "マサキの転送装置 84 gold silver to a new world"
     ]
   },
   "neo1085": {
@@ -23066,10 +26950,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マダツボミのとう 085 Japanese",
+      "マダツボミのとう 85 Japanese",
       "マダツボミのとう 085 第1弾「金、銀、新世界へ...」",
+      "マダツボミのとう 85 第1弾「金、銀、新世界へ...」",
       "マダツボミのとう 085 neo",
+      "マダツボミのとう 85 neo",
       "マダツボミのとう 085 neo genesis",
-      "マダツボミのとう 085 gold silver to a new world"
+      "マダツボミのとう 85 neo genesis",
+      "マダツボミのとう 085 gold silver to a new world",
+      "マダツボミのとう 85 gold silver to a new world"
     ]
   },
   "neo1086": {
@@ -23091,10 +26980,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エコロジム 086 Japanese",
+      "エコロジム 86 Japanese",
       "エコロジム 086 第1弾「金、銀、新世界へ...」",
+      "エコロジム 86 第1弾「金、銀、新世界へ...」",
       "エコロジム 086 neo",
+      "エコロジム 86 neo",
       "エコロジム 086 neo genesis",
-      "エコロジム 086 gold silver to a new world"
+      "エコロジム 86 neo genesis",
+      "エコロジム 086 gold silver to a new world",
+      "エコロジム 86 gold silver to a new world"
     ]
   },
   "neo1087": {
@@ -23116,10 +27010,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エネルギーチャージ 087 Japanese",
+      "エネルギーチャージ 87 Japanese",
       "エネルギーチャージ 087 第1弾「金、銀、新世界へ...」",
+      "エネルギーチャージ 87 第1弾「金、銀、新世界へ...」",
       "エネルギーチャージ 087 neo",
+      "エネルギーチャージ 87 neo",
       "エネルギーチャージ 087 neo genesis",
-      "エネルギーチャージ 087 gold silver to a new world"
+      "エネルギーチャージ 87 neo genesis",
+      "エネルギーチャージ 087 gold silver to a new world",
+      "エネルギーチャージ 87 gold silver to a new world"
     ]
   },
   "neo1088": {
@@ -23141,10 +27040,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "きあいのハチマキ 088 Japanese",
+      "きあいのハチマキ 88 Japanese",
       "きあいのハチマキ 088 第1弾「金、銀、新世界へ...」",
+      "きあいのハチマキ 88 第1弾「金、銀、新世界へ...」",
       "きあいのハチマキ 088 neo",
+      "きあいのハチマキ 88 neo",
       "きあいのハチマキ 088 neo genesis",
-      "きあいのハチマキ 088 gold silver to a new world"
+      "きあいのハチマキ 88 neo genesis",
+      "きあいのハチマキ 088 gold silver to a new world",
+      "きあいのハチマキ 88 gold silver to a new world"
     ]
   },
   "neo1089": {
@@ -23166,10 +27070,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "クルミ 089 Japanese",
+      "クルミ 89 Japanese",
       "クルミ 089 第1弾「金、銀、新世界へ...」",
+      "クルミ 89 第1弾「金、銀、新世界へ...」",
       "クルミ 089 neo",
+      "クルミ 89 neo",
       "クルミ 089 neo genesis",
-      "クルミ 089 gold silver to a new world"
+      "クルミ 89 neo genesis",
+      "クルミ 089 gold silver to a new world",
+      "クルミ 89 gold silver to a new world"
     ]
   },
   "neo1090": {
@@ -23191,10 +27100,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "スロットゲーム 090 Japanese",
+      "スロットゲーム 90 Japanese",
       "スロットゲーム 090 第1弾「金、銀、新世界へ...」",
+      "スロットゲーム 90 第1弾「金、銀、新世界へ...」",
       "スロットゲーム 090 neo",
+      "スロットゲーム 90 neo",
       "スロットゲーム 090 neo genesis",
-      "スロットゲーム 090 gold silver to a new world"
+      "スロットゲーム 90 neo genesis",
+      "スロットゲーム 090 gold silver to a new world",
+      "スロットゲーム 90 gold silver to a new world"
     ]
   },
   "neo1091": {
@@ -23216,10 +27130,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "タイムカプセル 091 Japanese",
+      "タイムカプセル 91 Japanese",
       "タイムカプセル 091 第1弾「金、銀、新世界へ...」",
+      "タイムカプセル 91 第1弾「金、銀、新世界へ...」",
       "タイムカプセル 091 neo",
+      "タイムカプセル 91 neo",
       "タイムカプセル 091 neo genesis",
-      "タイムカプセル 091 gold silver to a new world"
+      "タイムカプセル 91 neo genesis",
+      "タイムカプセル 091 gold silver to a new world",
+      "タイムカプセル 91 gold silver to a new world"
     ]
   },
   "neo1092": {
@@ -23241,10 +27160,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "超エネルギー回収 092 Japanese",
+      "超エネルギー回収 92 Japanese",
       "超エネルギー回収 092 第1弾「金、銀、新世界へ...」",
+      "超エネルギー回収 92 第1弾「金、銀、新世界へ...」",
       "超エネルギー回収 092 neo",
+      "超エネルギー回収 92 neo",
       "超エネルギー回収 092 neo genesis",
-      "超エネルギー回収 092 gold silver to a new world"
+      "超エネルギー回収 92 neo genesis",
+      "超エネルギー回収 092 gold silver to a new world",
+      "超エネルギー回収 92 gold silver to a new world"
     ]
   },
   "neo1093": {
@@ -23266,10 +27190,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ポケモンギア 093 Japanese",
+      "ポケモンギア 93 Japanese",
       "ポケモンギア 093 第1弾「金、銀、新世界へ...」",
+      "ポケモンギア 93 第1弾「金、銀、新世界へ...」",
       "ポケモンギア 093 neo",
+      "ポケモンギア 93 neo",
       "ポケモンギア 093 neo genesis",
-      "ポケモンギア 093 gold silver to a new world"
+      "ポケモンギア 93 neo genesis",
+      "ポケモンギア 093 gold silver to a new world",
+      "ポケモンギア 93 gold silver to a new world"
     ]
   },
   "neo1094": {
@@ -23291,10 +27220,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "悪エネルギー 094 Japanese",
+      "悪エネルギー 94 Japanese",
       "悪エネルギー 094 第1弾「金、銀、新世界へ...」",
+      "悪エネルギー 94 第1弾「金、銀、新世界へ...」",
       "悪エネルギー 094 neo",
+      "悪エネルギー 94 neo",
       "悪エネルギー 094 neo genesis",
-      "悪エネルギー 094 gold silver to a new world"
+      "悪エネルギー 94 neo genesis",
+      "悪エネルギー 094 gold silver to a new world",
+      "悪エネルギー 94 gold silver to a new world"
     ]
   },
   "neo1095": {
@@ -23316,10 +27250,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "鋼エネルギー 095 Japanese",
+      "鋼エネルギー 95 Japanese",
       "鋼エネルギー 095 第1弾「金、銀、新世界へ...」",
+      "鋼エネルギー 95 第1弾「金、銀、新世界へ...」",
       "鋼エネルギー 095 neo",
+      "鋼エネルギー 95 neo",
       "鋼エネルギー 095 neo genesis",
-      "鋼エネルギー 095 gold silver to a new world"
+      "鋼エネルギー 95 neo genesis",
+      "鋼エネルギー 095 gold silver to a new world",
+      "鋼エネルギー 95 gold silver to a new world"
     ]
   },
   "neo1096": {
@@ -23341,10 +27280,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "リサイクルエネルギー 096 Japanese",
+      "リサイクルエネルギー 96 Japanese",
       "リサイクルエネルギー 096 第1弾「金、銀、新世界へ...」",
+      "リサイクルエネルギー 96 第1弾「金、銀、新世界へ...」",
       "リサイクルエネルギー 096 neo",
+      "リサイクルエネルギー 96 neo",
       "リサイクルエネルギー 096 neo genesis",
-      "リサイクルエネルギー 096 gold silver to a new world"
+      "リサイクルエネルギー 96 neo genesis",
+      "リサイクルエネルギー 096 gold silver to a new world",
+      "リサイクルエネルギー 96 gold silver to a new world"
     ]
   },
   "neo2001": {
@@ -24354,10 +28298,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エネルギーアーク 053 Japanese",
+      "エネルギーアーク 53 Japanese",
       "エネルギーアーク 053 第2弾「遺跡をこえて...」",
+      "エネルギーアーク 53 第2弾「遺跡をこえて...」",
       "エネルギーアーク 053 neo",
+      "エネルギーアーク 53 neo",
       "エネルギーアーク 053 neo discovery",
-      "エネルギーアーク 053 crossing the ruins"
+      "エネルギーアーク 53 neo discovery",
+      "エネルギーアーク 053 crossing the ruins",
+      "エネルギーアーク 53 crossing the ruins"
     ]
   },
   "neo2054": {
@@ -24379,10 +28328,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "遺跡の石版 054 Japanese",
+      "遺跡の石版 54 Japanese",
       "遺跡の石版 054 第2弾「遺跡をこえて...」",
+      "遺跡の石版 54 第2弾「遺跡をこえて...」",
       "遺跡の石版 054 neo",
+      "遺跡の石版 54 neo",
       "遺跡の石版 054 neo discovery",
-      "遺跡の石版 054 crossing the ruins"
+      "遺跡の石版 54 neo discovery",
+      "遺跡の石版 054 crossing the ruins",
+      "遺跡の石版 54 crossing the ruins"
     ]
   },
   "neo2055": {
@@ -24404,10 +28358,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "遺跡の石版 055 Japanese",
+      "遺跡の石版 55 Japanese",
       "遺跡の石版 055 第2弾「遺跡をこえて...」",
+      "遺跡の石版 55 第2弾「遺跡をこえて...」",
       "遺跡の石版 055 neo",
+      "遺跡の石版 55 neo",
       "遺跡の石版 055 neo discovery",
-      "遺跡の石版 055 crossing the ruins"
+      "遺跡の石版 55 neo discovery",
+      "遺跡の石版 055 crossing the ruins",
+      "遺跡の石版 55 crossing the ruins"
     ]
   },
   "neo2056": {
@@ -24429,10 +28388,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "たまごの化石 056 Japanese",
+      "たまごの化石 56 Japanese",
       "たまごの化石 056 第2弾「遺跡をこえて...」",
+      "たまごの化石 56 第2弾「遺跡をこえて...」",
       "たまごの化石 056 neo",
+      "たまごの化石 56 neo",
       "たまごの化石 056 neo discovery",
-      "たまごの化石 056 crossing the ruins"
+      "たまごの化石 56 neo discovery",
+      "たまごの化石 056 crossing the ruins",
+      "たまごの化石 56 crossing the ruins"
     ]
   },
   "neo2057": {
@@ -24454,10 +28418,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "退化スプレーHYPER 057 Japanese",
+      "退化スプレーHYPER 57 Japanese",
       "退化スプレーHYPER 057 第2弾「遺跡をこえて...」",
+      "退化スプレーHYPER 57 第2弾「遺跡をこえて...」",
       "退化スプレーHYPER 057 neo",
+      "退化スプレーHYPER 57 neo",
       "退化スプレーHYPER 057 neo discovery",
-      "退化スプレーHYPER 057 crossing the ruins"
+      "退化スプレーHYPER 57 neo discovery",
+      "退化スプレーHYPER 057 crossing the ruins",
+      "退化スプレーHYPER 57 crossing the ruins"
     ]
   },
   "neo3001": {
@@ -25467,10 +29436,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ボロのつりざお 053 Japanese",
+      "ボロのつりざお 53 Japanese",
       "ボロのつりざお 053 第3弾「めざめる伝説」",
+      "ボロのつりざお 53 第3弾「めざめる伝説」",
       "ボロのつりざお 053 neo",
+      "ボロのつりざお 53 neo",
       "ボロのつりざお 053 neo revelation",
-      "ボロのつりざお 053 awakening legends"
+      "ボロのつりざお 53 neo revelation",
+      "ボロのつりざお 053 awakening legends",
+      "ボロのつりざお 53 awakening legends"
     ]
   },
   "neo3054": {
@@ -25492,10 +29466,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "いやしの野原 054 Japanese",
+      "いやしの野原 54 Japanese",
       "いやしの野原 054 第3弾「めざめる伝説」",
+      "いやしの野原 54 第3弾「めざめる伝説」",
       "いやしの野原 054 neo",
+      "いやしの野原 54 neo",
       "いやしの野原 054 neo revelation",
-      "いやしの野原 054 awakening legends"
+      "いやしの野原 54 neo revelation",
+      "いやしの野原 054 awakening legends",
+      "いやしの野原 54 awakening legends"
     ]
   },
   "neo3055": {
@@ -25517,10 +29496,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ふうせんのみ 055 Japanese",
+      "ふうせんのみ 55 Japanese",
       "ふうせんのみ 055 第3弾「めざめる伝説」",
+      "ふうせんのみ 55 第3弾「めざめる伝説」",
       "ふうせんのみ 055 neo",
+      "ふうせんのみ 55 neo",
       "ふうせんのみ 055 neo revelation",
-      "ふうせんのみ 055 awakening legends"
+      "ふうせんのみ 55 neo revelation",
+      "ふうせんのみ 055 awakening legends",
+      "ふうせんのみ 55 awakening legends"
     ]
   },
   "neo3056": {
@@ -25542,10 +29526,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ポケモン育て屋夫婦 056 Japanese",
+      "ポケモン育て屋夫婦 56 Japanese",
       "ポケモン育て屋夫婦 056 第3弾「めざめる伝説」",
+      "ポケモン育て屋夫婦 56 第3弾「めざめる伝説」",
       "ポケモン育て屋夫婦 056 neo",
+      "ポケモン育て屋夫婦 56 neo",
       "ポケモン育て屋夫婦 056 neo revelation",
-      "ポケモン育て屋夫婦 056 awakening legends"
+      "ポケモン育て屋夫婦 56 neo revelation",
+      "ポケモン育て屋夫婦 056 awakening legends",
+      "ポケモン育て屋夫婦 56 awakening legends"
     ]
   },
   "neo3057": {
@@ -25567,10 +29556,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ロケット団のアジト 057 Japanese",
+      "ロケット団のアジト 57 Japanese",
       "ロケット団のアジト 057 第3弾「めざめる伝説」",
+      "ロケット団のアジト 57 第3弾「めざめる伝説」",
       "ロケット団のアジト 057 neo",
+      "ロケット団のアジト 57 neo",
       "ロケット団のアジト 057 neo revelation",
-      "ロケット団のアジト 057 awakening legends"
+      "ロケット団のアジト 57 neo revelation",
+      "ロケット団のアジト 057 awakening legends",
+      "ロケット団のアジト 57 awakening legends"
     ]
   },
   "neo4001": {
@@ -27454,10 +31448,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ばんのうごな 099 Japanese",
+      "ばんのうごな 99 Japanese",
       "ばんのうごな 099 第4弾「闇、そして光へ...」",
+      "ばんのうごな 99 第4弾「闇、そして光へ...」",
       "ばんのうごな 099 neo",
+      "ばんのうごな 99 neo",
       "ばんのうごな 099 neo destiny",
-      "ばんのうごな 099 darkness and to light"
+      "ばんのうごな 99 neo destiny",
+      "ばんのうごな 099 darkness and to light",
+      "ばんのうごな 99 darkness and to light"
     ]
   },
   "neo4100": {
@@ -27829,10 +31828,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Chikorita 001 Japanese",
+      "Chikorita 1 Japanese",
+      "Chikorita 152 Japanese",
       "Chikorita 001 プレミアムファイル",
+      "Chikorita 1 プレミアムファイル",
+      "Chikorita 152 プレミアムファイル",
       "Chikorita 001 neo",
+      "Chikorita 1 neo",
+      "Chikorita 152 neo",
       "Chikorita 001 premium file",
-      "チコリータ 001 Japanese"
+      "Chikorita 1 premium file",
+      "Chikorita 152 premium file",
+      "チコリータ 001 Japanese",
+      "チコリータ 1 Japanese",
+      "チコリータ 152 Japanese",
+      "チコリータ 001 プレミアムファイル",
+      "チコリータ 1 プレミアムファイル",
+      "チコリータ 152 プレミアムファイル",
+      "チコリータ 001 neo",
+      "チコリータ 1 neo"
     ]
   },
   "neopf1002": {
@@ -27854,10 +31868,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Bayleef 002 Japanese",
+      "Bayleef 2 Japanese",
+      "Bayleef 153 Japanese",
       "Bayleef 002 プレミアムファイル",
+      "Bayleef 2 プレミアムファイル",
+      "Bayleef 153 プレミアムファイル",
       "Bayleef 002 neo",
+      "Bayleef 2 neo",
+      "Bayleef 153 neo",
       "Bayleef 002 premium file",
-      "ベイリーフ 002 Japanese"
+      "Bayleef 2 premium file",
+      "Bayleef 153 premium file",
+      "ベイリーフ 002 Japanese",
+      "ベイリーフ 2 Japanese",
+      "ベイリーフ 153 Japanese",
+      "ベイリーフ 002 プレミアムファイル",
+      "ベイリーフ 2 プレミアムファイル",
+      "ベイリーフ 153 プレミアムファイル",
+      "ベイリーフ 002 neo",
+      "ベイリーフ 2 neo"
     ]
   },
   "neopf1003": {
@@ -27879,10 +31908,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Meganium 003 Japanese",
+      "Meganium 3 Japanese",
+      "Meganium 154 Japanese",
       "Meganium 003 プレミアムファイル",
+      "Meganium 3 プレミアムファイル",
+      "Meganium 154 プレミアムファイル",
       "Meganium 003 neo",
+      "Meganium 3 neo",
+      "Meganium 154 neo",
       "Meganium 003 premium file",
-      "メガニウム 003 Japanese"
+      "Meganium 3 premium file",
+      "Meganium 154 premium file",
+      "メガニウム 003 Japanese",
+      "メガニウム 3 Japanese",
+      "メガニウム 154 Japanese",
+      "メガニウム 003 プレミアムファイル",
+      "メガニウム 3 プレミアムファイル",
+      "メガニウム 154 プレミアムファイル",
+      "メガニウム 003 neo",
+      "メガニウム 3 neo"
     ]
   },
   "neopf1004": {
@@ -27904,10 +31948,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Cyndaquil 004 Japanese",
+      "Cyndaquil 4 Japanese",
+      "Cyndaquil 155 Japanese",
       "Cyndaquil 004 プレミアムファイル",
+      "Cyndaquil 4 プレミアムファイル",
+      "Cyndaquil 155 プレミアムファイル",
       "Cyndaquil 004 neo",
+      "Cyndaquil 4 neo",
+      "Cyndaquil 155 neo",
       "Cyndaquil 004 premium file",
-      "ヒノアラシ 004 Japanese"
+      "Cyndaquil 4 premium file",
+      "Cyndaquil 155 premium file",
+      "ヒノアラシ 004 Japanese",
+      "ヒノアラシ 4 Japanese",
+      "ヒノアラシ 155 Japanese",
+      "ヒノアラシ 004 プレミアムファイル",
+      "ヒノアラシ 4 プレミアムファイル",
+      "ヒノアラシ 155 プレミアムファイル",
+      "ヒノアラシ 004 neo",
+      "ヒノアラシ 4 neo"
     ]
   },
   "neopf1005": {
@@ -27929,10 +31988,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Quilava 005 Japanese",
+      "Quilava 5 Japanese",
+      "Quilava 156 Japanese",
       "Quilava 005 プレミアムファイル",
+      "Quilava 5 プレミアムファイル",
+      "Quilava 156 プレミアムファイル",
       "Quilava 005 neo",
+      "Quilava 5 neo",
+      "Quilava 156 neo",
       "Quilava 005 premium file",
-      "マグマラシ 005 Japanese"
+      "Quilava 5 premium file",
+      "Quilava 156 premium file",
+      "マグマラシ 005 Japanese",
+      "マグマラシ 5 Japanese",
+      "マグマラシ 156 Japanese",
+      "マグマラシ 005 プレミアムファイル",
+      "マグマラシ 5 プレミアムファイル",
+      "マグマラシ 156 プレミアムファイル",
+      "マグマラシ 005 neo",
+      "マグマラシ 5 neo"
     ]
   },
   "neopf1006": {
@@ -27954,10 +32028,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Typhlosion 006 Japanese",
+      "Typhlosion 6 Japanese",
+      "Typhlosion 157 Japanese",
       "Typhlosion 006 プレミアムファイル",
+      "Typhlosion 6 プレミアムファイル",
+      "Typhlosion 157 プレミアムファイル",
       "Typhlosion 006 neo",
+      "Typhlosion 6 neo",
+      "Typhlosion 157 neo",
       "Typhlosion 006 premium file",
-      "バクフーン 006 Japanese"
+      "Typhlosion 6 premium file",
+      "Typhlosion 157 premium file",
+      "バクフーン 006 Japanese",
+      "バクフーン 6 Japanese",
+      "バクフーン 157 Japanese",
+      "バクフーン 006 プレミアムファイル",
+      "バクフーン 6 プレミアムファイル",
+      "バクフーン 157 プレミアムファイル",
+      "バクフーン 006 neo",
+      "バクフーン 6 neo"
     ]
   },
   "neopf1007": {
@@ -27979,10 +32068,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Totodile 007 Japanese",
+      "Totodile 7 Japanese",
+      "Totodile 158 Japanese",
       "Totodile 007 プレミアムファイル",
+      "Totodile 7 プレミアムファイル",
+      "Totodile 158 プレミアムファイル",
       "Totodile 007 neo",
+      "Totodile 7 neo",
+      "Totodile 158 neo",
       "Totodile 007 premium file",
-      "ワニノコ 007 Japanese"
+      "Totodile 7 premium file",
+      "Totodile 158 premium file",
+      "ワニノコ 007 Japanese",
+      "ワニノコ 7 Japanese",
+      "ワニノコ 158 Japanese",
+      "ワニノコ 007 プレミアムファイル",
+      "ワニノコ 7 プレミアムファイル",
+      "ワニノコ 158 プレミアムファイル",
+      "ワニノコ 007 neo",
+      "ワニノコ 7 neo"
     ]
   },
   "neopf1008": {
@@ -28004,10 +32108,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Croconaw 008 Japanese",
+      "Croconaw 8 Japanese",
+      "Croconaw 159 Japanese",
       "Croconaw 008 プレミアムファイル",
+      "Croconaw 8 プレミアムファイル",
+      "Croconaw 159 プレミアムファイル",
       "Croconaw 008 neo",
+      "Croconaw 8 neo",
+      "Croconaw 159 neo",
       "Croconaw 008 premium file",
-      "アリゲイツ 008 Japanese"
+      "Croconaw 8 premium file",
+      "Croconaw 159 premium file",
+      "アリゲイツ 008 Japanese",
+      "アリゲイツ 8 Japanese",
+      "アリゲイツ 159 Japanese",
+      "アリゲイツ 008 プレミアムファイル",
+      "アリゲイツ 8 プレミアムファイル",
+      "アリゲイツ 159 プレミアムファイル",
+      "アリゲイツ 008 neo",
+      "アリゲイツ 8 neo"
     ]
   },
   "neopf1009": {
@@ -28029,10 +32148,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Feraligatr 009 Japanese",
+      "Feraligatr 9 Japanese",
+      "Feraligatr 160 Japanese",
       "Feraligatr 009 プレミアムファイル",
+      "Feraligatr 9 プレミアムファイル",
+      "Feraligatr 160 プレミアムファイル",
       "Feraligatr 009 neo",
+      "Feraligatr 9 neo",
+      "Feraligatr 160 neo",
       "Feraligatr 009 premium file",
-      "オーダイル 009 Japanese"
+      "Feraligatr 9 premium file",
+      "Feraligatr 160 premium file",
+      "オーダイル 009 Japanese",
+      "オーダイル 9 Japanese",
+      "オーダイル 160 Japanese",
+      "オーダイル 009 プレミアムファイル",
+      "オーダイル 9 プレミアムファイル",
+      "オーダイル 160 プレミアムファイル",
+      "オーダイル 009 neo",
+      "オーダイル 9 neo"
     ]
   },
   "neopf2001": {
@@ -28054,10 +32188,21 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Unown N 001 Japanese",
+      "Unown N 1 Japanese",
       "Unown N 001 プレミアムファイル2",
+      "Unown N 1 プレミアムファイル2",
       "Unown N 001 neo",
+      "Unown N 1 neo",
       "Unown N 001 premium file 2",
-      "アンノーン[N] 001 Japanese"
+      "Unown N 1 premium file 2",
+      "アンノーン[N] 001 Japanese",
+      "アンノーン[N] 1 Japanese",
+      "アンノーン[N] 001 プレミアムファイル2",
+      "アンノーン[N] 1 プレミアムファイル2",
+      "アンノーン[N] 001 neo",
+      "アンノーン[N] 1 neo",
+      "アンノーン[N] 001 premium file 2",
+      "アンノーン[N] 1 premium file 2"
     ]
   },
   "neopf2002": {
@@ -28079,10 +32224,21 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Unown E 002 Japanese",
+      "Unown E 2 Japanese",
       "Unown E 002 プレミアムファイル2",
+      "Unown E 2 プレミアムファイル2",
       "Unown E 002 neo",
+      "Unown E 2 neo",
       "Unown E 002 premium file 2",
-      "アンノーン[E] 002 Japanese"
+      "Unown E 2 premium file 2",
+      "アンノーン[E] 002 Japanese",
+      "アンノーン[E] 2 Japanese",
+      "アンノーン[E] 002 プレミアムファイル2",
+      "アンノーン[E] 2 プレミアムファイル2",
+      "アンノーン[E] 002 neo",
+      "アンノーン[E] 2 neo",
+      "アンノーン[E] 002 premium file 2",
+      "アンノーン[E] 2 premium file 2"
     ]
   },
   "neopf2003": {
@@ -28104,10 +32260,21 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Unown O 003 Japanese",
+      "Unown O 3 Japanese",
       "Unown O 003 プレミアムファイル2",
+      "Unown O 3 プレミアムファイル2",
       "Unown O 003 neo",
+      "Unown O 3 neo",
       "Unown O 003 premium file 2",
-      "アンノーン[O] 003 Japanese"
+      "Unown O 3 premium file 2",
+      "アンノーン[O] 003 Japanese",
+      "アンノーン[O] 3 Japanese",
+      "アンノーン[O] 003 プレミアムファイル2",
+      "アンノーン[O] 3 プレミアムファイル2",
+      "アンノーン[O] 003 neo",
+      "アンノーン[O] 3 neo",
+      "アンノーン[O] 003 premium file 2",
+      "アンノーン[O] 3 premium file 2"
     ]
   },
   "neopf2004": {
@@ -28129,10 +32296,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Espeon 004 Japanese",
+      "Espeon 4 Japanese",
+      "Espeon 196 Japanese",
       "Espeon 004 プレミアムファイル2",
+      "Espeon 4 プレミアムファイル2",
+      "Espeon 196 プレミアムファイル2",
       "Espeon 004 neo",
+      "Espeon 4 neo",
+      "Espeon 196 neo",
       "Espeon 004 premium file 2",
-      "エーフィ 004 Japanese"
+      "Espeon 4 premium file 2",
+      "Espeon 196 premium file 2",
+      "エーフィ 004 Japanese",
+      "エーフィ 4 Japanese",
+      "エーフィ 196 Japanese",
+      "エーフィ 004 プレミアムファイル2",
+      "エーフィ 4 プレミアムファイル2",
+      "エーフィ 196 プレミアムファイル2",
+      "エーフィ 004 neo",
+      "エーフィ 4 neo"
     ]
   },
   "neopf2005": {
@@ -28154,10 +32336,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Eevee 005 Japanese",
+      "Eevee 5 Japanese",
+      "Eevee 133 Japanese",
       "Eevee 005 プレミアムファイル2",
+      "Eevee 5 プレミアムファイル2",
+      "Eevee 133 プレミアムファイル2",
       "Eevee 005 neo",
+      "Eevee 5 neo",
+      "Eevee 133 neo",
       "Eevee 005 premium file 2",
-      "イーブイ 005 Japanese"
+      "Eevee 5 premium file 2",
+      "Eevee 133 premium file 2",
+      "イーブイ 005 Japanese",
+      "イーブイ 5 Japanese",
+      "イーブイ 133 Japanese",
+      "イーブイ 005 プレミアムファイル2",
+      "イーブイ 5 プレミアムファイル2",
+      "イーブイ 133 プレミアムファイル2",
+      "イーブイ 005 neo",
+      "イーブイ 5 neo"
     ]
   },
   "neopf2006": {
@@ -28179,10 +32376,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Umbreon 006 Japanese",
+      "Umbreon 6 Japanese",
+      "Umbreon 197 Japanese",
       "Umbreon 006 プレミアムファイル2",
+      "Umbreon 6 プレミアムファイル2",
+      "Umbreon 197 プレミアムファイル2",
       "Umbreon 006 neo",
+      "Umbreon 6 neo",
+      "Umbreon 197 neo",
       "Umbreon 006 premium file 2",
-      "ブラッキー 006 Japanese"
+      "Umbreon 6 premium file 2",
+      "Umbreon 197 premium file 2",
+      "ブラッキー 006 Japanese",
+      "ブラッキー 6 Japanese",
+      "ブラッキー 197 Japanese",
+      "ブラッキー 006 プレミアムファイル2",
+      "ブラッキー 6 プレミアムファイル2",
+      "ブラッキー 197 プレミアムファイル2",
+      "ブラッキー 006 neo",
+      "ブラッキー 6 neo"
     ]
   },
   "neopf2007": {
@@ -28204,10 +32416,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pichu 007 Japanese",
+      "Pichu 7 Japanese",
+      "Pichu 172 Japanese",
       "Pichu 007 プレミアムファイル2",
+      "Pichu 7 プレミアムファイル2",
+      "Pichu 172 プレミアムファイル2",
       "Pichu 007 neo",
+      "Pichu 7 neo",
+      "Pichu 172 neo",
       "Pichu 007 premium file 2",
-      "ピチュー 007 Japanese"
+      "Pichu 7 premium file 2",
+      "Pichu 172 premium file 2",
+      "ピチュー 007 Japanese",
+      "ピチュー 7 Japanese",
+      "ピチュー 172 Japanese",
+      "ピチュー 007 プレミアムファイル2",
+      "ピチュー 7 プレミアムファイル2",
+      "ピチュー 172 プレミアムファイル2",
+      "ピチュー 007 neo",
+      "ピチュー 7 neo"
     ]
   },
   "neopf2008": {
@@ -28229,10 +32456,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Entei 008 Japanese",
+      "Entei 8 Japanese",
+      "Entei 244 Japanese",
       "Entei 008 プレミアムファイル2",
+      "Entei 8 プレミアムファイル2",
+      "Entei 244 プレミアムファイル2",
       "Entei 008 neo",
+      "Entei 8 neo",
+      "Entei 244 neo",
       "Entei 008 premium file 2",
-      "エンテイ 008 Japanese"
+      "Entei 8 premium file 2",
+      "Entei 244 premium file 2",
+      "エンテイ 008 Japanese",
+      "エンテイ 8 Japanese",
+      "エンテイ 244 Japanese",
+      "エンテイ 008 プレミアムファイル2",
+      "エンテイ 8 プレミアムファイル2",
+      "エンテイ 244 プレミアムファイル2",
+      "エンテイ 008 neo",
+      "エンテイ 8 neo"
     ]
   },
   "neopf2009": {
@@ -28254,10 +32496,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Charizard 009 Japanese",
+      "Charizard 9 Japanese",
+      "Charizard 6 Japanese",
       "Charizard 009 プレミアムファイル2",
+      "Charizard 9 プレミアムファイル2",
+      "Charizard 6 プレミアムファイル2",
       "Charizard 009 neo",
+      "Charizard 9 neo",
+      "Charizard 6 neo",
       "Charizard 009 premium file 2",
-      "リザードン 009 Japanese"
+      "Charizard 9 premium file 2",
+      "Charizard 6 premium file 2",
+      "リザードン 009 Japanese",
+      "リザードン 9 Japanese",
+      "リザードン 6 Japanese",
+      "リザードン 009 プレミアムファイル2",
+      "リザードン 9 プレミアムファイル2",
+      "リザードン 6 プレミアムファイル2",
+      "リザードン 009 neo",
+      "リザードン 9 neo"
     ]
   },
   "neopf3001": {
@@ -28279,10 +32536,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Sudowoodo 001 Japanese",
+      "Sudowoodo 1 Japanese",
+      "Sudowoodo 185 Japanese",
       "Sudowoodo 001 プレミアムファイル3",
+      "Sudowoodo 1 プレミアムファイル3",
+      "Sudowoodo 185 プレミアムファイル3",
       "Sudowoodo 001 neo",
+      "Sudowoodo 1 neo",
+      "Sudowoodo 185 neo",
       "Sudowoodo 001 premium file 3",
-      "ウソッキー 001 Japanese"
+      "Sudowoodo 1 premium file 3",
+      "Sudowoodo 185 premium file 3",
+      "ウソッキー 001 Japanese",
+      "ウソッキー 1 Japanese",
+      "ウソッキー 185 Japanese",
+      "ウソッキー 001 プレミアムファイル3",
+      "ウソッキー 1 プレミアムファイル3",
+      "ウソッキー 185 プレミアムファイル3",
+      "ウソッキー 001 neo",
+      "ウソッキー 1 neo"
     ]
   },
   "neopf3002": {
@@ -28304,10 +32576,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Celebi 002 Japanese",
+      "Celebi 2 Japanese",
+      "Celebi 251 Japanese",
       "Celebi 002 プレミアムファイル3",
+      "Celebi 2 プレミアムファイル3",
+      "Celebi 251 プレミアムファイル3",
       "Celebi 002 neo",
+      "Celebi 2 neo",
+      "Celebi 251 neo",
       "Celebi 002 premium file 3",
-      "セレビィ 002 Japanese"
+      "Celebi 2 premium file 3",
+      "Celebi 251 premium file 3",
+      "セレビィ 002 Japanese",
+      "セレビィ 2 Japanese",
+      "セレビィ 251 Japanese",
+      "セレビィ 002 プレミアムファイル3",
+      "セレビィ 2 プレミアムファイル3",
+      "セレビィ 251 プレミアムファイル3",
+      "セレビィ 002 neo",
+      "セレビィ 2 neo"
     ]
   },
   "neopf3003": {
@@ -28329,10 +32616,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Sneasel 003 Japanese",
+      "Sneasel 3 Japanese",
+      "Sneasel 215 Japanese",
       "Sneasel 003 プレミアムファイル3",
+      "Sneasel 3 プレミアムファイル3",
+      "Sneasel 215 プレミアムファイル3",
       "Sneasel 003 neo",
+      "Sneasel 3 neo",
+      "Sneasel 215 neo",
       "Sneasel 003 premium file 3",
-      "ニューラ 003 Japanese"
+      "Sneasel 3 premium file 3",
+      "Sneasel 215 premium file 3",
+      "ニューラ 003 Japanese",
+      "ニューラ 3 Japanese",
+      "ニューラ 215 Japanese",
+      "ニューラ 003 プレミアムファイル3",
+      "ニューラ 3 プレミアムファイル3",
+      "ニューラ 215 プレミアムファイル3",
+      "ニューラ 003 neo",
+      "ニューラ 3 neo"
     ]
   },
   "neopf3004": {
@@ -28354,10 +32656,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Raikou 004 Japanese",
+      "Raikou 4 Japanese",
+      "Raikou 243 Japanese",
       "Raikou 004 プレミアムファイル3",
+      "Raikou 4 プレミアムファイル3",
+      "Raikou 243 プレミアムファイル3",
       "Raikou 004 neo",
+      "Raikou 4 neo",
+      "Raikou 243 neo",
       "Raikou 004 premium file 3",
-      "ライコウ 004 Japanese"
+      "Raikou 4 premium file 3",
+      "Raikou 243 premium file 3",
+      "ライコウ 004 Japanese",
+      "ライコウ 4 Japanese",
+      "ライコウ 243 Japanese",
+      "ライコウ 004 プレミアムファイル3",
+      "ライコウ 4 プレミアムファイル3",
+      "ライコウ 243 プレミアムファイル3",
+      "ライコウ 004 neo",
+      "ライコウ 4 neo"
     ]
   },
   "neopf3005": {
@@ -28379,10 +32696,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Entei 005 Japanese",
+      "Entei 5 Japanese",
+      "Entei 244 Japanese",
       "Entei 005 プレミアムファイル3",
+      "Entei 5 プレミアムファイル3",
+      "Entei 244 プレミアムファイル3",
       "Entei 005 neo",
+      "Entei 5 neo",
+      "Entei 244 neo",
       "Entei 005 premium file 3",
-      "エンテイ 005 Japanese"
+      "Entei 5 premium file 3",
+      "Entei 244 premium file 3",
+      "エンテイ 005 Japanese",
+      "エンテイ 5 Japanese",
+      "エンテイ 244 Japanese",
+      "エンテイ 005 プレミアムファイル3",
+      "エンテイ 5 プレミアムファイル3",
+      "エンテイ 244 プレミアムファイル3",
+      "エンテイ 005 neo",
+      "エンテイ 5 neo"
     ]
   },
   "neopf3006": {
@@ -28404,10 +32736,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Suicune 006 Japanese",
+      "Suicune 6 Japanese",
+      "Suicune 245 Japanese",
       "Suicune 006 プレミアムファイル3",
+      "Suicune 6 プレミアムファイル3",
+      "Suicune 245 プレミアムファイル3",
       "Suicune 006 neo",
+      "Suicune 6 neo",
+      "Suicune 245 neo",
       "Suicune 006 premium file 3",
-      "スイクン 006 Japanese"
+      "Suicune 6 premium file 3",
+      "Suicune 245 premium file 3",
+      "スイクン 006 Japanese",
+      "スイクン 6 Japanese",
+      "スイクン 245 Japanese",
+      "スイクン 006 プレミアムファイル3",
+      "スイクン 6 プレミアムファイル3",
+      "スイクン 245 プレミアムファイル3",
+      "スイクン 006 neo",
+      "スイクン 6 neo"
     ]
   },
   "neopf3007": {
@@ -28429,10 +32776,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Ho-Oh 007 Japanese",
+      "Ho-Oh 7 Japanese",
+      "Ho-Oh 250 Japanese",
       "Ho-Oh 007 プレミアムファイル3",
+      "Ho-Oh 7 プレミアムファイル3",
+      "Ho-Oh 250 プレミアムファイル3",
       "Ho-Oh 007 neo",
+      "Ho-Oh 7 neo",
+      "Ho-Oh 250 neo",
       "Ho-Oh 007 premium file 3",
-      "ホウオウ 007 Japanese"
+      "Ho-Oh 7 premium file 3",
+      "Ho-Oh 250 premium file 3",
+      "ホウオウ 007 Japanese",
+      "ホウオウ 7 Japanese",
+      "ホウオウ 250 Japanese",
+      "ホウオウ 007 プレミアムファイル3",
+      "ホウオウ 7 プレミアムファイル3",
+      "ホウオウ 250 プレミアムファイル3",
+      "ホウオウ 007 neo",
+      "ホウオウ 7 neo"
     ]
   },
   "neopf3008": {
@@ -28454,10 +32816,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Lugia 008 Japanese",
+      "Lugia 8 Japanese",
+      "Lugia 249 Japanese",
       "Lugia 008 プレミアムファイル3",
+      "Lugia 8 プレミアムファイル3",
+      "Lugia 249 プレミアムファイル3",
       "Lugia 008 neo",
+      "Lugia 8 neo",
+      "Lugia 249 neo",
       "Lugia 008 premium file 3",
-      "ルギア 008 Japanese"
+      "Lugia 8 premium file 3",
+      "Lugia 249 premium file 3",
+      "ルギア 008 Japanese",
+      "ルギア 8 Japanese",
+      "ルギア 249 Japanese",
+      "ルギア 008 プレミアムファイル3",
+      "ルギア 8 プレミアムファイル3",
+      "ルギア 249 プレミアムファイル3",
+      "ルギア 008 neo",
+      "ルギア 8 neo"
     ]
   },
   "neopf3009": {
@@ -28479,10 +32856,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Skarmory 009 Japanese",
+      "Skarmory 9 Japanese",
+      "Skarmory 227 Japanese",
       "Skarmory 009 プレミアムファイル3",
+      "Skarmory 9 プレミアムファイル3",
+      "Skarmory 227 プレミアムファイル3",
       "Skarmory 009 neo",
+      "Skarmory 9 neo",
+      "Skarmory 227 neo",
       "Skarmory 009 premium file 3",
-      "エアームド 009 Japanese"
+      "Skarmory 9 premium file 3",
+      "Skarmory 227 premium file 3",
+      "エアームド 009 Japanese",
+      "エアームド 9 Japanese",
+      "エアームド 227 Japanese",
+      "エアームド 009 プレミアムファイル3",
+      "エアームド 9 プレミアムファイル3",
+      "エアームド 227 プレミアムファイル3",
+      "エアームド 009 neo",
+      "エアームド 9 neo"
     ]
   },
   "neointro1001": {
@@ -28542,10 +32934,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 003 Japanese",
+      "草エネルギー 3 Japanese",
       "草エネルギー 003 イントロパック★neo(チコリータデッキ)",
+      "草エネルギー 3 イントロパック★neo(チコリータデッキ)",
       "草エネルギー 003 neo",
+      "草エネルギー 3 neo",
       "草エネルギー 003 neo intro pack",
-      "草エネルギー 003 chikorita deck"
+      "草エネルギー 3 neo intro pack",
+      "草エネルギー 003 chikorita deck",
+      "草エネルギー 3 chikorita deck"
     ]
   },
   "neointro1004": {
@@ -28567,10 +32964,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 004 Japanese",
+      "草エネルギー 4 Japanese",
       "草エネルギー 004 イントロパック★neo(チコリータデッキ)",
+      "草エネルギー 4 イントロパック★neo(チコリータデッキ)",
       "草エネルギー 004 neo",
+      "草エネルギー 4 neo",
       "草エネルギー 004 neo intro pack",
-      "草エネルギー 004 chikorita deck"
+      "草エネルギー 4 neo intro pack",
+      "草エネルギー 004 chikorita deck",
+      "草エネルギー 4 chikorita deck"
     ]
   },
   "neointro1005": {
@@ -28592,10 +32994,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 005 Japanese",
+      "炎エネルギー 5 Japanese",
       "炎エネルギー 005 イントロパック★neo(チコリータデッキ)",
+      "炎エネルギー 5 イントロパック★neo(チコリータデッキ)",
       "炎エネルギー 005 neo",
+      "炎エネルギー 5 neo",
       "炎エネルギー 005 neo intro pack",
-      "炎エネルギー 005 chikorita deck"
+      "炎エネルギー 5 neo intro pack",
+      "炎エネルギー 005 chikorita deck",
+      "炎エネルギー 5 chikorita deck"
     ]
   },
   "neointro1006": {
@@ -28617,10 +33024,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "闘エネルギー 006 Japanese",
+      "闘エネルギー 6 Japanese",
       "闘エネルギー 006 イントロパック★neo(チコリータデッキ)",
+      "闘エネルギー 6 イントロパック★neo(チコリータデッキ)",
       "闘エネルギー 006 neo",
+      "闘エネルギー 6 neo",
       "闘エネルギー 006 neo intro pack",
-      "闘エネルギー 006 chikorita deck"
+      "闘エネルギー 6 neo intro pack",
+      "闘エネルギー 006 chikorita deck",
+      "闘エネルギー 6 chikorita deck"
     ]
   },
   "neointro1007": {
@@ -28680,10 +33092,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 009 Japanese",
+      "草エネルギー 9 Japanese",
       "草エネルギー 009 イントロパック★neo(チコリータデッキ)",
+      "草エネルギー 9 イントロパック★neo(チコリータデッキ)",
       "草エネルギー 009 neo",
+      "草エネルギー 9 neo",
       "草エネルギー 009 neo intro pack",
-      "草エネルギー 009 chikorita deck"
+      "草エネルギー 9 neo intro pack",
+      "草エネルギー 009 chikorita deck",
+      "草エネルギー 9 chikorita deck"
     ]
   },
   "neointro1010": {
@@ -28724,10 +33141,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "闘エネルギー 011 Japanese",
+      "闘エネルギー 11 Japanese",
       "闘エネルギー 011 イントロパック★neo(チコリータデッキ)",
+      "闘エネルギー 11 イントロパック★neo(チコリータデッキ)",
       "闘エネルギー 011 neo",
+      "闘エネルギー 11 neo",
       "闘エネルギー 011 neo intro pack",
-      "闘エネルギー 011 chikorita deck"
+      "闘エネルギー 11 neo intro pack",
+      "闘エネルギー 011 chikorita deck",
+      "闘エネルギー 11 chikorita deck"
     ]
   },
   "neointro1012": {
@@ -28787,10 +33209,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 014 Japanese",
+      "炎エネルギー 14 Japanese",
       "炎エネルギー 014 イントロパック★neo(チコリータデッキ)",
+      "炎エネルギー 14 イントロパック★neo(チコリータデッキ)",
       "炎エネルギー 014 neo",
+      "炎エネルギー 14 neo",
       "炎エネルギー 014 neo intro pack",
-      "炎エネルギー 014 chikorita deck"
+      "炎エネルギー 14 neo intro pack",
+      "炎エネルギー 014 chikorita deck",
+      "炎エネルギー 14 chikorita deck"
     ]
   },
   "neointro1015": {
@@ -28850,10 +33277,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 017 Japanese",
+      "炎エネルギー 17 Japanese",
       "炎エネルギー 017 イントロパック★neo(チコリータデッキ)",
+      "炎エネルギー 17 イントロパック★neo(チコリータデッキ)",
       "炎エネルギー 017 neo",
+      "炎エネルギー 17 neo",
       "炎エネルギー 017 neo intro pack",
-      "炎エネルギー 017 chikorita deck"
+      "炎エネルギー 17 neo intro pack",
+      "炎エネルギー 017 chikorita deck",
+      "炎エネルギー 17 chikorita deck"
     ]
   },
   "neointro1018": {
@@ -28875,10 +33307,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "闘エネルギー 018 Japanese",
+      "闘エネルギー 18 Japanese",
       "闘エネルギー 018 イントロパック★neo(チコリータデッキ)",
+      "闘エネルギー 18 イントロパック★neo(チコリータデッキ)",
       "闘エネルギー 018 neo",
+      "闘エネルギー 18 neo",
       "闘エネルギー 018 neo intro pack",
-      "闘エネルギー 018 chikorita deck"
+      "闘エネルギー 18 neo intro pack",
+      "闘エネルギー 018 chikorita deck",
+      "闘エネルギー 18 chikorita deck"
     ]
   },
   "neointro1019": {
@@ -28900,10 +33337,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 019 Japanese",
+      "炎エネルギー 19 Japanese",
       "炎エネルギー 019 イントロパック★neo(チコリータデッキ)",
+      "炎エネルギー 19 イントロパック★neo(チコリータデッキ)",
       "炎エネルギー 019 neo",
+      "炎エネルギー 19 neo",
       "炎エネルギー 019 neo intro pack",
-      "炎エネルギー 019 chikorita deck"
+      "炎エネルギー 19 neo intro pack",
+      "炎エネルギー 019 chikorita deck",
+      "炎エネルギー 19 chikorita deck"
     ]
   },
   "neointro1020": {
@@ -28944,10 +33386,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マスターボール 021 Japanese",
+      "マスターボール 21 Japanese",
       "マスターボール 021 イントロパック★neo(チコリータデッキ)",
+      "マスターボール 21 イントロパック★neo(チコリータデッキ)",
       "マスターボール 021 neo",
+      "マスターボール 21 neo",
       "マスターボール 021 neo intro pack",
-      "マスターボール 021 chikorita deck"
+      "マスターボール 21 neo intro pack",
+      "マスターボール 021 chikorita deck",
+      "マスターボール 21 chikorita deck"
     ]
   },
   "neointro1022": {
@@ -29026,10 +33473,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "炎エネルギー 025 Japanese",
+      "炎エネルギー 25 Japanese",
       "炎エネルギー 025 イントロパック★neo(チコリータデッキ)",
+      "炎エネルギー 25 イントロパック★neo(チコリータデッキ)",
       "炎エネルギー 025 neo",
+      "炎エネルギー 25 neo",
       "炎エネルギー 025 neo intro pack",
-      "炎エネルギー 025 chikorita deck"
+      "炎エネルギー 25 neo intro pack",
+      "炎エネルギー 025 chikorita deck",
+      "炎エネルギー 25 chikorita deck"
     ]
   },
   "neointro1026": {
@@ -29051,10 +33503,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 026 Japanese",
+      "草エネルギー 26 Japanese",
       "草エネルギー 026 イントロパック★neo(チコリータデッキ)",
+      "草エネルギー 26 イントロパック★neo(チコリータデッキ)",
       "草エネルギー 026 neo",
+      "草エネルギー 26 neo",
       "草エネルギー 026 neo intro pack",
-      "草エネルギー 026 chikorita deck"
+      "草エネルギー 26 neo intro pack",
+      "草エネルギー 026 chikorita deck",
+      "草エネルギー 26 chikorita deck"
     ]
   },
   "neointro1027": {
@@ -29076,10 +33533,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 027 Japanese",
+      "草エネルギー 27 Japanese",
       "草エネルギー 027 イントロパック★neo(チコリータデッキ)",
+      "草エネルギー 27 イントロパック★neo(チコリータデッキ)",
       "草エネルギー 027 neo",
+      "草エネルギー 27 neo",
       "草エネルギー 027 neo intro pack",
-      "草エネルギー 027 chikorita deck"
+      "草エネルギー 27 neo intro pack",
+      "草エネルギー 027 chikorita deck",
+      "草エネルギー 27 chikorita deck"
     ]
   },
   "neointro1028": {
@@ -29101,10 +33563,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 028 Japanese",
+      "草エネルギー 28 Japanese",
       "草エネルギー 028 イントロパック★neo(チコリータデッキ)",
+      "草エネルギー 28 イントロパック★neo(チコリータデッキ)",
       "草エネルギー 028 neo",
+      "草エネルギー 28 neo",
       "草エネルギー 028 neo intro pack",
-      "草エネルギー 028 chikorita deck"
+      "草エネルギー 28 neo intro pack",
+      "草エネルギー 028 chikorita deck",
+      "草エネルギー 28 chikorita deck"
     ]
   },
   "neointro1029": {
@@ -29126,10 +33593,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "草エネルギー 029 Japanese",
+      "草エネルギー 29 Japanese",
       "草エネルギー 029 イントロパック★neo(チコリータデッキ)",
+      "草エネルギー 29 イントロパック★neo(チコリータデッキ)",
       "草エネルギー 029 neo",
+      "草エネルギー 29 neo",
       "草エネルギー 029 neo intro pack",
-      "草エネルギー 029 chikorita deck"
+      "草エネルギー 29 neo intro pack",
+      "草エネルギー 029 chikorita deck",
+      "草エネルギー 29 chikorita deck"
     ]
   },
   "neointro1030": {
@@ -29170,10 +33642,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Meganium 001 Japanese",
+      "Meganium 1 Japanese",
+      "Meganium 154 Japanese",
       "Meganium 001 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Meganium 1 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Meganium 154 イントロパック★neo(チコリータデッキ：拡張カード)",
       "Meganium 001 neo",
+      "Meganium 1 neo",
+      "Meganium 154 neo",
       "Meganium 001 neo intro pack",
-      "Meganium 001 chikorita deck"
+      "Meganium 1 neo intro pack",
+      "Meganium 154 neo intro pack",
+      "Meganium 001 chikorita deck",
+      "Meganium 1 chikorita deck",
+      "Meganium 154 chikorita deck",
+      "メガニウム 001 Japanese",
+      "メガニウム 1 Japanese",
+      "メガニウム 154 Japanese",
+      "メガニウム 001 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "メガニウム 1 イントロパック★neo(チコリータデッキ：拡張カード)"
     ]
   },
   "neointro1ex002": {
@@ -29195,10 +33682,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Magby 002 Japanese",
+      "Magby 2 Japanese",
+      "Magby 240 Japanese",
       "Magby 002 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Magby 2 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Magby 240 イントロパック★neo(チコリータデッキ：拡張カード)",
       "Magby 002 neo",
+      "Magby 2 neo",
+      "Magby 240 neo",
       "Magby 002 neo intro pack",
-      "Magby 002 chikorita deck"
+      "Magby 2 neo intro pack",
+      "Magby 240 neo intro pack",
+      "Magby 002 chikorita deck",
+      "Magby 2 chikorita deck",
+      "Magby 240 chikorita deck",
+      "ブビィ 002 Japanese",
+      "ブビィ 2 Japanese",
+      "ブビィ 240 Japanese",
+      "ブビィ 002 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "ブビィ 2 イントロパック★neo(チコリータデッキ：拡張カード)"
     ]
   },
   "neointro1ex003": {
@@ -29220,10 +33722,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Machop 003 Japanese",
+      "Machop 3 Japanese",
+      "Machop 66 Japanese",
       "Machop 003 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Machop 3 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Machop 66 イントロパック★neo(チコリータデッキ：拡張カード)",
       "Machop 003 neo",
+      "Machop 3 neo",
+      "Machop 66 neo",
       "Machop 003 neo intro pack",
-      "Machop 003 chikorita deck"
+      "Machop 3 neo intro pack",
+      "Machop 66 neo intro pack",
+      "Machop 003 chikorita deck",
+      "Machop 3 chikorita deck",
+      "Machop 66 chikorita deck",
+      "ワンリキー 003 Japanese",
+      "ワンリキー 3 Japanese",
+      "ワンリキー 66 Japanese",
+      "ワンリキー 003 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "ワンリキー 3 イントロパック★neo(チコリータデッキ：拡張カード)"
     ]
   },
   "neointro1ex004": {
@@ -29245,10 +33762,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Geodude 004 Japanese",
+      "Geodude 4 Japanese",
+      "Geodude 74 Japanese",
       "Geodude 004 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Geodude 4 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Geodude 74 イントロパック★neo(チコリータデッキ：拡張カード)",
       "Geodude 004 neo",
+      "Geodude 4 neo",
+      "Geodude 74 neo",
       "Geodude 004 neo intro pack",
-      "Geodude 004 chikorita deck"
+      "Geodude 4 neo intro pack",
+      "Geodude 74 neo intro pack",
+      "Geodude 004 chikorita deck",
+      "Geodude 4 chikorita deck",
+      "Geodude 74 chikorita deck",
+      "イシツブテ 004 Japanese",
+      "イシツブテ 4 Japanese",
+      "イシツブテ 74 Japanese",
+      "イシツブテ 004 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "イシツブテ 4 イントロパック★neo(チコリータデッキ：拡張カード)"
     ]
   },
   "neointro1ex005": {
@@ -29270,10 +33802,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Skarmory 005 Japanese",
+      "Skarmory 5 Japanese",
+      "Skarmory 227 Japanese",
       "Skarmory 005 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Skarmory 5 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Skarmory 227 イントロパック★neo(チコリータデッキ：拡張カード)",
       "Skarmory 005 neo",
+      "Skarmory 5 neo",
+      "Skarmory 227 neo",
       "Skarmory 005 neo intro pack",
-      "Skarmory 005 chikorita deck"
+      "Skarmory 5 neo intro pack",
+      "Skarmory 227 neo intro pack",
+      "Skarmory 005 chikorita deck",
+      "Skarmory 5 chikorita deck",
+      "Skarmory 227 chikorita deck",
+      "エアームド 005 Japanese",
+      "エアームド 5 Japanese",
+      "エアームド 227 Japanese",
+      "エアームド 005 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "エアームド 5 イントロパック★neo(チコリータデッキ：拡張カード)"
     ]
   },
   "neointro1ex006": {
@@ -29295,10 +33842,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "PlusPower 006 Japanese",
+      "PlusPower 6 Japanese",
       "PlusPower 006 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "PlusPower 6 イントロパック★neo(チコリータデッキ：拡張カード)",
       "PlusPower 006 neo",
+      "PlusPower 6 neo",
       "PlusPower 006 neo intro pack",
-      "PlusPower 006 chikorita deck"
+      "PlusPower 6 neo intro pack",
+      "PlusPower 006 chikorita deck",
+      "PlusPower 6 chikorita deck",
+      "プラスパワー 006 Japanese",
+      "プラスパワー 6 Japanese",
+      "プラスパワー 006 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "プラスパワー 6 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "プラスパワー 006 neo",
+      "プラスパワー 6 neo",
+      "プラスパワー 006 neo intro pack",
+      "プラスパワー 6 neo intro pack",
+      "プラスパワー 006 chikorita deck",
+      "プラスパワー 6 chikorita deck"
     ]
   },
   "neointro1ex007": {
@@ -29320,10 +33882,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Switch 007 Japanese",
+      "Switch 7 Japanese",
       "Switch 007 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "Switch 7 イントロパック★neo(チコリータデッキ：拡張カード)",
       "Switch 007 neo",
+      "Switch 7 neo",
       "Switch 007 neo intro pack",
-      "Switch 007 chikorita deck"
+      "Switch 7 neo intro pack",
+      "Switch 007 chikorita deck",
+      "Switch 7 chikorita deck",
+      "ポケモンいれかえ 007 Japanese",
+      "ポケモンいれかえ 7 Japanese",
+      "ポケモンいれかえ 007 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "ポケモンいれかえ 7 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "ポケモンいれかえ 007 neo",
+      "ポケモンいれかえ 7 neo",
+      "ポケモンいれかえ 007 neo intro pack",
+      "ポケモンいれかえ 7 neo intro pack",
+      "ポケモンいれかえ 007 chikorita deck",
+      "ポケモンいれかえ 7 chikorita deck"
     ]
   },
   "neointro1ex008": {
@@ -29345,10 +33922,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "きのみ 008 Japanese",
+      "きのみ 8 Japanese",
       "きのみ 008 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "きのみ 8 イントロパック★neo(チコリータデッキ：拡張カード)",
       "きのみ 008 neo",
+      "きのみ 8 neo",
       "きのみ 008 neo intro pack",
-      "きのみ 008 chikorita deck"
+      "きのみ 8 neo intro pack",
+      "きのみ 008 chikorita deck",
+      "きのみ 8 chikorita deck"
     ]
   },
   "neointro1ex009": {
@@ -29370,10 +33952,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "エネルギースタジアム 009 Japanese",
+      "エネルギースタジアム 9 Japanese",
       "エネルギースタジアム 009 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "エネルギースタジアム 9 イントロパック★neo(チコリータデッキ：拡張カード)",
       "エネルギースタジアム 009 neo",
+      "エネルギースタジアム 9 neo",
       "エネルギースタジアム 009 neo intro pack",
-      "エネルギースタジアム 009 chikorita deck"
+      "エネルギースタジアム 9 neo intro pack",
+      "エネルギースタジアム 009 chikorita deck",
+      "エネルギースタジアム 9 chikorita deck"
     ]
   },
   "neointro1ex010": {
@@ -29395,10 +33982,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "鋼エネルギー 010 Japanese",
+      "鋼エネルギー 10 Japanese",
       "鋼エネルギー 010 イントロパック★neo(チコリータデッキ：拡張カード)",
+      "鋼エネルギー 10 イントロパック★neo(チコリータデッキ：拡張カード)",
       "鋼エネルギー 010 neo",
+      "鋼エネルギー 10 neo",
       "鋼エネルギー 010 neo intro pack",
-      "鋼エネルギー 010 chikorita deck"
+      "鋼エネルギー 10 neo intro pack",
+      "鋼エネルギー 010 chikorita deck",
+      "鋼エネルギー 10 chikorita deck"
     ]
   },
   "neointro2001": {
@@ -29496,10 +34088,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 005 Japanese",
+      "水エネルギー 5 Japanese",
       "水エネルギー 005 イントロパック★neo(ワニノコデッキ)",
+      "水エネルギー 5 イントロパック★neo(ワニノコデッキ)",
       "水エネルギー 005 neo",
+      "水エネルギー 5 neo",
       "水エネルギー 005 neo intro pack",
-      "水エネルギー 005 totodile deck"
+      "水エネルギー 5 neo intro pack",
+      "水エネルギー 005 totodile deck",
+      "水エネルギー 5 totodile deck"
     ]
   },
   "neointro2006": {
@@ -29521,10 +34118,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 006 Japanese",
+      "雷エネルギー 6 Japanese",
       "雷エネルギー 006 イントロパック★neo(ワニノコデッキ)",
+      "雷エネルギー 6 イントロパック★neo(ワニノコデッキ)",
       "雷エネルギー 006 neo",
+      "雷エネルギー 6 neo",
       "雷エネルギー 006 neo intro pack",
-      "雷エネルギー 006 totodile deck"
+      "雷エネルギー 6 neo intro pack",
+      "雷エネルギー 006 totodile deck",
+      "雷エネルギー 6 totodile deck"
     ]
   },
   "neointro2007": {
@@ -29546,10 +34148,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "超エネルギー 007 Japanese",
+      "超エネルギー 7 Japanese",
       "超エネルギー 007 イントロパック★neo(ワニノコデッキ)",
+      "超エネルギー 7 イントロパック★neo(ワニノコデッキ)",
       "超エネルギー 007 neo",
+      "超エネルギー 7 neo",
       "超エネルギー 007 neo intro pack",
-      "超エネルギー 007 totodile deck"
+      "超エネルギー 7 neo intro pack",
+      "超エネルギー 007 totodile deck",
+      "超エネルギー 7 totodile deck"
     ]
   },
   "neointro2008": {
@@ -29590,10 +34197,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 009 Japanese",
+      "雷エネルギー 9 Japanese",
       "雷エネルギー 009 イントロパック★neo(ワニノコデッキ)",
+      "雷エネルギー 9 イントロパック★neo(ワニノコデッキ)",
       "雷エネルギー 009 neo",
+      "雷エネルギー 9 neo",
       "雷エネルギー 009 neo intro pack",
-      "雷エネルギー 009 totodile deck"
+      "雷エネルギー 9 neo intro pack",
+      "雷エネルギー 009 totodile deck",
+      "雷エネルギー 9 totodile deck"
     ]
   },
   "neointro2010": {
@@ -29634,10 +34246,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 011 Japanese",
+      "水エネルギー 11 Japanese",
       "水エネルギー 011 イントロパック★neo(ワニノコデッキ)",
+      "水エネルギー 11 イントロパック★neo(ワニノコデッキ)",
       "水エネルギー 011 neo",
+      "水エネルギー 11 neo",
       "水エネルギー 011 neo intro pack",
-      "水エネルギー 011 totodile deck"
+      "水エネルギー 11 neo intro pack",
+      "水エネルギー 011 totodile deck",
+      "水エネルギー 11 totodile deck"
     ]
   },
   "neointro2012": {
@@ -29659,10 +34276,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "超エネルギー 012 Japanese",
+      "超エネルギー 12 Japanese",
       "超エネルギー 012 イントロパック★neo(ワニノコデッキ)",
+      "超エネルギー 12 イントロパック★neo(ワニノコデッキ)",
       "超エネルギー 012 neo",
+      "超エネルギー 12 neo",
       "超エネルギー 012 neo intro pack",
-      "超エネルギー 012 totodile deck"
+      "超エネルギー 12 neo intro pack",
+      "超エネルギー 012 totodile deck",
+      "超エネルギー 12 totodile deck"
     ]
   },
   "neointro2013": {
@@ -29684,10 +34306,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 013 Japanese",
+      "水エネルギー 13 Japanese",
       "水エネルギー 013 イントロパック★neo(ワニノコデッキ)",
+      "水エネルギー 13 イントロパック★neo(ワニノコデッキ)",
       "水エネルギー 013 neo",
+      "水エネルギー 13 neo",
       "水エネルギー 013 neo intro pack",
-      "水エネルギー 013 totodile deck"
+      "水エネルギー 13 neo intro pack",
+      "水エネルギー 013 totodile deck",
+      "水エネルギー 13 totodile deck"
     ]
   },
   "neointro2014": {
@@ -29709,10 +34336,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 014 Japanese",
+      "水エネルギー 14 Japanese",
       "水エネルギー 014 イントロパック★neo(ワニノコデッキ)",
+      "水エネルギー 14 イントロパック★neo(ワニノコデッキ)",
       "水エネルギー 014 neo",
+      "水エネルギー 14 neo",
       "水エネルギー 014 neo intro pack",
-      "水エネルギー 014 totodile deck"
+      "水エネルギー 14 neo intro pack",
+      "水エネルギー 014 totodile deck",
+      "水エネルギー 14 totodile deck"
     ]
   },
   "neointro2015": {
@@ -29734,10 +34366,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 015 Japanese",
+      "雷エネルギー 15 Japanese",
       "雷エネルギー 015 イントロパック★neo(ワニノコデッキ)",
+      "雷エネルギー 15 イントロパック★neo(ワニノコデッキ)",
       "雷エネルギー 015 neo",
+      "雷エネルギー 15 neo",
       "雷エネルギー 015 neo intro pack",
-      "雷エネルギー 015 totodile deck"
+      "雷エネルギー 15 neo intro pack",
+      "雷エネルギー 015 totodile deck",
+      "雷エネルギー 15 totodile deck"
     ]
   },
   "neointro2016": {
@@ -29778,10 +34415,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 017 Japanese",
+      "水エネルギー 17 Japanese",
       "水エネルギー 017 イントロパック★neo(ワニノコデッキ)",
+      "水エネルギー 17 イントロパック★neo(ワニノコデッキ)",
       "水エネルギー 017 neo",
+      "水エネルギー 17 neo",
       "水エネルギー 017 neo intro pack",
-      "水エネルギー 017 totodile deck"
+      "水エネルギー 17 neo intro pack",
+      "水エネルギー 017 totodile deck",
+      "水エネルギー 17 totodile deck"
     ]
   },
   "neointro2018": {
@@ -29822,10 +34464,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 019 Japanese",
+      "水エネルギー 19 Japanese",
       "水エネルギー 019 イントロパック★neo(ワニノコデッキ)",
+      "水エネルギー 19 イントロパック★neo(ワニノコデッキ)",
       "水エネルギー 019 neo",
+      "水エネルギー 19 neo",
       "水エネルギー 019 neo intro pack",
-      "水エネルギー 019 totodile deck"
+      "水エネルギー 19 neo intro pack",
+      "水エネルギー 019 totodile deck",
+      "水エネルギー 19 totodile deck"
     ]
   },
   "neointro2020": {
@@ -29885,10 +34532,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "マスターボール 022 Japanese",
+      "マスターボール 22 Japanese",
       "マスターボール 022 イントロパック★neo(ワニノコデッキ)",
+      "マスターボール 22 イントロパック★neo(ワニノコデッキ)",
       "マスターボール 022 neo",
+      "マスターボール 22 neo",
       "マスターボール 022 neo intro pack",
-      "マスターボール 022 totodile deck"
+      "マスターボール 22 neo intro pack",
+      "マスターボール 022 totodile deck",
+      "マスターボール 22 totodile deck"
     ]
   },
   "neointro2023": {
@@ -29910,10 +34562,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 023 Japanese",
+      "雷エネルギー 23 Japanese",
       "雷エネルギー 023 イントロパック★neo(ワニノコデッキ)",
+      "雷エネルギー 23 イントロパック★neo(ワニノコデッキ)",
       "雷エネルギー 023 neo",
+      "雷エネルギー 23 neo",
       "雷エネルギー 023 neo intro pack",
-      "雷エネルギー 023 totodile deck"
+      "雷エネルギー 23 neo intro pack",
+      "雷エネルギー 023 totodile deck",
+      "雷エネルギー 23 totodile deck"
     ]
   },
   "neointro2024": {
@@ -29992,10 +34649,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "超エネルギー 027 Japanese",
+      "超エネルギー 27 Japanese",
       "超エネルギー 027 イントロパック★neo(ワニノコデッキ)",
+      "超エネルギー 27 イントロパック★neo(ワニノコデッキ)",
       "超エネルギー 027 neo",
+      "超エネルギー 27 neo",
       "超エネルギー 027 neo intro pack",
-      "超エネルギー 027 totodile deck"
+      "超エネルギー 27 neo intro pack",
+      "超エネルギー 027 totodile deck",
+      "超エネルギー 27 totodile deck"
     ]
   },
   "neointro2028": {
@@ -30017,10 +34679,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "水エネルギー 028 Japanese",
+      "水エネルギー 28 Japanese",
       "水エネルギー 028 イントロパック★neo(ワニノコデッキ)",
+      "水エネルギー 28 イントロパック★neo(ワニノコデッキ)",
       "水エネルギー 028 neo",
+      "水エネルギー 28 neo",
       "水エネルギー 028 neo intro pack",
-      "水エネルギー 028 totodile deck"
+      "水エネルギー 28 neo intro pack",
+      "水エネルギー 028 totodile deck",
+      "水エネルギー 28 totodile deck"
     ]
   },
   "neointro2029": {
@@ -30042,10 +34709,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "雷エネルギー 029 Japanese",
+      "雷エネルギー 29 Japanese",
       "雷エネルギー 029 イントロパック★neo(ワニノコデッキ)",
+      "雷エネルギー 29 イントロパック★neo(ワニノコデッキ)",
       "雷エネルギー 029 neo",
+      "雷エネルギー 29 neo",
       "雷エネルギー 029 neo intro pack",
-      "雷エネルギー 029 totodile deck"
+      "雷エネルギー 29 neo intro pack",
+      "雷エネルギー 029 totodile deck",
+      "雷エネルギー 29 totodile deck"
     ]
   },
   "neointro2030": {
@@ -30086,10 +34758,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Feraligatr 001 Japanese",
+      "Feraligatr 1 Japanese",
+      "Feraligatr 160 Japanese",
       "Feraligatr 001 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Feraligatr 1 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Feraligatr 160 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "Feraligatr 001 neo",
+      "Feraligatr 1 neo",
+      "Feraligatr 160 neo",
       "Feraligatr 001 neo intro pack",
-      "Feraligatr 001 totodile deck"
+      "Feraligatr 1 neo intro pack",
+      "Feraligatr 160 neo intro pack",
+      "Feraligatr 001 totodile deck",
+      "Feraligatr 1 totodile deck",
+      "Feraligatr 160 totodile deck",
+      "オーダイル 001 Japanese",
+      "オーダイル 1 Japanese",
+      "オーダイル 160 Japanese",
+      "オーダイル 001 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "オーダイル 1 イントロパック★neo(ワニノコデッキ：拡張カード)"
     ]
   },
   "neointro2ex002": {
@@ -30111,10 +34798,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Pichu 002 Japanese",
+      "Pichu 2 Japanese",
+      "Pichu 172 Japanese",
       "Pichu 002 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Pichu 2 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Pichu 172 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "Pichu 002 neo",
+      "Pichu 2 neo",
+      "Pichu 172 neo",
       "Pichu 002 neo intro pack",
-      "Pichu 002 totodile deck"
+      "Pichu 2 neo intro pack",
+      "Pichu 172 neo intro pack",
+      "Pichu 002 totodile deck",
+      "Pichu 2 totodile deck",
+      "Pichu 172 totodile deck",
+      "ピチュー 002 Japanese",
+      "ピチュー 2 Japanese",
+      "ピチュー 172 Japanese",
+      "ピチュー 002 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "ピチュー 2 イントロパック★neo(ワニノコデッキ：拡張カード)"
     ]
   },
   "neointro2ex003": {
@@ -30136,10 +34838,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Abra 003 Japanese",
+      "Abra 3 Japanese",
+      "Abra 63 Japanese",
       "Abra 003 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Abra 3 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Abra 63 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "Abra 003 neo",
+      "Abra 3 neo",
+      "Abra 63 neo",
       "Abra 003 neo intro pack",
-      "Abra 003 totodile deck"
+      "Abra 3 neo intro pack",
+      "Abra 63 neo intro pack",
+      "Abra 003 totodile deck",
+      "Abra 3 totodile deck",
+      "Abra 63 totodile deck",
+      "ケーシィ 003 Japanese",
+      "ケーシィ 3 Japanese",
+      "ケーシィ 63 Japanese",
+      "ケーシィ 003 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "ケーシィ 3 イントロパック★neo(ワニノコデッキ：拡張カード)"
     ]
   },
   "neointro2ex004": {
@@ -30161,10 +34878,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Natu 004 Japanese",
+      "Natu 4 Japanese",
+      "Natu 177 Japanese",
       "Natu 004 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Natu 4 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Natu 177 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "Natu 004 neo",
+      "Natu 4 neo",
+      "Natu 177 neo",
       "Natu 004 neo intro pack",
-      "Natu 004 totodile deck"
+      "Natu 4 neo intro pack",
+      "Natu 177 neo intro pack",
+      "Natu 004 totodile deck",
+      "Natu 4 totodile deck",
+      "Natu 177 totodile deck",
+      "ネイティ 004 Japanese",
+      "ネイティ 4 Japanese",
+      "ネイティ 177 Japanese",
+      "ネイティ 004 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "ネイティ 4 イントロパック★neo(ワニノコデッキ：拡張カード)"
     ]
   },
   "neointro2ex005": {
@@ -30186,10 +34918,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Houndour 005 Japanese",
+      "Houndour 5 Japanese",
+      "Houndour 228 Japanese",
       "Houndour 005 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Houndour 5 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Houndour 228 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "Houndour 005 neo",
+      "Houndour 5 neo",
+      "Houndour 228 neo",
       "Houndour 005 neo intro pack",
-      "Houndour 005 totodile deck"
+      "Houndour 5 neo intro pack",
+      "Houndour 228 neo intro pack",
+      "Houndour 005 totodile deck",
+      "Houndour 5 totodile deck",
+      "Houndour 228 totodile deck",
+      "デルビル 005 Japanese",
+      "デルビル 5 Japanese",
+      "デルビル 228 Japanese",
+      "デルビル 005 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "デルビル 5 イントロパック★neo(ワニノコデッキ：拡張カード)"
     ]
   },
   "neointro2ex006": {
@@ -30211,10 +34958,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Defender 006 Japanese",
+      "Defender 6 Japanese",
       "Defender 006 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Defender 6 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "Defender 006 neo",
+      "Defender 6 neo",
       "Defender 006 neo intro pack",
-      "Defender 006 totodile deck"
+      "Defender 6 neo intro pack",
+      "Defender 006 totodile deck",
+      "Defender 6 totodile deck",
+      "ディフェンダー 006 Japanese",
+      "ディフェンダー 6 Japanese",
+      "ディフェンダー 006 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "ディフェンダー 6 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "ディフェンダー 006 neo",
+      "ディフェンダー 6 neo",
+      "ディフェンダー 006 neo intro pack",
+      "ディフェンダー 6 neo intro pack",
+      "ディフェンダー 006 totodile deck",
+      "ディフェンダー 6 totodile deck"
     ]
   },
   "neointro2ex007": {
@@ -30236,10 +34998,25 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Gust of Wind 007 Japanese",
+      "Gust of Wind 7 Japanese",
       "Gust of Wind 007 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "Gust of Wind 7 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "Gust of Wind 007 neo",
+      "Gust of Wind 7 neo",
       "Gust of Wind 007 neo intro pack",
-      "Gust of Wind 007 totodile deck"
+      "Gust of Wind 7 neo intro pack",
+      "Gust of Wind 007 totodile deck",
+      "Gust of Wind 7 totodile deck",
+      "突風 007 Japanese",
+      "突風 7 Japanese",
+      "突風 007 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "突風 7 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "突風 007 neo",
+      "突風 7 neo",
+      "突風 007 neo intro pack",
+      "突風 7 neo intro pack",
+      "突風 007 totodile deck",
+      "突風 7 totodile deck"
     ]
   },
   "neointro2ex008": {
@@ -30261,10 +35038,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "きのみ 008 Japanese",
+      "きのみ 8 Japanese",
       "きのみ 008 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "きのみ 8 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "きのみ 008 neo",
+      "きのみ 8 neo",
       "きのみ 008 neo intro pack",
-      "きのみ 008 totodile deck"
+      "きのみ 8 neo intro pack",
+      "きのみ 008 totodile deck",
+      "きのみ 8 totodile deck"
     ]
   },
   "neointro2ex009": {
@@ -30286,10 +35068,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "ラッキースタジアム 009 Japanese",
+      "ラッキースタジアム 9 Japanese",
       "ラッキースタジアム 009 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "ラッキースタジアム 9 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "ラッキースタジアム 009 neo",
+      "ラッキースタジアム 9 neo",
       "ラッキースタジアム 009 neo intro pack",
-      "ラッキースタジアム 009 totodile deck"
+      "ラッキースタジアム 9 neo intro pack",
+      "ラッキースタジアム 009 totodile deck",
+      "ラッキースタジアム 9 totodile deck"
     ]
   },
   "neointro2ex010": {
@@ -30311,10 +35098,15 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "悪エネルギー 010 Japanese",
+      "悪エネルギー 10 Japanese",
       "悪エネルギー 010 イントロパック★neo(ワニノコデッキ：拡張カード)",
+      "悪エネルギー 10 イントロパック★neo(ワニノコデッキ：拡張カード)",
       "悪エネルギー 010 neo",
+      "悪エネルギー 10 neo",
       "悪エネルギー 010 neo intro pack",
-      "悪エネルギー 010 totodile deck"
+      "悪エネルギー 10 neo intro pack",
+      "悪エネルギー 010 totodile deck",
+      "悪エネルギー 10 totodile deck"
     ]
   },
   "neop001": {
@@ -30336,10 +35128,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Murkrow - Japanese",
+      "Murkrow 198 Japanese",
       "Murkrow - プロモ",
+      "Murkrow 198 プロモ",
       "Murkrow - neo",
+      "Murkrow 198 neo",
       "ヤミカラス - Japanese",
-      "ヤミカラス - プロモ"
+      "ヤミカラス 198 Japanese",
+      "ヤミカラス - プロモ",
+      "ヤミカラス 198 プロモ",
+      "ヤミカラス - neo",
+      "ヤミカラス 198 neo"
     ]
   },
   "neop002": {
@@ -30384,10 +35183,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Wooper - Japanese",
+      "Wooper 194 Japanese",
       "Wooper - プロモ",
+      "Wooper 194 プロモ",
       "Wooper - neo",
+      "Wooper 194 neo",
       "ウパー - Japanese",
-      "ウパー - プロモ"
+      "ウパー 194 Japanese",
+      "ウパー - プロモ",
+      "ウパー 194 プロモ",
+      "ウパー - neo",
+      "ウパー 194 neo"
     ]
   },
   "neop004": {
@@ -30455,10 +35261,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Chikorita - Japanese",
+      "Chikorita 152 Japanese",
       "Chikorita - プロモ",
+      "Chikorita 152 プロモ",
       "Chikorita - neo",
+      "Chikorita 152 neo",
       "チコリータ - Japanese",
-      "チコリータ - プロモ"
+      "チコリータ 152 Japanese",
+      "チコリータ - プロモ",
+      "チコリータ 152 プロモ",
+      "チコリータ - neo",
+      "チコリータ 152 neo"
     ]
   },
   "neop007": {
@@ -30480,10 +35293,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Cyndaquil - Japanese",
+      "Cyndaquil 155 Japanese",
       "Cyndaquil - プロモ",
+      "Cyndaquil 155 プロモ",
       "Cyndaquil - neo",
+      "Cyndaquil 155 neo",
       "ヒノアラシ - Japanese",
-      "ヒノアラシ - プロモ"
+      "ヒノアラシ 155 Japanese",
+      "ヒノアラシ - プロモ",
+      "ヒノアラシ 155 プロモ",
+      "ヒノアラシ - neo",
+      "ヒノアラシ 155 neo"
     ]
   },
   "neop008": {
@@ -30505,10 +35325,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Totodile - Japanese",
+      "Totodile 158 Japanese",
       "Totodile - プロモ",
+      "Totodile 158 プロモ",
       "Totodile - neo",
+      "Totodile 158 neo",
       "ワニノコ - Japanese",
-      "ワニノコ - プロモ"
+      "ワニノコ 158 Japanese",
+      "ワニノコ - プロモ",
+      "ワニノコ 158 プロモ",
+      "ワニノコ - neo",
+      "ワニノコ 158 neo"
     ]
   },
   "neop009": {
@@ -30530,10 +35357,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Chikorita - Japanese",
+      "Chikorita 152 Japanese",
       "Chikorita - プロモ",
+      "Chikorita 152 プロモ",
       "Chikorita - neo",
+      "Chikorita 152 neo",
       "チコリータ - Japanese",
-      "チコリータ - プロモ"
+      "チコリータ 152 Japanese",
+      "チコリータ - プロモ",
+      "チコリータ 152 プロモ",
+      "チコリータ - neo",
+      "チコリータ 152 neo"
     ]
   },
   "neop010": {
@@ -30555,10 +35389,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Cyndaquil - Japanese",
+      "Cyndaquil 155 Japanese",
       "Cyndaquil - プロモ",
+      "Cyndaquil 155 プロモ",
       "Cyndaquil - neo",
+      "Cyndaquil 155 neo",
       "ヒノアラシ - Japanese",
-      "ヒノアラシ - プロモ"
+      "ヒノアラシ 155 Japanese",
+      "ヒノアラシ - プロモ",
+      "ヒノアラシ 155 プロモ",
+      "ヒノアラシ - neo",
+      "ヒノアラシ 155 neo"
     ]
   },
   "neop011": {
@@ -30580,10 +35421,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Totodile - Japanese",
+      "Totodile 158 Japanese",
       "Totodile - プロモ",
+      "Totodile 158 プロモ",
       "Totodile - neo",
+      "Totodile 158 neo",
       "ワニノコ - Japanese",
-      "ワニノコ - プロモ"
+      "ワニノコ 158 Japanese",
+      "ワニノコ - プロモ",
+      "ワニノコ 158 プロモ",
+      "ワニノコ - neo",
+      "ワニノコ 158 neo"
     ]
   },
   "neop012": {
@@ -30605,10 +35453,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Cleffa - Japanese",
+      "Cleffa 173 Japanese",
       "Cleffa - プロモ",
+      "Cleffa 173 プロモ",
       "Cleffa - neo",
+      "Cleffa 173 neo",
       "ピィ - Japanese",
-      "ピィ - プロモ"
+      "ピィ 173 Japanese",
+      "ピィ - プロモ",
+      "ピィ 173 プロモ",
+      "ピィ - neo",
+      "ピィ 173 neo"
     ]
   },
   "neop013": {
@@ -30630,10 +35485,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Jynx - Japanese",
+      "Jynx 124 Japanese",
       "Jynx - プロモ",
+      "Jynx 124 プロモ",
       "Jynx - neo",
+      "Jynx 124 neo",
       "ルージュラ - Japanese",
-      "ルージュラ - プロモ"
+      "ルージュラ 124 Japanese",
+      "ルージュラ - プロモ",
+      "ルージュラ 124 プロモ",
+      "ルージュラ - neo",
+      "ルージュラ 124 neo"
     ]
   },
   "neop014": {
@@ -30655,10 +35517,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Steelix - Japanese",
+      "Steelix 208 Japanese",
       "Steelix - プロモ",
+      "Steelix 208 プロモ",
       "Steelix - neo",
+      "Steelix 208 neo",
       "ハガネール - Japanese",
-      "ハガネール - プロモ"
+      "ハガネール 208 Japanese",
+      "ハガネール - プロモ",
+      "ハガネール 208 プロモ",
+      "ハガネール - neo",
+      "ハガネール 208 neo"
     ]
   },
   "neop015": {
@@ -30864,10 +35733,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Porygon - Japanese",
+      "Porygon 137 Japanese",
       "Porygon - プロモ",
+      "Porygon 137 プロモ",
       "Porygon - neo",
+      "Porygon 137 neo",
       "ポリゴン - Japanese",
-      "ポリゴン - プロモ"
+      "ポリゴン 137 Japanese",
+      "ポリゴン - プロモ",
+      "ポリゴン 137 プロモ",
+      "ポリゴン - neo",
+      "ポリゴン 137 neo"
     ]
   },
   "neop024": {
@@ -30889,10 +35765,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Eevee - Japanese",
+      "Eevee 133 Japanese",
       "Eevee - プロモ",
+      "Eevee 133 プロモ",
       "Eevee - neo",
+      "Eevee 133 neo",
       "イーブイ - Japanese",
-      "イーブイ - プロモ"
+      "イーブイ 133 Japanese",
+      "イーブイ - プロモ",
+      "イーブイ 133 プロモ",
+      "イーブイ - neo",
+      "イーブイ 133 neo"
     ]
   },
   "neop025": {
@@ -30914,10 +35797,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Scizor - Japanese",
+      "Scizor 212 Japanese",
       "Scizor - プロモ",
+      "Scizor 212 プロモ",
       "Scizor - neo",
+      "Scizor 212 neo",
       "ハッサム - Japanese",
-      "ハッサム - プロモ"
+      "ハッサム 212 Japanese",
+      "ハッサム - プロモ",
+      "ハッサム 212 プロモ",
+      "ハッサム - neo",
+      "ハッサム 212 neo"
     ]
   },
   "neop026": {
@@ -30985,10 +35875,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Marill - Japanese",
+      "Marill 183 Japanese",
       "Marill - プロモ",
+      "Marill 183 プロモ",
       "Marill - neo",
+      "Marill 183 neo",
       "マリル - Japanese",
-      "マリル - プロモ"
+      "マリル 183 Japanese",
+      "マリル - プロモ",
+      "マリル 183 プロモ",
+      "マリル - neo",
+      "マリル 183 neo"
     ]
   },
   "neop029": {
@@ -31010,10 +35907,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Smeargle - Japanese",
+      "Smeargle 235 Japanese",
       "Smeargle - プロモ",
+      "Smeargle 235 プロモ",
       "Smeargle - neo",
+      "Smeargle 235 neo",
       "ドーブル - Japanese",
-      "ドーブル - プロモ"
+      "ドーブル 235 Japanese",
+      "ドーブル - プロモ",
+      "ドーブル 235 プロモ",
+      "ドーブル - neo",
+      "ドーブル 235 neo"
     ]
   },
   "neop030": {
@@ -31035,10 +35939,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Hitmontop - Japanese",
+      "Hitmontop 237 Japanese",
       "Hitmontop - プロモ",
+      "Hitmontop 237 プロモ",
       "Hitmontop - neo",
+      "Hitmontop 237 neo",
       "カポエラー - Japanese",
-      "カポエラー - プロモ"
+      "カポエラー 237 Japanese",
+      "カポエラー - プロモ",
+      "カポエラー 237 プロモ",
+      "カポエラー - neo",
+      "カポエラー 237 neo"
     ]
   },
   "neop031": {
@@ -31060,10 +35971,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Igglybuff - Japanese",
+      "Igglybuff 174 Japanese",
       "Igglybuff - プロモ",
+      "Igglybuff 174 プロモ",
       "Igglybuff - neo",
+      "Igglybuff 174 neo",
       "ププリン - Japanese",
-      "ププリン - プロモ"
+      "ププリン 174 Japanese",
+      "ププリン - プロモ",
+      "ププリン 174 プロモ",
+      "ププリン - neo",
+      "ププリン 174 neo"
     ]
   },
   "neop032": {
@@ -31085,10 +36003,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Sunkern - Japanese",
+      "Sunkern 191 Japanese",
       "Sunkern - プロモ",
+      "Sunkern 191 プロモ",
       "Sunkern - neo",
+      "Sunkern 191 neo",
       "ヒマナッツ - Japanese",
-      "ヒマナッツ - プロモ"
+      "ヒマナッツ 191 Japanese",
+      "ヒマナッツ - プロモ",
+      "ヒマナッツ 191 プロモ",
+      "ヒマナッツ - neo",
+      "ヒマナッツ 191 neo"
     ]
   },
   "neop033": {
@@ -31110,10 +36035,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Togepi - Japanese",
+      "Togepi 175 Japanese",
       "Togepi - プロモ",
+      "Togepi 175 プロモ",
       "Togepi - neo",
+      "Togepi 175 neo",
       "トゲピー - Japanese",
-      "トゲピー - プロモ"
+      "トゲピー 175 Japanese",
+      "トゲピー - プロモ",
+      "トゲピー 175 プロモ",
+      "トゲピー - neo",
+      "トゲピー 175 neo"
     ]
   },
   "neop034": {
@@ -31138,7 +36070,8 @@ window.POKECA_PSA = {
       "Unown J - プロモ",
       "Unown J - neo",
       "アンノーン［J］ - Japanese",
-      "アンノーン［J］ - プロモ"
+      "アンノーン［J］ - プロモ",
+      "アンノーン［J］ - neo"
     ]
   },
   "neop035": {
@@ -31163,7 +36096,8 @@ window.POKECA_PSA = {
       "Unown R - プロモ",
       "Unown R - neo",
       "アンノーン［R] - Japanese",
-      "アンノーン［R] - プロモ"
+      "アンノーン［R] - プロモ",
+      "アンノーン［R] - neo"
     ]
   },
   "neop036": {
@@ -31185,10 +36119,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Misdreavus - Japanese",
+      "Misdreavus 200 Japanese",
       "Misdreavus - プロモ",
+      "Misdreavus 200 プロモ",
       "Misdreavus - neo",
+      "Misdreavus 200 neo",
       "ムウマ - Japanese",
-      "ムウマ - プロモ"
+      "ムウマ 200 Japanese",
+      "ムウマ - プロモ",
+      "ムウマ 200 プロモ",
+      "ムウマ - neo",
+      "ムウマ 200 neo"
     ]
   },
   "neop037": {
@@ -31210,10 +36151,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Smoochum - Japanese",
+      "Smoochum 238 Japanese",
       "Smoochum - プロモ",
+      "Smoochum 238 プロモ",
       "Smoochum - neo",
+      "Smoochum 238 neo",
       "ムチュール - Japanese",
-      "ムチュール - プロモ"
+      "ムチュール 238 Japanese",
+      "ムチュール - プロモ",
+      "ムチュール 238 プロモ",
+      "ムチュール - neo",
+      "ムチュール 238 neo"
     ]
   },
   "neop038": {
@@ -31235,10 +36183,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Dunsparce - Japanese",
+      "Dunsparce 206 Japanese",
       "Dunsparce - プロモ",
+      "Dunsparce 206 プロモ",
       "Dunsparce - neo",
+      "Dunsparce 206 neo",
       "ノコッチ - Japanese",
-      "ノコッチ - プロモ"
+      "ノコッチ 206 Japanese",
+      "ノコッチ - プロモ",
+      "ノコッチ 206 プロモ",
+      "ノコッチ - neo",
+      "ノコッチ 206 neo"
     ]
   },
   "neop039": {
@@ -31263,7 +36218,8 @@ window.POKECA_PSA = {
       "Dark Ivysaur - プロモ",
       "Dark Ivysaur - neo",
       "わるいフシギソウ - Japanese",
-      "わるいフシギソウ - プロモ"
+      "わるいフシギソウ - プロモ",
+      "わるいフシギソウ - neo"
     ]
   },
   "neop040": {
@@ -31288,7 +36244,8 @@ window.POKECA_PSA = {
       "Dark Venusaur - プロモ",
       "Dark Venusaur - neo",
       "わるいフシギバナ - Japanese",
-      "わるいフシギバナ - プロモ"
+      "わるいフシギバナ - プロモ",
+      "わるいフシギバナ - neo"
     ]
   },
   "neop041": {
@@ -31313,7 +36270,8 @@ window.POKECA_PSA = {
       "Rocket's Mewtwo - プロモ",
       "Rocket's Mewtwo - neo",
       "GR団のミュウツー - Japanese",
-      "GR団のミュウツー - プロモ"
+      "GR団のミュウツー - プロモ",
+      "GR団のミュウツー - neo"
     ]
   },
   "neop042": {
@@ -31335,10 +36293,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Lugia - Japanese",
+      "Lugia 249 Japanese",
       "Lugia - プロモ",
+      "Lugia 249 プロモ",
       "Lugia - neo",
+      "Lugia 249 neo",
       "ルギア - Japanese",
-      "ルギア - プロモ"
+      "ルギア 249 Japanese",
+      "ルギア - プロモ",
+      "ルギア 249 プロモ",
+      "ルギア - neo",
+      "ルギア 249 neo"
     ]
   },
   "neop043": {
@@ -31360,10 +36325,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Bellossom - Japanese",
+      "Bellossom 182 Japanese",
       "Bellossom - プロモ",
+      "Bellossom 182 プロモ",
       "Bellossom - neo",
+      "Bellossom 182 neo",
       "キレイハナ - Japanese",
-      "キレイハナ - プロモ"
+      "キレイハナ 182 Japanese",
+      "キレイハナ - プロモ",
+      "キレイハナ 182 プロモ",
+      "キレイハナ - neo",
+      "キレイハナ 182 neo"
     ]
   },
   "neop044": {
@@ -31388,7 +36360,8 @@ window.POKECA_PSA = {
       "Shining Mew - プロモ",
       "Shining Mew - neo",
       "ひかるミュウ - Japanese",
-      "ひかるミュウ - プロモ"
+      "ひかるミュウ - プロモ",
+      "ひかるミュウ - neo"
     ]
   },
   "neop045": {
@@ -31413,7 +36386,8 @@ window.POKECA_PSA = {
       "Dark Fearow - プロモ",
       "Dark Fearow - neo",
       "わるいオニドリル - Japanese",
-      "わるいオニドリル - プロモ"
+      "わるいオニドリル - プロモ",
+      "わるいオニドリル - neo"
     ]
   },
   "neop046": {
@@ -31438,7 +36412,8 @@ window.POKECA_PSA = {
       "Shining Magikarp - プロモ",
       "Shining Magikarp - neo",
       "ひかるコイキング - Japanese",
-      "ひかるコイキング - プロモ"
+      "ひかるコイキング - プロモ",
+      "ひかるコイキング - neo"
     ]
   },
   "neop047": {
@@ -31460,10 +36435,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Hoppip - Japanese",
+      "Hoppip 187 Japanese",
       "Hoppip - プロモ",
+      "Hoppip 187 プロモ",
       "Hoppip - neo",
+      "Hoppip 187 neo",
       "ハネッコ - Japanese",
-      "ハネッコ - プロモ"
+      "ハネッコ 187 Japanese",
+      "ハネッコ - プロモ",
+      "ハネッコ 187 プロモ",
+      "ハネッコ - neo",
+      "ハネッコ 187 neo"
     ]
   },
   "neop048": {
@@ -34647,10 +39629,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Rocket's Scizor 002 Japanese",
+      "Rocket's Scizor 2 Japanese",
       "Rocket's Scizor 002 プロモ",
+      "Rocket's Scizor 2 プロモ",
       "Rocket's Scizor 002 VS",
+      "Rocket's Scizor 2 VS",
       "R団のハッサム 002 Japanese",
-      "R団のハッサム 002 プロモ"
+      "R団のハッサム 2 Japanese",
+      "R団のハッサム 002 プロモ",
+      "R団のハッサム 2 プロモ",
+      "R団のハッサム 002 VS",
+      "R団のハッサム 2 VS"
     ]
   },
   "vsp003": {
@@ -34672,10 +39661,17 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "Rocket's Sneasel 003 Japanese",
+      "Rocket's Sneasel 3 Japanese",
       "Rocket's Sneasel 003 プロモ",
+      "Rocket's Sneasel 3 プロモ",
       "Rocket's Sneasel 003 VS",
+      "Rocket's Sneasel 3 VS",
       "R団のニューラ 003 Japanese",
-      "R団のニューラ 003 プロモ"
+      "R団のニューラ 3 Japanese",
+      "R団のニューラ 003 プロモ",
+      "R団のニューラ 3 プロモ",
+      "R団のニューラ 003 VS",
+      "R団のニューラ 3 VS"
     ]
   },
   "vsp008": {
@@ -34697,8 +39693,11 @@ window.POKECA_PSA = {
     "updated": null,
     "spec_search_queries": [
       "トロピカルウインド 008 Japanese",
+      "トロピカルウインド 8 Japanese",
       "トロピカルウインド 008 プロモ",
-      "トロピカルウインド 008 VS"
+      "トロピカルウインド 8 プロモ",
+      "トロピカルウインド 008 VS",
+      "トロピカルウインド 8 VS"
     ]
   }
 };
