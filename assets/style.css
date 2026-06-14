@@ -12,6 +12,7 @@
   --font-body: "Noto Sans JP", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   --font-latin: "Fjalla One", sans-serif;
   --quick-search-height: 78px;
+  --quick-search-avoid-bottom: 0px;
 }
 
 * {
@@ -31,7 +32,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  padding-bottom: calc(var(--quick-search-height) + env(safe-area-inset-bottom));
+  padding-bottom: calc(var(--quick-search-height) + var(--quick-search-avoid-bottom, 0px) + env(safe-area-inset-bottom));
   background: var(--white);
 }
 
@@ -277,7 +278,7 @@ h1 {
 .quick-search {
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: var(--quick-search-avoid-bottom, 0px);
   left: 0;
   z-index: 20;
   display: flex;
@@ -287,6 +288,7 @@ h1 {
   padding: 10px max(12px, calc((100vw - 1200px) / 2 + 12px)) calc(10px + env(safe-area-inset-bottom));
   background: var(--white);
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.12);
+  will-change: bottom;
 }
 
 body.scroll-locked .quick-search {
@@ -363,8 +365,14 @@ body.scroll-locked .quick-search {
 }
 
 .chip-field legend {
-  margin-bottom: 8px;
+  float: left;
+  width: 100%;
+  margin: 0 0 8px;
   padding: 0;
+}
+
+.chip-field .chip-list {
+  clear: both;
 }
 
 .chip-list {
@@ -828,6 +836,12 @@ body.scroll-locked .quick-search {
   min-width: 0;
 }
 
+.modal-visual {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
 .modal-info {
   display: grid;
   align-content: start;
@@ -858,7 +872,7 @@ body.scroll-locked .quick-search {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .summary-chip {

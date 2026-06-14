@@ -50,6 +50,7 @@
               id="search-input"
               type="search"
               inputmode="search"
+              enterkeyhint="search"
               autocomplete="off"
               placeholder="例: リザードン / Charizard / 016/096"
             >
@@ -116,10 +117,6 @@
             </div>
             <p id="modal-caption" class="modal-caption"></p>
             <div id="modal-chips" class="modal-chips" aria-label="カード概要"></div>
-          </div>
-
-          <div class="modal-info">
-            <dl id="modal-details" class="detail-list"></dl>
             <section class="market-section" aria-labelledby="market-title">
               <h3 id="market-title">相場を調べる</h3>
               <div id="market-links" class="market-links"></div>
@@ -142,6 +139,10 @@
               <div id="psa-body"></div>
             </section>
           </div>
+
+          <div class="modal-info">
+            <dl id="modal-details" class="detail-list"></dl>
+          </div>
         </div>
 
         <footer class="modal-footer">
@@ -162,7 +163,7 @@
     </footer>
 
     <div id="quick-search-bar" class="quick-search">
-      <input id="quick-search-input" type="search" inputmode="search" autocomplete="off"
+      <input id="quick-search-input" type="search" inputmode="search" enterkeyhint="search" autocomplete="off"
              placeholder="カード名・No で検索（例: リザードン / 006）" aria-label="クイック検索">
       <button id="quick-search-clear" class="quick-search-clear" type="button" aria-label="クリア" hidden>×</button>
     </div>

@@ -195,8 +195,12 @@
     };
   }
 
+  function isPSAPopulation(psa) {
+    return Boolean(psa) && (psa.status === "population" || (!psa.status && psa.total !== undefined));
+  }
+
   function hasPSAData(card) {
-    return Boolean(psaById[card.id]);
+    return isPSAPopulation(psaById[card.id]);
   }
 
   function hasQuoteData(card) {
@@ -427,6 +431,7 @@
     getTypeKey,
     getHashForCard,
     getIdFromHash,
+    hasPSAData,
     hasQuoteData,
     getPriceHistoryPoints,
     filterPriceHistoryPoints,
@@ -495,6 +500,18 @@
   };
 
   const tileById = new Map();
+
+  function updateQuickSearchAvoidance() {
+    const viewport = window.visualViewport;
+    if (!viewport) {
+      document.documentElement.style.setProperty("--quick-search-avoid-bottom", "0px");
+      return;
+    }
+
+    const layoutHeight = window.innerHeight || document.documentElement.clientHeight || viewport.height;
+    const bottomInset = Math.max(0, layoutHeight - viewport.height - viewport.offsetTop);
+    document.documentElement.style.setProperty("--quick-search-avoid-bottom", `${Math.ceil(bottomInset)}px`);
+  }
 
   function cssEscape(value) {
     if (window.CSS?.escape) {
@@ -898,6 +915,22 @@
     applyFilters({ updateUrl: true });
   }
 
+  function submitSearchInput(input) {
+    state.query = String(input?.value || "").trim();
+    setSearchInputs(state.query);
+    applyFilters({ updateUrl: true });
+    input?.blur?.();
+    updateQuickSearchAvoidance();
+  }
+
+  function handleSearchKeydown(event) {
+    if (event.key !== "Enter" || event.isComposing || event.keyCode === 229) {
+      return;
+    }
+    event.preventDefault();
+    submitSearchInput(event.target);
+  }
+
   function debounce(callback, delay) {
     let timer = 0;
     return (...args) => {
@@ -1263,7 +1296,34 @@
     if (!psa) {
       els.psaBody.append(createElement("p", {
         className: "psa-empty",
-        text: "このカードのPSA鑑定データはありません",
+        text: "PSA状態は未収集です",
+      }));
+      return;
+    }
+    if (psa.status === "spec_unmatched") {
+      els.psaBody.append(
+        createElement("p", {
+          className: "psa-empty",
+          text: "PSA spec ID未照合（鑑定数0件とは未判定）",
+        }),
+        createElement("p", {
+          className: "psa-source",
+          text: "全カード照合対象です。PSA側の該当spec IDが見つかり次第、鑑定数を表示します。",
+        }),
+      );
+      return;
+    }
+    if (psa.status === "pending") {
+      els.psaBody.append(createElement("p", {
+        className: "psa-empty",
+        text: "PSA spec ID照合済み・鑑定数は次回更新待ちです",
+      }));
+      return;
+    }
+    if (psa.status === "no_population") {
+      els.psaBody.append(createElement("p", {
+        className: "psa-empty",
+        text: "PSA APIで母集団データが返っていません（0件とは未判定）",
       }));
       return;
     }
@@ -1511,7 +1571,9 @@
     };
 
     els.searchInput.addEventListener("input", handleSearchInput);
+    els.searchInput.addEventListener("keydown", handleSearchKeydown);
     els.quickSearchInput?.addEventListener("input", handleSearchInput);
+    els.quickSearchInput?.addEventListener("keydown", handleSearchKeydown);
     els.quickSearchClear?.addEventListener("click", () => {
       state.query = "";
       setSearchInputs("");
@@ -1556,12 +1618,18 @@
     });
     window.addEventListener("hashchange", openFromHash);
     window.addEventListener("popstate", openFromHash);
+    window.addEventListener("resize", updateQuickSearchAvoidance);
+    window.visualViewport?.addEventListener("resize", updateQuickSearchAvoidance);
+    window.visualViewport?.addEventListener("scroll", updateQuickSearchAvoidance);
+    els.searchInput.addEventListener("focus", updateQuickSearchAvoidance);
+    els.quickSearchInput?.addEventListener("focus", updateQuickSearchAvoidance);
   }
 
   function init() {
     renderFilters();
     readFiltersFromUrl();
     bindEvents();
+    updateQuickSearchAvoidance();
     applyFilters();
     openFromHash();
   }
