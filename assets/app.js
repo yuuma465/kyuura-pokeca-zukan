@@ -1301,15 +1301,35 @@
       return;
     }
     if (psa.status === "spec_unmatched") {
+      const searchQueries = Array.isArray(psa.spec_search_queries)
+        ? psa.spec_search_queries.filter(Boolean)
+        : [];
+      const firstQuery = searchQueries.find((query) => /vending|pokemon japanese/i.test(query)) || searchQueries[0] || "";
+      const source = createElement("p", { className: "psa-source" });
+      source.append(document.createTextNode("全カード照合対象です。"));
+      if (firstQuery) {
+        const link = createElement("a", {
+          text: "PSA公式で候補検索",
+          attrs: {
+            href: `https://www.psacard.com/search?q=${encodeURIComponent(firstQuery)}`,
+            target: "_blank",
+            rel: "noopener noreferrer",
+          },
+        });
+        source.append(
+          document.createTextNode("候補検索: "),
+          link,
+          document.createTextNode(`（${firstQuery}）`),
+        );
+      } else {
+        source.append(document.createTextNode("PSA側の該当spec IDが見つかり次第、鑑定数を表示します。"));
+      }
       els.psaBody.append(
         createElement("p", {
           className: "psa-empty",
           text: "PSA spec ID未照合（鑑定数0件とは未判定）",
         }),
-        createElement("p", {
-          className: "psa-source",
-          text: "全カード照合対象です。PSA側の該当spec IDが見つかり次第、鑑定数を表示します。",
-        }),
+        source,
       );
       return;
     }
