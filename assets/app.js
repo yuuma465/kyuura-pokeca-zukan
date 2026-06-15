@@ -22,6 +22,7 @@
     left: 52,
   };
   const svgNamespace = "http://www.w3.org/2000/svg";
+  const firstEditionSetName = "第1弾 拡張パック";
 
   const seriesOrder = new Map([
     ["PMCG", 0],
@@ -68,6 +69,11 @@
     { key: "★", label: "★", name: "レア", className: "rarity--rare" },
   ];
   const rarityByKey = new Map(rarityDefinitions.map((rarity) => [rarity.key, rarity]));
+
+  const editionDefinitions = [
+    { key: "first", label: "初版あり" },
+    { key: "no-first", label: "初版なし" },
+  ];
 
   const initialSetOrder = buildInitialSetOrder(sourceCards);
   const cards = sortCards(sourceCards);
@@ -151,6 +157,14 @@
     return symbol || "-";
   }
 
+  function normalizeQueryTokens(value) {
+    return String(value || "")
+      .trim()
+      .split(/\s+/)
+      .map(normalizeText)
+      .filter(Boolean);
+  }
+
   function getCardKind(card) {
     if (card.hp !== null && card.hp !== undefined && card.hp !== "") {
       return "ポケモン";
@@ -203,16 +217,115 @@
     return isPSAPopulation(psaById[card.id]);
   }
 
-  function hasQuoteData(card) {
-    return Boolean(priceById[card.id]);
+  function normalizeQuoteEntry(entry, fallbackUpdated = "") {
+    if (!entry || typeof entry !== "object") {
+      return null;
+    }
+    const buy = Number(entry.buy);
+    const sell = Number(entry.sell);
+    if (!Number.isFinite(buy) || !Number.isFinite(sell)) {
+      return null;
+    }
+    return {
+      buy,
+      sell,
+      n: Number.isFinite(Number(entry.n)) ? Number(entry.n) : 0,
+      updated: entry.updated || fallbackUpdated || "",
+    };
   }
 
-  function cardMatchesQuery(card, normalizedQuery) {
-    if (!normalizedQuery) {
+  function getQuoteEditionEntry(quote, editionKey) {
+    if (!quote || typeof quote !== "object") {
+      return null;
+    }
+    const editionQuote = normalizeQuoteEntry(quote.editions?.[editionKey], quote.updated);
+    if (editionQuote) {
+      return editionQuote;
+    }
+    if (editionKey === "unlimited" || editionKey === "standard") {
+      return normalizeQuoteEntry(quote);
+    }
+    return null;
+  }
+
+  function hasFirstEditionVariant(card) {
+    return String(card?.set || "") === firstEditionSetName;
+  }
+
+  function getEditionInfo(card) {
+    if (hasFirstEditionVariant(card)) {
+      return {
+        key: "first",
+        label: "初版（マークなし）あり",
+        detail: "通常版（マークあり）と初版（マークなし）の版違いがあります",
+      };
+    }
+    return {
+      key: "no-first",
+      label: "初版なし",
+      detail: "初版（マークなし）対象外のカードです",
+    };
+  }
+
+  function cardMatchesEdition(card, selectedEditions) {
+    if (!selectedEditions || selectedEditions.size === 0) {
       return true;
     }
-    const haystack = normalizeText(`${card.name_ja} ${card.name_en} ${card.card_number} ${card.id}`);
-    return haystack.includes(normalizedQuery);
+    const hasFirst = hasFirstEditionVariant(card);
+    return (hasFirst && selectedEditions.has("first")) || (!hasFirst && selectedEditions.has("no-first"));
+  }
+
+  function getEditionSearchText(card) {
+    return hasFirstEditionVariant(card)
+      ? "初版 マークなし 無記号 通常版 マークあり 版違い"
+      : "初版なし 通常版";
+  }
+
+  function getEditionQuotes(card) {
+    const quote = priceById[card.id];
+    if (!quote) {
+      return [];
+    }
+    if (hasFirstEditionVariant(card)) {
+      return [
+        {
+          key: "first",
+          label: "初版（マークなし）",
+          modifier: "first",
+          quote: getQuoteEditionEntry(quote, "first"),
+          emptyText: "初版相場は未取得です",
+        },
+        {
+          key: "unlimited",
+          label: "通常版（マークあり）",
+          modifier: "unlimited",
+          quote: getQuoteEditionEntry(quote, "unlimited"),
+          emptyText: "通常版相場は未取得です",
+        },
+      ];
+    }
+    return [
+      {
+        key: "standard",
+        label: "通常版",
+        modifier: "standard",
+        quote: getQuoteEditionEntry(quote, "standard"),
+        emptyText: "相場は未取得です",
+      },
+    ];
+  }
+
+  function hasQuoteData(card) {
+    return getEditionQuotes(card).some((item) => item.quote);
+  }
+
+  function cardMatchesQuery(card, query) {
+    const tokens = normalizeQueryTokens(query);
+    if (!tokens.length) {
+      return true;
+    }
+    const haystack = normalizeText(`${card.name_ja} ${card.name_en} ${card.card_number} ${card.id} ${getEditionSearchText(card)}`);
+    return tokens.every((token) => haystack.includes(token));
   }
 
   function filterCards(cardList, filters) {
@@ -220,8 +333,9 @@
     const selectedKinds = filters.selectedKinds || new Set();
     const selectedTypes = filters.selectedTypes || new Set();
     const selectedRarities = filters.selectedRarities || new Set();
+    const selectedEditions = filters.selectedEditions || new Set();
     const selectedSet = filters.selectedSet || "";
-    const normalizedQuery = normalizeText(filters.query || "");
+    const query = filters.query || "";
 
     return cardList.filter((card) => {
       const kind = getCardKind(card);
@@ -233,8 +347,9 @@
         (selectedKinds.size === 0 || selectedKinds.has(kind)) &&
         (selectedTypes.size === 0 || selectedTypes.has(type)) &&
         (selectedRarities.size === 0 || selectedRarities.has(rarity)) &&
+        cardMatchesEdition(card, selectedEditions) &&
         (!filters.psaOnly || hasPSAData(card)) &&
-        cardMatchesQuery(card, normalizedQuery)
+        cardMatchesQuery(card, query)
       );
     });
   }
@@ -433,6 +548,9 @@
     getIdFromHash,
     hasPSAData,
     hasQuoteData,
+    hasFirstEditionVariant,
+    getEditionInfo,
+    getEditionQuotes,
     getPriceHistoryPoints,
     filterPriceHistoryPoints,
     buildQuoteChartModel,
@@ -452,6 +570,7 @@
     selectedKinds: new Set(),
     selectedTypes: new Set(),
     selectedRarities: new Set(),
+    selectedEditions: new Set(),
     psaOnly: false,
     query: "",
     visibleCards: [...cards],
@@ -473,6 +592,7 @@
     kindFilters: document.getElementById("kind-filters"),
     typeFilters: document.getElementById("type-filters"),
     rarityFilters: document.getElementById("rarity-filters"),
+    editionFilters: document.getElementById("edition-filters"),
     psaOnly: document.getElementById("psa-only"),
     modal: document.getElementById("card-modal"),
     modalPanel: document.querySelector(".modal-panel"),
@@ -679,6 +799,10 @@
     for (const rarity of rarityDefinitions.filter((item) => presentRarities.has(item.key))) {
       els.rarityFilters.append(buildChipButton(rarity, "rarity"));
     }
+
+    for (const edition of editionDefinitions) {
+      els.editionFilters?.append(buildChipButton(edition, "edition"));
+    }
   }
 
   function getStateSet(group) {
@@ -690,6 +814,9 @@
     }
     if (group === "type") {
       return state.selectedTypes;
+    }
+    if (group === "edition") {
+      return state.selectedEditions;
     }
     return state.selectedRarities;
   }
@@ -784,8 +911,11 @@
     tile.append(
       thumb,
       createElement("span", { className: "type-bar", attrs: { "aria-hidden": "true" } }),
-      tileInfo,
     );
+    if (hasFirstEditionVariant(card)) {
+      tile.append(createElement("span", { className: "edition-badge edition-badge--tile", text: "初版あり" }));
+    }
+    tile.append(tileInfo);
     tile.addEventListener("click", () => openModal(card.id, { updateHash: true, push: true, focusSource: tile }));
     tileById.set(card.id, tile);
     return tile;
@@ -859,6 +989,7 @@
     readSet("kind", state.selectedKinds, new Set(kindDefinitions.map((item) => item.key)));
     readSet("type", state.selectedTypes, new Set(typeDefinitions.filter((item) => item.pokemon).map((item) => item.key)));
     readSet("rarity", state.selectedRarities, new Set(rarityDefinitions.map((item) => item.key)));
+    readSet("edition", state.selectedEditions, new Set(editionDefinitions.map((item) => item.key)));
 
     const knownSets = new Set(cards.map((card) => card.set));
     const set = params.get("set") || "";
@@ -884,6 +1015,7 @@
     writeSet("kind", state.selectedKinds);
     writeSet("type", state.selectedTypes);
     writeSet("rarity", state.selectedRarities);
+    writeSet("edition", state.selectedEditions);
 
     if (state.selectedSet) {
       params.set("set", state.selectedSet);
@@ -909,6 +1041,7 @@
     state.selectedKinds.clear();
     state.selectedTypes.clear();
     state.selectedRarities.clear();
+    state.selectedEditions.clear();
     state.psaOnly = false;
     state.query = "";
     setSearchInputs("");
@@ -1216,17 +1349,40 @@
     tabs[nextIndex].click();
   }
 
-  function buildQuoteCard(label, amount, count, modifier) {
+  function buildQuoteCard(label, quote, modifier) {
     const card = createElement("div", { className: `quote-card quote-card--${modifier}` });
+    if (!quote) {
+      card.append(
+        createElement("span", { className: "quote-label", text: label }),
+        createElement("span", { className: "quote-amount quote-amount--empty", text: "未取得" }),
+        createElement("span", {
+          className: "quote-note",
+          text: "次回の価格更新で版別検索を試します",
+        }),
+      );
+      return card;
+    }
     card.append(
       createElement("span", { className: "quote-label", text: label }),
-      createElement("span", { className: "quote-amount", text: formatYen(amount) }),
+      createElement("span", { className: "quote-amount", text: formatYen(quote.sell) }),
       createElement("span", {
         className: "quote-note",
-        text: `複数出品 ${formatNumber(count)} 件の中央値ベース / 状態・版により変動します`,
+        text: `販売目安 / 複数出品 ${formatNumber(quote.n)} 件の中央値ベース`,
+      }),
+      createElement("span", {
+        className: "quote-note",
+        text: `買取目安 ${formatYen(quote.buy)} / 状態により変動します`,
       }),
     );
     return card;
+  }
+
+  function getLatestQuoteUpdated(items) {
+    return items
+      .map((item) => item.quote?.updated)
+      .filter(Boolean)
+      .sort()
+      .at(-1) || "";
   }
 
   function renderQuote(card) {
@@ -1234,25 +1390,27 @@
       return;
     }
 
-    const quote = priceById[card.id];
+    const editionQuotes = getEditionQuotes(card);
     els.quoteBody.replaceChildren();
-    if (!quote) {
+    if (!editionQuotes.some((item) => item.quote)) {
       els.quoteSection.hidden = true;
       hideQuoteChart();
       return;
     }
 
     els.quoteSection.hidden = false;
-    const metrics = createElement("div", { className: "quote-metrics" });
-    metrics.append(
-      buildQuoteCard("買取目安", quote.buy, quote.n, "buy"),
-      buildQuoteCard("販売目安", quote.sell, quote.n, "sell"),
-    );
+    const metrics = createElement("div", {
+      className: hasFirstEditionVariant(card) ? "quote-edition-grid" : "quote-metrics",
+    });
+    for (const item of editionQuotes) {
+      metrics.append(buildQuoteCard(item.label, item.quote, item.modifier));
+    }
+    const updated = getLatestQuoteUpdated(editionQuotes);
     els.quoteBody.append(
       metrics,
       createElement("p", {
         className: "quote-source",
-        text: `最終更新 ${formatDate(quote.updated)} / 価格参考: magi等の出品相場`,
+        text: `最終更新 ${formatDate(updated)} / 価格参考: magi等の出品相場 / 初版はマークなし、通常版はマークありとして分けています`,
       }),
     );
     renderQuoteChart(card);
@@ -1433,6 +1591,7 @@
     appendDetail("進化", buildEvolutionLine(card));
     appendDetail("カード番号", card.card_number || "-");
     appendDetail("セット名", card.set || "-");
+    appendDetail("版区分", getEditionInfo(card).detail);
     appendDetail("地方", card.region || "-");
     appendDetail("イラストレーター", card.illustrator || "-");
   }
@@ -1461,12 +1620,16 @@
       markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
     }
 
-    els.modalChips.replaceChildren(
+    const modalChips = [
       createSummaryChip(typeInfo.fullLabel, typeInfo, null),
       createRarityBadge(rarityInfo),
       createSummaryChip(getStageLabel(card), typeInfo, null),
       createSummaryChip(card.set || "-", null, null),
-    );
+    ];
+    if (hasFirstEditionVariant(card)) {
+      modalChips.push(createElement("span", { className: "edition-badge", text: "初版（マークなし）あり" }));
+    }
+    els.modalChips.replaceChildren(...modalChips);
     renderModalDetails(card);
     renderMarketLinks(card);
     renderQuote(card);

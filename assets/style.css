@@ -340,6 +340,10 @@ body.scroll-locked .quick-search {
 }
 
 .rarity-field {
+  padding-bottom: 14px;
+}
+
+.edition-field {
   padding-bottom: 12px;
 }
 
@@ -493,7 +497,7 @@ body.scroll-locked .quick-search {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -701,6 +705,28 @@ body.scroll-locked .quick-search {
   margin-top: 7px;
   border-radius: 2px;
   background: var(--type-color, var(--muted));
+}
+
+.edition-badge {
+  display: inline-flex;
+  min-height: 25px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--blue);
+  border-radius: 35px;
+  padding: 3px 9px;
+  background: var(--white);
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.edition-badge--tile {
+  margin-top: 7px;
+  font-size: 11px;
 }
 
 .tile-info {
@@ -1063,6 +1089,17 @@ body.scroll-locked .quick-search {
   background: var(--white);
 }
 
+.quote-card--first {
+  border-color: var(--red);
+  background: var(--white);
+}
+
+.quote-card--unlimited,
+.quote-card--standard {
+  border-color: var(--blue);
+  background: var(--white);
+}
+
 .quote-label {
   color: var(--black);
   font-size: 12px;
@@ -1085,6 +1122,24 @@ body.scroll-locked .quick-search {
   color: var(--blue);
 }
 
+.quote-card--first .quote-amount {
+  color: var(--red);
+}
+
+.quote-card--unlimited .quote-amount,
+.quote-card--standard .quote-amount {
+  color: var(--blue);
+}
+
+.quote-amount--empty,
+.quote-card--first .quote-amount--empty,
+.quote-card--unlimited .quote-amount--empty,
+.quote-card--standard .quote-amount--empty {
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 18px;
+}
+
 .quote-note,
 .quote-source {
   margin: 0;
@@ -1097,6 +1152,12 @@ body.scroll-locked .quick-search {
 .quote-source {
   border-top: 1px solid var(--border);
   padding-top: 9px;
+}
+
+.quote-edition-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
 }
 
 .quote-chart-wrap {
@@ -1552,12 +1613,12 @@ body.scroll-locked .quick-search {
     font-size: 16px;
   }
 
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .psa-summary {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .quote-edition-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1587,18 +1648,6 @@ body.scroll-locked .quick-search {
   .package-body {
     grid-template-columns: minmax(260px, 0.92fr) minmax(0, 1.08fr);
     align-items: start;
-  }
-}
-
-@media (min-width: 900px) {
-  .card-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 1200px) {
-  .card-grid {
-    grid-template-columns: repeat(5, 1fr);
   }
 }
 
