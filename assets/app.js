@@ -157,12 +157,23 @@
     return symbol || "-";
   }
 
+  const genericSearchTokens = new Set([
+    "旧裏",
+    "旧裏面",
+    "ポケカ",
+    "ポケモンカード",
+    "ポケモンカードゲーム",
+    "カード",
+    "pokemoncard",
+    "pokeca",
+  ]);
+
   function normalizeQueryTokens(value) {
     return String(value || "")
       .trim()
       .split(/\s+/)
       .map(normalizeText)
-      .filter(Boolean);
+      .filter((token) => token && !genericSearchTokens.has(token));
   }
 
   function getCardKind(card) {
@@ -324,7 +335,7 @@
     if (!tokens.length) {
       return true;
     }
-    const haystack = normalizeText(`${card.name_ja} ${card.name_en} ${card.card_number} ${card.id} ${getEditionSearchText(card)}`);
+    const haystack = normalizeText(`${card.name_ja} ${card.name_en} ${card.card_number} ${card.id} ${card.set} ${card.series} ${getEditionSearchText(card)}`);
     return tokens.every((token) => haystack.includes(token));
   }
 
