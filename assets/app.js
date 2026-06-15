@@ -23,6 +23,7 @@
   };
   const svgNamespace = "http://www.w3.org/2000/svg";
   const firstEditionSetName = "第1弾 拡張パック";
+  const favoriteStorageKey = "pokecaFavoritesV1";
 
   const seriesOrder = new Map([
     ["PMCG", 0],
@@ -330,6 +331,22 @@
     return getEditionQuotes(card).some((item) => item.quote);
   }
 
+  function getPSA10Quote(card) {
+    const quote = priceById[card.id];
+    if (!quote || typeof quote !== "object") {
+      return null;
+    }
+    return normalizeQuoteEntry(
+      quote.psa10 || quote.psa10_jp || quote.psa_10 || quote.psa?.g10 || quote.grades?.psa10,
+      quote.updated,
+    );
+  }
+
+  function getPSA10TileLabel(card) {
+    const quote = getPSA10Quote(card);
+    return quote ? `PSA10 ${formatCompactYen(quote.sell)}` : "PSA10 未取得";
+  }
+
   function cardMatchesQuery(card, query) {
     const tokens = normalizeQueryTokens(query);
     if (!tokens.length) {
@@ -346,6 +363,7 @@
     const selectedRarities = filters.selectedRarities || new Set();
     const selectedEditions = filters.selectedEditions || new Set();
     const selectedSet = filters.selectedSet || "";
+    const favoriteIds = filters.favoriteIds || new Set();
     const query = filters.query || "";
 
     return cardList.filter((card) => {
@@ -360,6 +378,7 @@
         (selectedRarities.size === 0 || selectedRarities.has(rarity)) &&
         cardMatchesEdition(card, selectedEditions) &&
         (!filters.psaOnly || hasPSAData(card)) &&
+        (!filters.favoriteOnly || favoriteIds.has(card.id)) &&
         cardMatchesQuery(card, query)
       );
     });
@@ -562,6 +581,8 @@
     hasFirstEditionVariant,
     getEditionInfo,
     getEditionQuotes,
+    getPSA10Quote,
+    getPSA10TileLabel,
     getPriceHistoryPoints,
     filterPriceHistoryPoints,
     buildQuoteChartModel,
@@ -583,6 +604,8 @@
     selectedRarities: new Set(),
     selectedEditions: new Set(),
     psaOnly: false,
+    favoriteOnly: false,
+    favoriteIds: loadFavoriteIds(),
     query: "",
     visibleCards: [...cards],
     activeCardId: null,
@@ -605,6 +628,7 @@
     rarityFilters: document.getElementById("rarity-filters"),
     editionFilters: document.getElementById("edition-filters"),
     psaOnly: document.getElementById("psa-only"),
+    favoritesOnly: document.getElementById("favorites-only"),
     modal: document.getElementById("card-modal"),
     modalPanel: document.querySelector(".modal-panel"),
     modalHeader: document.querySelector(".modal-header"),
@@ -631,6 +655,78 @@
   };
 
   const tileById = new Map();
+
+  function loadFavoriteIds() {
+    try {
+      const raw = window.localStorage?.getItem(favoriteStorageKey);
+      const parsed = JSON.parse(raw || "[]");
+      return new Set(Array.isArray(parsed) ? parsed.filter((id) => cardById.has(id)) : []);
+    } catch (error) {
+      return new Set();
+    }
+  }
+
+  function saveFavoriteIds() {
+    try {
+      window.localStorage?.setItem(favoriteStorageKey, JSON.stringify([...state.favoriteIds]));
+    } catch (error) {
+      // localStorageが使えない環境では、このセッション内だけで保持する。
+    }
+  }
+
+  function isFavorite(cardOrId) {
+    const id = typeof cardOrId === "string" ? cardOrId : cardOrId?.id;
+    return state.favoriteIds.has(id);
+  }
+
+  function updateFavoriteButton(button, card) {
+    const active = isFavorite(card);
+    button.classList.toggle("is-favorite", active);
+    button.textContent = active ? "♥" : "♡";
+    button.setAttribute("aria-pressed", String(active));
+    button.setAttribute("aria-label", active ? `${card.name_ja}をお気に入りから外す` : `${card.name_ja}をお気に入りに追加`);
+    button.title = active ? "お気に入りから外す" : "お気に入りに追加";
+  }
+
+  function buildFavoriteButton(card) {
+    const button = createElement("button", {
+      className: "favorite-button",
+      attrs: {
+        type: "button",
+        "data-favorite-id": card.id,
+      },
+    });
+    updateFavoriteButton(button, card);
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      toggleFavorite(card.id);
+    });
+    return button;
+  }
+
+  function updateFavoriteButtons(cardId) {
+    for (const button of document.querySelectorAll(`[data-favorite-id="${cssEscape(cardId)}"]`)) {
+      const card = cardById.get(cardId);
+      if (card) {
+        updateFavoriteButton(button, card);
+      }
+    }
+  }
+
+  function toggleFavorite(cardId) {
+    if (state.favoriteIds.has(cardId)) {
+      state.favoriteIds.delete(cardId);
+    } else {
+      state.favoriteIds.add(cardId);
+    }
+    saveFavoriteIds();
+    if (state.favoriteOnly) {
+      applyFilters({ updateUrl: true });
+      return;
+    }
+    updateFavoriteButtons(cardId);
+  }
 
   function updateQuickSearchAvoidance() {
     const viewport = window.visualViewport;
@@ -850,6 +946,9 @@
     }
     els.setFilter.value = state.selectedSet;
     els.psaOnly.checked = state.psaOnly;
+    if (els.favoritesOnly) {
+      els.favoritesOnly.checked = state.favoriteOnly;
+    }
   }
 
   function setSearchInputs(value) {
@@ -865,15 +964,14 @@
 
   function buildTile(card) {
     const typeInfo = getTypeInfo(card);
-    const rarityInfo = getRarityInfo(card);
     const numberLabel = getCardNumberLabel(card);
-    const tile = createElement("button", {
+    const tile = createElement("article", {
       className: "card-tile",
       attrs: {
-        type: "button",
+        role: "button",
+        tabindex: "0",
         "data-id": card.id,
         "data-type": typeInfo.key,
-        "data-rarity": rarityInfo.key,
         "aria-label": `${numberLabel} ${card.name_ja} の詳細を開く`,
       },
     });
@@ -895,20 +993,17 @@
       img,
       createElement("span", { className: "fallback-ball", attrs: { "aria-hidden": "true" } }),
       createElement("span", { className: "fallback-text" }),
-      createElement("span", { className: "no-badge", text: numberLabel }),
-      createElement("span", {
-        className: `rarity ${rarityInfo.className}`,
-        text: rarityInfo.key,
-        attrs: { "aria-label": `レアリティ ${rarityInfo.name}` },
-      }),
-      createElement("span", {
-        className: `stage${card.stage === "1進化" || card.stage === "2進化" ? " stage--evolved" : ""}`,
-        text: getStageLabel(card),
-      }),
     );
-    if (hasPSAData(card)) {
-      thumb.append(createElement("span", { className: "psa-badge", text: "PSA" }));
-    }
+
+    const marketRow = createElement("span", { className: "tile-market-row" });
+    const psa10Quote = getPSA10Quote(card);
+    marketRow.append(
+      createElement("span", {
+        className: `psa10-market${psa10Quote ? "" : " psa10-market--empty"}`,
+        text: getPSA10TileLabel(card),
+      }),
+      buildFavoriteButton(card),
+    );
 
     const tileInfo = createElement("span", { className: "tile-info" });
     const typeDot = createElement("span", { className: "type-dot", attrs: { "aria-label": typeInfo.fullLabel } });
@@ -922,12 +1017,20 @@
     tile.append(
       thumb,
       createElement("span", { className: "type-bar", attrs: { "aria-hidden": "true" } }),
+      marketRow,
     );
-    if (hasFirstEditionVariant(card)) {
-      tile.append(createElement("span", { className: "edition-badge edition-badge--tile", text: "初版あり" }));
-    }
     tile.append(tileInfo);
     tile.addEventListener("click", () => openModal(card.id, { updateHash: true, push: true, focusSource: tile }));
+    tile.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") {
+        return;
+      }
+      if (event.target?.closest?.(".favorite-button")) {
+        return;
+      }
+      event.preventDefault();
+      openModal(card.id, { updateHash: true, push: true, focusSource: tile });
+    });
     tileById.set(card.id, tile);
     return tile;
   }
@@ -1006,6 +1109,7 @@
     const set = params.get("set") || "";
     state.selectedSet = knownSets.has(set) ? set : "";
     state.psaOnly = params.get("psa") === "1";
+    state.favoriteOnly = params.get("fav") === "1";
     state.query = params.get("q") || "";
     setSearchInputs(state.query);
   }
@@ -1038,6 +1142,11 @@
     } else {
       params.delete("psa");
     }
+    if (state.favoriteOnly) {
+      params.set("fav", "1");
+    } else {
+      params.delete("fav");
+    }
     if (state.query) {
       params.set("q", state.query);
     } else {
@@ -1054,6 +1163,7 @@
     state.selectedRarities.clear();
     state.selectedEditions.clear();
     state.psaOnly = false;
+    state.favoriteOnly = false;
     state.query = "";
     setSearchInputs("");
     applyFilters({ updateUrl: true });
@@ -1780,6 +1890,10 @@
     });
     els.psaOnly.addEventListener("change", (event) => {
       state.psaOnly = event.target.checked;
+      applyFilters({ updateUrl: true });
+    });
+    els.favoritesOnly?.addEventListener("change", (event) => {
+      state.favoriteOnly = event.target.checked;
       applyFilters({ updateUrl: true });
     });
     els.resetButton.addEventListener("click", resetFilters);
