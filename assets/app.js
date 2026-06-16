@@ -24,6 +24,7 @@
   const svgNamespace = "http://www.w3.org/2000/svg";
   const firstEditionSetName = "第1弾 拡張パック";
   const favoriteStorageKey = "pokecaFavoritesV1";
+  const defaultSortMode = "oldest";
 
   const seriesOrder = new Map([
     ["PMCG", 0],
@@ -57,6 +58,15 @@
     { key: "ジョウト", label: "ジョウト" },
     { key: "VS", label: "VS" },
   ];
+  const sortOptions = [
+    { key: "newest", label: "新しい順" },
+    { key: "oldest", label: "古い順" },
+    { key: "price-asc", label: "安い順" },
+    { key: "price-desc", label: "高い順" },
+    { key: "change-desc", label: "価格上昇順" },
+    { key: "change-asc", label: "価格下落順" },
+  ];
+  const sortOptionByKey = new Map(sortOptions.map((option) => [option.key, option]));
 
   const kindDefinitions = [
     { key: "ポケモン", label: "ポケモン" },
@@ -143,6 +153,65 @@
 
   function sortCards(cardList) {
     return [...cardList].sort(compareCards);
+  }
+
+  function getSortableQuote(card) {
+    return getPSA10Quote(card) || getSelectedEditionQuote(card, getDefaultModalEdition(card));
+  }
+
+  function getPriceChangeMetric(card) {
+    const points = getPriceHistoryPoints(card);
+    if (points.length < 2) {
+      return null;
+    }
+    const latest = points.at(-1);
+    const previous = points.at(-2);
+    const change = Number(latest.sell) - Number(previous.sell);
+    return Number.isFinite(change) ? change : null;
+  }
+
+  function getSortMetric(card, sortMode) {
+    if (sortMode === "price-asc" || sortMode === "price-desc") {
+      const quote = getSortableQuote(card);
+      const sell = Number(quote?.sell);
+      return Number.isFinite(sell) ? sell : null;
+    }
+    if (sortMode === "change-asc" || sortMode === "change-desc") {
+      return getPriceChangeMetric(card);
+    }
+    return null;
+  }
+
+  function compareMetricCards(a, b, sortMode, direction) {
+    const aMetric = getSortMetric(a, sortMode);
+    const bMetric = getSortMetric(b, sortMode);
+    const aMissing = !Number.isFinite(aMetric);
+    const bMissing = !Number.isFinite(bMetric);
+    if (aMissing || bMissing) {
+      if (aMissing && bMissing) {
+        return compareCards(a, b);
+      }
+      return aMissing ? 1 : -1;
+    }
+    const diff = (aMetric - bMetric) * direction;
+    return diff || compareCards(a, b);
+  }
+
+  function sortCardsByMode(cardList, sortMode = defaultSortMode) {
+    const mode = sortOptionByKey.has(sortMode) ? sortMode : defaultSortMode;
+    if (mode === "newest") {
+      return [...cardList].sort((a, b) => compareCards(b, a));
+    }
+    if (mode === "price-asc") {
+      return [...cardList].sort((a, b) => compareMetricCards(a, b, mode, 1));
+    }
+    if (mode === "price-desc" || mode === "change-desc") {
+      return [...cardList].sort((a, b) => compareMetricCards(a, b, mode, -1));
+    }
+    if (mode === "change-asc") {
+      return [...cardList].sort((a, b) => compareMetricCards(a, b, mode, 1));
+    }
+    return sortCards(cardList);
   }
 
   function normalizeText(value) {
@@ -630,7 +699,11 @@
 
   window.POKECA_APP_TESTS = {
     normalizeText,
+    sortOptions,
     sortCards,
+    sortCardsByMode,
+    getSortMetric,
+    getPriceChangeMetric,
     groupCards,
     filterCards,
     getCardKind,
@@ -673,6 +746,8 @@
     favoriteOnly: false,
     favoriteIds: loadFavoriteIds(),
     query: "",
+    sortMode: defaultSortMode,
+    advancedFiltersOpen: false,
     visibleCards: [...cards],
     activeCardId: null,
     activeEditionKey: "",
@@ -688,6 +763,10 @@
     quickSearchInput: document.getElementById("quick-search-input"),
     quickSearchClear: document.getElementById("quick-search-clear"),
     resetButton: document.getElementById("reset-button"),
+    sortButton: document.getElementById("sort-button"),
+    sortMenu: document.getElementById("sort-menu"),
+    advancedFilterToggle: document.getElementById("advanced-filter-toggle"),
+    advancedFilters: document.getElementById("advanced-filters"),
     regionFilters: document.getElementById("region-filters"),
     setFilter: document.getElementById("set-filter"),
     kindFilters: document.getElementById("kind-filters"),
@@ -1017,6 +1096,12 @@
     if (els.favoritesOnly) {
       els.favoritesOnly.checked = state.favoriteOnly;
     }
+    updateSortControls();
+    if (hasAdvancedFiltersActive()) {
+      setAdvancedFiltersOpen(true);
+    } else {
+      setAdvancedFiltersOpen(state.advancedFiltersOpen);
+    }
   }
 
   function setSearchInputs(value) {
@@ -1028,6 +1113,52 @@
     if (els.quickSearchClear) {
       els.quickSearchClear.hidden = text.length === 0;
     }
+  }
+
+  function setSortMenuOpen(open) {
+    if (!els.sortButton || !els.sortMenu) {
+      return;
+    }
+    els.sortButton.setAttribute("aria-expanded", String(open));
+    els.sortMenu.hidden = !open;
+  }
+
+  function updateSortControls() {
+    const mode = sortOptionByKey.has(state.sortMode) ? state.sortMode : defaultSortMode;
+    for (const button of els.sortMenu?.querySelectorAll("[data-sort-mode]") || []) {
+      button.setAttribute("aria-checked", String(button.getAttribute("data-sort-mode") === mode));
+    }
+  }
+
+  function selectSortMode(sortMode) {
+    if (!sortOptionByKey.has(sortMode)) {
+      return;
+    }
+    state.sortMode = sortMode;
+    setSortMenuOpen(false);
+    applyFilters({ updateUrl: true });
+  }
+
+  function setAdvancedFiltersOpen(open) {
+    state.advancedFiltersOpen = Boolean(open);
+    if (els.advancedFilters) {
+      els.advancedFilters.hidden = !state.advancedFiltersOpen;
+    }
+    if (els.advancedFilterToggle) {
+      els.advancedFilterToggle.setAttribute("aria-expanded", String(state.advancedFiltersOpen));
+    }
+  }
+
+  function hasAdvancedFiltersActive() {
+    return Boolean(
+      state.selectedSet ||
+      state.selectedKinds.size ||
+      state.selectedTypes.size ||
+      state.selectedRarities.size ||
+      state.selectedEditions.size ||
+      state.psaOnly ||
+      state.favoriteOnly,
+    );
   }
 
   function buildTile(card) {
@@ -1142,9 +1273,26 @@
     els.grid.replaceChildren(fragment);
   }
 
+  function renderFlatCardGrid(cardList) {
+    tileById.clear();
+    const grid = createElement("div", { className: "card-grid card-grid--flat" });
+    for (const card of cardList) {
+      grid.append(buildTile(card));
+    }
+    els.grid.replaceChildren(grid);
+  }
+
+  function renderCardResults(cardList) {
+    if (state.sortMode === defaultSortMode) {
+      renderCardGroups(cardList);
+      return;
+    }
+    renderFlatCardGrid(cardList);
+  }
+
   function applyFilters({ updateUrl = false } = {}) {
-    state.visibleCards = filterCards(cards, state);
-    renderCardGroups(state.visibleCards);
+    state.visibleCards = sortCardsByMode(filterCards(cards, state), state.sortMode);
+    renderCardResults(state.visibleCards);
     updateFilterControls();
     els.resultCount.textContent = `表示中 ${formatNumber(state.visibleCards.length)} / 全 ${formatNumber(totalCount)} 枚`;
     els.emptyState.hidden = state.visibleCards.length !== 0;
@@ -1179,6 +1327,9 @@
     state.psaOnly = params.get("psa") === "1";
     state.favoriteOnly = params.get("fav") === "1";
     state.query = params.get("q") || "";
+    const sort = params.get("sort") || defaultSortMode;
+    state.sortMode = sortOptionByKey.has(sort) ? sort : defaultSortMode;
+    state.advancedFiltersOpen = hasAdvancedFiltersActive();
     setSearchInputs(state.query);
   }
 
@@ -1220,6 +1371,11 @@
     } else {
       params.delete("q");
     }
+    if (state.sortMode && state.sortMode !== defaultSortMode) {
+      params.set("sort", state.sortMode);
+    } else {
+      params.delete("sort");
+    }
     updateHistory("replaceState", url);
   }
 
@@ -1233,6 +1389,8 @@
     state.psaOnly = false;
     state.favoriteOnly = false;
     state.query = "";
+    state.sortMode = defaultSortMode;
+    state.advancedFiltersOpen = false;
     setSearchInputs("");
     applyFilters({ updateUrl: true });
   }
@@ -2012,6 +2170,20 @@
       state.favoriteOnly = event.target.checked;
       applyFilters({ updateUrl: true });
     });
+    els.sortButton?.addEventListener("click", (event) => {
+      event.stopPropagation();
+      setSortMenuOpen(els.sortMenu?.hidden !== false);
+    });
+    els.sortMenu?.addEventListener("click", (event) => {
+      const button = event.target?.closest?.("[data-sort-mode]");
+      if (!button) {
+        return;
+      }
+      selectSortMode(button.getAttribute("data-sort-mode"));
+    });
+    els.advancedFilterToggle?.addEventListener("click", () => {
+      setAdvancedFiltersOpen(!state.advancedFiltersOpen);
+    });
     els.resetButton.addEventListener("click", resetFilters);
     els.modalClose.addEventListener("click", () => closeModal({ updateHash: true }));
     els.modal.addEventListener("click", (event) => {
@@ -2028,6 +2200,9 @@
     els.quoteChartTabs?.addEventListener("click", handleQuoteChartTabClick);
     els.quoteChartTabs?.addEventListener("keydown", handleQuoteChartTabKeydown);
     window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        setSortMenuOpen(false);
+      }
       if (!els.modal.open) {
         return;
       }
@@ -2039,6 +2214,15 @@
         event.preventDefault();
         navigateModal(1);
       }
+    });
+    document.addEventListener("click", (event) => {
+      if (els.sortMenu?.hidden !== false) {
+        return;
+      }
+      if (event.target?.closest?.(".sort-control")) {
+        return;
+      }
+      setSortMenuOpen(false);
     });
     window.addEventListener("hashchange", openFromHash);
     window.addEventListener("popstate", openFromHash);

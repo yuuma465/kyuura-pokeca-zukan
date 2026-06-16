@@ -75,59 +75,77 @@
             <button id="reset-button" class="reset-button" type="button">すべて</button>
           </div>
 
-          <div class="search-row">
-            <label for="search-input">名前・No検索</label>
-            <input
-              id="search-input"
-              type="search"
-              inputmode="search"
-              enterkeyhint="search"
-              autocomplete="off"
-              placeholder="例: 旧裏 リザードン / 第1弾 拡張パック"
-            >
-          </div>
-
           <fieldset class="chip-field">
             <legend>地方</legend>
             <div id="region-filters" class="chip-list" aria-label="地方フィルタ"></div>
           </fieldset>
 
-          <div class="select-row">
-            <label for="set-filter">発売パック</label>
-            <select id="set-filter">
-              <option value="">すべての発売パック</option>
-            </select>
+          <div class="search-toolbar">
+            <div class="search-row">
+              <label class="sr-only" for="search-input">名前・No検索</label>
+              <input
+                id="search-input"
+                type="search"
+                inputmode="search"
+                enterkeyhint="search"
+                autocomplete="off"
+                placeholder="カードを検索"
+              >
+            </div>
+
+            <div class="sort-control">
+              <button id="sort-button" class="toolbar-icon-button" type="button" aria-label="並び替え" aria-haspopup="menu" aria-expanded="false" aria-controls="sort-menu">↕</button>
+              <div id="sort-menu" class="sort-menu" role="menu" hidden>
+                <button type="button" role="menuitemradio" aria-checked="false" data-sort-mode="newest">新しい順</button>
+                <button type="button" role="menuitemradio" aria-checked="true" data-sort-mode="oldest">古い順</button>
+                <button type="button" role="menuitemradio" aria-checked="false" data-sort-mode="price-asc">安い順</button>
+                <button type="button" role="menuitemradio" aria-checked="false" data-sort-mode="price-desc">高い順</button>
+                <button type="button" role="menuitemradio" aria-checked="false" data-sort-mode="change-desc">価格上昇順</button>
+                <button type="button" role="menuitemradio" aria-checked="false" data-sort-mode="change-asc">価格下落順</button>
+              </div>
+            </div>
+
+            <button id="advanced-filter-toggle" class="toolbar-icon-button" type="button" aria-label="詳細フィルタ" aria-expanded="false" aria-controls="advanced-filters">☷</button>
           </div>
 
-          <fieldset class="chip-field">
-            <legend>種別</legend>
-            <div id="kind-filters" class="chip-list" aria-label="種別フィルタ"></div>
-          </fieldset>
+          <div id="advanced-filters" class="advanced-filters" hidden>
+            <div class="select-row">
+              <label for="set-filter">発売パック</label>
+              <select id="set-filter">
+                <option value="">すべての発売パック</option>
+              </select>
+            </div>
 
-          <fieldset class="chip-field">
-            <legend>属性</legend>
-            <div id="type-filters" class="chip-list" aria-label="属性フィルタ"></div>
-          </fieldset>
+            <fieldset class="chip-field">
+              <legend>種別</legend>
+              <div id="kind-filters" class="chip-list" aria-label="種別フィルタ"></div>
+            </fieldset>
 
-          <fieldset class="chip-field rarity-field">
-            <legend>レアリティ</legend>
-            <div id="rarity-filters" class="chip-list" aria-label="レアリティフィルタ"></div>
-          </fieldset>
+            <fieldset class="chip-field">
+              <legend>属性</legend>
+              <div id="type-filters" class="chip-list" aria-label="属性フィルタ"></div>
+            </fieldset>
 
-          <fieldset class="chip-field edition-field">
-            <legend>版区分</legend>
-            <div id="edition-filters" class="chip-list" aria-label="版区分フィルタ"></div>
-          </fieldset>
+            <fieldset class="chip-field rarity-field">
+              <legend>レアリティ</legend>
+              <div id="rarity-filters" class="chip-list" aria-label="レアリティフィルタ"></div>
+            </fieldset>
 
-          <label class="toggle-row" for="psa-only">
-            <input id="psa-only" type="checkbox">
-            <span>PSAデータありのみ表示</span>
-          </label>
+            <fieldset class="chip-field edition-field">
+              <legend>版区分</legend>
+              <div id="edition-filters" class="chip-list" aria-label="版区分フィルタ"></div>
+            </fieldset>
 
-          <label class="toggle-row" for="favorites-only">
-            <input id="favorites-only" type="checkbox">
-            <span>お気に入りのみ表示</span>
-          </label>
+            <label class="toggle-row" for="psa-only">
+              <input id="psa-only" type="checkbox">
+              <span>PSAデータありのみ表示</span>
+            </label>
+
+            <label class="toggle-row" for="favorites-only">
+              <input id="favorites-only" type="checkbox">
+              <span>お気に入りのみ表示</span>
+            </label>
+          </div>
         </div>
       </section>
 
