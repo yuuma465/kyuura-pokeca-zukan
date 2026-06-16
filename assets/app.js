@@ -400,7 +400,7 @@
 
   function getPSA10TileLabel(card) {
     const quote = getPSA10Quote(card);
-    return quote ? `PSA10 ${formatCompactYen(quote.sell)}` : "PSA10 未取得";
+    return quote ? `PSA10 ${formatCompactYen(quote.sell)}` : "PSA10相場 未取得";
   }
 
   function cardMatchesQuery(card, query) {
