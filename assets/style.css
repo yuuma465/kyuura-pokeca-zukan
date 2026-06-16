@@ -257,7 +257,7 @@ h1 {
 
 .search-toolbar {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 44px 44px;
+  grid-template-columns: minmax(0, 1fr) repeat(2, 44px);
   gap: 8px;
   align-items: center;
   border-right: 1px solid var(--border);
@@ -290,7 +290,9 @@ h1 {
 .toolbar-icon-button {
   display: inline-grid;
   width: 44px;
+  min-width: 44px;
   height: 44px;
+  min-height: 44px;
   place-items: center;
   border: 0;
   border-radius: 50%;
@@ -302,13 +304,86 @@ h1 {
   cursor: pointer;
 }
 
+.toolbar-icon {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  color: currentColor;
+}
+
+.toolbar-icon-sort::before,
+.toolbar-icon-sort::after {
+  position: absolute;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border: solid currentColor;
+  content: "";
+}
+
+.toolbar-icon-sort::before {
+  top: 2px;
+  border-width: 2px 2px 0 0;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.toolbar-icon-sort::after {
+  bottom: 2px;
+  border-width: 0 0 2px 2px;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.toolbar-icon-filter {
+  background:
+    linear-gradient(currentColor, currentColor) 0 5px / 22px 2px no-repeat,
+    linear-gradient(currentColor, currentColor) 0 11px / 22px 2px no-repeat,
+    linear-gradient(currentColor, currentColor) 0 17px / 22px 2px no-repeat;
+}
+
+.toolbar-icon-filter::before,
+.toolbar-icon-filter::after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: #505050;
+  content: "";
+}
+
+.toolbar-icon-filter::before {
+  top: 2px;
+  left: 4px;
+  box-shadow: 10px 12px 0 -2px #505050, 10px 12px 0 0 currentColor;
+}
+
+.toolbar-icon-filter::after {
+  top: 8px;
+  right: 3px;
+}
+
 .toolbar-icon-button:hover,
 .toolbar-icon-button[aria-expanded="true"] {
   background: var(--black);
 }
 
+.toolbar-icon-button:hover .toolbar-icon-filter::before,
+.toolbar-icon-button[aria-expanded="true"] .toolbar-icon-filter::before {
+  box-shadow: 10px 12px 0 -2px var(--black), 10px 12px 0 0 currentColor;
+}
+
+.toolbar-icon-button:hover .toolbar-icon-filter::before,
+.toolbar-icon-button:hover .toolbar-icon-filter::after,
+.toolbar-icon-button[aria-expanded="true"] .toolbar-icon-filter::before,
+.toolbar-icon-button[aria-expanded="true"] .toolbar-icon-filter::after {
+  background: var(--black);
+}
+
 .sort-control {
   position: relative;
+  width: 44px;
+  height: 44px;
   min-width: 0;
 }
 

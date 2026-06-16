@@ -45,7 +45,7 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css?v=20260617-ui1">
   </head>
   <body>
     <header class="site-header">
@@ -94,7 +94,9 @@
             </div>
 
             <div class="sort-control">
-              <button id="sort-button" class="toolbar-icon-button" type="button" aria-label="並び替え" aria-haspopup="menu" aria-expanded="false" aria-controls="sort-menu">↕</button>
+              <button id="sort-button" class="toolbar-icon-button" type="button" aria-label="並び替え" aria-haspopup="menu" aria-expanded="false" aria-controls="sort-menu">
+                <span class="toolbar-icon toolbar-icon-sort" aria-hidden="true"></span>
+              </button>
               <div id="sort-menu" class="sort-menu" role="menu" hidden>
                 <button type="button" role="menuitemradio" aria-checked="false" data-sort-mode="newest">新しい順</button>
                 <button type="button" role="menuitemradio" aria-checked="true" data-sort-mode="oldest">古い順</button>
@@ -105,7 +107,9 @@
               </div>
             </div>
 
-            <button id="advanced-filter-toggle" class="toolbar-icon-button" type="button" aria-label="詳細フィルタ" aria-expanded="false" aria-controls="advanced-filters">☷</button>
+            <button id="advanced-filter-toggle" class="toolbar-icon-button" type="button" aria-label="詳細フィルタ" aria-expanded="false" aria-controls="advanced-filters">
+              <span class="toolbar-icon toolbar-icon-filter" aria-hidden="true"></span>
+            </button>
           </div>
 
           <div id="advanced-filters" class="advanced-filters" hidden>
