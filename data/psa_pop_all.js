@@ -2,10 +2,10 @@ window.POKECA_PSA = {
   "1st1001": {
     "status": "population",
     "spec_id": 544115,
-    "total": 2345,
+    "total": 2346,
     "grades": {
       "g10": 686,
-      "g9": 924,
+      "g9": 925,
       "g8": 336,
       "g7": 123,
       "g6": 91,
@@ -15,8 +15,50 @@ window.POKECA_PSA = {
       "g2": 18,
       "g1": 17
     },
-    "gem_rate": 29.3,
-    "updated": "2026-06-15"
+    "gem_rate": 29.2,
+    "updated": "2026-06-16",
+    "editions": {
+      "unlimited": {
+        "status": "population",
+        "spec_id": 544115,
+        "total": 2346,
+        "grades": {
+          "g10": 686,
+          "g9": 925,
+          "g8": 336,
+          "g7": 123,
+          "g6": 91,
+          "g5": 76,
+          "g4": 38,
+          "g3": 23,
+          "g2": 18,
+          "g1": 17
+        },
+        "gem_rate": 29.2,
+        "updated": "2026-06-16"
+      },
+      "first": {
+        "status": "population",
+        "spec_id": 2018947,
+        "total": 757,
+        "grades": {
+          "g10": 68,
+          "g9": 253,
+          "g8": 153,
+          "g7": 89,
+          "g6": 68,
+          "g5": 53,
+          "g4": 37,
+          "g3": 11,
+          "g2": 8,
+          "g1": 10
+        },
+        "gem_rate": 9.0,
+        "updated": "2026-06-16",
+        "source_cert": "72246242",
+        "psa_description": "1996 POKEMON JAPANESE BASIC 1 BULBASAUR NO RARITY SYMBOL"
+      }
+    }
   },
   "1st1002": {
     "status": "population",
@@ -35,12 +77,12 @@ window.POKECA_PSA = {
       "g1": 9
     },
     "gem_rate": 25.8,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1003": {
     "status": "population",
     "spec_id": 544116,
-    "total": 8122,
+    "total": 8123,
     "grades": {
       "g10": 734,
       "g9": 2276,
@@ -51,10 +93,10 @@ window.POKECA_PSA = {
       "g4": 375,
       "g3": 248,
       "g2": 164,
-      "g1": 382
+      "g1": 383
     },
     "gem_rate": 9.0,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1004": {
     "status": "population",
@@ -73,7 +115,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 42.0,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1005": {
     "status": "population",
@@ -92,7 +134,7 @@ window.POKECA_PSA = {
       "g1": 2
     },
     "gem_rate": 36.6,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1006": {
     "status": "population",
@@ -111,7 +153,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 37.8,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1007": {
     "status": "population",
@@ -130,7 +172,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 31.5,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1008": {
     "status": "population",
@@ -149,7 +191,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 26.4,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1009": {
     "status": "population",
@@ -168,7 +210,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 38.5,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1010": {
     "status": "population",
@@ -187,7 +229,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 32.7,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1011": {
     "status": "population",
@@ -206,7 +248,7 @@ window.POKECA_PSA = {
       "g1": 10
     },
     "gem_rate": 14.2,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1012": {
     "status": "population",
@@ -225,7 +267,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 45.0,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1013": {
     "status": "population",
@@ -244,7 +286,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 43.4,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1014": {
     "status": "population",
@@ -263,7 +305,7 @@ window.POKECA_PSA = {
       "g1": 14
     },
     "gem_rate": 28.6,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1015": {
     "status": "population",
@@ -282,26 +324,26 @@ window.POKECA_PSA = {
       "g1": 7
     },
     "gem_rate": 24.3,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1016": {
     "status": "population",
     "spec_id": 544118,
-    "total": 20381,
+    "total": 20386,
     "grades": {
       "g10": 992,
-      "g9": 3956,
-      "g8": 3382,
+      "g9": 3957,
+      "g8": 3383,
       "g7": 2191,
       "g6": 2307,
       "g5": 1886,
       "g4": 1506,
       "g3": 1133,
       "g2": 886,
-      "g1": 1956
+      "g1": 1959
     },
     "gem_rate": 4.9,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1017": {
     "status": "population",
@@ -320,7 +362,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 38.8,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1018": {
     "status": "population",
@@ -339,7 +381,7 @@ window.POKECA_PSA = {
       "g1": 13
     },
     "gem_rate": 19.0,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1019": {
     "status": "population",
@@ -358,7 +400,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 29.1,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1020": {
     "status": "population",
@@ -377,7 +419,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 34.7,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1021": {
     "status": "population",
@@ -396,7 +438,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 39.6,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1022": {
     "status": "population",
@@ -415,7 +457,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 36.1,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1023": {
     "status": "population",
@@ -434,7 +476,7 @@ window.POKECA_PSA = {
       "g1": 23
     },
     "gem_rate": 30.2,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1024": {
     "status": "population",
@@ -453,12 +495,12 @@ window.POKECA_PSA = {
       "g1": 4
     },
     "gem_rate": 28.4,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1025": {
     "status": "population",
     "spec_id": 544119,
-    "total": 8672,
+    "total": 8675,
     "grades": {
       "g10": 712,
       "g9": 2325,
@@ -468,11 +510,11 @@ window.POKECA_PSA = {
       "g5": 647,
       "g4": 428,
       "g3": 273,
-      "g2": 174,
-      "g1": 402
+      "g2": 175,
+      "g1": 404
     },
     "gem_rate": 8.2,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1026": {
     "status": "population",
@@ -491,17 +533,17 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 42.6,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1027": {
     "status": "population",
     "spec_id": 2173874,
-    "total": 317,
+    "total": 318,
     "grades": {
       "g10": 94,
       "g9": 141,
       "g8": 48,
-      "g7": 10,
+      "g7": 11,
       "g6": 5,
       "g5": 7,
       "g4": 2,
@@ -509,8 +551,8 @@ window.POKECA_PSA = {
       "g2": 1,
       "g1": 3
     },
-    "gem_rate": 29.7,
-    "updated": "2026-06-15"
+    "gem_rate": 29.6,
+    "updated": "2026-06-16"
   },
   "1st1028": {
     "status": "population",
@@ -529,7 +571,7 @@ window.POKECA_PSA = {
       "g1": 15
     },
     "gem_rate": 19.3,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1029": {
     "status": "population",
@@ -548,7 +590,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 36.8,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1030": {
     "status": "population",
@@ -567,7 +609,7 @@ window.POKECA_PSA = {
       "g1": 2
     },
     "gem_rate": 34.3,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1031": {
     "status": "population",
@@ -586,7 +628,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 41.8,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1032": {
     "status": "population",
@@ -605,7 +647,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 37.1,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1033": {
     "status": "population",
@@ -624,7 +666,7 @@ window.POKECA_PSA = {
       "g1": 5
     },
     "gem_rate": 26.0,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1034": {
     "status": "population",
@@ -643,16 +685,16 @@ window.POKECA_PSA = {
       "g1": 48
     },
     "gem_rate": 16.9,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1035": {
     "status": "population",
     "spec_id": 1878023,
-    "total": 5311,
+    "total": 5315,
     "grades": {
       "g10": 1074,
-      "g9": 2072,
-      "g8": 1056,
+      "g9": 2074,
+      "g8": 1058,
       "g7": 384,
       "g6": 302,
       "g5": 181,
@@ -662,26 +704,26 @@ window.POKECA_PSA = {
       "g1": 48
     },
     "gem_rate": 20.2,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1036": {
     "status": "population",
     "spec_id": 544124,
-    "total": 3369,
+    "total": 3371,
     "grades": {
       "g10": 520,
-      "g9": 1326,
+      "g9": 1327,
       "g8": 726,
       "g7": 294,
       "g6": 185,
       "g5": 149,
       "g4": 69,
       "g3": 37,
-      "g2": 23,
+      "g2": 24,
       "g1": 24
     },
     "gem_rate": 15.4,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1037": {
     "status": "population",
@@ -700,7 +742,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 36.2,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1038": {
     "status": "population",
@@ -719,7 +761,7 @@ window.POKECA_PSA = {
       "g1": 9
     },
     "gem_rate": 14.0,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1039": {
     "status": "population",
@@ -738,7 +780,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 36.4,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1040": {
     "status": "population",
@@ -757,7 +799,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 26.8,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1041": {
     "status": "population",
@@ -776,15 +818,15 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 24.0,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1042": {
     "status": "population",
     "spec_id": 544145,
-    "total": 3203,
+    "total": 3204,
     "grades": {
       "g10": 588,
-      "g9": 1225,
+      "g9": 1226,
       "g8": 642,
       "g7": 303,
       "g6": 191,
@@ -795,15 +837,15 @@ window.POKECA_PSA = {
       "g1": 24
     },
     "gem_rate": 18.4,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1043": {
     "status": "population",
     "spec_id": 2173884,
-    "total": 661,
+    "total": 662,
     "grades": {
       "g10": 245,
-      "g9": 298,
+      "g9": 299,
       "g8": 63,
       "g7": 15,
       "g6": 21,
@@ -813,8 +855,8 @@ window.POKECA_PSA = {
       "g2": 3,
       "g1": 2
     },
-    "gem_rate": 37.1,
-    "updated": "2026-06-15"
+    "gem_rate": 37.0,
+    "updated": "2026-06-16"
   },
   "1st1044": {
     "status": "population",
@@ -833,7 +875,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 25.1,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1045": {
     "status": "population",
@@ -852,7 +894,7 @@ window.POKECA_PSA = {
       "g1": 37
     },
     "gem_rate": 16.1,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1046": {
     "status": "population",
@@ -871,7 +913,7 @@ window.POKECA_PSA = {
       "g1": 2
     },
     "gem_rate": 35.2,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1047": {
     "status": "population",
@@ -890,7 +932,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 25.5,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1048": {
     "status": "population",
@@ -909,7 +951,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 14.2,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1049": {
     "status": "population",
@@ -928,7 +970,7 @@ window.POKECA_PSA = {
       "g1": 6
     },
     "gem_rate": 19.5,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1050": {
     "status": "population",
@@ -947,7 +989,7 @@ window.POKECA_PSA = {
       "g1": 91
     },
     "gem_rate": 15.9,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1051": {
     "status": "population",
@@ -966,7 +1008,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 17.8,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1052": {
     "status": "population",
@@ -985,16 +1027,16 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 41.7,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1053": {
     "status": "population",
     "spec_id": 544130,
-    "total": 228,
+    "total": 229,
     "grades": {
       "g10": 58,
       "g9": 81,
-      "g8": 41,
+      "g8": 42,
       "g7": 20,
       "g6": 8,
       "g5": 11,
@@ -1003,8 +1045,8 @@ window.POKECA_PSA = {
       "g2": 0,
       "g1": 0
     },
-    "gem_rate": 25.4,
-    "updated": "2026-06-15"
+    "gem_rate": 25.3,
+    "updated": "2026-06-16"
   },
   "1st1054": {
     "status": "population",
@@ -1023,7 +1065,7 @@ window.POKECA_PSA = {
       "g1": 1
     },
     "gem_rate": 44.2,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1055": {
     "status": "population",
@@ -1042,7 +1084,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 30.3,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1056": {
     "status": "population",
@@ -1061,7 +1103,7 @@ window.POKECA_PSA = {
       "g1": 21
     },
     "gem_rate": 17.3,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1057": {
     "status": "population",
@@ -1080,7 +1122,7 @@ window.POKECA_PSA = {
       "g1": 3
     },
     "gem_rate": 43.0,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1058": {
     "status": "population",
@@ -1099,7 +1141,7 @@ window.POKECA_PSA = {
       "g1": 14
     },
     "gem_rate": 13.5,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1059": {
     "status": "population",
@@ -1118,7 +1160,7 @@ window.POKECA_PSA = {
       "g1": 0
     },
     "gem_rate": 37.8,
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "1st1060": {
     "status": "population",
@@ -15789,23 +15831,23 @@ window.POKECA_PSA = {
     ]
   },
   "1stex2028": {
-    "status": "pending",
-    "total": null,
+    "status": "population",
+    "spec_id": 2065599,
+    "total": 234,
     "grades": {
-      "g10": 0,
-      "g9": 0,
-      "g8": 0,
-      "g7": 0,
-      "g6": 0,
-      "g5": 0,
-      "g4": 0,
+      "g10": 51,
+      "g9": 125,
+      "g8": 42,
+      "g7": 8,
+      "g6": 5,
+      "g5": 1,
+      "g4": 1,
       "g3": 0,
-      "g2": 0,
+      "g2": 1,
       "g1": 0
     },
-    "gem_rate": null,
-    "updated": null,
-    "spec_id": 2065599
+    "gem_rate": 21.8,
+    "updated": "2026-06-16"
   },
   "1stex2029": {
     "status": "spec_unmatched",

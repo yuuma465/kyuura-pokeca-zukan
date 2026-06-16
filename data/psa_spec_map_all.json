@@ -1,6 +1,15 @@
 {
  "1st1001": {
-  "spec_id": 544115
+  "spec_id": 544115,
+  "editions": {
+   "unlimited": {
+    "spec_id": 544115
+   },
+   "first": {
+    "spec_id": 2018947,
+    "source_cert": "72246242"
+   }
+  }
  },
  "1st1002": {
   "spec_id": 2174008

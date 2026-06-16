@@ -264,17 +264,58 @@
     return String(card?.set || "") === firstEditionSetName;
   }
 
-  function getEditionInfo(card) {
-    if (hasFirstEditionVariant(card)) {
+  function getEditionOptions(card) {
+    if (!hasFirstEditionVariant(card)) {
+      return [{ key: "standard", label: "通常版", shortLabel: "通常版" }];
+    }
+    return [
+      { key: "unlimited", label: "通常版（マークあり）", shortLabel: "マークあり" },
+      { key: "first", label: "初版（マークなし）", shortLabel: "マークなし" },
+    ];
+  }
+
+  function getDefaultModalEdition(card) {
+    return hasFirstEditionVariant(card) ? "unlimited" : "standard";
+  }
+
+  function normalizeModalEdition(card, editionKey) {
+    const options = getEditionOptions(card);
+    return options.some((item) => item.key === editionKey) ? editionKey : getDefaultModalEdition(card);
+  }
+
+  function getEditionInfo(card, editionKey = "") {
+    if (!editionKey) {
+      if (hasFirstEditionVariant(card)) {
+        return {
+          key: "first",
+          label: "初版（マークなし）あり",
+          detail: "通常版（マークあり）と初版（マークなし）の版違いがあります",
+        };
+      }
+      return {
+        key: "no-first",
+        label: "初版なし",
+        detail: "初版（マークなし）対象外のカードです",
+      };
+    }
+    const normalizedEdition = normalizeModalEdition(card, editionKey || getDefaultModalEdition(card));
+    if (hasFirstEditionVariant(card) && normalizedEdition === "first") {
       return {
         key: "first",
-        label: "初版（マークなし）あり",
-        detail: "通常版（マークあり）と初版（マークなし）の版違いがあります",
+        label: "初版（マークなし）",
+        detail: "初版（マークなし）を表示中です",
+      };
+    }
+    if (hasFirstEditionVariant(card)) {
+      return {
+        key: "unlimited",
+        label: "通常版（マークあり）",
+        detail: "通常版（マークあり）を表示中です。初版（マークなし）へ切替できます",
       };
     }
     return {
-      key: "no-first",
-      label: "初版なし",
+      key: "standard",
+      label: "通常版",
       detail: "初版（マークなし）対象外のカードです",
     };
   }
@@ -329,6 +370,21 @@
 
   function hasQuoteData(card) {
     return getEditionQuotes(card).some((item) => item.quote);
+  }
+
+  function getSelectedEditionQuote(card, editionKey = "") {
+    const normalizedEdition = normalizeModalEdition(card, editionKey || getDefaultModalEdition(card));
+    return getEditionQuotes(card).find((item) => item.key === normalizedEdition)?.quote || null;
+  }
+
+  function getPSAEntry(card, editionKey = "") {
+    const psa = psaById[card.id];
+    const normalizedEdition = normalizeModalEdition(card, editionKey || getDefaultModalEdition(card));
+    const editionEntry = psa?.editions?.[normalizedEdition];
+    if (editionEntry) {
+      return editionEntry;
+    }
+    return psa || null;
   }
 
   function getPSA10Quote(card) {
@@ -441,19 +497,24 @@
     return { date, time, buy, sell };
   }
 
-  function normalizePriceHistory(points) {
+  function normalizePriceHistory(points, editionKey = "") {
     if (!Array.isArray(points)) {
       return [];
     }
     return points
-      .map(normalizePriceHistoryPoint)
+      .map((point) => {
+        if (editionKey && point?.editions?.[editionKey]) {
+          return normalizePriceHistoryPoint({ date: point.date, ...point.editions[editionKey] });
+        }
+        return normalizePriceHistoryPoint(point);
+      })
       .filter(Boolean)
       .sort((a, b) => a.time - b.time);
   }
 
-  function getPriceHistoryPoints(cardOrId) {
+  function getPriceHistoryPoints(cardOrId, editionKey = "") {
     const id = typeof cardOrId === "string" ? cardOrId : cardOrId?.id;
-    return normalizePriceHistory(priceHistoryById[id] || []);
+    return normalizePriceHistory(priceHistoryById[id] || [], editionKey);
   }
 
   function resolvePriceHistoryRange(points, rangeKey = "all") {
@@ -579,8 +640,13 @@
     hasPSAData,
     hasQuoteData,
     hasFirstEditionVariant,
+    getEditionOptions,
+    getDefaultModalEdition,
+    normalizeModalEdition,
     getEditionInfo,
     getEditionQuotes,
+    getSelectedEditionQuote,
+    getPSAEntry,
     getPSA10Quote,
     getPSA10TileLabel,
     getPriceHistoryPoints,
@@ -609,6 +675,7 @@
     query: "",
     visibleCards: [...cards],
     activeCardId: null,
+    activeEditionKey: "",
     lastFocusedTile: null,
     quoteChartRange: "all",
   };
@@ -640,6 +707,7 @@
     modalFallback: document.getElementById("modal-fallback"),
     modalCaption: document.getElementById("modal-caption"),
     modalChips: document.getElementById("modal-chips"),
+    modalEditionSwitch: document.getElementById("modal-edition-switch"),
     modalDetails: document.getElementById("modal-details"),
     marketLinks: document.getElementById("market-links"),
     quoteSection: document.getElementById("quote-section"),
@@ -1411,12 +1479,12 @@
     return svg;
   }
 
-  function renderQuoteChart(card) {
+  function renderQuoteChart(card, editionKey = "") {
     if (!els.quoteChartWrap || !els.quoteChart) {
       return;
     }
 
-    const history = getPriceHistoryPoints(card);
+    const history = getPriceHistoryPoints(card, normalizeModalEdition(card, editionKey || state.activeEditionKey));
     els.quoteChart.replaceChildren();
     if (!history.length) {
       hideQuoteChart();
@@ -1447,7 +1515,7 @@
     state.quoteChartRange = button.getAttribute("data-chart-range");
     const card = cardById.get(state.activeCardId);
     if (card) {
-      renderQuoteChart(card);
+      renderQuoteChart(card, state.activeEditionKey);
     }
   }
 
@@ -1506,12 +1574,46 @@
       .at(-1) || "";
   }
 
-  function renderQuote(card) {
+  function renderEditionSwitch(card) {
+    if (!els.modalEditionSwitch) {
+      return;
+    }
+    const options = getEditionOptions(card);
+    if (options.length <= 1) {
+      els.modalEditionSwitch.hidden = true;
+      els.modalEditionSwitch.replaceChildren();
+      return;
+    }
+    const activeEdition = normalizeModalEdition(card, state.activeEditionKey);
+    els.modalEditionSwitch.hidden = false;
+    els.modalEditionSwitch.replaceChildren();
+    for (const option of options) {
+      const button = createElement("button", {
+        className: `edition-switch-button edition-switch-button--${option.key}`,
+        text: option.shortLabel,
+        attrs: {
+          type: "button",
+          "data-modal-edition": option.key,
+          "aria-pressed": String(option.key === activeEdition),
+        },
+      });
+      button.addEventListener("click", () => {
+        state.activeEditionKey = option.key;
+        renderEditionDependentSections(card);
+      });
+      els.modalEditionSwitch.append(button);
+    }
+  }
+
+  function renderQuote(card, editionKey = "") {
     if (!els.quoteSection || !els.quoteBody) {
       return;
     }
 
-    const editionQuotes = getEditionQuotes(card);
+    const normalizedEdition = normalizeModalEdition(card, editionKey || state.activeEditionKey);
+    const editionQuotes = hasFirstEditionVariant(card)
+      ? getEditionQuotes(card).filter((item) => item.key === normalizedEdition)
+      : getEditionQuotes(card);
     els.quoteBody.replaceChildren();
     if (!editionQuotes.some((item) => item.quote)) {
       els.quoteSection.hidden = true;
@@ -1521,7 +1623,7 @@
 
     els.quoteSection.hidden = false;
     const metrics = createElement("div", {
-      className: hasFirstEditionVariant(card) ? "quote-edition-grid" : "quote-metrics",
+      className: "quote-metrics",
     });
     for (const item of editionQuotes) {
       metrics.append(buildQuoteCard(item.label, item.quote, item.modifier));
@@ -1534,7 +1636,7 @@
         text: `最終更新 ${formatDate(updated)} / 価格参考: magi等の出品相場 / 初版はマークなし、通常版はマークありとして分けています`,
       }),
     );
-    renderQuoteChart(card);
+    renderQuoteChart(card, normalizedEdition);
   }
 
   function buildPSAGradeRow(grade, count, total) {
@@ -1564,12 +1666,13 @@
     return row;
   }
 
-  function renderPSA(card) {
+  function renderPSA(card, editionKey = "") {
     if (!els.psaSection || !els.psaBody) {
       return;
     }
 
-    const psa = psaById[card.id];
+    const normalizedEdition = normalizeModalEdition(card, editionKey || state.activeEditionKey);
+    const psa = getPSAEntry(card, normalizedEdition);
     els.psaSection.hidden = false;
     els.psaBody.replaceChildren();
     if (!psa) {
@@ -1649,8 +1752,9 @@
     }
 
     const source = createElement("p", { className: "psa-source" });
+    const editionLabel = getEditionOptions(card).find((item) => item.key === normalizedEdition)?.label || "";
     source.append(
-      document.createTextNode(`PSA公式データ / Spec ID ${psa.spec_id || "-"} / 最終更新 ${formatDate(psa.updated)} / `),
+      document.createTextNode(`PSA公式データ${editionLabel ? `（${editionLabel}）` : ""} / Spec ID ${psa.spec_id || "-"} / 最終更新 ${formatDate(psa.updated)} / `),
       createElement("a", {
         text: "psacard.com",
         attrs: {
@@ -1694,9 +1798,10 @@
     els.modalDetails.append(dd);
   }
 
-  function renderModalDetails(card) {
+  function renderModalDetails(card, editionKey = "") {
     const typeInfo = getTypeInfo(card);
     const rarityInfo = getRarityInfo(card);
+    const editionInfo = getEditionInfo(card, editionKey || state.activeEditionKey);
     els.modalDetails.replaceChildren();
 
     const hp = createElement("span", { className: "hp-strong", text: getHpLabel(card) });
@@ -1712,9 +1817,18 @@
     appendDetail("進化", buildEvolutionLine(card));
     appendDetail("カード番号", card.card_number || "-");
     appendDetail("セット名", card.set || "-");
-    appendDetail("版区分", getEditionInfo(card).detail);
+    appendDetail("版区分", editionInfo.detail);
     appendDetail("地方", card.region || "-");
     appendDetail("イラストレーター", card.illustrator || "-");
+  }
+
+  function renderEditionDependentSections(card) {
+    const editionKey = normalizeModalEdition(card, state.activeEditionKey);
+    state.activeEditionKey = editionKey;
+    renderEditionSwitch(card);
+    renderModalDetails(card, editionKey);
+    renderQuote(card, editionKey);
+    renderPSA(card, editionKey);
   }
 
   function renderModal(card) {
@@ -1722,6 +1836,7 @@
     const rarityInfo = getRarityInfo(card);
     const caption = [card.region, card.set].filter(Boolean).join(" / ") || "-";
     state.activeCardId = card.id;
+    state.activeEditionKey = getDefaultModalEdition(card);
 
     setTypeStyle(els.modalPanel, card);
     setTypeStyle(els.modal, card);
@@ -1751,10 +1866,11 @@
       modalChips.push(createElement("span", { className: "edition-badge", text: "初版（マークなし）あり" }));
     }
     els.modalChips.replaceChildren(...modalChips);
-    renderModalDetails(card);
+    renderEditionSwitch(card);
+    renderModalDetails(card, state.activeEditionKey);
     renderMarketLinks(card);
-    renderQuote(card);
-    renderPSA(card);
+    renderQuote(card, state.activeEditionKey);
+    renderPSA(card, state.activeEditionKey);
     updateModalNavigation(card);
     els.sourceLink.href = card.source_url || "#";
   }
