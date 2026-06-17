@@ -783,6 +783,7 @@
     grid: document.getElementById("card-grid"),
     resultCount: document.getElementById("result-count"),
     emptyState: document.getElementById("empty-state"),
+    homeResetButton: document.getElementById("home-reset-button"),
     searchInput: document.getElementById("search-input"),
     quickSearchInput: document.getElementById("quick-search-input"),
     quickSearchClear: document.getElementById("quick-search-clear"),
@@ -1226,10 +1227,12 @@
       },
     });
     img.addEventListener("error", () => markImageFallback(thumb, `${numberLabel}\n${card.name_ja}\n画像なし`), { once: true });
+    const favoriteButton = buildFavoriteButton(card);
     thumb.append(
       img,
       createElement("span", { className: "fallback-ball", attrs: { "aria-hidden": "true" } }),
       createElement("span", { className: "fallback-text" }),
+      favoriteButton,
     );
 
     const marketRow = createElement("span", { className: "tile-market-row" });
@@ -1239,7 +1242,6 @@
         className: `psa10-market${psa10Quote ? "" : " psa10-market--empty"}`,
         text: getPSA10TileLabel(card),
       }),
-      buildFavoriteButton(card),
     );
 
     const tileInfo = createElement("span", { className: "tile-info" });
@@ -1252,7 +1254,6 @@
 
     tile.append(
       thumb,
-      createElement("span", { className: "type-bar", attrs: { "aria-hidden": "true" } }),
       marketRow,
     );
     tile.append(tileInfo);
@@ -1416,7 +1417,7 @@
     updateHistory("replaceState", url);
   }
 
-  function resetFilters() {
+  function resetFilters({ updateUrl = true } = {}) {
     state.selectedRegions.clear();
     state.selectedSet = "";
     state.selectedKinds.clear();
@@ -1429,7 +1430,21 @@
     state.sortMode = defaultSortMode;
     state.advancedFiltersOpen = false;
     setSearchInputs("");
-    applyFilters({ updateUrl: true });
+    applyFilters({ updateUrl });
+  }
+
+  function resetToHome() {
+    if (els.modal.open) {
+      closeModal({ updateHash: false, restoreFocus: false });
+    }
+    state.activeCardId = null;
+    state.lastFocusedTile = null;
+    resetFilters({ updateUrl: false });
+    const url = new URL(location.href);
+    url.search = "";
+    url.hash = "";
+    updateHistory("replaceState", url);
+    window.scrollTo?.({ top: 0, behavior: "smooth" });
   }
 
   function submitSearchInput(input) {
@@ -2184,6 +2199,7 @@
     els.advancedFilterToggle?.addEventListener("click", () => {
       setAdvancedFiltersOpen(!state.advancedFiltersOpen);
     });
+    els.homeResetButton?.addEventListener("click", resetToHome);
     els.resetButton.addEventListener("click", resetFilters);
     els.modalClose.addEventListener("click", () => closeModal({ updateHash: true }));
     els.modal.addEventListener("click", (event) => {

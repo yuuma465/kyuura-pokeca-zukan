@@ -98,6 +98,28 @@ h1 {
   line-height: 1.18;
 }
 
+.home-reset-button {
+  display: block;
+  max-width: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.home-reset-button:hover {
+  color: var(--blue);
+}
+
+.home-reset-button:focus-visible {
+  outline: 3px solid rgba(0, 117, 194, 0.28);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
 .header-subbar {
   background: var(--black);
   color: var(--white);
@@ -876,14 +898,6 @@ body.scroll-locked .quick-search {
   color: var(--muted);
 }
 
-.type-bar {
-  display: block;
-  height: 4px;
-  margin-top: 7px;
-  border-radius: 2px;
-  background: var(--type-color, var(--muted));
-}
-
 .edition-badge {
   display: inline-flex;
   min-height: 25px;
@@ -938,18 +952,21 @@ body.scroll-locked .quick-search {
 }
 
 .favorite-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 2;
   display: inline-grid;
-  width: 34px;
-  height: 34px;
-  flex: 0 0 34px;
+  width: 30px;
+  height: 30px;
   place-items: center;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(17, 24, 39, 0.16);
   border-radius: 50%;
   padding: 0;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.94);
   color: var(--muted);
   cursor: pointer;
-  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.04);
+  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.14);
   transition:
     border-color 0.15s ease,
     background-color 0.15s ease,
@@ -959,12 +976,12 @@ body.scroll-locked .quick-search {
 }
 
 .favorite-button svg {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   display: block;
   fill: none;
   stroke: currentColor;
-  stroke-width: 2.2;
+  stroke-width: 2.1;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
