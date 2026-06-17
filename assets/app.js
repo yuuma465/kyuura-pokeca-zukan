@@ -16,10 +16,10 @@
   const quoteChartLayout = {
     width: 640,
     height: 160,
-    top: 18,
-    right: 72,
-    bottom: 34,
-    left: 52,
+    top: 14,
+    right: 18,
+    bottom: 28,
+    left: 48,
   };
   const svgNamespace = "http://www.w3.org/2000/svg";
   const firstEditionSetName = "第1弾 拡張パック";
@@ -625,6 +625,30 @@
       .join(" ");
   }
 
+  function buildSmoothSvgPath(points, yKey) {
+    if (!points.length) {
+      return "";
+    }
+    const firstPoint = points[0];
+    const path = [`M ${roundSvgNumber(firstPoint.x)} ${roundSvgNumber(firstPoint[yKey])}`];
+    for (let index = 0; index < points.length - 1; index += 1) {
+      const previous = points[index - 1] || points[index];
+      const current = points[index];
+      const next = points[index + 1];
+      const after = points[index + 2] || next;
+      const cp1x = current.x + (next.x - previous.x) / 6;
+      const cp1y = current[yKey] + (next[yKey] - previous[yKey]) / 6;
+      const cp2x = next.x - (after.x - current.x) / 6;
+      const cp2y = next[yKey] - (after[yKey] - current[yKey]) / 6;
+      path.push(
+        `C ${roundSvgNumber(cp1x)} ${roundSvgNumber(cp1y)} ` +
+        `${roundSvgNumber(cp2x)} ${roundSvgNumber(cp2y)} ` +
+        `${roundSvgNumber(next.x)} ${roundSvgNumber(next[yKey])}`,
+      );
+    }
+    return path.join(" ");
+  }
+
   function buildQuoteChartModel(points, rangeKey = "all") {
     const resolved = resolvePriceHistoryRange(points, rangeKey);
     const selectedPoints = resolved.points;
@@ -645,7 +669,7 @@
       };
     }
 
-    const rawValues = selectedPoints.flatMap((point) => [point.buy, point.sell]);
+    const rawValues = selectedPoints.map((point) => point.sell);
     const rawMin = Math.min(...rawValues);
     const rawMax = Math.max(...rawValues);
     const rawRange = rawMax - rawMin;
@@ -668,16 +692,16 @@
           : index / Math.max(selectedPoints.length - 1, 1);
       const x = layout.left + ratio * plotWidth;
       const ySell = layout.top + (1 - (point.sell - yMin) / valueRange) * plotHeight;
-      const yBuy = layout.top + (1 - (point.buy - yMin) / valueRange) * plotHeight;
-      return { ...point, x, ySell, yBuy };
+      return { ...point, x, ySell };
     });
 
     const yTicks = [yMax, (yMax + yMin) / 2, yMin].map((value) => ({
       value,
       y: layout.top + (1 - (value - yMin) / valueRange) * plotHeight,
     }));
-    const sellPath = buildSvgPath(chartPoints, "ySell");
-    const buyPath = buildSvgPath(chartPoints, "yBuy");
+    const sellPath = chartPoints.length > 1
+      ? buildSmoothSvgPath(chartPoints, "ySell")
+      : buildSvgPath(chartPoints, "ySell");
     const sellAreaPath = chartPoints.length > 1
       ? `${sellPath} L ${roundSvgNumber(chartPoints.at(-1).x)} ${roundSvgNumber(baselineY)} L ${roundSvgNumber(chartPoints[0].x)} ${roundSvgNumber(baselineY)} Z`
       : "";
@@ -690,7 +714,7 @@
       yMax,
       yTicks,
       sellPath,
-      buyPath,
+      buyPath: "",
       sellAreaPath,
       latest: chartPoints.at(-1),
       layout,
@@ -1575,26 +1599,10 @@
       x2: plotRight,
       y2: baselineY,
     }));
-    appendSvgText(svg, {
-      class: "quote-chart-axis-title",
-      x: layout.left,
-      y: 12,
-    }, "価格");
-    appendSvgText(svg, {
-      class: "quote-chart-axis-title",
-      x: plotRight,
-      y: layout.height - 5,
-      "text-anchor": "end",
-    }, "日付");
-
     if (model.points.length > 1) {
       svg.append(createSvgElement("path", {
         class: "quote-chart-area quote-chart-area--sell",
         d: model.sellAreaPath,
-      }));
-      svg.append(createSvgElement("path", {
-        class: "quote-chart-line quote-chart-line--buy",
-        d: model.buyPath,
       }));
       svg.append(createSvgElement("path", {
         class: "quote-chart-line quote-chart-line--sell",
@@ -1620,32 +1628,11 @@
     }
 
     svg.append(createSvgElement("circle", {
-      class: "quote-chart-dot quote-chart-dot--buy",
-      cx: roundSvgNumber(latest.x),
-      cy: roundSvgNumber(latest.yBuy),
-      r: 3,
-    }));
-    svg.append(createSvgElement("circle", {
       class: "quote-chart-dot quote-chart-dot--sell",
       cx: roundSvgNumber(latest.x),
       cy: roundSvgNumber(latest.ySell),
       r: 4,
     }));
-
-    const labelAnchor = latest.x > layout.width - layout.right - 100 ? "end" : "start";
-    const labelX = labelAnchor === "end" ? latest.x - 8 : latest.x + 8;
-    appendSvgText(svg, {
-      class: "quote-chart-value quote-chart-value--sell",
-      x: roundSvgNumber(labelX),
-      y: roundSvgNumber(Math.max(layout.top + 10, latest.ySell - 7)),
-      "text-anchor": labelAnchor,
-    }, `販売 ${formatYen(latest.sell)}`);
-    appendSvgText(svg, {
-      class: "quote-chart-value quote-chart-value--buy",
-      x: roundSvgNumber(labelX),
-      y: roundSvgNumber(Math.min(baselineY - 4, latest.yBuy + 14)),
-      "text-anchor": labelAnchor,
-    }, `買取 ${formatYen(latest.buy)}`);
 
     return svg;
   }
@@ -1675,7 +1662,7 @@
     if (model.mode === "single") {
       els.quoteChart.append(createElement("p", { className: "quote-chart-status", text: statusText }));
     }
-    els.quoteChart.append(buildQuoteChartLegend(), buildQuoteChartSvg(model, card));
+    els.quoteChart.append(buildQuoteChartSvg(model, card));
   }
 
   function handleQuoteChartTabClick(event) {

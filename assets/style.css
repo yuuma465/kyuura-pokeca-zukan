@@ -1568,11 +1568,12 @@ body.scroll-locked .quick-search {
 .quote-chart-axis {
   stroke: var(--border);
   stroke-width: 1;
+  opacity: 0.72;
   vector-effect: non-scaling-stroke;
 }
 
 .quote-chart-area {
-  opacity: 0.12;
+  opacity: 0.16;
 }
 
 .quote-chart-area--sell {
@@ -1588,12 +1589,7 @@ body.scroll-locked .quick-search {
 
 .quote-chart-line--sell {
   stroke: var(--blue);
-  stroke-width: 3;
-}
-
-.quote-chart-line--buy {
-  stroke: var(--muted);
-  stroke-width: 2;
+  stroke-width: 2.8;
 }
 
 .quote-chart-dot {
@@ -1604,10 +1600,6 @@ body.scroll-locked .quick-search {
 
 .quote-chart-dot--sell {
   fill: var(--blue);
-}
-
-.quote-chart-dot--buy {
-  fill: var(--muted);
 }
 
 .quote-chart-label,
@@ -1625,25 +1617,9 @@ body.scroll-locked .quick-search {
   font-weight: 900;
 }
 
-.quote-chart-value {
-  font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0;
-}
-
-.quote-chart-value--sell {
-  fill: var(--blue);
-}
-
-.quote-chart-value--buy {
-  fill: var(--muted);
-}
-
 .quote-chart-svg--motion .quote-chart-line,
 .quote-chart-svg--motion .quote-chart-area,
-.quote-chart-svg--motion .quote-chart-dot,
-.quote-chart-svg--motion .quote-chart-value {
+.quote-chart-svg--motion .quote-chart-dot {
   animation: quote-chart-fade-in 0.24s ease both;
 }
 
@@ -1693,11 +1669,11 @@ body.scroll-locked .quick-search {
 
 .psa-metric {
   display: grid;
-  gap: 5px;
+  gap: 4px;
   min-width: 0;
   border: 1px solid #d8d8d8;
   border-radius: 6px;
-  padding: 12px;
+  padding: 10px;
   background: #f7f7f7;
 }
 
@@ -1705,9 +1681,9 @@ body.scroll-locked .quick-search {
 .psa-metric-sub {
   min-width: 0;
   color: #666;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.45;
   overflow-wrap: anywhere;
 }
 
@@ -1719,11 +1695,12 @@ body.scroll-locked .quick-search {
   display: block;
   color: var(--blue);
   font-family: var(--font-body);
-  font-size: clamp(30px, 8vw, 44px);
+  font-size: clamp(24px, 6vw, 30px);
   font-weight: 900;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .psa-grade-list {
@@ -2066,8 +2043,7 @@ body.scroll-locked .quick-search {
 
   .quote-chart-svg--motion .quote-chart-line,
   .quote-chart-svg--motion .quote-chart-area,
-  .quote-chart-svg--motion .quote-chart-dot,
-  .quote-chart-svg--motion .quote-chart-value {
+  .quote-chart-svg--motion .quote-chart-dot {
     animation: none;
   }
 }
