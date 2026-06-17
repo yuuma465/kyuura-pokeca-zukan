@@ -1210,7 +1210,6 @@
     tileInfo.append(
       createElement("span", { className: "tile-name", text: card.name_ja }),
       typeDot,
-      createElement("span", { className: "tile-hp", text: getHpLabel(card) }),
     );
 
     tile.append(
