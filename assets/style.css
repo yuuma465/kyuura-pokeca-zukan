@@ -939,31 +939,42 @@ body.scroll-locked .quick-search {
 
 .favorite-button {
   display: inline-grid;
-  width: 32px;
-  height: 32px;
-  flex: 0 0 32px;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
   place-items: center;
   border: 1px solid var(--border);
   border-radius: 50%;
   padding: 0;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.96);
   color: var(--muted);
   cursor: pointer;
-  font-family: var(--font-latin);
-  font-size: 19px;
-  font-weight: 900;
-  line-height: 1;
+  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.04);
   transition:
     border-color 0.15s ease,
     background-color 0.15s ease,
+    box-shadow 0.15s ease,
     color 0.15s ease,
     transform 0.15s ease;
+}
+
+.favorite-button svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .favorite-button:hover,
 .favorite-button:focus-visible {
   border-color: var(--red);
+  background: #fff8f7;
   color: var(--red);
+  box-shadow: 0 3px 10px rgba(232, 83, 59, 0.12);
 }
 
 .favorite-button:focus-visible {
@@ -979,6 +990,10 @@ body.scroll-locked .quick-search {
   border-color: rgba(232, 83, 59, 0.45);
   background: #fff1ef;
   color: var(--red);
+}
+
+.favorite-button.is-favorite svg {
+  fill: currentColor;
 }
 
 .tile-info {
@@ -2020,6 +2035,10 @@ body.scroll-locked .quick-search {
 
   .search-toolbar {
     padding: 0 12px 12px;
+  }
+
+  .modal-chips {
+    display: none;
   }
 
   .modal-footer {

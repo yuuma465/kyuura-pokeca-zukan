@@ -826,10 +826,24 @@
     return state.favoriteIds.has(id);
   }
 
+  function createFavoriteIcon(active) {
+    const icon = createSvgElement("svg", {
+      class: "favorite-icon",
+      viewBox: "0 0 24 24",
+      "aria-hidden": "true",
+      focusable: "false",
+    });
+    icon.append(createSvgElement("path", {
+      d: "M12 20.2 4.9 13.6C1.1 10 3.5 3.8 8.6 3.8c1.8 0 3.4.9 4.4 2.3 1-1.4 2.6-2.3 4.4-2.3 5.1 0 7.5 6.2 3.7 9.8L12 20.2Z",
+      fill: active ? "currentColor" : "none",
+    }));
+    return icon;
+  }
+
   function updateFavoriteButton(button, card) {
     const active = isFavorite(card);
     button.classList.toggle("is-favorite", active);
-    button.textContent = active ? "♥" : "♡";
+    button.replaceChildren(createFavoriteIcon(active));
     button.setAttribute("aria-pressed", String(active));
     button.setAttribute("aria-label", active ? `${card.name_ja}をお気に入りから外す` : `${card.name_ja}をお気に入りに追加`);
     button.title = active ? "お気に入りから外す" : "お気に入りに追加";
