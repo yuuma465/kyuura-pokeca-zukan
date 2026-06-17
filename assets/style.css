@@ -903,7 +903,7 @@ body.scroll-locked .quick-search {
 
 .tile-market-row {
   display: flex;
-  min-height: 29px;
+  min-height: 40px;
   align-items: center;
   gap: 6px;
   margin-top: 7px;
@@ -912,22 +912,22 @@ body.scroll-locked .quick-search {
 .psa10-market {
   display: inline-flex;
   min-width: 0;
-  min-height: 26px;
+  min-height: 40px;
   flex: 1 1 auto;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   border: 1px solid var(--blue);
   border-radius: 35px;
-  padding: 3px 7px;
+  padding: 4px 6px;
   background: #eef8ff;
   color: var(--blue);
-  font-family: var(--font-latin);
-  font-size: 10px;
+  font-family: var(--font-body);
+  font-size: 9px;
   font-weight: 900;
-  line-height: 1.15;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.25;
+  text-align: center;
+  white-space: pre-line;
 }
 
 .psa10-market--empty {
@@ -939,9 +939,9 @@ body.scroll-locked .quick-search {
 
 .favorite-button {
   display: inline-grid;
-  width: 29px;
-  height: 29px;
-  flex: 0 0 29px;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
   place-items: center;
   border: 1px solid var(--border);
   border-radius: 50%;

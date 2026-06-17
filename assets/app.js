@@ -469,7 +469,7 @@
 
   function getPSA10TileLabel(card) {
     const quote = getPSA10Quote(card);
-    return quote ? `PSA10 ${formatCompactYen(quote.sell)}` : "PSA10相場 未取得";
+    return quote ? `PSA10販売価格\n${formatYen(quote.sell)}` : "PSA10販売価格\n未取得";
   }
 
   function cardMatchesQuery(card, query) {
@@ -1551,7 +1551,7 @@
         class: "quote-chart-label quote-chart-label--price",
         x: 6,
         y: roundSvgNumber(tick.y + 3),
-      }, formatCompactYen(tick.value));
+      }, formatYen(tick.value));
     }
 
     svg.append(createSvgElement("line", {
