@@ -1252,12 +1252,14 @@
 
     const marketRow = createElement("span", { className: "tile-market-row" });
     const psa10Quote = getPSA10Quote(card);
-    marketRow.append(
-      createElement("span", {
-        className: `psa10-market${psa10Quote ? "" : " psa10-market--empty"}`,
-        text: getPSA10TileLabel(card),
-      }),
+    const psa10Market = createElement("span", {
+      className: `psa10-market${psa10Quote ? "" : " psa10-market--empty"}`,
+    });
+    psa10Market.append(
+      createElement("span", { className: "psa10-market-label", text: "PSA10相場" }),
+      createElement("span", { className: "psa10-market-value", text: getPSA10TileLabel(card) }),
     );
+    marketRow.append(psa10Market);
 
     const tileInfo = createElement("span", { className: "tile-info" });
     const typeDot = createElement("span", { className: "type-dot", attrs: { "aria-label": typeInfo.fullLabel } });

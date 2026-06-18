@@ -926,23 +926,45 @@ body.scroll-locked .quick-search {
 .psa10-market {
   display: inline-flex;
   min-width: 0;
-  min-height: 28px;
+  min-height: 34px;
   flex: 1 1 auto;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2px;
   overflow: hidden;
   padding: 0 2px 1px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.psa10-market-label {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  color: #697386;
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-overflow: ellipsis;
+}
+
+.psa10-market-value {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
   color: #d41445;
   font-family: var(--font-latin);
   font-size: 20px;
   font-weight: 900;
   line-height: 1;
-  text-align: center;
   letter-spacing: 0;
-  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.psa10-market--empty {
+.psa10-market--empty .psa10-market-value {
   color: #9ca3af;
   font-family: var(--font-sans);
   font-size: 12px;
