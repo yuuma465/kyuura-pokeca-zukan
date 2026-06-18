@@ -467,9 +467,15 @@
     );
   }
 
+  function getCardImageUrl(card, editionKey = "") {
+    const variants = card?.image_variants && typeof card.image_variants === "object" ? card.image_variants : {};
+    const normalizedEdition = normalizeModalEdition(card, editionKey || state.activeEditionKey || getDefaultModalEdition(card));
+    return variants[normalizedEdition] || variants.standard || variants.unlimited || card?.image_url || "";
+  }
+
   function getPSA10TileLabel(card) {
     const quote = getPSA10Quote(card);
-    return quote ? `PSA10販売価格\n${formatYen(quote.sell)}` : "PSA10販売価格\n未取得";
+    return quote ? formatYen(quote.sell) : "未取得";
   }
 
   function cardMatchesQuery(card, query) {
@@ -692,7 +698,7 @@
           : index / Math.max(selectedPoints.length - 1, 1);
       const x = layout.left + ratio * plotWidth;
       const ySell = layout.top + (1 - (point.sell - yMin) / valueRange) * plotHeight;
-      return { ...point, x, ySell };
+      return { ...point, index, x, ySell };
     });
 
     const yTicks = [yMax, (yMax + yMin) / 2, yMin].map((value) => ({
@@ -721,6 +727,13 @@
     };
   }
 
+  function getQuoteChartPointLabel(point) {
+    if (!point) {
+      return "";
+    }
+    return `${formatDate(point.date)} 販売 ${formatYen(point.sell)}`;
+  }
+
   window.POKECA_APP_TESTS = {
     normalizeText,
     sortOptions,
@@ -745,10 +758,12 @@
     getSelectedEditionQuote,
     getPSAEntry,
     getPSA10Quote,
+    getCardImageUrl,
     getPSA10TileLabel,
     getPriceHistoryPoints,
     filterPriceHistoryPoints,
     buildQuoteChartModel,
+    getQuoteChartPointLabel,
     formatYen,
     formatDate,
     formatChartDate,
@@ -1649,7 +1664,61 @@
       r: 4,
     }));
 
+    svg.append(createSvgElement("circle", {
+      class: "quote-chart-selected",
+      cx: roundSvgNumber(latest.x),
+      cy: roundSvgNumber(latest.ySell),
+      r: 7,
+    }));
+
+    model.points.forEach((point, index) => {
+      const hit = createSvgElement("circle", {
+        class: "quote-chart-hit",
+        cx: roundSvgNumber(point.x),
+        cy: roundSvgNumber(point.ySell),
+        r: 15,
+        tabindex: "0",
+        role: "button",
+        "aria-label": getQuoteChartPointLabel(point),
+        "aria-pressed": String(point === latest),
+        "data-chart-point-index": String(index),
+      });
+      const pointTitle = createSvgElement("title");
+      pointTitle.textContent = getQuoteChartPointLabel(point);
+      hit.append(pointTitle);
+      svg.append(hit);
+    });
+
     return svg;
+  }
+
+  function renderQuoteChartReadout(point) {
+    return createElement("p", {
+      className: "quote-chart-readout",
+      text: point ? getQuoteChartPointLabel(point) : "チャート上の点をタップすると、その日の相場を表示します",
+    });
+  }
+
+  function selectQuoteChartPoint(point) {
+    if (!els.quoteChart || !point) {
+      return;
+    }
+    const selected = els.quoteChart.querySelector(".quote-chart-selected");
+    if (selected) {
+      selected.setAttribute("cx", roundSvgNumber(point.x));
+      selected.setAttribute("cy", roundSvgNumber(point.ySell));
+    }
+    for (const hit of els.quoteChart.querySelectorAll(".quote-chart-hit")) {
+      hit.setAttribute("aria-pressed", "false");
+    }
+    const activeHit = els.quoteChart.querySelector(`.quote-chart-hit[data-chart-point-index="${point.index}"]`);
+    if (activeHit) {
+      activeHit.setAttribute("aria-pressed", "true");
+    }
+    const readout = els.quoteChart.querySelector(".quote-chart-readout");
+    if (readout) {
+      readout.textContent = getQuoteChartPointLabel(point);
+    }
   }
 
   function renderQuoteChart(card, editionKey = "") {
@@ -1677,7 +1746,33 @@
     if (model.mode === "single") {
       els.quoteChart.append(createElement("p", { className: "quote-chart-status", text: statusText }));
     }
-    els.quoteChart.append(buildQuoteChartSvg(model, card));
+    els.quoteChart.append(buildQuoteChartSvg(model, card), renderQuoteChartReadout(model.latest));
+  }
+
+  function handleQuoteChartPointSelect(event) {
+    const target = event.target.closest?.(".quote-chart-hit");
+    if (!target || !els.quoteChart?.contains(target)) {
+      return;
+    }
+    const card = cardById.get(state.activeCardId);
+    if (!card) {
+      return;
+    }
+    const history = getPriceHistoryPoints(card, normalizeModalEdition(card, state.activeEditionKey));
+    const model = buildQuoteChartModel(history, state.quoteChartRange);
+    const point = model.points[Number(target.getAttribute("data-chart-point-index"))];
+    if (!point) {
+      return;
+    }
+    event.preventDefault();
+    selectQuoteChartPoint(point);
+  }
+
+  function handleQuoteChartPointKeydown(event) {
+    if (!["Enter", " "].includes(event.key)) {
+      return;
+    }
+    handleQuoteChartPointSelect(event);
   }
 
   function handleQuoteChartTabClick(event) {
@@ -1973,7 +2068,6 @@
 
   function renderModalDetails(card, editionKey = "") {
     const typeInfo = getTypeInfo(card);
-    const rarityInfo = getRarityInfo(card);
     const editionInfo = getEditionInfo(card, editionKey || state.activeEditionKey);
     els.modalDetails.replaceChildren();
 
@@ -1986,8 +2080,6 @@
     typeValue.append(createElement("span", { className: "type-dot", attrs: { "aria-hidden": "true" } }), document.createTextNode(typeInfo.fullLabel));
     appendDetail("属性", typeValue);
 
-    appendDetail("レアリティ", createRarityBadge(rarityInfo));
-    appendDetail("進化", buildEvolutionLine(card));
     appendDetail("カード番号", card.card_number || "-");
     appendDetail("セット名", card.set || "-");
     appendDetail("版区分", editionInfo.detail);
@@ -1995,9 +2087,27 @@
     appendDetail("イラストレーター", card.illustrator || "-");
   }
 
+  function renderModalImage(card, editionKey = "") {
+    const normalizedEdition = normalizeModalEdition(card, editionKey || state.activeEditionKey);
+    const imageUrl = getCardImageUrl(card, normalizedEdition);
+    const caption = [card.region, card.set].filter(Boolean).join(" / ") || "-";
+    const editionInfo = getEditionInfo(card, normalizedEdition);
+    els.modalFallback.textContent = "";
+    clearImageFallback(els.modalThumb);
+    els.modalImage.onerror = () => markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
+    els.modalImage.alt = `${card.name_ja} ${caption} ${editionInfo.label}のカード画像`;
+    if (imageUrl) {
+      els.modalImage.src = imageUrl;
+    } else {
+      els.modalImage.removeAttribute("src");
+      markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
+    }
+  }
+
   function renderEditionDependentSections(card) {
     const editionKey = normalizeModalEdition(card, state.activeEditionKey);
     state.activeEditionKey = editionKey;
+    renderModalImage(card, editionKey);
     renderEditionSwitch(card);
     renderModalDetails(card, editionKey);
     renderQuote(card, editionKey);
@@ -2005,8 +2115,6 @@
   }
 
   function renderModal(card) {
-    const typeInfo = getTypeInfo(card);
-    const rarityInfo = getRarityInfo(card);
     const caption = [card.region, card.set].filter(Boolean).join(" / ") || "-";
     state.activeCardId = card.id;
     state.activeEditionKey = getDefaultModalEdition(card);
@@ -2018,27 +2126,9 @@
     els.modalNo.textContent = getCardNumberLabel(card);
     els.modalTitle.textContent = card.name_ja;
     els.modalCaption.textContent = caption;
-    els.modalFallback.textContent = "";
-    clearImageFallback(els.modalThumb);
-    els.modalImage.onerror = () => markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
-    els.modalImage.alt = `${card.name_ja} ${caption}のカード画像`;
-    if (card.image_url) {
-      els.modalImage.src = card.image_url;
-    } else {
-      els.modalImage.removeAttribute("src");
-      markImageFallback(els.modalThumb, `${getCardNumberLabel(card)}\n${card.name_ja}\n画像なし`);
-    }
-
-    const modalChips = [
-      createSummaryChip(typeInfo.fullLabel, typeInfo, null),
-      createRarityBadge(rarityInfo),
-      createSummaryChip(getStageLabel(card), typeInfo, null),
-      createSummaryChip(card.set || "-", null, null),
-    ];
-    if (hasFirstEditionVariant(card)) {
-      modalChips.push(createElement("span", { className: "edition-badge", text: "初版（マークなし）あり" }));
-    }
-    els.modalChips.replaceChildren(...modalChips);
+    els.modalChips.replaceChildren();
+    els.modalChips.hidden = true;
+    renderModalImage(card, state.activeEditionKey);
     renderEditionSwitch(card);
     renderModalDetails(card, state.activeEditionKey);
     renderMarketLinks(card);
@@ -2215,6 +2305,8 @@
     els.nextCard.addEventListener("click", () => navigateModal(1));
     els.quoteChartTabs?.addEventListener("click", handleQuoteChartTabClick);
     els.quoteChartTabs?.addEventListener("keydown", handleQuoteChartTabKeydown);
+    els.quoteChart?.addEventListener("click", handleQuoteChartPointSelect);
+    els.quoteChart?.addEventListener("keydown", handleQuoteChartPointKeydown);
     window.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
         setSortMenuOpen(false);
