@@ -23,6 +23,7 @@
   };
   const svgNamespace = "http://www.w3.org/2000/svg";
   const firstEditionSetName = "第1弾 拡張パック";
+  const firstEditionImageCacheVersion = "v=20260619-hareruya2";
   const favoriteStorageKey = "pokecaFavoritesV1";
   const defaultSortMode = "oldest";
 
@@ -470,7 +471,14 @@
   function getCardImageUrl(card, editionKey = "") {
     const variants = card?.image_variants && typeof card.image_variants === "object" ? card.image_variants : {};
     const normalizedEdition = normalizeModalEdition(card, editionKey || state.activeEditionKey || getDefaultModalEdition(card));
-    return variants[normalizedEdition] || variants.standard || variants.unlimited || card?.image_url || "";
+    return withFirstEditionImageCacheBust(variants[normalizedEdition] || variants.standard || variants.unlimited || card?.image_url || "");
+  }
+
+  function withFirstEditionImageCacheBust(url) {
+    if (typeof url !== "string" || !url.startsWith("assets/card-images/1st10")) {
+      return url || "";
+    }
+    return url.includes("?") ? `${url}&${firstEditionImageCacheVersion}` : `${url}?${firstEditionImageCacheVersion}`;
   }
 
   function getPSA10TileLabel(card) {
@@ -1233,7 +1241,7 @@
     const thumb = createElement("span", { className: "thumb" });
     const img = createElement("img", {
       attrs: {
-        src: card.image_url,
+        src: withFirstEditionImageCacheBust(card.image_url),
         alt: `${card.name_ja}のカード画像`,
         loading: "lazy",
         decoding: "async",
