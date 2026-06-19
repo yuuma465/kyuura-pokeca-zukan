@@ -25,7 +25,7 @@
   const firstEditionSetName = "第1弾 拡張パック";
   const firstEditionImageCacheVersion = "v=20260619-hareruya2";
   const favoriteStorageKey = "pokecaFavoritesV1";
-  const defaultSortMode = "oldest";
+  const defaultSortMode = "number";
 
   const seriesOrder = new Map([
     ["PMCG", 0],
@@ -60,6 +60,7 @@
     { key: "VS", label: "VS" },
   ];
   const sortOptions = [
+    { key: "number", label: "番号順" },
     { key: "newest", label: "新しい順" },
     { key: "oldest", label: "古い順" },
     { key: "price-asc", label: "安い順" },
@@ -89,6 +90,7 @@
 
   const initialSetOrder = buildInitialSetOrder(sourceCards);
   const cards = sortCards(sourceCards);
+  const releaseOrderedCards = sortCardsByRelease(sourceCards);
   const cardById = new Map(cards.map((card) => [card.id, card]));
   const totalCount = cards.length;
 
@@ -120,7 +122,7 @@
     };
   }
 
-  function compareCards(a, b) {
+  function compareReleaseCards(a, b) {
     const seriesDiff = (seriesOrder.get(a.series) ?? 99) - (seriesOrder.get(b.series) ?? 99);
     if (seriesDiff) {
       return seriesDiff;
@@ -152,8 +154,24 @@
     return collator.compare(a.id || "", b.id || "");
   }
 
+  function compareCards(a, b) {
+    const aNo = parseCardNumber(a.card_number);
+    const bNo = parseCardNumber(b.card_number);
+    if (aNo.missing !== bNo.missing) {
+      return aNo.missing ? 1 : -1;
+    }
+    if (aNo.number !== bNo.number) {
+      return aNo.number - bNo.number;
+    }
+    return compareReleaseCards(a, b);
+  }
+
   function sortCards(cardList) {
     return [...cardList].sort(compareCards);
+  }
+
+  function sortCardsByRelease(cardList) {
+    return [...cardList].sort(compareReleaseCards);
   }
 
   function getSortableQuote(card) {
@@ -201,7 +219,10 @@
   function sortCardsByMode(cardList, sortMode = defaultSortMode) {
     const mode = sortOptionByKey.has(sortMode) ? sortMode : defaultSortMode;
     if (mode === "newest") {
-      return [...cardList].sort((a, b) => compareCards(b, a));
+      return [...cardList].sort((a, b) => compareReleaseCards(b, a));
+    }
+    if (mode === "oldest") {
+      return sortCardsByRelease(cardList);
     }
     if (mode === "price-asc") {
       return [...cardList].sort((a, b) => compareMetricCards(a, b, mode, 1));
@@ -1091,7 +1112,7 @@
       setCounts.set(card.set, (setCounts.get(card.set) || 0) + 1);
     }
     const seenSets = new Set();
-    for (const card of cards) {
+    for (const card of releaseOrderedCards) {
       if (seenSets.has(card.set)) {
         continue;
       }
@@ -1346,7 +1367,7 @@
   }
 
   function renderCardResults(cardList) {
-    if (state.sortMode === defaultSortMode) {
+    if (state.sortMode === "oldest") {
       renderCardGroups(cardList);
       return;
     }
