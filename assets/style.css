@@ -236,6 +236,83 @@ h1 {
   content: "";
 }
 
+.account-panel {
+  display: grid;
+  gap: 10px;
+  border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  padding: 0 14px 14px;
+  background: var(--white);
+}
+
+.account-status {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.account-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px;
+}
+
+.account-fields input {
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  padding: 7px 10px;
+  background: #fafafa;
+}
+
+.account-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.account-action-button,
+.account-link-button {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--black);
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.account-action-button--secondary,
+.account-link-button {
+  background: var(--white);
+  color: var(--black);
+}
+
+.account-message {
+  min-height: 1.4em;
+  margin: 0;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.account-message[data-tone="success"] {
+  color: var(--blue);
+}
+
 .result-count {
   margin: 4px 0 0;
   color: var(--muted);
@@ -995,15 +1072,12 @@ body.scroll-locked .quick-search {
     transform 0.15s ease;
 }
 
-.favorite-button svg {
-  width: 15px;
-  height: 15px;
+.favorite-button::before {
+  width: 18px;
+  height: 18px;
+  background: url("favorite-heart-outline.png?v=20260619") center / contain no-repeat;
+  content: "";
   display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.1;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 .favorite-button:hover,
@@ -1029,8 +1103,8 @@ body.scroll-locked .quick-search {
   color: var(--red);
 }
 
-.favorite-button.is-favorite svg {
-  fill: currentColor;
+.favorite-button.is-favorite::before {
+  background-image: url("favorite-heart-filled.png?v=20260619");
 }
 
 .tile-info {
@@ -1989,6 +2063,7 @@ body.scroll-locked .quick-search {
   }
 
   .control-head,
+  .account-panel,
   .search-row,
   .select-row,
   .toggle-row,
@@ -2040,6 +2115,14 @@ body.scroll-locked .quick-search {
   .control-head {
     align-items: center;
     padding: 10px 12px 8px;
+  }
+
+  .account-panel {
+    padding: 0 12px 10px;
+  }
+
+  .account-fields {
+    grid-template-columns: 1fr;
   }
 
   .control-head h2 {

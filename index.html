@@ -47,7 +47,7 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="assets/style.css?v=20260619-psa10-label">
+    <link rel="stylesheet" href="assets/style.css?v=20260619-account-heart">
   </head>
   <body>
     <header class="site-header">
@@ -80,6 +80,24 @@
             </div>
             <button id="reset-button" class="reset-button" type="button">すべて</button>
           </div>
+
+          <form id="account-form" class="account-panel" autocomplete="on">
+            <div class="account-status">
+              <span id="account-status-text">未ログイン</span>
+              <button id="account-logout-button" class="account-link-button" type="button" hidden>ログアウト</button>
+            </div>
+            <div class="account-fields">
+              <label class="sr-only" for="account-name-input">アカウント名</label>
+              <input id="account-name-input" name="username" type="text" autocomplete="username" placeholder="アカウント名">
+              <label class="sr-only" for="account-password-input">パスワード</label>
+              <input id="account-password-input" name="password" type="password" autocomplete="current-password" placeholder="パスワード">
+            </div>
+            <div class="account-actions">
+              <button id="account-login-button" class="account-action-button" type="submit">ログイン</button>
+              <button id="account-register-button" class="account-action-button account-action-button--secondary" type="button">新規作成</button>
+            </div>
+            <p id="account-message" class="account-message" aria-live="polite"></p>
+          </form>
 
           <fieldset class="chip-field">
             <legend>地方</legend>
@@ -243,6 +261,6 @@
     <script src="data/psa_pop_all.js"></script>
     <script src="data/price_all.js"></script>
     <script src="data/price_history.js"></script>
-    <script src="assets/app.js?v=20260619-pokedex-sort"></script>
+    <script src="assets/app.js?v=20260619-account-heart"></script>
   </body>
 </html>

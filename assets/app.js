@@ -25,6 +25,9 @@
   const firstEditionSetName = "第1弾 拡張パック";
   const firstEditionImageCacheVersion = "v=20260619-hareruya2";
   const favoriteStorageKey = "pokecaFavoritesV1";
+  const favoriteApiPath = "api/account.php";
+  const accountSessionStorageKey = "pokecaAccountSessionV1";
+  const accountFavoriteStoragePrefix = "pokecaFavoritesByAccount:";
   const defaultSortMode = "number";
 
   const seriesOrder = new Map([
@@ -867,6 +870,15 @@
     return `${formatDate(point.date)} 販売 ${formatYen(point.sell)}`;
   }
 
+  function normalizeAccountName(value) {
+    return String(value || "").trim().replace(/\s+/g, "").toLowerCase();
+  }
+
+  function getAccountFavoriteStorageKey(account) {
+    const id = normalizeAccountName(account?.id || account?.name || "");
+    return `${accountFavoriteStoragePrefix}${id || "guest"}`;
+  }
+
   window.POKECA_APP_TESTS = {
     normalizeText,
     sortOptions,
@@ -902,6 +914,8 @@
     formatChartDate,
     parseCardNumber,
     getPokemonDexSortInfo,
+    normalizeAccountName,
+    getAccountFavoriteStorageKey,
   };
 
   if (window.POKECA_APP_SKIP_INIT) {
@@ -917,7 +931,10 @@
     selectedEditions: new Set(),
     psaOnly: false,
     favoriteOnly: false,
-    favoriteIds: loadFavoriteIds(),
+    activeAccount: loadCachedAccountSession(),
+    accountBusy: false,
+    accountMessage: "",
+    favoriteIds: new Set(),
     query: "",
     sortMode: defaultSortMode,
     advancedFiltersOpen: false,
@@ -937,6 +954,14 @@
     quickSearchInput: document.getElementById("quick-search-input"),
     quickSearchClear: document.getElementById("quick-search-clear"),
     resetButton: document.getElementById("reset-button"),
+    accountForm: document.getElementById("account-form"),
+    accountNameInput: document.getElementById("account-name-input"),
+    accountPasswordInput: document.getElementById("account-password-input"),
+    accountLoginButton: document.getElementById("account-login-button"),
+    accountRegisterButton: document.getElementById("account-register-button"),
+    accountLogoutButton: document.getElementById("account-logout-button"),
+    accountStatusText: document.getElementById("account-status-text"),
+    accountMessage: document.getElementById("account-message"),
     sortButton: document.getElementById("sort-button"),
     sortMenu: document.getElementById("sort-menu"),
     advancedFilterToggle: document.getElementById("advanced-filter-toggle"),
@@ -977,22 +1002,227 @@
 
   const tileById = new Map();
 
-  function loadFavoriteIds() {
+  function normalizeFavoriteIds(ids) {
+    return Array.isArray(ids) ? ids.filter((id) => typeof id === "string" && cardById.has(id)) : [];
+  }
+
+  function loadCachedAccountSession() {
     try {
-      const raw = window.localStorage?.getItem(favoriteStorageKey);
-      const parsed = JSON.parse(raw || "[]");
-      return new Set(Array.isArray(parsed) ? parsed.filter((id) => cardById.has(id)) : []);
+      const raw = window.localStorage?.getItem(accountSessionStorageKey);
+      const account = JSON.parse(raw || "null");
+      return account?.id ? account : null;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function saveCachedAccountSession(account) {
+    try {
+      if (account?.id) {
+        window.localStorage?.setItem(accountSessionStorageKey, JSON.stringify({ id: account.id, name: account.name || account.id }));
+      } else {
+        window.localStorage?.removeItem(accountSessionStorageKey);
+      }
+    } catch (error) {
+      // localStorageが使えない環境では、このセッション内だけで保持する。
+    }
+  }
+
+  function loadFavoriteIds(account = state.activeAccount) {
+    try {
+      const scopedRaw = window.localStorage?.getItem(getAccountFavoriteStorageKey(account));
+      const legacyRaw = account ? "[]" : window.localStorage?.getItem(favoriteStorageKey);
+      const parsed = JSON.parse(scopedRaw || legacyRaw || "[]");
+      return new Set(normalizeFavoriteIds(parsed));
     } catch (error) {
       return new Set();
     }
   }
 
-  function saveFavoriteIds() {
+  function saveFavoriteIds({ sync = true } = {}) {
     try {
-      window.localStorage?.setItem(favoriteStorageKey, JSON.stringify([...state.favoriteIds]));
+      window.localStorage?.setItem(getAccountFavoriteStorageKey(state.activeAccount), JSON.stringify([...state.favoriteIds]));
     } catch (error) {
       // localStorageが使えない環境では、このセッション内だけで保持する。
     }
+    if (sync) {
+      syncFavoritesToAccount();
+    }
+  }
+
+  async function requestAccountApi(action, payload = {}) {
+    const response = await fetch(favoriteApiPath, {
+      method: "POST",
+      credentials: "same-origin",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action, ...payload }),
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok || data.ok === false) {
+      const error = new Error(data.error || "account_api_error");
+      error.code = data.error || response.status;
+      throw error;
+    }
+    return data;
+  }
+
+  async function fetchAccountState() {
+    const response = await fetch(`${favoriteApiPath}?action=me`, {
+      credentials: "same-origin",
+      headers: { "Accept": "application/json" },
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok || data.ok === false) {
+      throw new Error(data.error || "account_api_error");
+    }
+    return data.account || null;
+  }
+
+  function setAccountMessage(message = "", tone = "error") {
+    state.accountMessage = message;
+    if (els.accountMessage) {
+      els.accountMessage.textContent = message;
+      els.accountMessage.dataset.tone = tone;
+    }
+  }
+
+  function updateAccountControls() {
+    const loggedIn = Boolean(state.activeAccount?.id);
+    if (els.accountStatusText) {
+      els.accountStatusText.textContent = loggedIn ? `${state.activeAccount.name || state.activeAccount.id}でログイン中` : "未ログイン";
+    }
+    if (els.accountLogoutButton) {
+      els.accountLogoutButton.hidden = !loggedIn;
+    }
+    if (els.accountNameInput) {
+      els.accountNameInput.disabled = state.accountBusy || loggedIn;
+      els.accountNameInput.value = loggedIn ? (state.activeAccount.name || state.activeAccount.id) : els.accountNameInput.value;
+    }
+    if (els.accountPasswordInput) {
+      els.accountPasswordInput.disabled = state.accountBusy || loggedIn;
+      if (loggedIn) {
+        els.accountPasswordInput.value = "";
+      }
+    }
+    for (const button of [els.accountLoginButton, els.accountRegisterButton]) {
+      if (button) {
+        button.disabled = state.accountBusy || loggedIn;
+      }
+    }
+  }
+
+  function applyAccount(account, favorites = []) {
+    state.activeAccount = account?.id ? { id: account.id, name: account.name || account.id } : null;
+    saveCachedAccountSession(state.activeAccount);
+    if (!state.activeAccount) {
+      state.favoriteIds = new Set();
+      saveFavoriteIds({ sync: false });
+      updateAccountControls();
+      applyFilters();
+      return;
+    }
+    const localFavorites = loadFavoriteIds(state.activeAccount);
+    const serverFavorites = normalizeFavoriteIds(favorites);
+    state.favoriteIds = new Set([...localFavorites, ...serverFavorites]);
+    saveFavoriteIds({ sync: state.favoriteIds.size !== serverFavorites.length });
+    updateAccountControls();
+    applyFilters();
+  }
+
+  async function refreshAccountState() {
+    try {
+      const account = await fetchAccountState();
+      if (account) {
+        applyAccount(account, account.favorites || []);
+        return;
+      }
+      applyAccount(null, []);
+    } catch (error) {
+      state.favoriteIds = state.activeAccount?.id ? loadFavoriteIds(state.activeAccount) : new Set();
+      updateAccountControls();
+      applyFilters();
+    }
+  }
+
+  async function loginAccount() {
+    const username = normalizeAccountName(els.accountNameInput?.value || "");
+    const password = els.accountPasswordInput?.value || "";
+    if (!username || !password) {
+      setAccountMessage("アカウント名とパスワードを入力してください。");
+      return;
+    }
+    state.accountBusy = true;
+    updateAccountControls();
+    setAccountMessage("");
+    try {
+      const data = await requestAccountApi("login", { username, password });
+      applyAccount(data.account, data.account?.favorites || []);
+      setAccountMessage("ログインしました。", "success");
+    } catch (error) {
+      setAccountMessage("ログインできませんでした。");
+    } finally {
+      state.accountBusy = false;
+      updateAccountControls();
+    }
+  }
+
+  async function registerAccount() {
+    const username = normalizeAccountName(els.accountNameInput?.value || "");
+    const password = els.accountPasswordInput?.value || "";
+    if (!username || password.length < 4) {
+      setAccountMessage("アカウント名と4文字以上のパスワードを入力してください。");
+      return;
+    }
+    state.accountBusy = true;
+    updateAccountControls();
+    setAccountMessage("");
+    try {
+      const data = await requestAccountApi("register", { username, password });
+      applyAccount(data.account, data.account?.favorites || []);
+      setAccountMessage("アカウントを作成しました。", "success");
+    } catch (error) {
+      setAccountMessage(error.code === "account_exists" ? "このアカウント名は使用済みです。" : "作成できませんでした。");
+    } finally {
+      state.accountBusy = false;
+      updateAccountControls();
+    }
+  }
+
+  async function logoutAccount() {
+    state.accountBusy = true;
+    updateAccountControls();
+    try {
+      await requestAccountApi("logout");
+    } catch (error) {
+      // セッション切れでも画面側はログアウト状態へ戻す。
+    } finally {
+      state.accountBusy = false;
+      applyAccount(null, []);
+      if (els.accountNameInput) {
+        els.accountNameInput.value = "";
+      }
+      setAccountMessage("ログアウトしました。", "success");
+    }
+  }
+
+  async function syncFavoritesToAccount() {
+    if (!state.activeAccount?.id) {
+      return;
+    }
+    try {
+      await requestAccountApi("favorites", { favorites: [...state.favoriteIds] });
+    } catch (error) {
+      setAccountMessage("ハートの同期に失敗しました。");
+    }
+  }
+
+  function requireAccountForFavorite() {
+    if (state.activeAccount?.id) {
+      return true;
+    }
+    setAccountMessage("ログインするとハートを保存できます。");
+    els.accountNameInput?.focus();
+    return false;
   }
 
   function isFavorite(cardOrId) {
@@ -1000,24 +1230,10 @@
     return state.favoriteIds.has(id);
   }
 
-  function createFavoriteIcon(active) {
-    const icon = createSvgElement("svg", {
-      class: "favorite-icon",
-      viewBox: "0 0 24 24",
-      "aria-hidden": "true",
-      focusable: "false",
-    });
-    icon.append(createSvgElement("path", {
-      d: "M12 20.2 4.9 13.6C1.1 10 3.5 3.8 8.6 3.8c1.8 0 3.4.9 4.4 2.3 1-1.4 2.6-2.3 4.4-2.3 5.1 0 7.5 6.2 3.7 9.8L12 20.2Z",
-      fill: active ? "currentColor" : "none",
-    }));
-    return icon;
-  }
-
   function updateFavoriteButton(button, card) {
     const active = isFavorite(card);
     button.classList.toggle("is-favorite", active);
-    button.replaceChildren(createFavoriteIcon(active));
+    button.replaceChildren();
     button.setAttribute("aria-pressed", String(active));
     button.setAttribute("aria-label", active ? `${card.name_ja}をお気に入りから外す` : `${card.name_ja}をお気に入りに追加`);
     button.title = active ? "お気に入りから外す" : "お気に入りに追加";
@@ -1050,6 +1266,9 @@
   }
 
   function toggleFavorite(cardId) {
+    if (!requireAccountForFavorite()) {
+      return;
+    }
     if (state.favoriteIds.has(cardId)) {
       state.favoriteIds.delete(cardId);
     } else {
@@ -2399,6 +2618,16 @@
       applyFilters({ updateUrl: true });
       els.quickSearchInput?.focus();
     });
+    els.accountForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      loginAccount();
+    });
+    els.accountRegisterButton?.addEventListener("click", () => {
+      registerAccount();
+    });
+    els.accountLogoutButton?.addEventListener("click", () => {
+      logoutAccount();
+    });
     els.setFilter.addEventListener("change", (event) => {
       state.selectedSet = event.target.value;
       applyFilters({ updateUrl: true });
@@ -2481,9 +2710,11 @@
     renderFilters();
     readFiltersFromUrl();
     bindEvents();
+    updateAccountControls();
     updateQuickSearchAvoidance();
     applyFilters();
     openFromHash();
+    refreshAccountState();
   }
 
   init();
