@@ -972,6 +972,7 @@
     activeAccount: loadCachedAccountSession(),
     accountVerified: false,
     accountBusy: false,
+    accountPromptOpen: false,
     accountMessage: "",
     favoriteIds: new Set(),
     purchaseById: new Map(),
@@ -1064,8 +1065,13 @@
 
   function updateAuthGate() {
     const authenticated = isAuthenticated();
-    document.body.classList.toggle("auth-locked", !authenticated);
+    if (authenticated) {
+      state.accountPromptOpen = false;
+    }
     document.body.classList.toggle("is-authenticated", authenticated);
+    if (els.accountForm) {
+      els.accountForm.hidden = !state.accountPromptOpen;
+    }
   }
 
   function loadCachedAccountSession() {
@@ -1165,6 +1171,19 @@
     }
   }
 
+  function showAccountPrompt(message = "IDとiPassを入力してください。") {
+    state.accountPromptOpen = true;
+    setAccountMessage(message);
+    if (els.modal?.open) {
+      closeModal({ updateHash: true, restoreFocus: false });
+    }
+    updateAccountControls();
+    window.requestAnimationFrame?.(() => {
+      els.accountForm?.scrollIntoView?.({ block: "center", behavior: "smooth" });
+      els.accountNameInput?.focus?.({ preventScroll: true });
+    });
+  }
+
   function updateAccountControls() {
     const loggedIn = isAuthenticated();
     if (els.accountStatusText) {
@@ -1196,9 +1215,6 @@
     state.accountVerified = Boolean(state.activeAccount?.id && verified);
     saveCachedAccountSession(state.activeAccount);
     if (!isAuthenticated()) {
-      if (els.modal?.open) {
-        closeModal({ updateHash: false, restoreFocus: false });
-      }
       state.favoriteIds = new Set();
       state.purchaseById = new Map();
       saveFavoriteIds({ sync: false });
@@ -1312,8 +1328,7 @@
     if (isAuthenticated()) {
       return true;
     }
-    setAccountMessage("ログインしてください。");
-    els.accountNameInput?.focus();
+    showAccountPrompt("お気に入りを保存するにはIDとiPassを入力してください。");
     return false;
   }
 
@@ -1417,7 +1432,11 @@
 
   async function savePurchaseFromModal() {
     const cardId = state.activeCardId;
-    if (!isAuthenticated() || !cardById.has(cardId)) {
+    if (!cardById.has(cardId)) {
+      return;
+    }
+    if (!isAuthenticated()) {
+      showAccountPrompt("購入済み情報を保存するにはIDとiPassを入力してください。");
       return;
     }
     const date = normalizePurchaseDate(els.purchaseDateInput?.value || "");

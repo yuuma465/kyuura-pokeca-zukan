@@ -41,20 +41,6 @@ body.scroll-locked {
   overflow: hidden;
 }
 
-body.auth-locked {
-  padding-bottom: 0;
-  background: var(--band);
-}
-
-body.auth-locked .site-header,
-body.auth-locked .card-section,
-body.auth-locked .site-footer,
-body.auth-locked .quick-search,
-body.auth-locked .bottom-nav,
-body.auth-locked .modal {
-  display: none;
-}
-
 button,
 input,
 select {
@@ -202,34 +188,6 @@ h1 {
   content: "";
 }
 
-body.auth-locked .control-band {
-  display: grid;
-  min-height: 100vh;
-  align-items: center;
-  border: 0;
-  background: var(--band);
-}
-
-body.auth-locked .controls {
-  width: min(100%, 440px);
-  padding: 22px 14px;
-}
-
-body.auth-locked .controls > :not(.account-panel) {
-  display: none;
-}
-
-body.auth-locked .account-panel {
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.12);
-}
-
-body.is-authenticated .account-panel {
-  display: none;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -286,6 +244,10 @@ body.is-authenticated .account-panel {
   border-left: 1px solid var(--border);
   padding: 0 14px 14px;
   background: var(--white);
+}
+
+.account-panel[hidden] {
+  display: none;
 }
 
 .account-status {
@@ -2260,10 +2222,6 @@ body.scroll-locked .quick-search {
 @media (max-width: 760px) {
   body {
     padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom));
-  }
-
-  body.auth-locked {
-    padding-bottom: 0;
   }
 
   .quick-search {

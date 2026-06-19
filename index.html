@@ -47,9 +47,9 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="assets/style.css?v=20260620-hide-account-panel">
+    <link rel="stylesheet" href="assets/style.css?v=20260620-on-demand-auth">
   </head>
-  <body class="auth-locked">
+  <body>
     <header class="site-header">
       <div class="container header-inner">
         <p class="kicker">Pocket Monsters Card Game / Old Back</p>
@@ -81,7 +81,7 @@
             <button id="reset-button" class="reset-button" type="button">すべて</button>
           </div>
 
-          <form id="account-form" class="account-panel" autocomplete="on">
+          <form id="account-form" class="account-panel" autocomplete="on" hidden>
             <div class="account-status">
               <span id="account-status-text">未ログイン</span>
               <button id="account-logout-button" class="account-link-button" type="button" hidden>ログアウト</button>
@@ -280,6 +280,6 @@
     <script src="data/psa_pop_all.js"></script>
     <script src="data/price_all.js"></script>
     <script src="data/price_history.js"></script>
-    <script src="assets/app.js?v=20260619-auth-purchase"></script>
+    <script src="assets/app.js?v=20260620-on-demand-auth"></script>
   </body>
 </html>
