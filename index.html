@@ -47,9 +47,9 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="assets/style.css?v=20260619-account-heart">
+    <link rel="stylesheet" href="assets/style.css?v=20260619-auth-purchase">
   </head>
-  <body>
+  <body class="auth-locked">
     <header class="site-header">
       <div class="container header-inner">
         <p class="kicker">Pocket Monsters Card Game / Old Back</p>
@@ -87,10 +87,10 @@
               <button id="account-logout-button" class="account-link-button" type="button" hidden>ログアウト</button>
             </div>
             <div class="account-fields">
-              <label class="sr-only" for="account-name-input">アカウント名</label>
-              <input id="account-name-input" name="username" type="text" autocomplete="username" placeholder="アカウント名">
-              <label class="sr-only" for="account-password-input">パスワード</label>
-              <input id="account-password-input" name="password" type="password" autocomplete="current-password" placeholder="パスワード">
+              <label class="sr-only" for="account-name-input">ID</label>
+              <input id="account-name-input" name="username" type="text" autocomplete="username" placeholder="ID">
+              <label class="sr-only" for="account-password-input">iPass</label>
+              <input id="account-password-input" name="password" type="password" autocomplete="current-password" placeholder="iPass">
             </div>
             <div class="account-actions">
               <button id="account-login-button" class="account-action-button" type="submit">ログイン</button>
@@ -206,6 +206,18 @@
             <p id="modal-caption" class="modal-caption"></p>
             <div id="modal-chips" class="modal-chips" aria-label="カード概要"></div>
             <div id="modal-edition-switch" class="edition-switch" aria-label="版区分を選択" hidden></div>
+            <section class="purchase-section" id="purchase-section" aria-labelledby="purchase-title">
+              <h3 id="purchase-title">購入済み</h3>
+              <button id="purchase-toggle-button" class="purchase-toggle-button" type="button">購入済み</button>
+              <p id="purchase-summary" class="purchase-summary">未登録</p>
+              <form id="purchase-form" class="purchase-form" hidden>
+                <label for="purchase-date-input">購入日</label>
+                <input id="purchase-date-input" name="purchaseDate" type="date" autocomplete="off">
+                <label for="purchase-amount-input">購入金額</label>
+                <input id="purchase-amount-input" name="purchaseAmount" type="number" inputmode="numeric" min="0" step="1" placeholder="購入金額">
+                <button id="purchase-save-button" class="purchase-save-button" type="submit">保存</button>
+              </form>
+            </section>
             <section class="market-section" aria-labelledby="market-title">
               <h3 id="market-title">相場を調べる</h3>
               <div id="market-links" class="market-links"></div>
@@ -257,10 +269,17 @@
       <button id="quick-search-clear" class="quick-search-clear" type="button" aria-label="クリア" hidden>×</button>
     </div>
 
+    <nav id="bottom-nav" class="bottom-nav" aria-label="下部ナビゲーション">
+      <button id="bottom-home-button" class="bottom-nav-button" type="button">ホーム</button>
+      <button id="bottom-search-button" class="bottom-nav-button" type="button">検索</button>
+      <button id="bottom-favorites-button" class="bottom-nav-button" type="button" aria-pressed="false">お気に入り</button>
+      <button id="bottom-purchased-button" class="bottom-nav-button" type="button" aria-pressed="false">購入済み</button>
+    </nav>
+
     <script src="data/cards_all.js"></script>
     <script src="data/psa_pop_all.js"></script>
     <script src="data/price_all.js"></script>
     <script src="data/price_history.js"></script>
-    <script src="assets/app.js?v=20260619-account-heart"></script>
+    <script src="assets/app.js?v=20260619-auth-purchase"></script>
   </body>
 </html>

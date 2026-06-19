@@ -28,6 +28,7 @@
   const favoriteApiPath = "api/account.php";
   const accountSessionStorageKey = "pokecaAccountSessionV1";
   const accountFavoriteStoragePrefix = "pokecaFavoritesByAccount:";
+  const accountPurchaseStoragePrefix = "pokecaPurchasesByAccount:";
   const defaultSortMode = "number";
 
   const seriesOrder = new Map([
@@ -631,6 +632,7 @@
     const selectedEditions = filters.selectedEditions || new Set();
     const selectedSet = filters.selectedSet || "";
     const favoriteIds = filters.favoriteIds || new Set();
+    const purchaseById = filters.purchaseById || new Map();
     const query = filters.query || "";
 
     return cardList.filter((card) => {
@@ -646,6 +648,7 @@
         cardMatchesEdition(card, selectedEditions) &&
         (!filters.psaOnly || hasPSAData(card)) &&
         (!filters.favoriteOnly || favoriteIds.has(card.id)) &&
+        (!filters.purchasedOnly || purchaseById.has(card.id)) &&
         cardMatchesQuery(card, query)
       );
     });
@@ -879,6 +882,38 @@
     return `${accountFavoriteStoragePrefix}${id || "guest"}`;
   }
 
+  function getAccountPurchaseStorageKey(account) {
+    const id = normalizeAccountName(account?.id || account?.name || "");
+    return `${accountPurchaseStoragePrefix}${id || "guest"}`;
+  }
+
+  function normalizePurchaseAmount(value) {
+    const normalized = Number(String(value ?? "").replace(/[^\d]/g, ""));
+    return Number.isFinite(normalized) && normalized >= 0 ? Math.floor(normalized) : null;
+  }
+
+  function normalizePurchaseDate(value) {
+    const text = String(value || "").trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(text) ? text : "";
+  }
+
+  function normalizePurchases(value) {
+    const source = value && typeof value === "object" && !Array.isArray(value) ? value : {};
+    const entries = [];
+    for (const [cardId, purchase] of Object.entries(source)) {
+      if (!cardById.has(cardId) || !purchase || typeof purchase !== "object") {
+        continue;
+      }
+      const date = normalizePurchaseDate(purchase.date);
+      const amount = normalizePurchaseAmount(purchase.amount);
+      if (!date || amount === null) {
+        continue;
+      }
+      entries.push([cardId, { date, amount }]);
+    }
+    return new Map(entries);
+  }
+
   window.POKECA_APP_TESTS = {
     normalizeText,
     sortOptions,
@@ -916,6 +951,8 @@
     getPokemonDexSortInfo,
     normalizeAccountName,
     getAccountFavoriteStorageKey,
+    getAccountPurchaseStorageKey,
+    normalizePurchases,
   };
 
   if (window.POKECA_APP_SKIP_INIT) {
@@ -931,10 +968,14 @@
     selectedEditions: new Set(),
     psaOnly: false,
     favoriteOnly: false,
+    purchasedOnly: false,
     activeAccount: loadCachedAccountSession(),
+    accountVerified: false,
     accountBusy: false,
     accountMessage: "",
     favoriteIds: new Set(),
+    purchaseById: new Map(),
+    purchaseFormOpen: false,
     query: "",
     sortMode: defaultSortMode,
     advancedFiltersOpen: false,
@@ -986,6 +1027,13 @@
     modalCaption: document.getElementById("modal-caption"),
     modalChips: document.getElementById("modal-chips"),
     modalEditionSwitch: document.getElementById("modal-edition-switch"),
+    purchaseSection: document.getElementById("purchase-section"),
+    purchaseToggleButton: document.getElementById("purchase-toggle-button"),
+    purchaseSummary: document.getElementById("purchase-summary"),
+    purchaseForm: document.getElementById("purchase-form"),
+    purchaseDateInput: document.getElementById("purchase-date-input"),
+    purchaseAmountInput: document.getElementById("purchase-amount-input"),
+    purchaseSaveButton: document.getElementById("purchase-save-button"),
     modalDetails: document.getElementById("modal-details"),
     marketLinks: document.getElementById("market-links"),
     quoteSection: document.getElementById("quote-section"),
@@ -998,12 +1046,26 @@
     prevCard: document.getElementById("prev-card"),
     nextCard: document.getElementById("next-card"),
     sourceLink: document.getElementById("source-link"),
+    bottomHomeButton: document.getElementById("bottom-home-button"),
+    bottomSearchButton: document.getElementById("bottom-search-button"),
+    bottomFavoritesButton: document.getElementById("bottom-favorites-button"),
+    bottomPurchasedButton: document.getElementById("bottom-purchased-button"),
   };
 
   const tileById = new Map();
 
   function normalizeFavoriteIds(ids) {
     return Array.isArray(ids) ? ids.filter((id) => typeof id === "string" && cardById.has(id)) : [];
+  }
+
+  function isAuthenticated() {
+    return Boolean(state.activeAccount?.id && state.accountVerified);
+  }
+
+  function updateAuthGate() {
+    const authenticated = isAuthenticated();
+    document.body.classList.toggle("auth-locked", !authenticated);
+    document.body.classList.toggle("is-authenticated", authenticated);
   }
 
   function loadCachedAccountSession() {
@@ -1036,6 +1098,23 @@
       return new Set(normalizeFavoriteIds(parsed));
     } catch (error) {
       return new Set();
+    }
+  }
+
+  function loadPurchases(account = state.activeAccount) {
+    try {
+      const raw = window.localStorage?.getItem(getAccountPurchaseStorageKey(account));
+      return normalizePurchases(JSON.parse(raw || "{}"));
+    } catch (error) {
+      return new Map();
+    }
+  }
+
+  function savePurchasesToLocal() {
+    try {
+      window.localStorage?.setItem(getAccountPurchaseStorageKey(state.activeAccount), JSON.stringify(Object.fromEntries(state.purchaseById)));
+    } catch (error) {
+      // localStorageが使えない環境では、このセッション内だけで保持する。
     }
   }
 
@@ -1087,9 +1166,9 @@
   }
 
   function updateAccountControls() {
-    const loggedIn = Boolean(state.activeAccount?.id);
+    const loggedIn = isAuthenticated();
     if (els.accountStatusText) {
-      els.accountStatusText.textContent = loggedIn ? `${state.activeAccount.name || state.activeAccount.id}でログイン中` : "未ログイン";
+      els.accountStatusText.textContent = loggedIn ? `${state.activeAccount.name || state.activeAccount.id}でログイン中` : "ログインしてください";
     }
     if (els.accountLogoutButton) {
       els.accountLogoutButton.hidden = !loggedIn;
@@ -1109,22 +1188,33 @@
         button.disabled = state.accountBusy || loggedIn;
       }
     }
+    updateAuthGate();
   }
 
-  function applyAccount(account, favorites = []) {
+  function applyAccount(account, favorites = [], purchases = {}, verified = Boolean(account?.id)) {
     state.activeAccount = account?.id ? { id: account.id, name: account.name || account.id } : null;
+    state.accountVerified = Boolean(state.activeAccount?.id && verified);
     saveCachedAccountSession(state.activeAccount);
-    if (!state.activeAccount) {
+    if (!isAuthenticated()) {
+      if (els.modal?.open) {
+        closeModal({ updateHash: false, restoreFocus: false });
+      }
       state.favoriteIds = new Set();
+      state.purchaseById = new Map();
       saveFavoriteIds({ sync: false });
+      savePurchasesToLocal();
       updateAccountControls();
       applyFilters();
       return;
     }
     const localFavorites = loadFavoriteIds(state.activeAccount);
     const serverFavorites = normalizeFavoriteIds(favorites);
+    const localPurchases = loadPurchases(state.activeAccount);
+    const serverPurchases = normalizePurchases(purchases);
     state.favoriteIds = new Set([...localFavorites, ...serverFavorites]);
+    state.purchaseById = new Map([...localPurchases, ...serverPurchases]);
     saveFavoriteIds({ sync: state.favoriteIds.size !== serverFavorites.length });
+    savePurchasesToLocal();
     updateAccountControls();
     applyFilters();
   }
@@ -1133,12 +1223,14 @@
     try {
       const account = await fetchAccountState();
       if (account) {
-        applyAccount(account, account.favorites || []);
+        applyAccount(account, account.favorites || [], account.purchases || {}, true);
         return;
       }
-      applyAccount(null, []);
+      applyAccount(null, [], {}, false);
     } catch (error) {
-      state.favoriteIds = state.activeAccount?.id ? loadFavoriteIds(state.activeAccount) : new Set();
+      state.accountVerified = false;
+      state.favoriteIds = new Set();
+      state.purchaseById = new Map();
       updateAccountControls();
       applyFilters();
     }
@@ -1156,7 +1248,7 @@
     setAccountMessage("");
     try {
       const data = await requestAccountApi("login", { username, password });
-      applyAccount(data.account, data.account?.favorites || []);
+      applyAccount(data.account, data.account?.favorites || [], data.account?.purchases || {}, true);
       setAccountMessage("ログインしました。", "success");
     } catch (error) {
       setAccountMessage("ログインできませんでした。");
@@ -1178,7 +1270,7 @@
     setAccountMessage("");
     try {
       const data = await requestAccountApi("register", { username, password });
-      applyAccount(data.account, data.account?.favorites || []);
+      applyAccount(data.account, data.account?.favorites || [], data.account?.purchases || {}, true);
       setAccountMessage("アカウントを作成しました。", "success");
     } catch (error) {
       setAccountMessage(error.code === "account_exists" ? "このアカウント名は使用済みです。" : "作成できませんでした。");
@@ -1197,7 +1289,7 @@
       // セッション切れでも画面側はログアウト状態へ戻す。
     } finally {
       state.accountBusy = false;
-      applyAccount(null, []);
+      applyAccount(null, [], {}, false);
       if (els.accountNameInput) {
         els.accountNameInput.value = "";
       }
@@ -1206,7 +1298,7 @@
   }
 
   async function syncFavoritesToAccount() {
-    if (!state.activeAccount?.id) {
+    if (!isAuthenticated()) {
       return;
     }
     try {
@@ -1217,10 +1309,10 @@
   }
 
   function requireAccountForFavorite() {
-    if (state.activeAccount?.id) {
+    if (isAuthenticated()) {
       return true;
     }
-    setAccountMessage("ログインするとハートを保存できます。");
+    setAccountMessage("ログインしてください。");
     els.accountNameInput?.focus();
     return false;
   }
@@ -1280,6 +1372,82 @@
       return;
     }
     updateFavoriteButtons(cardId);
+  }
+
+  function getPurchase(cardOrId) {
+    const id = typeof cardOrId === "string" ? cardOrId : cardOrId?.id;
+    return state.purchaseById.get(id) || null;
+  }
+
+  function formatPurchaseText(purchase) {
+    if (!purchase) {
+      return "未登録";
+    }
+    return `購入日 ${formatDate(purchase.date)} / 購入金額 ${formatYen(purchase.amount)}`;
+  }
+
+  function setPurchaseMessage(message = "", tone = "") {
+    if (!els.purchaseSummary) {
+      return;
+    }
+    els.purchaseSummary.textContent = message;
+    if (tone) {
+      els.purchaseSummary.dataset.tone = tone;
+    } else {
+      delete els.purchaseSummary.dataset.tone;
+    }
+  }
+
+  function renderPurchaseSection(card) {
+    const purchase = getPurchase(card);
+    if (!els.purchaseSection || !els.purchaseToggleButton || !els.purchaseForm) {
+      return;
+    }
+    els.purchaseToggleButton.classList.toggle("is-purchased", Boolean(purchase));
+    els.purchaseToggleButton.setAttribute("aria-expanded", String(state.purchaseFormOpen));
+    els.purchaseForm.hidden = !state.purchaseFormOpen;
+    if (els.purchaseDateInput) {
+      els.purchaseDateInput.value = purchase?.date || "";
+    }
+    if (els.purchaseAmountInput) {
+      els.purchaseAmountInput.value = purchase ? String(purchase.amount) : "";
+    }
+    setPurchaseMessage(formatPurchaseText(purchase));
+  }
+
+  async function savePurchaseFromModal() {
+    const cardId = state.activeCardId;
+    if (!isAuthenticated() || !cardById.has(cardId)) {
+      return;
+    }
+    const date = normalizePurchaseDate(els.purchaseDateInput?.value || "");
+    const amount = normalizePurchaseAmount(els.purchaseAmountInput?.value || "");
+    if (!date || amount === null) {
+      setPurchaseMessage("購入日と購入金額を入力してください。", "error");
+      return;
+    }
+    const purchase = { date, amount };
+    state.purchaseById.set(cardId, purchase);
+    savePurchasesToLocal();
+    state.purchaseFormOpen = false;
+    renderPurchaseSection(cardById.get(cardId));
+    updateBottomNav();
+    if (state.purchasedOnly) {
+      applyFilters({ updateUrl: true });
+    }
+    try {
+      const data = await requestAccountApi("purchase", { cardId, date, amount });
+      if (data.account?.purchases) {
+        state.purchaseById = normalizePurchases(data.account.purchases);
+        savePurchasesToLocal();
+        renderPurchaseSection(cardById.get(cardId));
+        if (state.purchasedOnly) {
+          applyFilters({ updateUrl: true });
+        }
+      }
+    } catch (error) {
+      setPurchaseMessage("購入済み情報の保存に失敗しました。", "error");
+    }
   }
 
   function updateQuickSearchAvoidance() {
@@ -1503,6 +1671,7 @@
     if (els.favoritesOnly) {
       els.favoritesOnly.checked = state.favoriteOnly;
     }
+    updateBottomNav();
     updateSortControls();
     if (hasAdvancedFiltersActive()) {
       setAdvancedFiltersOpen(true);
@@ -1564,7 +1733,8 @@
       state.selectedRarities.size ||
       state.selectedEditions.size ||
       state.psaOnly ||
-      state.favoriteOnly,
+      state.favoriteOnly ||
+      state.purchasedOnly,
     );
   }
 
@@ -1734,6 +1904,7 @@
     state.selectedSet = knownSets.has(set) ? set : "";
     state.psaOnly = params.get("psa") === "1";
     state.favoriteOnly = params.get("fav") === "1";
+    state.purchasedOnly = params.get("purchased") === "1";
     state.query = params.get("q") || "";
     const sort = params.get("sort") || defaultSortMode;
     state.sortMode = sortOptionByKey.has(sort) ? sort : defaultSortMode;
@@ -1774,6 +1945,11 @@
     } else {
       params.delete("fav");
     }
+    if (state.purchasedOnly) {
+      params.set("purchased", "1");
+    } else {
+      params.delete("purchased");
+    }
     if (state.query) {
       params.set("q", state.query);
     } else {
@@ -1796,6 +1972,7 @@
     state.selectedEditions.clear();
     state.psaOnly = false;
     state.favoriteOnly = false;
+    state.purchasedOnly = false;
     state.query = "";
     state.sortMode = defaultSortMode;
     state.advancedFiltersOpen = false;
@@ -1814,6 +1991,37 @@
     url.search = "";
     url.hash = "";
     updateHistory("replaceState", url);
+    window.scrollTo?.({ top: 0, behavior: "smooth" });
+  }
+
+  function updateBottomNav() {
+    els.bottomFavoritesButton?.classList.toggle("is-active", state.favoriteOnly);
+    els.bottomFavoritesButton?.setAttribute("aria-pressed", String(state.favoriteOnly));
+    els.bottomPurchasedButton?.classList.toggle("is-active", state.purchasedOnly);
+    els.bottomPurchasedButton?.setAttribute("aria-pressed", String(state.purchasedOnly));
+    els.bottomSearchButton?.classList.toggle("is-active", Boolean(state.query));
+    els.bottomHomeButton?.classList.toggle("is-active", !state.favoriteOnly && !state.purchasedOnly && !state.query);
+  }
+
+  function focusSearchFromNav() {
+    if (els.modal.open) {
+      closeModal({ updateHash: true, restoreFocus: false });
+    }
+    els.searchInput?.scrollIntoView?.({ block: "center", behavior: "smooth" });
+    els.searchInput?.focus?.();
+  }
+
+  function showFavoritesFromNav() {
+    state.favoriteOnly = true;
+    state.purchasedOnly = false;
+    applyFilters({ updateUrl: true });
+    window.scrollTo?.({ top: 0, behavior: "smooth" });
+  }
+
+  function showPurchasedFromNav() {
+    state.favoriteOnly = false;
+    state.purchasedOnly = true;
+    applyFilters({ updateUrl: true });
     window.scrollTo?.({ top: 0, behavior: "smooth" });
   }
 
@@ -2465,6 +2673,7 @@
     renderModalImage(card, editionKey);
     renderEditionSwitch(card);
     renderModalDetails(card, editionKey);
+    renderPurchaseSection(card);
     renderQuote(card, editionKey);
     renderPSA(card, editionKey);
   }
@@ -2473,6 +2682,7 @@
     const caption = [card.region, card.set].filter(Boolean).join(" / ") || "-";
     state.activeCardId = card.id;
     state.activeEditionKey = getDefaultModalEdition(card);
+    state.purchaseFormOpen = false;
 
     setTypeStyle(els.modalPanel, card);
     setTypeStyle(els.modal, card);
@@ -2486,6 +2696,7 @@
     renderModalImage(card, state.activeEditionKey);
     renderEditionSwitch(card);
     renderModalDetails(card, state.activeEditionKey);
+    renderPurchaseSection(card);
     renderMarketLinks(card);
     renderQuote(card, state.activeEditionKey);
     renderPSA(card, state.activeEditionKey);
@@ -2628,6 +2839,23 @@
     els.accountLogoutButton?.addEventListener("click", () => {
       logoutAccount();
     });
+    els.purchaseToggleButton?.addEventListener("click", () => {
+      state.purchaseFormOpen = !state.purchaseFormOpen;
+      if (state.activeCardId) {
+        renderPurchaseSection(cardById.get(state.activeCardId));
+      }
+      if (state.purchaseFormOpen) {
+        els.purchaseDateInput?.focus?.();
+      }
+    });
+    els.purchaseForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      savePurchaseFromModal();
+    });
+    els.bottomHomeButton?.addEventListener("click", resetToHome);
+    els.bottomSearchButton?.addEventListener("click", focusSearchFromNav);
+    els.bottomFavoritesButton?.addEventListener("click", showFavoritesFromNav);
+    els.bottomPurchasedButton?.addEventListener("click", showPurchasedFromNav);
     els.setFilter.addEventListener("change", (event) => {
       state.selectedSet = event.target.value;
       applyFilters({ updateUrl: true });

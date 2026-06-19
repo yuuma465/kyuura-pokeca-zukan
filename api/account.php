@@ -73,6 +73,36 @@ function validate_favorites(array $favorites): array
     return array_slice(array_keys($valid), 0, 5000);
 }
 
+function validate_card_id($cardId): ?string
+{
+    if (!is_string($cardId)) {
+        return null;
+    }
+    $id = trim($cardId);
+    return $id !== '' && preg_match('/^[A-Za-z0-9_-]+$/', $id) ? $id : null;
+}
+
+function validate_purchase_date($date): ?string
+{
+    if (!is_string($date) || !preg_match('/^\d{4}-\d{2}-\d{2}$/', $date)) {
+        return null;
+    }
+    [$year, $month, $day] = array_map('intval', explode('-', $date));
+    return checkdate($month, $day, $year) ? $date : null;
+}
+
+function validate_purchase_amount($amount): ?int
+{
+    if (is_string($amount)) {
+        $amount = preg_replace('/[^\d]/', '', $amount);
+    }
+    if ($amount === '' || $amount === null || !is_numeric($amount)) {
+        return null;
+    }
+    $number = (int)$amount;
+    return $number >= 0 && $number <= 999999999 ? $number : null;
+}
+
 function ensure_store(): void
 {
     global $dataDir, $dataFile;
@@ -115,6 +145,7 @@ function account_response(array $account): array
         'id' => $account['id'],
         'name' => $account['name'],
         'favorites' => array_values($account['favorites'] ?? []),
+        'purchases' => (object)($account['purchases'] ?? []),
     ];
 }
 
@@ -170,6 +201,7 @@ if ($action === 'register' || $action === 'login') {
                 'name' => $username,
                 'passwordHash' => password_hash($password, PASSWORD_DEFAULT),
                 'favorites' => [],
+                'purchases' => [],
                 'createdAt' => gmdate('c'),
                 'updatedAt' => gmdate('c'),
             ];
@@ -198,6 +230,35 @@ if ($action === 'favorites') {
             respond(['ok' => false, 'error' => 'not_logged_in'], 401);
         }
         $store['accounts'][$accountId]['favorites'] = $favorites;
+        $store['accounts'][$accountId]['updatedAt'] = gmdate('c');
+        return $store['accounts'][$accountId];
+    });
+    respond(['ok' => true, 'account' => account_response($account)]);
+}
+
+if ($action === 'purchase') {
+    $accountId = $_SESSION['account_id'] ?? '';
+    if (!is_string($accountId) || $accountId === '') {
+        respond(['ok' => false, 'error' => 'not_logged_in'], 401);
+    }
+    $cardId = validate_card_id($payload['cardId'] ?? null);
+    $date = validate_purchase_date($payload['date'] ?? null);
+    $amount = validate_purchase_amount($payload['amount'] ?? null);
+    if ($cardId === null || $date === null || $amount === null) {
+        respond(['ok' => false, 'error' => 'invalid_purchase'], 400);
+    }
+    $account = with_store(function (array &$store) use ($accountId, $cardId, $date, $amount) {
+        if (!isset($store['accounts'][$accountId])) {
+            respond(['ok' => false, 'error' => 'not_logged_in'], 401);
+        }
+        if (!isset($store['accounts'][$accountId]['purchases']) || !is_array($store['accounts'][$accountId]['purchases'])) {
+            $store['accounts'][$accountId]['purchases'] = [];
+        }
+        $store['accounts'][$accountId]['purchases'][$cardId] = [
+            'date' => $date,
+            'amount' => $amount,
+            'updatedAt' => gmdate('c'),
+        ];
         $store['accounts'][$accountId]['updatedAt'] = gmdate('c');
         return $store['accounts'][$accountId];
     });

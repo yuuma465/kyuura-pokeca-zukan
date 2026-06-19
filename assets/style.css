@@ -12,6 +12,7 @@
   --font-body: "Noto Sans JP", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   --font-latin: "Fjalla One", sans-serif;
   --quick-search-height: 78px;
+  --bottom-nav-height: 70px;
   --quick-search-avoid-bottom: 0px;
 }
 
@@ -38,6 +39,20 @@ body {
 
 body.scroll-locked {
   overflow: hidden;
+}
+
+body.auth-locked {
+  padding-bottom: 0;
+  background: var(--band);
+}
+
+body.auth-locked .site-header,
+body.auth-locked .card-section,
+body.auth-locked .site-footer,
+body.auth-locked .quick-search,
+body.auth-locked .bottom-nav,
+body.auth-locked .modal {
+  display: none;
 }
 
 button,
@@ -185,6 +200,30 @@ h1 {
   display: block;
   height: 0;
   content: "";
+}
+
+body.auth-locked .control-band {
+  display: grid;
+  min-height: 100vh;
+  align-items: center;
+  border: 0;
+  background: var(--band);
+}
+
+body.auth-locked .controls {
+  width: min(100%, 440px);
+  padding: 22px 14px;
+}
+
+body.auth-locked .controls > :not(.account-panel) {
+  display: none;
+}
+
+body.auth-locked .account-panel {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.12);
 }
 
 .sr-only {
@@ -670,6 +709,45 @@ body.scroll-locked .quick-search {
 
 .quick-search-clear[hidden] {
   display: none;
+}
+
+.bottom-nav {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 21;
+  display: none;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+  padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.bottom-nav-button {
+  display: inline-flex;
+  min-width: 0;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 8px;
+  padding: 6px 4px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.bottom-nav-button:hover,
+.bottom-nav-button:focus-visible,
+.bottom-nav-button.is-active,
+.bottom-nav-button[aria-pressed="true"] {
+  background: var(--black);
+  color: var(--white);
 }
 
 .select-row select {
@@ -1966,6 +2044,99 @@ body.scroll-locked .quick-search {
   color: var(--blue-dark);
 }
 
+.purchase-section {
+  display: grid;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--white);
+}
+
+.purchase-section h3 {
+  margin: 0;
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.purchase-toggle-button {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  padding: 7px 14px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.purchase-save-button {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  padding: 7px 14px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.purchase-toggle-button.is-purchased {
+  border-color: var(--blue);
+  background: var(--blue);
+}
+
+.purchase-summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.purchase-summary[data-tone="error"] {
+  color: var(--red);
+}
+
+.purchase-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+
+.purchase-form[hidden] {
+  display: none;
+}
+
+.purchase-form label {
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.purchase-form input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fafafa;
+  color: var(--ink);
+}
+
 .package-modal {
   width: min(94vw, 760px);
   max-width: 760px;
@@ -2079,6 +2250,28 @@ body.scroll-locked .quick-search {
   .package-body {
     grid-template-columns: minmax(260px, 0.92fr) minmax(0, 1.08fr);
     align-items: start;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom));
+  }
+
+  body.auth-locked {
+    padding-bottom: 0;
+  }
+
+  .quick-search {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: grid;
+  }
+
+  body.scroll-locked .bottom-nav {
+    display: none;
   }
 }
 
