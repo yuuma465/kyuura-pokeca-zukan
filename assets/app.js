@@ -38,6 +38,43 @@
     ["VS", 2],
   ]);
   const collator = new Intl.Collator("ja-JP", { numeric: true, sensitivity: "base" });
+  const pokemonSpeciesNames = [
+    "フシギダネ", "フシギソウ", "フシギバナ", "ヒトカゲ", "リザード", "リザードン", "ゼニガメ", "カメール", "カメックス",
+    "キャタピー", "トランセル", "バタフリー", "ビードル", "コクーン", "スピアー", "ポッポ", "ピジョン", "ピジョット",
+    "コラッタ", "ラッタ", "オニスズメ", "オニドリル", "アーボ", "アーボック", "ピカチュウ", "ライチュウ", "サンド",
+    "サンドパン", "ニドラン♀", "ニドリーナ", "ニドクイン", "ニドラン♂", "ニドリーノ", "ニドキング", "ピッピ", "ピクシー",
+    "ロコン", "キュウコン", "プリン", "プクリン", "ズバット", "ゴルバット", "ナゾノクサ", "クサイハナ", "ラフレシア",
+    "パラス", "パラセクト", "コンパン", "モルフォン", "ディグダ", "ダグトリオ", "ニャース", "ペルシアン", "コダック",
+    "ゴルダック", "マンキー", "オコリザル", "ガーディ", "ウインディ", "ニョロモ", "ニョロゾ", "ニョロボン", "ケーシィ",
+    "ユンゲラー", "フーディン", "ワンリキー", "ゴーリキー", "カイリキー", "マダツボミ", "ウツドン", "ウツボット",
+    "メノクラゲ", "ドククラゲ", "イシツブテ", "ゴローン", "ゴローニャ", "ポニータ", "ギャロップ", "ヤドン", "ヤドラン",
+    "コイル", "レアコイル", "カモネギ", "ドードー", "ドードリオ", "パウワウ", "ジュゴン", "ベトベター", "ベトベトン",
+    "シェルダー", "パルシェン", "ゴース", "ゴースト", "ゲンガー", "イワーク", "スリープ", "スリーパー", "クラブ",
+    "キングラー", "ビリリダマ", "マルマイン", "タマタマ", "ナッシー", "カラカラ", "ガラガラ", "サワムラー", "エビワラー",
+    "ベロリンガ", "ドガース", "マタドガス", "サイホーン", "サイドン", "ラッキー", "モンジャラ", "ガルーラ", "タッツー",
+    "シードラ", "トサキント", "アズマオウ", "ヒトデマン", "スターミー", "バリヤード", "ストライク", "ルージュラ",
+    "エレブー", "ブーバー", "カイロス", "ケンタロス", "コイキング", "ギャラドス", "ラプラス", "メタモン", "イーブイ",
+    "シャワーズ", "サンダース", "ブースター", "ポリゴン", "オムナイト", "オムスター", "カブト", "カブトプス", "プテラ",
+    "カビゴン", "フリーザー", "サンダー", "ファイヤー", "ミニリュウ", "ハクリュー", "カイリュー", "ミュウツー", "ミュウ",
+    "チコリータ", "ベイリーフ", "メガニウム", "ヒノアラシ", "マグマラシ", "バクフーン", "ワニノコ", "アリゲイツ",
+    "オーダイル", "オタチ", "オオタチ", "ホーホー", "ヨルノズク", "レディバ", "レディアン", "イトマル", "アリアドス",
+    "クロバット", "チョンチー", "ランターン", "ピチュー", "ピィ", "ププリン", "トゲピー", "トゲチック", "ネイティ",
+    "ネイティオ", "メリープ", "モココ", "デンリュウ", "キレイハナ", "マリル", "マリルリ", "ウソッキー", "ニョロトノ",
+    "ハネッコ", "ポポッコ", "ワタッコ", "エイパム", "ヒマナッツ", "キマワリ", "ヤンヤンマ", "ウパー", "ヌオー",
+    "エーフィ", "ブラッキー", "ヤミカラス", "ヤドキング", "ムウマ", "アンノーン", "ソーナンス", "キリンリキ",
+    "クヌギダマ", "フォレトス", "ノコッチ", "グライガー", "ハガネール", "ブルー", "グランブル", "ハリーセン",
+    "ハッサム", "ツボツボ", "ヘラクロス", "ニューラ", "ヒメグマ", "リングマ", "マグマッグ", "マグカルゴ", "ウリムー",
+    "イノムー", "サニーゴ", "テッポウオ", "オクタン", "デリバード", "マンタイン", "エアームド", "デルビル", "ヘルガー",
+    "キングドラ", "ゴマゾウ", "ドンファン", "ポリゴン２", "オドシシ", "ドーブル", "バルキー", "カポエラー", "ムチュール",
+    "エレキッド", "ブビィ", "ミルタンク", "ハピナス", "ライコウ", "エンテイ", "スイクン", "ヨーギラス", "サナギラス",
+    "バンギラス", "ルギア", "ホウオウ", "セレビィ",
+  ];
+  const pokemonSpeciesAliases = new Map([
+    ["ウィンディ", "ウインディ"],
+    ["ハクリュウ", "ハクリュー"],
+    ["ポリゴン2", "ポリゴン２"],
+  ]);
+  const pokemonDexEntries = buildPokemonDexEntries();
 
   const typeDefinitions = [
     { key: "草", label: "草", fullLabel: "草", color: "#5BB04A", pokemon: true },
@@ -60,7 +97,7 @@
     { key: "VS", label: "VS" },
   ];
   const sortOptions = [
-    { key: "number", label: "番号順" },
+    { key: "number", label: "図鑑番号順" },
     { key: "newest", label: "新しい順" },
     { key: "oldest", label: "古い順" },
     { key: "price-asc", label: "安い順" },
@@ -89,6 +126,7 @@
   ];
 
   const initialSetOrder = buildInitialSetOrder(sourceCards);
+  const primaryPokemonCardIds = buildPrimaryPokemonCardIds(sourceCards);
   const cards = sortCards(sourceCards);
   const releaseOrderedCards = sortCardsByRelease(sourceCards);
   const cardById = new Map(cards.map((card) => [card.id, card]));
@@ -120,6 +158,62 @@
       number: Number(match[1]),
       total: Number(match[2] || Number.MAX_SAFE_INTEGER),
     };
+  }
+
+  function buildPokemonDexEntries() {
+    const orderByName = new Map();
+    pokemonSpeciesNames.forEach((name, index) => {
+      orderByName.set(name, index + 1);
+    });
+    for (const [alias, canonical] of pokemonSpeciesAliases.entries()) {
+      const order = orderByName.get(canonical);
+      if (order) {
+        orderByName.set(alias, order);
+      }
+    }
+    return [...orderByName.entries()]
+      .map(([name, number]) => ({ name, number }))
+      .sort((a, b) => b.name.length - a.name.length || a.number - b.number);
+  }
+
+  function matchPokemonDexEntry(cardName) {
+    const name = String(cardName || "").trim();
+    if (!name) {
+      return null;
+    }
+    return pokemonDexEntries.find((entry) => name === entry.name)
+      || pokemonDexEntries.find((entry) => name.endsWith(entry.name))
+      || pokemonDexEntries.find((entry) => name.startsWith(entry.name))
+      || null;
+  }
+
+  function getPokemonDexSortInfo(card) {
+    if ((card?.card_type || "") !== "ポケモン") {
+      return { missing: true, number: Number.MAX_SAFE_INTEGER, variantRank: 2, species: "" };
+    }
+    const entry = matchPokemonDexEntry(card.name_ja);
+    if (!entry) {
+      return { missing: true, number: Number.MAX_SAFE_INTEGER, variantRank: 1, species: "" };
+    }
+    const cardName = String(card.name_ja || "").trim();
+    return {
+      missing: false,
+      number: entry.number,
+      variantRank: cardName === entry.name ? 0 : 1,
+      species: pokemonSpeciesAliases.get(entry.name) || entry.name,
+    };
+  }
+
+  function buildPrimaryPokemonCardIds(cardList) {
+    const primaryIdByDexNumber = new Map();
+    for (const card of sortCardsByRelease(cardList)) {
+      const info = getPokemonDexSortInfo(card);
+      if (info.missing || info.variantRank !== 0 || primaryIdByDexNumber.has(info.number)) {
+        continue;
+      }
+      primaryIdByDexNumber.set(info.number, card.id);
+    }
+    return new Set(primaryIdByDexNumber.values());
   }
 
   function compareReleaseCards(a, b) {
@@ -155,13 +249,23 @@
   }
 
   function compareCards(a, b) {
-    const aNo = parseCardNumber(a.card_number);
-    const bNo = parseCardNumber(b.card_number);
-    if (aNo.missing !== bNo.missing) {
-      return aNo.missing ? 1 : -1;
+    const aDex = getPokemonDexSortInfo(a);
+    const bDex = getPokemonDexSortInfo(b);
+    if (aDex.missing !== bDex.missing) {
+      return aDex.missing ? 1 : -1;
     }
-    if (aNo.number !== bNo.number) {
-      return aNo.number - bNo.number;
+    if (!aDex.missing) {
+      const aPrimaryRank = primaryPokemonCardIds.has(a.id) ? 0 : 1;
+      const bPrimaryRank = primaryPokemonCardIds.has(b.id) ? 0 : 1;
+      if (aPrimaryRank !== bPrimaryRank) {
+        return aPrimaryRank - bPrimaryRank;
+      }
+    }
+    if (aDex.number !== bDex.number) {
+      return aDex.number - bDex.number;
+    }
+    if (!aDex.missing && aDex.variantRank !== bDex.variantRank) {
+      return aDex.variantRank - bDex.variantRank;
     }
     return compareReleaseCards(a, b);
   }
@@ -797,6 +901,7 @@
     formatDate,
     formatChartDate,
     parseCardNumber,
+    getPokemonDexSortInfo,
   };
 
   if (window.POKECA_APP_SKIP_INIT) {
