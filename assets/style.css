@@ -226,6 +226,10 @@ body.auth-locked .account-panel {
   box-shadow: 0 12px 28px rgba(17, 24, 39, 0.12);
 }
 
+body.is-authenticated .account-panel {
+  display: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
