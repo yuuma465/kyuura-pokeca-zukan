@@ -442,6 +442,7 @@
       sell,
       n: Number.isFinite(Number(entry.n)) ? Number(entry.n) : 0,
       updated: entry.updated || fallbackUpdated || "",
+      condition_label: typeof entry.condition_label === "string" ? entry.condition_label.trim() : "",
     };
   }
 
@@ -613,6 +614,11 @@
   function getPSA10TileLabel(card) {
     const quote = getPSA10Quote(card);
     return quote ? formatYen(quote.sell) : "未取得";
+  }
+
+  function getPSA10MarketLabel(card) {
+    const label = getPSA10Quote(card)?.condition_label || "";
+    return label && label !== "PSA10" ? `${label}相場` : "PSA10相場";
   }
 
   function cardMatchesQuery(card, query) {
@@ -940,6 +946,7 @@
     getPSA10Quote,
     getCardImageUrl,
     getPSA10TileLabel,
+    getPSA10MarketLabel,
     getPriceHistoryPoints,
     filterPriceHistoryPoints,
     buildQuoteChartModel,
@@ -1817,7 +1824,7 @@
       className: `psa10-market${psa10Quote ? "" : " psa10-market--empty"}`,
     });
     psa10Market.append(
-      createElement("span", { className: "psa10-market-label", text: "PSA10相場" }),
+      createElement("span", { className: "psa10-market-label", text: getPSA10MarketLabel(card) }),
       createElement("span", { className: "psa10-market-value", text: getPSA10TileLabel(card) }),
     );
     marketRow.append(psa10Market);
