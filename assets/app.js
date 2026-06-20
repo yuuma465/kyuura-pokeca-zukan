@@ -1469,16 +1469,35 @@
     }
   }
 
+  function getBottomNavOffset() {
+    const nav = els.bottomHomeButton?.closest?.(".bottom-nav");
+    if (!nav) {
+      return 0;
+    }
+    const navStyle = window.getComputedStyle?.(nav);
+    if (navStyle?.display === "none") {
+      return 0;
+    }
+    const rootStyle = window.getComputedStyle?.(document.documentElement);
+    const cssHeight = Number.parseFloat(rootStyle?.getPropertyValue("--bottom-nav-height") || "");
+    if (Number.isFinite(cssHeight)) {
+      return cssHeight;
+    }
+    const measuredHeight = nav.getBoundingClientRect?.().height;
+    return Number.isFinite(measuredHeight) ? measuredHeight : 0;
+  }
+
   function updateQuickSearchAvoidance() {
+    const bottomNavOffset = getBottomNavOffset();
     const viewport = window.visualViewport;
     if (!viewport) {
-      document.documentElement.style.setProperty("--quick-search-avoid-bottom", "0px");
+      document.documentElement.style.setProperty("--quick-search-avoid-bottom", `${Math.ceil(bottomNavOffset)}px`);
       return;
     }
 
     const layoutHeight = window.innerHeight || document.documentElement.clientHeight || viewport.height;
     const bottomInset = Math.max(0, layoutHeight - viewport.height - viewport.offsetTop);
-    document.documentElement.style.setProperty("--quick-search-avoid-bottom", `${Math.ceil(bottomInset)}px`);
+    document.documentElement.style.setProperty("--quick-search-avoid-bottom", `${Math.ceil(bottomNavOffset + bottomInset)}px`);
   }
 
   function cssEscape(value) {
